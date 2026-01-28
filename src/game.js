@@ -11,6 +11,7 @@ import MulleNet from 'util/network'
 import MulleCursor from 'util/cursor'
 
 import MenuState from 'scenes/menu'
+import FileBrowserState from 'scenes/filebrowser'
 
 import GarageState from 'scenes/garage'
 import JunkState from 'scenes/junk'
@@ -29,6 +30,11 @@ import SaftfabrikState from 'scenes/saftfabrik'
 import SolhemState from 'scenes/solhem'
 import DorisDigitalState from 'scenes/dorisdigital'
 import ViolaState from 'scenes/viola'
+import TreeCarState from 'scenes/treecar'
+import LuddeLabState from 'scenes/luddelabb'
+import OceanState from 'scenes/ocean'
+import CreditsState from 'scenes/credits'
+import WorldSelectState from 'scenes/worldselect'
 
 // var requireScenes = require.context('scenes', true, /\.js$/);
 // requireScenes.keys().forEach(requireScenes);
@@ -86,8 +92,8 @@ class MulleGame extends Phaser.Game {
 
     this.mulle.networkEnabled = false
 
-    this.mulle.networkServer = 'mulle.datagutten.net:8765'
-    this.mulle.networkDevServer = 'localhost:8765'
+    this.mulle.networkServer = 'wss://miel.dtun.nl/ws'
+    this.mulle.networkDevServer = 'ws://localhost:8765'
 
     this.mulle.defaultLanguage = 'english'
     // this.mulle.defaultLanguage = 'swedish';
@@ -107,6 +113,8 @@ class MulleGame extends Phaser.Game {
       '08': 'diploma',
 
       10: 'menu',
+      12: 'credits',
+      18: 'worldselect',
 
       66: 'plugin',
 
@@ -122,7 +130,6 @@ class MulleGame extends Phaser.Game {
       90: 'dorisdigital',
       91: 'luddelabb',
       92: 'figgeferrum',
-
       93: 'ocean',
       94: 'carshow'
 
@@ -134,6 +141,9 @@ class MulleGame extends Phaser.Game {
       load: LoadState,
 
       menu: MenuState, // 10
+      filebrowser: FileBrowserState, // File browser
+      credits: CreditsState, // 12
+      worldselect: WorldSelectState, // 18
 
       junk: JunkState, // 02
       garage: GarageState, // 03
@@ -145,14 +155,16 @@ class MulleGame extends Phaser.Game {
       //plugin: PluginState, // 66
 
       mudcar: MudCarState, // 82
-      //treecar: TreeCarState, // 83
+      treecar: TreeCarState, // 83
       roadthing: RoadThingState, // 84
       roaddog: RoadDogState, // 85
       solhem: SolhemState, // 86
       saftfabrik: SaftfabrikState, // 87
       sturestortand: StureStortandState, // 88
       dorisdigital: DorisDigitalState, // 90
+      luddelabb: LuddeLabState, // 91
       figgeferrum: FiggeFerrumState, // 92
+      ocean: OceanState, // 93
       viola: ViolaState, // 89
 
       carshow: CarShowState // 94

@@ -175,6 +175,38 @@ class MenuState extends MulleState {
     wKey.onDown.add(() => {
       this.game.state.start('worldselect')
     })
+    
+    // "Browse Files" button
+    const browseBtn = this.game.add.text(320, 420, '📁 Bekijk Alle Auto\'s', {
+      font: 'bold 20px Arial',
+      fill: '#0066cc',
+      stroke: '#ffffff',
+      strokeThickness: 2
+    })
+    browseBtn.anchor.set(0.5)
+    browseBtn.inputEnabled = true
+
+    browseBtn.events.onInputOver.add(() => {
+      browseBtn.fill = '#0088ff'
+      browseBtn.scale.set(1.1)
+      this.game.canvas.className = 'cursor-point'
+    })
+
+    browseBtn.events.onInputOut.add(() => {
+      browseBtn.fill = '#0066cc'
+      browseBtn.scale.set(1.0)
+      this.game.canvas.className = ''
+    })
+
+    browseBtn.events.onInputUp.add(() => {
+      this.game.state.start('filebrowser')
+    })
+    
+    // Hotkey B for file browser
+    const bKey = this.game.input.keyboard.addKey(Phaser.Keyboard.B)
+    bKey.onDown.add(() => {
+      this.game.state.start('filebrowser')
+    })
   }
 
   shutdown () {
