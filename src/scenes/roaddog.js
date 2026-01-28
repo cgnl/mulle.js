@@ -52,6 +52,11 @@ class RoadDogState extends MulleState {
       this.game.mulle.user.Car.addCache('#GotDogOnce')
       this.game.mulle.user.Car.addCache('#Dog')
 
+      // Mission 1 completed: Bring back Salka
+      if (this.game.mulle.missions) {
+        this.game.mulle.missions.markAsCompleted(1)
+      }
+
       new blinkThing(this.game, salka, () => {this.game.state.start('world')}, this)
     })
   }

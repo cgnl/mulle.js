@@ -11,7 +11,7 @@ class FiggeFerrumState extends MulleState {
     super.preload()
 
     this.game.load.pack('figgeferrum', 'assets/figgeferrum.json', null, this)
-    this.subtitles = new SubtitleLoader(this.game, 'figgeferrum', ['english', 'swedish'])
+    this.subtitles = new SubtitleLoader(this.game, 'figgeferrum', ['dutch', 'english', 'swedish'])
     this.subtitles.preload()
   }
 

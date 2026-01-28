@@ -10,7 +10,7 @@ class ViolaState extends MulleState {
   preload () {
     super.preload()
     this.game.load.pack('viola', 'assets/viola.json', null, this)
-    this.subtitles = new SubtitleLoader(this.game, 'viola', ['english'])
+    this.subtitles = new SubtitleLoader(this.game, 'viola', ['dutch', 'english'])
     this.subtitles.preload()
   }
 
@@ -96,6 +96,11 @@ class ViolaState extends MulleState {
 
                 this.game.time.events.remove(buffaTimer)
                 buffa.animations.stop()
+
+                // Mission 7 completed: Viola's accordion
+                if (this.game.mulle.missions) {
+                    this.game.mulle.missions.markAsCompleted(7)
+                }
                 
                 // Use blinkThing for the disappearing effect
                 new blinkThing(this.game, tank, () => {

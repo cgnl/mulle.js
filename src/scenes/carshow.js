@@ -92,6 +92,11 @@ class CarShowState extends MulleState {
 
       // say score
       judge.talk(scoreTalk[ rating ], () => {
+        // Mission 2 completed: Car show
+        if (this.game.mulle.missions) {
+          this.game.mulle.missions.markAsCompleted(2)
+        }
+
         // end
         console.log('end')
         this.game.state.start('world')

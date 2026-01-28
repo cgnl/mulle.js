@@ -20,7 +20,7 @@ class SaftfabrikState extends MulleState {
 
     this.car = null
 
-    // var hasLemonade = this.game.mulle.user.Car.hasCache('#Lemonade')
+    var hasLemonade = this.game.mulle.user.Car.hasCache('#Lemonade')
     var hasTank = this.game.mulle.user.Car.hasPart(172)
 
     var background = new MulleSprite(this.game, 320, 240)
@@ -41,6 +41,17 @@ class SaftfabrikState extends MulleState {
     garson.silenceAnimation = 'idle'
     this.game.add.existing(garson)
     this.game.mulle.actors.garson = garson
+
+    // If you've already fetched the lemonade once, the factory is effectively "done/closed"
+    if (hasLemonade) {
+      // "nu är ju saftfabriken stängd" branch
+      mulle.talk('87d007v0', () => {
+        game.time.events.add(Phaser.Timer.SECOND * 1, () => {
+          this.game.state.start('world')
+        })
+      })
+      return
+    }
 
     garson.talk('87d002v0', () => {
       if (hasTank) {
@@ -72,6 +83,7 @@ class SaftfabrikState extends MulleState {
           })
         })
 
+        // Mark lemonade fetched (mission progression)
         this.game.mulle.user.Car.addCache('#Lemonade')
       } else {
         // nja

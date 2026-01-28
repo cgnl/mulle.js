@@ -53,6 +53,11 @@ class DorisDigitalState extends MulleState {
 
       this.game.mulle.user.addPart('yard', 306)
 
+      // Mission 4 completed: Doris Digital
+      if (this.game.mulle.missions) {
+        this.game.mulle.missions.markAsCompleted(4)
+      }
+
       // narrator
       this.game.mulle.playAudio('90d001v0', () => {
         // After game

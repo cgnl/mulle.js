@@ -6,6 +6,7 @@ import MulleSprite from '../objects/sprite'
 import MulleButton from '../objects/button'
 import MulleCarPart from '../objects/carpart'
 import MulleJunkActor from '../objects/JunkActor'
+import MulleActor from '../objects/actor'
 import DirectorHelper from '../objects/DirectorHelper'
 import SubtitleLoader from '../objects/SubtitleLoader'
 
@@ -55,7 +56,7 @@ class JunkState extends MulleState {
     super.preload()
 
     this.game.load.pack('junk', 'assets/junk.json', null, this)
-    this.subtitles = new SubtitleLoader(this.game, 'junk', ['english'])
+    this.subtitles = new SubtitleLoader(this.game, 'junk', ['dutch', 'english'])
     //this.subtitles.preload()
     this.subtitles.preload('carparts')
 
@@ -167,8 +168,18 @@ class JunkState extends MulleState {
     this.game.add.existing(mulle_body)
 
 
-    /*this.buffaActor = new MulleActor(this.game, 320, 222, 'buffa')
-    this.game.add.existing(this.buffaActor)*/
+    // Buffa (Rifka) wandering around the junk piles
+    this.buffaActor = new MulleActor(this.game, 320, 320, 'buffa')
+    this.buffaActor.animations.play('idle')
+    this.game.add.existing(this.buffaActor)
+    this.game.mulle.actors.buffa = this.buffaActor
+    
+    // Random scratch animation
+    this.game.time.events.loop(5000, () => {
+      if (Math.random() > 0.5) {
+        this.buffaActor.animations.play('scratch1')
+      }
+    })
 
     /*
     this.junkPile = this.game.mulle.user.Junk['Pile' + this.currentPile]

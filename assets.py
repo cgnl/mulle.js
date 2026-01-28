@@ -20,6 +20,10 @@ optimizeImages = int(sys.argv[1])
 
 MulleResources = []
 
+resWorldSelect = MulleResource('worldselect')
+resWorldSelect.addFile({'dir': '18.DXR', 'lib': 'Internal', 'num': '1-48'})
+MulleResources.append(resWorldSelect)
+
 resMenu = MulleResource('menu')
 resMenu.addFile({'dir': '10.DXR', 'lib': 'Internal', 'num': 2})
 resMenu.addFile({'dir': '10.DXR', 'lib': 'Internal', 'num': '115-123'})  # face
@@ -100,9 +104,8 @@ resYard.addFile({'dir': '04.DXR', 'lib': 'Internal', 'num': '40-44'})
 resYard.addFile({'dir': '04.DXR', 'lib': 'Internal', 'num': 261})  # No mail
 resYard.addFile({'dir': '04.DXR', 'lib': 'Internal', 'num': '272-277'})  # Package and garage full
 resYard.addFile({'dir': '04.DXR', 'lib': 'Internal', 'num': '279-280'})  # Mail/figge
-resYard.addFile({'dir': 'CDDATA.CXT', 'lib': 'Standalone', 'num': '19-22'})  # Letters
-resYard.addFile({'dir': 'CDDATA.CXT', 'lib': 'Standalone', 'num': '24-25'})  # Letter audio carshow/sturestortand
-resYard.addFile({'dir': 'CDDATA.CXT', 'lib': 'Standalone', 'num': '29-30'})  # Letter audio pia/race
+resYard.addFile({'dir': 'CDDATA.CXT', 'lib': 'Standalone', 'num': '19-22'})  # Letters (mail images)
+resYard.addFile({'dir': 'CDDATA.CXT', 'lib': 'Standalone', 'num': '24-30'})  # Letter audio (all mail missions)
 
 MulleResources.append(resYard)
 

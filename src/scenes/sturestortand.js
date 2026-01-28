@@ -59,17 +59,20 @@ class StureStortandState extends MulleState {
       sture.talk('88d005v0', () => {
         // men så bra, den kommer nog väl till pass
         mulle.talk('88d006v0', () => {
+          // Reward: part 162 (milk truck)
+          this.game.mulle.user.addPart('yard', 162)
+          this.game.mulle.user.Car.removeCache('#Lemonade')
+
+          // Mission 3 completed: Lemonade party
+          if (this.game.mulle.missions) {
+            this.game.mulle.missions.markAsCompleted(3)
+          }
+
           game.time.events.add(Phaser.Timer.SECOND * 1, () => {
             this.game.state.start('world')
           })
         })
       })
-
-      var partId = 162
-
-      this.game.mulle.user.addPart('yard', partId)
-
-      this.game.mulle.user.Car.removeCache('#Lemonade')
     } else {
       var sture = new MulleActor(this.game, 285, 162, 'stureSad')
       sture.talkAnimation = 'talk'
@@ -80,7 +83,7 @@ class StureStortandState extends MulleState {
       // mulle, vi har ett problem
       sture.talk('88d002v0', () => {
         if (!hasTank) {
-          // tja, jag kan ju försöka hjälpa till
+          // tja, jag kan ju försöka helpen till
           mulle.talk('88d003v0', () => {
             game.time.events.add(Phaser.Timer.SECOND * 1, () => {
               this.game.state.start('world')
@@ -96,13 +99,6 @@ class StureStortandState extends MulleState {
         }
       })
     }
-
-    // var dog = new MulleSprite(this.game, 480, 386)
-    // dog.setDirectorMember('85.DXR', 26)
-    // this.game.add.existing(dog)
-
-    // narrator
-    // this.game.mulle.playAudio('88d001v0')
 
     // bg loop
     this.game.mulle.playAudio('88e001v0')

@@ -1,11 +1,17 @@
-# Override this step with additional_contexts in docker-compose.yml if ISO is outside project directory
-FROM scratch AS iso
-ARG GAME_LANG=sv
-COPY ./iso/mullebil_${GAME_LANG}.iso mullebil_${GAME_LANG}.iso
-COPY ./iso/plugin.exe plugin.exe
+# Download ISO from remote URL instead of expecting local copy
+FROM alpine:latest AS iso
+ARG GAME_LANG=nl
+ARG ISO_URL=https://vanhul.st/mieliso.iso
+
+WORKDIR /iso
+RUN apk add --no-cache curl zip && \
+    curl -L -o mullebil_${GAME_LANG}.iso ${ISO_URL} && \
+    echo "dummy" > dummy.txt && \
+    zip plugin.exe dummy.txt && \
+    rm dummy.txt
 
 FROM python:3.11 AS builder_py
-ARG GAME_LANG=sv
+ARG GAME_LANG=nl
 ARG OPTIPNG_LEVEL=7
 
 WORKDIR /build
@@ -16,8 +22,8 @@ COPY ./assets.py .
 COPY ./audiosprite ./audiosprite
 
 # Copy game data
-COPY --from=iso mullebil_${GAME_LANG}.iso ./iso/mullebil_${GAME_LANG}.iso
-COPY --from=iso plugin.exe ./iso/plugin.exe
+COPY --from=iso /iso/mullebil_${GAME_LANG}.iso ./iso/mullebil_${GAME_LANG}.iso
+COPY --from=iso /iso/plugin.exe ./iso/plugin.exe
 
 # Install dependencies (including p7zip-full for self-extracting archives)
 RUN apt-get update && apt-get -y install ffmpeg optipng p7zip-full
@@ -70,7 +76,7 @@ RUN sass ./src/style.scss ./dist/style.css
 
 FROM httpd:bookworm AS web_run
 EXPOSE 80
-ARG GAME_LANG=sv
+ARG GAME_LANG=nl
 WORKDIR /usr/local/apache2/htdocs
 
 # Copy built assets

@@ -662,6 +662,18 @@ class WorldState extends MulleState {
         this.game.debug.text('D ' + v.def.DirResource, v.x, v.y + 16)
       })
     }
+
+    // Hotkey C for credits
+    const cKey = this.game.input.keyboard.addKey(Phaser.Keyboard.C)
+    cKey.onDown.add(() => {
+      this.game.state.start('credits')
+    })
+
+    // Hotkey W for world select
+    const wKey = this.game.input.keyboard.addKey(Phaser.Keyboard.W)
+    wKey.onDown.add(() => {
+      this.game.state.start('worldselect')
+    })
   }
 
   shutdown () {

@@ -9,11 +9,22 @@ from enum import Enum
 
 import json
 
-import wave, aifc, sunau
+import wave
+try:
+    import aifc
+except ModuleNotFoundError:
+    aifc = None
+try:
+    import sunau
+except ModuleNotFoundError:
+    sunau = None
 
 import glob
 
-from PIL import Image, ImageDraw, ImagePalette
+try:
+    from PIL import Image, ImageDraw, ImagePalette
+except ModuleNotFoundError:
+    Image = ImageDraw = ImagePalette = None
 
 import bitstring
 
