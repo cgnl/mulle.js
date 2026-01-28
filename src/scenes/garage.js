@@ -28,7 +28,7 @@ class GarageState extends MulleState {
 
     this.game.load.pack('garage', 'assets/garage.json', null, this)
     this.game.load.json('partNames', 'data/part_names.json')
-    this.subtitles = new SubtitleLoader(this.game, 'garage', ['english'])
+    this.subtitles = new SubtitleLoader(this.game, 'garage', ['dutch', 'english'])
     this.subtitles.preload()
     this.subtitles.preload('carparts')
   }
@@ -125,16 +125,65 @@ class GarageState extends MulleState {
   }
 
   figgeGiveParts () {
+    // Initialize Figge tracking if not exists
+    if (typeof this.game.mulle.user.FiggeVisits === 'undefined') {
+      this.game.mulle.user.FiggeVisits = 0
+    }
+    
+    if (!this.game.mulle.user.FiggeUnlocks) {
+      this.game.mulle.user.FiggeUnlocks = {
+        tier1: false,
+        tier2: false,
+        tier3: false,
+        vip: false
+      }
+    }
+    
+    // Increment visit counter
+    this.game.mulle.user.FiggeVisits++
+    console.log('[Figge] Visit #', this.game.mulle.user.FiggeVisits)
+    
+    // Determine reward tier based on visits
+    let partsToGive = 3 // Base amount
+    
+    if (this.game.mulle.user.FiggeVisits >= 7) {
+      // Tier 3: VIP customer (7+ visits)
+      partsToGive = 5
+      this.game.mulle.user.FiggeUnlocks.tier3 = true
+      this.game.mulle.user.FiggeUnlocks.vip = true
+      console.log('[Figge] VIP tier unlocked! 5 parts')
+    } else if (this.game.mulle.user.FiggeVisits >= 4) {
+      // Tier 2: Regular customer (4-6 visits)
+      partsToGive = 4
+      this.game.mulle.user.FiggeUnlocks.tier2 = true
+      console.log('[Figge] Tier 2 unlocked! 4 parts')
+    } else if (this.game.mulle.user.FiggeVisits >= 2) {
+      // Tier 1: Returning customer (2-3 visits)
+      partsToGive = 3
+      this.game.mulle.user.FiggeUnlocks.tier1 = true
+      console.log('[Figge] Tier 1 unlocked! 3 parts')
+    } else {
+      // First visit
+      partsToGive = 2
+      console.log('[Figge] First visit! 2 parts')
+    }
+    
+    // Give parts
     if (this.game.mulle.user.availableParts.JunkMan.length > 0) {
-      for (let i = 0; i < 3; i++) {
+      let givenCount = 0
+      
+      for (let i = 0; i < partsToGive; i++) {
         const partId = this.game.mulle.user.availableParts.JunkMan[i]
 
         if (!partId) break
 
         this.game.mulle.user.addPart('yard', partId, null, true)
+        givenCount++
 
-        console.log('figge add part', partId)
+        console.log('[Figge] Added part:', partId)
       }
+      
+      console.log(`[Figge] Gave ${givenCount} parts (tier allows ${partsToGive})`)
 
       this.game.mulle.user.save()
 
@@ -484,6 +533,18 @@ class GarageState extends MulleState {
         document.getElementById('cheats').appendChild(b)
       }
     }
+
+    // Hotkey C for credits
+    const cKey = this.game.input.keyboard.addKey(Phaser.Keyboard.C)
+    cKey.onDown.add(() => {
+      this.game.state.start('credits')
+    })
+
+    // Hotkey W for world select
+    const wKey = this.game.input.keyboard.addKey(Phaser.Keyboard.W)
+    wKey.onDown.add(() => {
+      this.game.state.start('worldselect')
+    })
   }
 
   shutdown () {

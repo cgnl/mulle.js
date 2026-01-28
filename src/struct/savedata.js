@@ -71,6 +71,18 @@ class MulleSave {
     this.figgeIsComing = false
     this.missionIsComing = false
     this.savedCars = []
+    
+    // Figge Ferrum progression system
+    this.FiggeVisits = 0
+    this.FiggeUnlocks = {
+      tier1: false,  // 2+ visits: 3 parts
+      tier2: false,  // 4+ visits: 4 parts
+      tier3: false,  // 7+ visits: 5 parts
+      vip: false     // VIP status marker
+    }
+    
+    // DLC tracking
+    this.DLCPurchased = []
 
     this.language = this.game.mulle.defaultLanguage // 'swedish'
   }
