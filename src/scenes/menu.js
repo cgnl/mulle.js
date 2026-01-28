@@ -71,9 +71,9 @@ class MenuState extends MulleState {
 
     let y = 60
     for (let name in this.game.mulle.UsersDB) {
+      // Name text (clickable to load)
       let text = this.game.add.text(350, y, name, { font: '24px serif' })
       text.inputEnabled = true
-      // text.useHandCursor = true;
 
       text.events.onInputOver.add((e) => {
         this.game.canvas.className = 'cursor-point'
@@ -95,7 +95,41 @@ class MenuState extends MulleState {
         this.game.state.start('garage')
       }, this)
 
-      y += 25
+      // Delete button
+      let deleteBtn = this.game.add.text(520, y, '🗑️', { 
+        font: '20px sans-serif',
+        fill: '#cc0000'
+      })
+      deleteBtn.inputEnabled = true
+      
+      deleteBtn.events.onInputOver.add(() => {
+        deleteBtn.fill = '#ff0000'
+        this.game.canvas.className = 'cursor-point'
+      }, this)
+      
+      deleteBtn.events.onInputOut.add(() => {
+        deleteBtn.fill = '#cc0000'
+        this.game.canvas.className = ''
+      }, this)
+      
+      deleteBtn.events.onInputUp.add((sprite, pointer) => {
+        // Stop event propagation to prevent triggering parent text click
+        pointer.stopPropagation = true
+        
+        // Confirmation dialog
+        if (confirm(`Verwijder "${name}"?\n\nDeze actie kan niet ongedaan gemaakt worden.`)) {
+          // Delete from database
+          delete this.game.mulle.UsersDB[name]
+          this.game.mulle.saveData()
+          
+          console.log('[Menu] Deleted user:', name)
+          
+          // Refresh the scene to update the list
+          this.game.state.restart()
+        }
+      }, this)
+
+      y += 30
     }
 
     this.game.mulle.subtitle.setLines('11d001v0', 'swedish', [
@@ -128,6 +162,18 @@ class MenuState extends MulleState {
           console.log('do point')
         }
       })
+    })
+
+    // Hotkey C for credits
+    const cKey = this.game.input.keyboard.addKey(Phaser.Keyboard.C)
+    cKey.onDown.add(() => {
+      this.game.state.start('credits')
+    })
+
+    // Hotkey W for world select
+    const wKey = this.game.input.keyboard.addKey(Phaser.Keyboard.W)
+    wKey.onDown.add(() => {
+      this.game.state.start('worldselect')
     })
   }
 
