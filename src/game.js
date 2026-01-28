@@ -12,6 +12,7 @@ import MulleCursor from 'util/cursor'
 
 import MenuState from 'scenes/menu'
 import FileBrowserState from 'scenes/filebrowser'
+import DLCShopState from 'scenes/dlcshop'
 
 import GarageState from 'scenes/garage'
 import JunkState from 'scenes/junk'
@@ -142,6 +143,7 @@ class MulleGame extends Phaser.Game {
 
       menu: MenuState, // 10
       filebrowser: FileBrowserState, // File browser
+      dlcshop: DLCShopState, // DLC shop
       credits: CreditsState, // 12
       worldselect: WorldSelectState, // 18
 

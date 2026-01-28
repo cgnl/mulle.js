@@ -177,8 +177,8 @@ class MenuState extends MulleState {
     })
     
     // "Browse Files" button
-    const browseBtn = this.game.add.text(320, 420, '📁 Bekijk Alle Auto\'s', {
-      font: 'bold 20px Arial',
+    const browseBtn = this.game.add.text(320, 400, '📁 Bekijk Alle Auto\'s', {
+      font: 'bold 18px Arial',
       fill: '#0066cc',
       stroke: '#ffffff',
       strokeThickness: 2
@@ -200,6 +200,32 @@ class MenuState extends MulleState {
 
     browseBtn.events.onInputUp.add(() => {
       this.game.state.start('filebrowser')
+    })
+    
+    // "DLC Shop" button
+    const dlcBtn = this.game.add.text(320, 435, '📦 Oom Otto\'s Winkel', {
+      font: 'bold 18px Arial',
+      fill: '#8B4513',
+      stroke: '#ffffff',
+      strokeThickness: 2
+    })
+    dlcBtn.anchor.set(0.5)
+    dlcBtn.inputEnabled = true
+
+    dlcBtn.events.onInputOver.add(() => {
+      dlcBtn.fill = '#A0522D'
+      dlcBtn.scale.set(1.1)
+      this.game.canvas.className = 'cursor-point'
+    })
+
+    dlcBtn.events.onInputOut.add(() => {
+      dlcBtn.fill = '#8B4513'
+      dlcBtn.scale.set(1.0)
+      this.game.canvas.className = ''
+    })
+
+    dlcBtn.events.onInputUp.add(() => {
+      this.game.state.start('dlcshop')
     })
     
     // Hotkey B for file browser
