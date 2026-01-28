@@ -1,0 +1,15 @@
+node_modules/
+dist/
+docs/
+mulle.sublime-workspace
+mulle.sublime-project
+cst_out_new/
+/build_data
+*.swp
+*.pyc
+/bin
+/build_scripts/iso
+
+# Ignore generated/binary artifacts
+iso/
+*.log

@@ -1,0 +1,9 @@
+pillow==9.5.0
+PyTexturePacker
+pydub
+bitstring
+
+pycdlib~=1.10.0
+GitPython
+requests
+libsass

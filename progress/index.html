@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<meta charset="UTF-8" />
+		
+		<title>mulle.js - progress</title>
+
+		<style>
+
+			* { box-sizing: border-box; }
+
+			body {
+
+				background: #000;
+
+				color: #ddd;
+
+				font: 14px Arial;
+
+			}
+
+			.text-content {
+
+				width: 640px;
+
+				margin: 40px auto;
+
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			ul ul {
+				padding: 0 0 5px 20px;
+			}
+
+			li {
+				list-style-type: none;
+				color: #888;
+			}
+
+			li:before {
+				content: '☐ ';
+			}
+
+			li.completed {
+				color: #3C9845;
+			}
+
+			li.completed:before {
+				content: '☑ ';
+			}
+
+			li.wip {
+				color: #DA812B;
+			}
+
+			li.wip:before {
+				content: '☐ ';
+			}
+
+			li.functional {
+				color: #88CD45;
+			}
+
+			li.functional:before {
+				content: '☑ ';
+			}
+
+			li.skip {
+				color: #444;
+				text-decoration: line-through;
+			}
+
+			li span.section { font-weight: 700; font-size: 110% }
+
+			h1, h2, h3 { color: #eee; }
+
+			.menu { margin-bottom: 15px; }
+			.menu a { display: inline-block; padding: 2px 4px; color: #eee; background: #2D3F5C; text-decoration: none; }
+			.menu a:hover { background: #374B6B; }
+			.menu a.active { background: #376B41; }
+
+		</style>
+
+	</head>
+	
+	<body>
+
+		<div class="text-content">
+
+			<h1>Mulle.js - Progress</h1>
+
+			<div class="menu">
+				<a href="../">Play</a>
+				<a class="active" href="../progress">Progress</a>
+				<a href="../info">Info</a>
+			</div>
+
+			An attempt to recreate a wonderful game from the past and bring it to modern platforms, and fix some issues along the way.
+
+			<h2>Features</h2>
+
+			<ul>
+				<li class="skip">Skipped</li>
+				<li>Not started yet</li>
+				<li class="wip">Work in progress</li>
+				<li class="functional">Functional</li>
+				<li class="completed">Completed</li>
+			</ul>
+
+			<ul>
+				<li class="wip">
+					<span class="section">Extra features</span>
+					<ul>
+						<li class="functional">Subtitles</li>
+						<li class="completed">Multiplayer</li>
+						<li class="completed">Chat</li>
+						<li class="completed">Car preview</li>
+						<li class="completed">Racing online highscores</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				<li class="wip">
+					<span class="section">00.cst - Shared data &amp; scripts</span>
+					<ul>
+						<li class="completed">Cursor</li>
+						<li class="wip">Missions
+							<ul>
+								<li class="functional">1 (Bring back salka)</li>
+								<li class="functional">2 (Car show)</li>
+								<li>3 (Lemonade party)</li>
+								<li class="functional">4 (Gaming with Doris Digital)</li>
+								<li>5 (Cat in tree)</li>
+								<li>6 (Ludde labb)</li>
+								<li>7 (Viola's accordion)</li>
+								<li>8 (Racing)</li>
+							</ul>
+						</li>
+						<li class="wip">DLC
+							<ul>
+								<li class="functional">Locked parts</li>
+								<li>Extra parts</li>
+								<li class="wip">Figge's junkyard minigame</li>
+							</ul>
+						</li>
+					</ul>
+
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">02.DXR - Home junkyard</span>
+					<ul>
+						<li class="completed">Junk piles</li>
+						<li class="completed">Part rects</li>
+						<li>Mulle</li>
+						<li>Buffa</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">03.DXR - Home garage</span>
+					<ul>
+						<li class="completed">Car building</li>
+						<li class="functional">Figge parts</li>
+						<li class="completed">Toolbox</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">04.DXR - Home yard</span>
+					<ul>
+						<li class="completed">Doors</li>
+						<li class="completed">Junk pile</li>
+						<li class="wip">Mail</li>
+						<li class="wip">Mulle</li>
+						<li>Buffa</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+
+				<li class="functional">
+					<span class="section">05.DXR - World/Map/Overworld</span>
+					<ul>
+						<li class="completed">
+							Driving
+						</li>
+
+						<li class="completed">Sounds</li>
+						<li class="wip">Map objects
+							<ul>
+								<li class="completed">Destinations</li>
+								<li class="completed">Random destinations</li>
+								<li class="completed">Gas stations</li>
+								<li class="completed">Ferry</li>
+								<li class="completed">Cows</li>
+								<li class="completed">Hill</li>
+								<li>BridgeC</li>
+								<li class="functional">BridgeW</li>
+								<li>FarAway</li>
+								<li class="completed">Goats</li>
+								<li class="completed">Picture</li>
+								<li class="completed">Racing</li>
+								<li>Sound</li>
+								<li class="completed">Stop</li>
+								<li>Teleport</li>
+								<li class="completed">Position correction</li>
+							</ul>
+						</li>
+						<li class="functional">Toolbox</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+
+				<li class="functional">
+					<span class="section">06.DXR - Car load/save</span>
+					<ul>
+						<li class="functional">Logic</li>
+						<li class="functional">UI</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+
+				<li class="completed">
+					<span class="section">08.DXR - Diploma</span>
+				</li>
+
+			</ul>
+
+			<ul>
+
+				<li class="functional">
+					<span class="section">10.DXR - Main menu | Intro | Ending</span>
+					<ul>
+						<li class="completed">File save/load</li>
+						<li class="functional">Mulle</li>
+						<li>File delete</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+
+				<li>
+					<span class="section">12.DXR - Credits</span>
+					<ul>
+						<li>Content</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+
+				<li>
+					<span class="section">13.DXR - File browser</span>
+					<ul>
+							<li class="functional">Logic</li>
+							<li class="completed">UI</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li>
+					<span class="section">18.DXR - World select</span>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li>
+					<span class="section">82.DXR - Bil i gyttja</span>
+					<ul>
+						<li class="functional">Car</li>
+						<li class="wip">Logic</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li>
+					<span class="section">83.DXR - Träd i vägen</span>
+					<ul>
+						<li>Car</li>
+						<li>Logic</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="completed">
+					<span class="section">84.DXR - Grunka</span>
+					<ul>
+						<li class="completed">Logic</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="completed">
+					<span class="section">85.DXR - Salka</span>
+					<ul>
+						<li class="completed">Salka</li>
+						<li class="completed">Logic</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="completed">
+					<span class="section">86.DXR - Mia Minardi</span>
+					<ul>
+						<li class="completed">Scene</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">87.DXR - Saftfabriken</span>
+					<ul>
+						<li class="functional">Scene</li>
+						<li class="functional">Logic</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">88.DXR - Sture Stortand</span>
+					<ul>
+						<li class="functional">Scene</li>
+						<li class="functional">Logic</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li>
+					<span class="section">89.DXR - Viola</span>
+					<ul>
+						<li class="functional">Scene</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">90.DXR - Doris Digital</span>
+					<ul>
+						<li class="functional">Scene</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li>
+					<span class="section">91.DXR - Ludde Labb</span>
+					<ul>
+						<li>Scene</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">92.DXR - Figge Ferrum</span>
+					<ul>
+						<li class="completed">Figge</li>
+						<li class="completed">Mulle</li>
+						<li class="completed">Salka</li>
+						<li class="functional">Buffa</li>
+						<li class="wip">Reward</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li>
+					<span class="section">93.DXR - Havet</span>
+					<ul>
+						<li>Scene</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul>
+				
+				<li class="functional">
+					<span class="section">94.DXR - Bilutställning</span>
+					<ul>
+						<li class="completed">Judge</li>
+						<li class="completed">Mulle</li>
+						<li class="completed">Score</li>
+						<li class="functional">Reward</li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+	
+	</body>
+
+</html>
