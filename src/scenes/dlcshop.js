@@ -168,6 +168,9 @@ class DLCShopState extends MulleState {
   
   /**
    * Purchase DLC package
+   * Based on original Lingo: pakket*.cst files contain #Postal arrays
+   * Parts are NOT given immediately - they come via postal system (mailbox in yard)
+   * 
    * @param {string} packageId - Package identifier
    * @param {Array} parts - Array of part definitions
    */
@@ -181,17 +184,16 @@ class DLCShopState extends MulleState {
     
     this.game.mulle.user.DLCPurchased.push(packageId)
     
-    // Add parts to inventory
-    // Note: Parts need to be added to the PartsDB and made available in garage
-    // This is a simplified implementation - full integration would require:
-    // 1. Adding parts to game.mulle.PartsDB
-    // 2. Making sprites available
-    // 3. Adding to yard/garage inventories
+    // Original Lingo behavior:
+    // - pakket*.cst adds parts to #Postal distribution channel
+    // - Parts come via checkPostal() when visiting yard
+    // - 1-3 parts per yard visit until all are received
+    // - Parts tracked in PostalHistory to avoid duplicates
+    //
+    // We just mark DLC as purchased - ExternalParts.getUnlockedDLCParts() 
+    // will include these parts in the postal pool automatically
     
-    parts.forEach(part => {
-      console.log('[DLCShop] Added part:', part.name, part.id)
-      // In real implementation: this.game.mulle.user.addPart('yard', part.id, null, true)
-    })
+    console.log('[DLCShop] DLC unlocked! Parts will arrive via mailbox in yard.')
     
     this.game.mulle.user.save()
     
@@ -213,7 +215,7 @@ class DLCShopState extends MulleState {
     })
     successText.anchor.set(0.5)
     
-    const detailText = this.game.add.text(320, 250, `${parts.length} nieuwe onderdelen\nbeschikbaar in de garage!`, {
+    const detailText = this.game.add.text(320, 250, `${parts.length} onderdelen komen\nvia de brievenbus in je tuin!`, {
       font: '20px Arial',
       fill: '#ffffff',
       align: 'center'

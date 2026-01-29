@@ -32,16 +32,64 @@ class ExternalParts {
       235, 251, 264, 278, 294,
       295, 14
     ]
+    
+    // DLC parts from Oom Otto packages (pakket1-10.cst)
+    // These are unlocked via the DLC shop and delivered through postal system
+    // Part IDs extracted EXACTLY from original Lingo #Postal arrays:
+    //   pakket1: [5, 300]
+    //   pakket2: [302]
+    //   pakket3: [301]
+    //   pakket4: [281]
+    //   pakket5: [69, 291]  (masters only - variants 70-73, 292-293 auto-unlock)
+    //   pakket6: [282]
+    //   pakket7: [279]
+    //   pakket8: [280, 289]
+    //   pakket9: [5, 184]   (5 is duplicate)
+    //   pakket10: [280, 289] (duplicates of pakket8)
+    this.dlcParts = [
+      5,    // Wijnvat achterkant (pakket1, pakket9)
+      69,   // Taxi bordje master (pakket5) - morphs to 70-73
+      184,  // Comfortabele stoel (pakket9)
+      279,  // Racewagen voorkant (pakket7)
+      280,  // Lamp accessoire (pakket8, pakket10)
+      281,  // Racewagen achterkant (pakket4)
+      282,  // Racewagen middenstuk (pakket6)
+      289,  // Toeter (pakket8, pakket10)
+      291,  // Uitklapbaar onderdeel master (pakket5) - morphs to 292-293
+      300,  // Taxi voorkant (pakket1)
+      301,  // Taxi achterkant (pakket3)
+      302   // Taxi middenstuk (pakket2)
+    ]
+    // Note: Parts 70-73 (taxi sign variants) and 292-293 (fold-out variants)
+    // are NOT in Postal - they auto-unlock when you have the master part (69, 291)
+  }
+  
+  /**
+   * Check if DLC is purchased and add DLC parts to postal pool
+   * @returns {number[]} Array of unlocked DLC part IDs
+   */
+  getUnlockedDLCParts () {
+    const user = this.game.mulle.user
+    if (!user.DLCPurchased || !user.DLCPurchased.includes('dlc_oom_otto')) {
+      return []
+    }
+    return this.dlcParts
   }
 
   /**
    * Calculate all postal parts the user doesn't own yet
+   * Includes base postal parts + unlocked DLC parts
    * @param {string} category - Part category (unused for now, kept for API compatibility)
    * @returns {number[]} Array of part IDs user doesn't have
    */
   calcCurrentlyAvailable (category) {
     const user = this.game.mulle.user
-    return this.postalParts.filter(partId => !user.hasPart(partId))
+    
+    // Combine base postal parts with unlocked DLC parts
+    const allPostalParts = [...this.postalParts, ...this.getUnlockedDLCParts()]
+    
+    // Filter out parts user already has
+    return allPostalParts.filter(partId => !user.hasPart(partId))
   }
 
   /**
