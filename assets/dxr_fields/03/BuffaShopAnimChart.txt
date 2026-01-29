@@ -1,0 +1,1 @@
+[#Actions:[#Still:[1],#Wait:[[#RndHold,1,30,60],#Shrug,#Shrug,#Shrug,#Shrug,#Shrug,#Shrug,#Shrug,#Shrug,#Shrug,#Shrug],#Shrug:[41,41,42,42],#GetDown:[41,41,[#Sound,["00e031v0"]],42,42,42,42,43,43,44,44,45,45],#GetUp:[45,45,44,44,43,43,42,42,41,41],#Sleep:[[#RndHold,46,12,18],47,47,47,47]],#Paths:[#Test:[point(0,0),point(0,0)]]]

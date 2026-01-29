@@ -1,0 +1,114 @@
+[
+  {
+    "audioId": "02d001v0",
+    "spriteId": "123",
+    "offset": -1.344,
+    "duration": 7.0,
+    "text": "Afval? Afval bestaat niet. Dat zijn gewoon wat oude spullen die je zo kunt recycleren.",
+    "timestamp": "0.000-7.000"
+  },
+  {
+    "audioId": "02d002v0",
+    "spriteId": "124",
+    "offset": -1.446,
+    "duration": 6.0,
+    "text": "Alles werkt prima. Je moet maar hard genoeg je best doen. Wil je het eens proberen?",
+    "timestamp": "7.000-13.000"
+  },
+  {
+    "audioId": "02d003v0",
+    "spriteId": "125",
+    "offset": -0.933,
+    "duration": 3.0,
+    "text": "Alles komt ooit nog wel eens van pas.",
+    "timestamp": "13.000-16.000"
+  },
+  {
+    "audioId": "02d004v0",
+    "spriteId": "126",
+    "offset": -0.985,
+    "duration": 8.0,
+    "text": "Toestellen, apparaten, groot of klein, je zegt het maar. Gewoonweg alles kun je opnieuw gebruiken. Neem dat maar van me aan.",
+    "timestamp": "16.000-24.000"
+  },
+  {
+    "audioId": "02d005v0",
+    "spriteId": "127",
+    "offset": -0.238,
+    "duration": 6.0,
+    "text": "Draaien en keren, prutsen en proberen, zo kun je met oude spullen altijd weer iets nieuws maken.",
+    "timestamp": "25.000-31.000"
+  },
+  {
+    "audioId": "02d006v0",
+    "spriteId": "128",
+    "offset": -0.584,
+    "duration": 7.0,
+    "text": "Wat een rommel. Het wordt dringend tijd om al die spullen eens te sorteren, anders is er geen beginnen meer aan.",
+    "timestamp": "31.000-38.000"
+  },
+  {
+    "audioId": "02d006v0",
+    "spriteId": "128",
+    "offset": 6.416,
+    "duration": 8.0,
+    "text": "Je zou alle wielen bij elkaar moeten leggen, de grote stukken bij de grote en de kleine bij de kleine. Dat zal al een heel stuk beter zijn.",
+    "timestamp": "38.000-46.000"
+  },
+  {
+    "audioId": "02d007v0",
+    "spriteId": "129",
+    "offset": -0.448,
+    "duration": 6.0,
+    "text": "Alles heeft zijn plaats, onthoud dat maar. Geen wonder dat je niets kunt terugvinden in deze rommel.",
+    "timestamp": "46.000-52.000"
+  },
+  {
+    "audioId": "02d007v0",
+    "spriteId": "129",
+    "offset": 5.552,
+    "duration": 4.0,
+    "text": "Maar niets houdt je tegen om wat op te ruimen hoor. Doe maar.",
+    "timestamp": "52.000-56.000"
+  },
+  {
+    "audioId": "02d008v0",
+    "spriteId": "130",
+    "offset": -0.243,
+    "duration": 10.0,
+    "text": "Wat een rommel. Je moet opruimen. Groot bij groot en klein bij klein. En de stuurwielen allemaal bij elkaar. Hoe vaak moet ik het je nog uitleggen?",
+    "timestamp": "56.000-66.000"
+  },
+  {
+    "audioId": "02d010v0",
+    "spriteId": "132",
+    "offset": -6.838,
+    "duration": 14.0,
+    "text": "Wacht eens even. Maar, maar, de hele garage ligt vol. Maar die werkplaats ligt propvol. Er kan geen moertje meer bij. Dat kan zo niet verder. Daar moet dringend iets aan gedaan worden.",
+    "timestamp": "66.000-80.000"
+  },
+  {
+    "audioId": "02d011v0",
+    "spriteId": "133",
+    "offset": -1.257,
+    "duration": 8.0,
+    "text": "De werkplaats ligt helemaal vol. Als je dit ding er nog bij wilt krijgen, zul je eerst wat moeten opruimen hoor.",
+    "timestamp": "80.000-88.000"
+  },
+  {
+    "audioId": "02d012v0",
+    "spriteId": "134",
+    "offset": 0.035,
+    "duration": 8.0,
+    "text": "Mensen, Figge heeft gevuld met schroten. Hij weet dat ik het leuk vind om nieuwe spullen te bouwen.",
+    "timestamp": "89.000-97.000"
+  },
+  {
+    "audioId": "02d014v0",
+    "spriteId": "136",
+    "offset": -4.385,
+    "duration": 12.0,
+    "text": "Nee, hier is geen plaats meer voor nog meer rommel. Wil je het hier nog rommeliger maken? Het ligt hier al helemaal vol. Nee, dat gaat niet. Die schroothoop ligt al propvol.",
+    "timestamp": "97.000-109.000"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "recurring": [
+    {"name": "Miel Monteur"},
+    {"name": "Rifka"},
+    {"name": "Staf Schroot"},
+    {"name": "Laika"},
+    {"name": "Juffrouw Sien"},
+    {"name": "Peggy PC"},
+    {"name": "Vicky Vitamien"},
+    {"name": "Arno Adel"},
+    {"name": "Juryman (Autoshow)"}
+  ],
+  "only_in_this_game": [
+    {"name": "Jacky Nix"},
+    {"name": "Boris Blaf"},
+    {"name": "Frank Petanque"}
+  ]
+}

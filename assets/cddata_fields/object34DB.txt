@@ -1,0 +1,1 @@
+[#ObjectId: 34, #type: #custom, #InnerRadius: 20, #OuterRadius: 0, #CustomObject:"Teleport", #DirResource: "", #Sounds: [], #FrameList: [], #SetWhenDone:[], #CheckFor:[], #IfFound:#None, #SpriteInfo:[#Over:1]]

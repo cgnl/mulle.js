@@ -1,0 +1,1 @@
+[#ObjectId: 27, #type: #custom, #InnerRadius: 20, #OuterRadius: 45, #CustomObject:"CBridge", #DirResource: "", #Sounds: ["31e004v0"], #FrameList: [#normal: ["31b030v0", "31b031v0", "31b032v0"]], #SetWhenDone:[], #CheckFor:[], #IfFound:#None, #SpriteInfo:[#Under:1]]

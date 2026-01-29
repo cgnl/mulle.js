@@ -1,0 +1,1682 @@
+[
+  {
+    "audioId": "20d001v0",
+    "spriteId": "1213",
+    "offset": 0.0,
+    "duration": 5.0,
+    "text": "Ja, dit is het tandwiel van de lift in de oude kolenmijn van Diepwater.",
+    "timestamp": "0.000-5.000"
+  },
+  {
+    "audioId": "20d002v0",
+    "spriteId": "1214",
+    "offset": 0.085,
+    "duration": 3.5,
+    "text": "Die wielen zaten vroeger aan de paardenkar van mijn grootvader.",
+    "timestamp": "6.000-9.500"
+  },
+  {
+    "audioId": "20d002v0",
+    "spriteId": "1214",
+    "offset": 4.085,
+    "duration": 2.5,
+    "text": "Die hebben een ongelooflijk goede grip.",
+    "timestamp": "10.000-12.500"
+  },
+  {
+    "audioId": "20d003v0",
+    "spriteId": "1215",
+    "offset": 0.028,
+    "duration": 2.5,
+    "text": "Oh, een grote raketmotor.",
+    "timestamp": "13.500-16.000"
+  },
+  {
+    "audioId": "20d003v0",
+    "spriteId": "1215",
+    "offset": 3.028,
+    "duration": 3.0,
+    "text": "Die moet nog verder naar achter staan dan een gewone motor.",
+    "timestamp": "16.500-19.500"
+  },
+  {
+    "audioId": "20d004v0",
+    "spriteId": "1216",
+    "offset": 0.084,
+    "duration": 1.5,
+    "text": "De mand van een luchtballon.",
+    "timestamp": "20.500-22.000"
+  },
+  {
+    "audioId": "20d004v0",
+    "spriteId": "1216",
+    "offset": 2.084,
+    "duration": 3.0,
+    "text": "Misschien kan ze dienen als carrosserie voor een auto?",
+    "timestamp": "22.500-25.500"
+  },
+  {
+    "audioId": "20d005v0",
+    "spriteId": "1217",
+    "offset": -0.317,
+    "duration": 5.0,
+    "text": "De paardenkar van Boris Blaf kunnen we vast wel tot een auto ombouwen.",
+    "timestamp": "26.000-31.000"
+  },
+  {
+    "audioId": "20d006v0",
+    "spriteId": "1218",
+    "offset": -0.439,
+    "duration": 5.0,
+    "text": "Hmm, de fiets van Tante Mona. Die komt zeker nog wel van pas.",
+    "timestamp": "31.500-36.500"
+  },
+  {
+    "audioId": "20d007v0",
+    "spriteId": "1219",
+    "offset": -0.219,
+    "duration": 4.0,
+    "text": "Dat zijn de lampen van grootvaders paardenkar. Vind je ze mooi?",
+    "timestamp": "37.500-41.500"
+  },
+  {
+    "audioId": "20d008v0",
+    "spriteId": "1220",
+    "offset": -0.112,
+    "duration": 4.5,
+    "text": "Die buis kunnen we misschien gebruiken als uitlaat of als versiering.",
+    "timestamp": "42.500-47.000"
+  },
+  {
+    "audioId": "20d009v0",
+    "spriteId": "1221",
+    "offset": -0.166,
+    "duration": 4.0,
+    "text": "Een elektrische motor werkt zolang de accu niet leeg is.",
+    "timestamp": "48.000-52.000"
+  },
+  {
+    "audioId": "20d009v0",
+    "spriteId": "1221",
+    "offset": 4.334,
+    "duration": 2.5,
+    "text": "Deze motor kan voorin of achterin staan.",
+    "timestamp": "52.500-55.000"
+  },
+  {
+    "audioId": "20d010v0",
+    "spriteId": "1222",
+    "offset": -0.33,
+    "duration": 3.0,
+    "text": "In zo'n stoel moet je wel heerlijk zitten.",
+    "timestamp": "56.000-59.000"
+  },
+  {
+    "audioId": "20d011v0",
+    "spriteId": "1223",
+    "offset": -0.259,
+    "duration": 3.0,
+    "text": "Die telefooncel kan dienen als cockpit voor de auto.",
+    "timestamp": "60.000-63.000"
+  },
+  {
+    "audioId": "20d011v0",
+    "spriteId": "1223",
+    "offset": 3.241,
+    "duration": 3.5,
+    "text": "Er zit al een deur in en zelfs een voorruit.",
+    "timestamp": "63.500-67.000"
+  },
+  {
+    "audioId": "20d012v0",
+    "spriteId": "1224",
+    "offset": -0.423,
+    "duration": 4.5,
+    "text": "Ja, dat is een accu. Zonder accu kan de motor niet starten.",
+    "timestamp": "67.500-72.000"
+  },
+  {
+    "audioId": "20d012v0",
+    "spriteId": "1224",
+    "offset": 4.577,
+    "duration": 3.5,
+    "text": "De accu moet naast de wielen staan, dicht bij de motor.",
+    "timestamp": "72.500-76.000"
+  },
+  {
+    "audioId": "20d013v0",
+    "spriteId": "1225",
+    "offset": -0.509,
+    "duration": 5.5,
+    "text": "De motor van een Ford T. Die kan voorin of achterin. Handig toch?",
+    "timestamp": "76.500-82.000"
+  },
+  {
+    "audioId": "20d014v0",
+    "spriteId": "1226",
+    "offset": -0.441,
+    "duration": 2.5,
+    "text": "De stuurknuppel van een vliegtuig.",
+    "timestamp": "82.500-85.000"
+  },
+  {
+    "audioId": "20d015v0",
+    "spriteId": "1227",
+    "offset": -0.596,
+    "duration": 4.5,
+    "text": "Je hebt de versnellingsbak van een tractor gevonden. Goed zo.",
+    "timestamp": "85.500-90.000"
+  },
+  {
+    "audioId": "20d015v0",
+    "spriteId": "1227",
+    "offset": 4.404,
+    "duration": 4.5,
+    "text": "Zet hem dicht bij de plek waar ik moet zitten, zodat ik bij de versnellingspook kan.",
+    "timestamp": "90.500-95.000"
+  },
+  {
+    "audioId": "20d016v0",
+    "spriteId": "1228",
+    "offset": -0.424,
+    "duration": 3.5,
+    "text": "Die waterkan kan dienst doen als brandstoftank.",
+    "timestamp": "95.500-99.000"
+  },
+  {
+    "audioId": "20d016v0",
+    "spriteId": "1228",
+    "offset": 3.576,
+    "duration": 4.5,
+    "text": "Ze past zowel voorin als achterin, maar wel in de buurt van de wielen.",
+    "timestamp": "99.500-104.000"
+  },
+  {
+    "audioId": "20d017v0",
+    "spriteId": "1229",
+    "offset": -0.145,
+    "duration": 2.5,
+    "text": "Dat zijn kleine, lichte wielen.",
+    "timestamp": "104.500-107.000"
+  },
+  {
+    "audioId": "20d018v0",
+    "spriteId": "1230",
+    "offset": -0.336,
+    "duration": 5.5,
+    "text": "De wielen van een tractor zijn uitstekend geschikt om over stenen en takken te rijden.",
+    "timestamp": "107.500-113.000"
+  },
+  {
+    "audioId": "20d019v0",
+    "spriteId": "1231",
+    "offset": -0.891,
+    "duration": 6.5,
+    "text": "Haha, de kant-en-klare neus van een Ford. Die kun je maar beter goed bijhouden.",
+    "timestamp": "113.000-119.500"
+  },
+  {
+    "audioId": "20d020v0",
+    "spriteId": "1232",
+    "offset": -0.764,
+    "duration": 5.5,
+    "text": "Met de rupsbanden van een oude bostractor kom je overal doorheen.",
+    "timestamp": "120.000-125.500"
+  },
+  {
+    "audioId": "20d021v0",
+    "spriteId": "1233",
+    "offset": -0.356,
+    "duration": 5.5,
+    "text": "De trommel van een wasmachine. Dat is nu eens een wiel dat je niet schoon hoeft te maken.",
+    "timestamp": "126.000-131.500"
+  },
+  {
+    "audioId": "20d022v0",
+    "spriteId": "1234",
+    "offset": -0.545,
+    "duration": 6.5,
+    "text": "De neus van een Volvo. Prima staalplaat, echte topkwaliteit uit het Hoge Noorden.",
+    "timestamp": "132.000-138.500"
+  },
+  {
+    "audioId": "20d023v0",
+    "spriteId": "1235",
+    "offset": -0.047,
+    "duration": 4.5,
+    "text": "Het stuurwiel van een boot. Dat is goed om mee te sturen.",
+    "timestamp": "139.500-144.000"
+  },
+  {
+    "audioId": "20d024v0",
+    "spriteId": "1236",
+    "offset": -0.062,
+    "duration": 2.5,
+    "text": "Een echt melkkrukje.",
+    "timestamp": "144.500-147.000"
+  },
+  {
+    "audioId": "20d025v0",
+    "spriteId": "1237",
+    "offset": 0.176,
+    "duration": 6.5,
+    "text": "Met zo'n kleine benzinetank van een motorfiets spaar je wel plaats uit, maar er kan niet zoveel benzine in.",
+    "timestamp": "147.500-154.000"
+  },
+  {
+    "audioId": "20d025v0",
+    "spriteId": "1237",
+    "offset": 7.176,
+    "duration": 4.5,
+    "text": "Deze tank past zowel voorin als achterin, in de buurt van de wielen.",
+    "timestamp": "154.500-159.000"
+  },
+  {
+    "audioId": "20d026v0",
+    "spriteId": "1238",
+    "offset": -0.165,
+    "duration": 4.5,
+    "text": "Een leuke, kleine versnellingsbak van een oude MG Sport.",
+    "timestamp": "159.500-164.000"
+  },
+  {
+    "audioId": "20d026v0",
+    "spriteId": "1238",
+    "offset": 4.835,
+    "duration": 3.5,
+    "text": "Zet hem zo dat ik gemakkelijk bij de versnellingspook kan.",
+    "timestamp": "164.500-168.000"
+  },
+  {
+    "audioId": "20d027v0",
+    "spriteId": "1239",
+    "offset": -0.043,
+    "duration": 4.5,
+    "text": "Een accu. Goed zo. Die heb je nodig om de motor te starten.",
+    "timestamp": "168.500-173.000"
+  },
+  {
+    "audioId": "20d027v0",
+    "spriteId": "1239",
+    "offset": 4.957,
+    "duration": 3.5,
+    "text": "Die accu past naast de wielen, dicht bij de motor.",
+    "timestamp": "173.500-177.000"
+  },
+  {
+    "audioId": "20d028v0",
+    "spriteId": "1240",
+    "offset": 0.022,
+    "duration": 4.5,
+    "text": "Met die mooie lampenkap van Tante Truus gaan we nu een auto bouwen.",
+    "timestamp": "177.500-182.000"
+  },
+  {
+    "audioId": "20d029v0",
+    "spriteId": "1241",
+    "offset": -0.464,
+    "duration": 3.5,
+    "text": "De wielen van een fiets. Ze zijn licht en soepel.",
+    "timestamp": "182.500-186.000"
+  },
+  {
+    "audioId": "20d030v0",
+    "spriteId": "1242",
+    "offset": -0.66,
+    "duration": 4.5,
+    "text": "Deze bumper heeft horens, net als een koe.",
+    "timestamp": "186.500-191.000"
+  },
+  {
+    "audioId": "20d031v0",
+    "spriteId": "1243",
+    "offset": 0.08,
+    "duration": 3.5,
+    "text": "Zo een dashboard met plaats voor een snelheidsmeter.",
+    "timestamp": "191.500-195.000"
+  },
+  {
+    "audioId": "20d032v0",
+    "spriteId": "1244",
+    "offset": -0.611,
+    "duration": 6.5,
+    "text": "Die scheepsklok kan misschien dienen als toeter. Zullen we deze op het dak monteren?",
+    "timestamp": "195.000-201.500"
+  },
+  {
+    "audioId": "20d033v0",
+    "spriteId": "1245",
+    "offset": -0.026,
+    "duration": 4.5,
+    "text": "Hier zat vroeger wijn in. Nu kunnen we dat vat gebruiken als benzinetank.",
+    "timestamp": "202.000-206.500"
+  },
+  {
+    "audioId": "20d033v0",
+    "spriteId": "1245",
+    "offset": 4.974,
+    "duration": 3.5,
+    "text": "Zet het voorin of achterin, in de buurt van de wielen.",
+    "timestamp": "207.000-210.500"
+  },
+  {
+    "audioId": "20d034v0",
+    "spriteId": "1246",
+    "offset": -0.123,
+    "duration": 4.5,
+    "text": "Ja ja, natuurlijk kun je van een boot een auto maken. Wacht maar af!",
+    "timestamp": "211.000-215.500"
+  },
+  {
+    "audioId": "20d035v0",
+    "spriteId": "1247",
+    "offset": -0.822,
+    "duration": 2.5,
+    "text": "Een motor.",
+    "timestamp": "216.000-218.500"
+  },
+  {
+    "audioId": "20d036v0",
+    "spriteId": "1248",
+    "offset": 0.05,
+    "duration": 3.5,
+    "text": "Een dak boven je hoofd en een goed uitzicht door het raam.",
+    "timestamp": "219.000-222.500"
+  },
+  {
+    "audioId": "20d036v0",
+    "spriteId": "1248",
+    "offset": 3.55,
+    "duration": 3.5,
+    "text": "Wie zegt dat een oud kippenhok geen autocarrosserie kan worden?",
+    "timestamp": "222.500-226.000"
+  },
+  {
+    "audioId": "20d037v0",
+    "spriteId": "1249",
+    "offset": -0.642,
+    "duration": 4.5,
+    "text": "Die oude sofa van Karel Knetter past perfect.",
+    "timestamp": "226.500-231.000"
+  },
+  {
+    "audioId": "20d038v0",
+    "spriteId": "1250",
+    "offset": -0.049,
+    "duration": 4.5,
+    "text": "De brouwer reed met zijn auto langs alle huizen om drank te verkopen.",
+    "timestamp": "231.500-236.000"
+  },
+  {
+    "audioId": "20d039v0",
+    "spriteId": "1251",
+    "offset": -0.64,
+    "duration": 2.5,
+    "text": "Dit is een kleine lichte accu.",
+    "timestamp": "236.500-239.000"
+  },
+  {
+    "audioId": "20d039v0",
+    "spriteId": "1251",
+    "offset": 2.36,
+    "duration": 4.5,
+    "text": "Zet hem naast de wielen, in de buurt van de motor, zodat de motor stroom krijgt.",
+    "timestamp": "239.500-244.000"
+  },
+  {
+    "audioId": "20d040v0",
+    "spriteId": "1252",
+    "offset": -0.834,
+    "duration": 2.5,
+    "text": "Een dashboard.",
+    "timestamp": "244.500-247.000"
+  },
+  {
+    "audioId": "20d041v0",
+    "spriteId": "1253",
+    "offset": 0.22,
+    "duration": 3.5,
+    "text": "Die motorkap van een kever kan nog best van pas komen.",
+    "timestamp": "247.500-251.000"
+  },
+  {
+    "audioId": "20d042v0",
+    "spriteId": "1254",
+    "offset": -0.719,
+    "duration": 3.5,
+    "text": "Een mooie cockpit van een helikopter.",
+    "timestamp": "251.000-254.500"
+  },
+  {
+    "audioId": "20d043v0",
+    "spriteId": "1255",
+    "offset": 0.008,
+    "duration": 4.5,
+    "text": "Een luxueuze Amerikaan is laag en lang. Zo hoort dat nu eenmaal.",
+    "timestamp": "255.000-259.500"
+  },
+  {
+    "audioId": "20d044v0",
+    "spriteId": "1256",
+    "offset": -0.908,
+    "duration": 3.5,
+    "text": "In zo'n serre heb je een prima zicht.",
+    "timestamp": "260.000-263.500"
+  },
+  {
+    "audioId": "20d045v0",
+    "spriteId": "1257",
+    "offset": -0.557,
+    "duration": 4.5,
+    "text": "De wielen moet je aan de buitenkant van de assen monteren.",
+    "timestamp": "264.000-268.500"
+  },
+  {
+    "audioId": "20d046v0",
+    "spriteId": "1258",
+    "offset": -0.008,
+    "duration": 4.5,
+    "text": "Wauw! Een oude V8 motor. Zo'n krachtig ding.",
+    "timestamp": "269.000-273.500"
+  },
+  {
+    "audioId": "20d046v0",
+    "spriteId": "1258",
+    "offset": 4.992,
+    "duration": 5.5,
+    "text": "Daarmee kun je gewoonweg alles trekken. Je kunt hem voorin of achterin de auto zetten.",
+    "timestamp": "274.000-279.500"
+  },
+  {
+    "audioId": "20d047v0",
+    "spriteId": "1259",
+    "offset": -0.975,
+    "duration": 5.5,
+    "text": "Met zo'n kleine lokomotief van een pleziertreintje trek je bijna alles.",
+    "timestamp": "279.500-285.000"
+  },
+  {
+    "audioId": "20d048v0",
+    "spriteId": "1260",
+    "offset": -0.681,
+    "duration": 3.5,
+    "text": "Een toilet met een deksel erop. Lekker praktisch.",
+    "timestamp": "285.500-289.000"
+  },
+  {
+    "audioId": "20d048v0",
+    "spriteId": "1260",
+    "offset": 3.319,
+    "duration": 3.5,
+    "text": "Dan hoef je niet eens uit te stappen als je zo nodig moet.",
+    "timestamp": "289.500-293.000"
+  },
+  {
+    "audioId": "20d049v0",
+    "spriteId": "1261",
+    "offset": -0.057,
+    "duration": 6.5,
+    "text": "Hmm, volgens mij komt die bumper uit het Wilde Westen. Helemaal uit Amerika.",
+    "timestamp": "293.500-300.000"
+  },
+  {
+    "audioId": "20d049v0",
+    "spriteId": "1261",
+    "offset": 6.943,
+    "duration": 4.5,
+    "text": "Het zou me niks verwonderen mocht die uit loslekke bandels komen.",
+    "timestamp": "300.500-305.000"
+  },
+  {
+    "audioId": "20d049v0",
+    "spriteId": "1261",
+    "offset": 11.943,
+    "duration": 3.5,
+    "text": "En kun je daar ook Poet Poet nog eens tegenkomen.",
+    "timestamp": "305.500-309.000"
+  },
+  {
+    "audioId": "20d050v0",
+    "spriteId": "1262",
+    "offset": 0.207,
+    "duration": 6.5,
+    "text": "Het oude tuinhuisje van Paul Bloembol. Dat wordt een leuke carrosserie. Daar kun je van op aan.",
+    "timestamp": "309.500-316.000"
+  },
+  {
+    "audioId": "20d051v0",
+    "spriteId": "1263",
+    "offset": -0.292,
+    "duration": 6.5,
+    "text": "Een oude melkkan van 50 liter. Dat wordt dus een benzinetank van 50 liter.",
+    "timestamp": "316.500-323.000"
+  },
+  {
+    "audioId": "20d051v0",
+    "spriteId": "1263",
+    "offset": 6.708,
+    "duration": 4.5,
+    "text": "Prima! Zet hem in de buurt van de wielen, voorin of achterin.",
+    "timestamp": "323.500-328.000"
+  },
+  {
+    "audioId": "20d052v0",
+    "spriteId": "1264",
+    "offset": 0.159,
+    "duration": 5.5,
+    "text": "De neus van een saap uit grootvaders tijd. Die komt zeker nog van pas.",
+    "timestamp": "328.500-334.000"
+  },
+  {
+    "audioId": "20d053v0",
+    "spriteId": "1265",
+    "offset": 0.016,
+    "duration": 4.5,
+    "text": "Met zo'n tent kun je een te gekke cockpit maken.",
+    "timestamp": "335.000-339.500"
+  },
+  {
+    "audioId": "20d054v0",
+    "spriteId": "1266",
+    "offset": 0.008,
+    "duration": 4.5,
+    "text": "En nu met die oude kar naar buiten. Eens kijken wat hij kan.",
+    "timestamp": "340.000-344.500"
+  },
+  {
+    "audioId": "20d055v0",
+    "spriteId": "1267",
+    "offset": -0.473,
+    "duration": 4.5,
+    "text": "Grote schijfremmen. Ideaal voor een echte snelheidsmaniak.",
+    "timestamp": "345.000-349.500"
+  },
+  {
+    "audioId": "20d055v0",
+    "spriteId": "1267",
+    "offset": 4.527,
+    "duration": 4.5,
+    "text": "Maar vergeet niet dat je eerst de remmen moet monteren voordat je de wielen vastschroeft.",
+    "timestamp": "350.000-354.500"
+  },
+  {
+    "audioId": "20d056v0",
+    "spriteId": "1268",
+    "offset": -0.726,
+    "duration": 6.5,
+    "text": "Een mooi stel schijfremmen. Een prachtig staaltje 20ste eeuwse techniek.",
+    "timestamp": "355.000-361.500"
+  },
+  {
+    "audioId": "20d056v0",
+    "spriteId": "1268",
+    "offset": 5.774,
+    "duration": 5.5,
+    "text": "De schijven duwen tegen de remvoering en dan stopt de auto.",
+    "timestamp": "361.500-367.000"
+  },
+  {
+    "audioId": "20d056v0",
+    "spriteId": "1268",
+    "offset": 11.774,
+    "duration": 6.5,
+    "text": "Schijfremmen moeten altijd in de buurt van de wielen gemonteerd worden, maar dat had je waarschijnlijk al wel geraden.",
+    "timestamp": "367.500-374.000"
+  },
+  {
+    "audioId": "20d057v0",
+    "spriteId": "1269",
+    "offset": -0.323,
+    "duration": 4.5,
+    "text": "Dit is een ventiel van een enorm groot oorlogsschip.",
+    "timestamp": "374.500-379.000"
+  },
+  {
+    "audioId": "20d058v0",
+    "spriteId": "1270",
+    "offset": -0.026,
+    "duration": 3.5,
+    "text": "Die toeter moeten we nog op het dak monteren.",
+    "timestamp": "379.500-383.000"
+  },
+  {
+    "audioId": "20d059v0",
+    "spriteId": "1271",
+    "offset": 0.273,
+    "duration": 5.5,
+    "text": "Zie je dat? Die radiator heeft een speciale uitsnijding voor een slang van een brandweerwagen.",
+    "timestamp": "383.500-389.000"
+  },
+  {
+    "audioId": "20d060v0",
+    "spriteId": "1272",
+    "offset": -0.876,
+    "duration": 6.5,
+    "text": "Met zo'n tractormotor ben je niet een van de snelste, maar je raakt er wel de stijlste hellingen mee op.",
+    "timestamp": "389.000-395.500"
+  },
+  {
+    "audioId": "20d060v0",
+    "spriteId": "1272",
+    "offset": 6.124,
+    "duration": 5.5,
+    "text": "En ook een tractormotor kun je niet alleen voorin, maar ook achterin monteren.",
+    "timestamp": "396.000-401.500"
+  },
+  {
+    "audioId": "20d061v0",
+    "spriteId": "1273",
+    "offset": -0.301,
+    "duration": 5.5,
+    "text": "Wat een oude sirene. Maar ze doet het nog altijd prima, denk ik.",
+    "timestamp": "402.000-407.500"
+  },
+  {
+    "audioId": "20d062v0",
+    "spriteId": "1274",
+    "offset": -0.221,
+    "duration": 3.5,
+    "text": "Deze lamp kunnen we nog op het dak monteren.",
+    "timestamp": "408.000-411.500"
+  },
+  {
+    "audioId": "20d063v0",
+    "spriteId": "1275",
+    "offset": 0.034,
+    "duration": 4.5,
+    "text": "Met zonnecellen kun je een elektrische motor aandrijven.",
+    "timestamp": "412.000-416.500"
+  },
+  {
+    "audioId": "20d064v0",
+    "spriteId": "1276",
+    "offset": -0.332,
+    "duration": 4.5,
+    "text": "Dit zwart-witte achterstuk was vroeger van een politiewagen.",
+    "timestamp": "416.500-421.000"
+  },
+  {
+    "audioId": "20d065v0",
+    "spriteId": "1277",
+    "offset": -0.599,
+    "duration": 3.5,
+    "text": "Klim erin en voel je een echte brandweerman.",
+    "timestamp": "421.500-425.000"
+  },
+  {
+    "audioId": "20d067v0",
+    "spriteId": "1279",
+    "offset": -2.276,
+    "duration": 8.5,
+    "text": "Een toeter? Het voorstuk van een politiewagen. Pas maar op, boeven en bandieten, hier komt Miel Monteur!",
+    "timestamp": "425.500-434.000"
+  },
+  {
+    "audioId": "20d068v0",
+    "spriteId": "1280",
+    "offset": -0.418,
+    "duration": 4.5,
+    "text": "De cabine van een politiewagen. Op weg naar de nor?",
+    "timestamp": "434.500-439.000"
+  },
+  {
+    "audioId": "20d069v0",
+    "spriteId": "1281",
+    "offset": 0.107,
+    "duration": 6.5,
+    "text": "Je kunt nooit genoeg oude kisten hebben. Deze hier zijn bijvoorbeeld prima om op te zitten.",
+    "timestamp": "439.500-446.000"
+  },
+  {
+    "audioId": "20d071v0",
+    "spriteId": "1283",
+    "offset": -3.455,
+    "duration": 7.5,
+    "text": "Een echte zwaailamp voor op het dak? Een brandplus-apparaat komt altijd van pas.",
+    "timestamp": "446.500-454.000"
+  },
+  {
+    "audioId": "20d072v0",
+    "spriteId": "1284",
+    "offset": 0.261,
+    "duration": 8.5,
+    "text": "Zo'n grote horen hoor je enorm ver. Als je zelf niet doof wilt worden, kun je hem maar beter boven op het dak monteren.",
+    "timestamp": "454.500-463.000"
+  },
+  {
+    "audioId": "20d073v0",
+    "spriteId": "1285",
+    "offset": 0.11,
+    "duration": 5.5,
+    "text": "Die bureau-lamp kun je op het dak zetten. Dat is een prima lamp, dat zul je wel zien.",
+    "timestamp": "463.500-469.000"
+  },
+  {
+    "audioId": "20d074v0",
+    "spriteId": "1286",
+    "offset": -0.501,
+    "duration": 9.5,
+    "text": "Zo'n motor van een boot is niet erg snel, maar wel erg betrouwbaar. Je kunt hem zowel voorin als achterin in de auto zetten.",
+    "timestamp": "469.000-478.500"
+  },
+  {
+    "audioId": "20d075v0",
+    "spriteId": "1287",
+    "offset": 0.035,
+    "duration": 6.5,
+    "text": "Als je die grasmaaier nu eens als motor gebruikte, voorin of achterin, dat mag je zelf kiezen.",
+    "timestamp": "479.000-485.500"
+  },
+  {
+    "audioId": "20d076v0",
+    "spriteId": "1288",
+    "offset": -0.409,
+    "duration": 8.5,
+    "text": "Remmen? Die heb je altijd nodig, want zonder remmen kun je niet remmen, haha, en dan rij je meteen tegen een boom aan.",
+    "timestamp": "486.000-494.500"
+  },
+  {
+    "audioId": "20d076v0",
+    "spriteId": "1288",
+    "offset": 8.091,
+    "duration": 10.5,
+    "text": "Maar denk erom bij het monteren, eerst de remmen en dan pas de wielen en eh, dicht bij de wielen natuurlijk, anders hebben die remmen helemaal geen zin.",
+    "timestamp": "494.500-505.000"
+  },
+  {
+    "audioId": "20d077v0",
+    "spriteId": "1289",
+    "offset": -0.287,
+    "duration": 12.5,
+    "text": "Een auto zonder toeter vind ik eerlijk gezegd maar niks. Dit modelletje hier is heel veelzijdig. Je kunt het zowel op het dashboard monteren als op het dak. Handig he?",
+    "timestamp": "505.500-518.000"
+  },
+  {
+    "audioId": "20d079v0",
+    "spriteId": "1291",
+    "offset": -2.91,
+    "duration": 8.0,
+    "text": "De neus van een ziekenwagen. De cabine van een ziekenwagen. Ta-toe-ta-ta, daar gaan we!",
+    "timestamp": "518.500-526.500"
+  },
+  {
+    "audioId": "20d081v0",
+    "spriteId": "1293",
+    "offset": -5.024,
+    "duration": 9.5,
+    "text": "In deze schommel zat ik altijd om de krant te lezen. Het hele achterstuk van een ziekenwagen, kijk eens hoe elegant!",
+    "timestamp": "527.000-536.500"
+  },
+  {
+    "audioId": "20d083v0",
+    "spriteId": "1295",
+    "offset": -2.674,
+    "duration": 8.5,
+    "text": "Tja, een kist. Kijk, ik dacht dat ik deze lamp kwijt was, goed dat ik ze heb teruggevonden.",
+    "timestamp": "537.000-545.500"
+  },
+  {
+    "audioId": "20d085v0",
+    "spriteId": "1297",
+    "offset": -3.686,
+    "duration": 12.5,
+    "text": "De neus van een brandweerwagen. Zal ik je eens wat vertellen? Voor deze tube tandpasta hier terechtkwam stond hij op een wolkenkrabber in New York, maar nu ligt hij hier!",
+    "timestamp": "545.500-558.000"
+  },
+  {
+    "audioId": "20d086v0",
+    "spriteId": "1298",
+    "offset": -0.383,
+    "duration": 7.5,
+    "text": "Ultradent, reclame voor tandpasta. Dit is de grootste tube tandpasta ter wereld!",
+    "timestamp": "558.500-566.000"
+  },
+  {
+    "audioId": "20d087v0",
+    "spriteId": "1299",
+    "offset": -0.785,
+    "duration": 9.5,
+    "text": "Echte racebanden, lekker breed voor een perfecte wegligging. Dit is een echte lederen bank, poepchique!",
+    "timestamp": "566.000-575.500"
+  },
+  {
+    "audioId": "20d089v0",
+    "spriteId": "1301",
+    "offset": -0.682,
+    "duration": 9.5,
+    "text": "Wil je dit ding misschien als brandstoftank gebruiken? Wel, zet hem dan maar dicht bij de wielen, voor of achterin, dat speelt niet zo'n rol.",
+    "timestamp": "576.000-585.500"
+  },
+  {
+    "audioId": "20d090v0",
+    "spriteId": "1302",
+    "offset": -0.937,
+    "duration": 7.5,
+    "text": "De motor van een Harley Davidson, prima spul! De motor kan voorin of achterin staan.",
+    "timestamp": "585.500-593.000"
+  },
+  {
+    "audioId": "20d091v0",
+    "spriteId": "1303",
+    "offset": -0.436,
+    "duration": 11.5,
+    "text": "Een jerrycan, ook die kun je gebruiken als benzinetank. Je kunt hem zowel voorin als achterin monteren, maar wel liefst zo dicht mogelijk bij de wielen.",
+    "timestamp": "593.500-605.000"
+  },
+  {
+    "audioId": "20d092v0",
+    "spriteId": "1304",
+    "offset": 0.14,
+    "duration": 4.5,
+    "text": "Wat denk je, zouden we deze schoorsteen niet kunnen gebruiken als uitlaat?",
+    "timestamp": "605.500-610.000"
+  },
+  {
+    "audioId": "20d093v0",
+    "spriteId": "1305",
+    "offset": -0.585,
+    "duration": 9.5,
+    "text": "Die witte krullen moeten tandpasta voorstellen. Deze reclame voor tandpasta stond ooit bovenop een wolkenkrabber.",
+    "timestamp": "610.000-619.500"
+  },
+  {
+    "audioId": "20d096v0",
+    "spriteId": "1308",
+    "offset": -5.58,
+    "duration": 9.5,
+    "text": "Daar ligt een uitlaat. Dat ziet er spannend uit. Waarschijnlijk een onderdeel van een oude Sputnik.",
+    "timestamp": "620.000-629.500"
+  },
+  {
+    "audioId": "20d097v0",
+    "spriteId": "1309",
+    "offset": 0.169,
+    "duration": 4.5,
+    "text": "Dat kun je op het dak zetten. Haha, het lijkt wel een paardenstaart!",
+    "timestamp": "630.000-634.500"
+  },
+  {
+    "audioId": "20d098v0",
+    "spriteId": "1310",
+    "offset": -0.889,
+    "duration": 12.5,
+    "text": "Een echte zwaailamp van de Amerikaanse politie. Dat zal nogal eens indruk maken als we die op onze auto monteren. Ik durf te wedden dat Poet Poet dan wel jaloers zal zijn.",
+    "timestamp": "634.500-647.000"
+  },
+  {
+    "audioId": "20d100v0",
+    "spriteId": "1312",
+    "offset": -5.329,
+    "duration": 11.5,
+    "text": "De achtervleugel van een Ferrari, te gaaf! FC de carrossiers, dat is pas een ploeg. Probeer eens of die op het dak past.",
+    "timestamp": "647.500-659.000"
+  },
+  {
+    "audioId": "20d102v0",
+    "spriteId": "1314",
+    "offset": -5.011,
+    "duration": 8.5,
+    "text": "En zwaaien maar met die vlaggen van FC Ruitenspray. Volgens mij kun je die rolschaatsen ook als wielen gebruiken.",
+    "timestamp": "659.000-667.500"
+  },
+  {
+    "audioId": "20d104v0",
+    "spriteId": "1316",
+    "offset": -4.662,
+    "duration": 8.5,
+    "text": "Kijk, het oude wijnvat van Frank Petanque. Even die schaatsen proberen, die hebben al veel meegemaakt. Haha!",
+    "timestamp": "668.000-676.500"
+  },
+  {
+    "audioId": "20d106v0",
+    "spriteId": "1318",
+    "offset": -3.355,
+    "duration": 8.5,
+    "text": "Een megafoon. Kijk hier eens, een toeter. Dit modelletje hoort thuis onder de motorkap.",
+    "timestamp": "677.000-685.500"
+  },
+  {
+    "audioId": "20d107v0",
+    "spriteId": "1319",
+    "offset": -0.52,
+    "duration": 4.5,
+    "text": "De neus van een Ferrari, een zeer elegante sportwagen.",
+    "timestamp": "686.500-691.000"
+  },
+  {
+    "audioId": "20d108v0",
+    "spriteId": "1320",
+    "offset": -0.894,
+    "duration": 11.5,
+    "text": "De koplampen van een oude Ford T. Ze branden zelfs nog. De Ford T was een van de eerste auto's ooit. Goh, waar is de tijd?",
+    "timestamp": "691.500-703.000"
+  },
+  {
+    "audioId": "20d110v0",
+    "spriteId": "1321",
+    "offset": -0.328,
+    "duration": 6.5,
+    "text": "Die bank stond vroeger in een Russische auto, maar toen was jij nog niet eens geboren, denk ik.",
+    "timestamp": "703.500-710.000"
+  },
+  {
+    "audioId": "20d111v0",
+    "spriteId": "1322",
+    "offset": -0.731,
+    "duration": 4.0,
+    "text": "Een grote voorruit hoort bij een echte Amerikaan.",
+    "timestamp": "710.000-714.000"
+  },
+  {
+    "audioId": "20d112v0",
+    "spriteId": "1323",
+    "offset": -0.623,
+    "duration": 8.0,
+    "text": "Tjonge tjonge, het stuurwiel van een Formule 1 auto. Dat komt vast en zeker uit een Sputnik.",
+    "timestamp": "714.500-722.500"
+  },
+  {
+    "audioId": "20d115v0",
+    "spriteId": "1326",
+    "offset": -2.707,
+    "duration": 7.0,
+    "text": "Een uitlaat. Een versnellingsbak. Alle auto's hebben een versnellingsbak nodig.",
+    "timestamp": "723.000-730.000"
+  },
+  {
+    "audioId": "20d115v0",
+    "spriteId": "1326",
+    "offset": 4.793,
+    "duration": 3.5,
+    "text": "Zonder versnellingsbak, geen schakelplezier, zeg ik altijd.",
+    "timestamp": "730.500-734.000"
+  },
+  {
+    "audioId": "20d115v0",
+    "spriteId": "1326",
+    "offset": 8.793,
+    "duration": 6.0,
+    "text": "Zet hem liefst zo dicht mogelijk bij mijn stoel, zodat ik makkelijk bij de versnellingspook kan.",
+    "timestamp": "734.500-740.500"
+  },
+  {
+    "audioId": "20d116v0",
+    "spriteId": "1327",
+    "offset": -0.429,
+    "duration": 7.0,
+    "text": "Juist, een accu mag je zeker niet vergeten. Zet hem naast de wielen in de buurt van de motor.",
+    "timestamp": "741.000-748.000"
+  },
+  {
+    "audioId": "20d117v0",
+    "spriteId": "1328",
+    "offset": -0.566,
+    "duration": 5.5,
+    "text": "Bij regenachtig weer kan het interessant zijn om een Amerikaan met een dak te hebben.",
+    "timestamp": "748.500-754.000"
+  },
+  {
+    "audioId": "20d118v0",
+    "spriteId": "1329",
+    "offset": -0.262,
+    "duration": 4.5,
+    "text": "Elegant te vinden. Van het achterstuk van een Amerikaan.",
+    "timestamp": "754.500-759.000"
+  },
+  {
+    "audioId": "20d120v0",
+    "spriteId": "1331",
+    "offset": -2.256,
+    "duration": 5.0,
+    "text": "Een bumper. Ja, hier heb ik al een beetje aan zitten klungelen.",
+    "timestamp": "759.500-764.500"
+  },
+  {
+    "audioId": "20d120v0",
+    "spriteId": "1331",
+    "offset": 3.244,
+    "duration": 7.0,
+    "text": "Dat wordt een portier met een wc-handvat. Wel een beetje raar, dat geef ik toe, maar prima in orde hoor.",
+    "timestamp": "765.000-772.000"
+  },
+  {
+    "audioId": "20d121v0",
+    "spriteId": "1332",
+    "offset": -0.244,
+    "duration": 3.0,
+    "text": "Een voorbumper. Lekker hip.",
+    "timestamp": "772.500-775.500"
+  },
+  {
+    "audioId": "20d122v0",
+    "spriteId": "1333",
+    "offset": -0.376,
+    "duration": 3.0,
+    "text": "De neus van een tractor. Goed spul.",
+    "timestamp": "776.000-779.000"
+  },
+  {
+    "audioId": "20d123v0",
+    "spriteId": "1334",
+    "offset": -0.259,
+    "duration": 4.5,
+    "text": "De neus van een Ford A. Compleet met radiator.",
+    "timestamp": "779.500-784.000"
+  },
+  {
+    "audioId": "20d124v0",
+    "spriteId": "1335",
+    "offset": -0.669,
+    "duration": 3.0,
+    "text": "Goede wielen met passende velgen.",
+    "timestamp": "784.000-787.000"
+  },
+  {
+    "audioId": "20d125v0",
+    "spriteId": "1336",
+    "offset": -0.485,
+    "duration": 4.0,
+    "text": "Dat is een versnellingsbak. Die heb je nodig om te kunnen rijden.",
+    "timestamp": "787.500-791.500"
+  },
+  {
+    "audioId": "20d125v0",
+    "spriteId": "1336",
+    "offset": 4.015,
+    "duration": 4.0,
+    "text": "Monteer hem alsjeblieft zo, dat ik makkelijk bij de pook kan als ik rijd.",
+    "timestamp": "792.000-796.000"
+  },
+  {
+    "audioId": "20d125v0",
+    "spriteId": "1336",
+    "offset": 8.515,
+    "duration": 2.5,
+    "text": "Anders wordt het zo'n onhandig geklungel.",
+    "timestamp": "796.500-799.000"
+  },
+  {
+    "audioId": "20d126v0",
+    "spriteId": "1337",
+    "offset": -0.405,
+    "duration": 5.5,
+    "text": "Daar hebben aardappelen in gezeten. Zou het niet kunnen dienen als carrosserie, denk je?",
+    "timestamp": "799.500-805.000"
+  },
+  {
+    "audioId": "20d127v0",
+    "spriteId": "1338",
+    "offset": -0.612,
+    "duration": 7.0,
+    "text": "Een benzinetank. Die hoort voorin of achterin, dat speelt niet zo'n rol, maar wel in de buurt van de wielen.",
+    "timestamp": "805.500-812.500"
+  },
+  {
+    "audioId": "20d128v0",
+    "spriteId": "1339",
+    "offset": -0.607,
+    "duration": 4.0,
+    "text": "Daar ligt een accu. Alle auto's hebben een accu nodig.",
+    "timestamp": "813.000-817.000"
+  },
+  {
+    "audioId": "20d128v0",
+    "spriteId": "1339",
+    "offset": 3.893,
+    "duration": 3.5,
+    "text": "Monteer hem in de buurt van de motor, naast de wielen.",
+    "timestamp": "817.500-821.000"
+  },
+  {
+    "audioId": "20d129v0",
+    "spriteId": "1340",
+    "offset": -0.54,
+    "duration": 4.5,
+    "text": "Dat fietsstuur kunnen we als stuurwiel gebruiken, denk je niet?",
+    "timestamp": "821.500-826.000"
+  },
+  {
+    "audioId": "20d130v0",
+    "spriteId": "1341",
+    "offset": -0.631,
+    "duration": 3.0,
+    "text": "Goed zo. We mogen de accu niet vergeten.",
+    "timestamp": "826.500-829.500"
+  },
+  {
+    "audioId": "20d130v0",
+    "spriteId": "1341",
+    "offset": 2.869,
+    "duration": 4.5,
+    "text": "Als je een elektrische motor hebt, levert de accu de nodige stroom.",
+    "timestamp": "830.000-834.500"
+  },
+  {
+    "audioId": "20d130v0",
+    "spriteId": "1341",
+    "offset": 7.869,
+    "duration": 3.5,
+    "text": "De accu moet naast de wielen staan, in de buurt van de motor.",
+    "timestamp": "835.000-838.500"
+  },
+  {
+    "audioId": "20d131v0",
+    "spriteId": "1342",
+    "offset": -0.053,
+    "duration": 4.0,
+    "text": "Een stuurwiel van een Formule 1-wagen, voor snelle ritten.",
+    "timestamp": "839.500-843.500"
+  },
+  {
+    "audioId": "20d132v0",
+    "spriteId": "1343",
+    "offset": -0.371,
+    "duration": 3.0,
+    "text": "Een laadbak die kan kiepen, te gek!",
+    "timestamp": "844.000-847.000"
+  },
+  {
+    "audioId": "20d134v0",
+    "spriteId": "1344",
+    "offset": -0.494,
+    "duration": 2.0,
+    "text": "Een goed stuurwiel.",
+    "timestamp": "847.500-849.500"
+  },
+  {
+    "audioId": "20d135v0",
+    "spriteId": "1345",
+    "offset": -0.422,
+    "duration": 2.5,
+    "text": "Mijn speciale motorkap.",
+    "timestamp": "850.000-852.500"
+  },
+  {
+    "audioId": "20d136v0",
+    "spriteId": "1346",
+    "offset": -0.386,
+    "duration": 4.5,
+    "text": "Deze motor heeft geen benzine nodig, hij werkt op elektriciteit.",
+    "timestamp": "853.000-857.500"
+  },
+  {
+    "audioId": "20d136v0",
+    "spriteId": "1346",
+    "offset": 4.614,
+    "duration": 4.0,
+    "text": "Je kunt hem zetten waar je maar wilt, voorin of achterin.",
+    "timestamp": "858.000-862.000"
+  },
+  {
+    "audioId": "20d137v0",
+    "spriteId": "1347",
+    "offset": -0.698,
+    "duration": 3.0,
+    "text": "Een paar trommelremmen, ook prima spul.",
+    "timestamp": "862.500-865.500"
+  },
+  {
+    "audioId": "20d137v0",
+    "spriteId": "1347",
+    "offset": 2.302,
+    "duration": 4.0,
+    "text": "Als de trommels tegen de remvoering duwen, stopt de auto.",
+    "timestamp": "865.500-869.500"
+  },
+  {
+    "audioId": "20d137v0",
+    "spriteId": "1347",
+    "offset": 6.802,
+    "duration": 4.5,
+    "text": "En vergeet niet, eerst de remmen monteren, en dan pas de wielen.",
+    "timestamp": "870.000-874.500"
+  },
+  {
+    "audioId": "20d138v0",
+    "spriteId": "1348",
+    "offset": -0.731,
+    "duration": 5.5,
+    "text": "Een kleine lichte accu, te monteren in de buurt van de motor, naast de wielen.",
+    "timestamp": "875.000-880.500"
+  },
+  {
+    "audioId": "20d139v0",
+    "spriteId": "1349",
+    "offset": -0.814,
+    "duration": 3.5,
+    "text": "Misschien kunnen we die skis gebruiken als bumper.",
+    "timestamp": "881.000-884.500"
+  },
+  {
+    "audioId": "20d140v0",
+    "spriteId": "1350",
+    "offset": -0.399,
+    "duration": 4.5,
+    "text": "Dat is een paar trommelremmen. Heb ik je al uitgelegd hoe trommelremmen werken?",
+    "timestamp": "885.000-889.500"
+  },
+  {
+    "audioId": "20d140v0",
+    "spriteId": "1350",
+    "offset": 4.601,
+    "duration": 4.5,
+    "text": "En ook voor trommelremmen geldt, eerst de remmetjes, en dan pas de wielen.",
+    "timestamp": "890.000-894.500"
+  },
+  {
+    "audioId": "20d141v0",
+    "spriteId": "1351",
+    "offset": -0.48,
+    "duration": 4.0,
+    "text": "Fantastisch, daar kun je veel mee bouwen.",
+    "timestamp": "895.000-899.000"
+  },
+  {
+    "audioId": "20d142v0",
+    "spriteId": "1352",
+    "offset": -0.351,
+    "duration": 3.0,
+    "text": "Geel, staat altijd elegant.",
+    "timestamp": "899.500-902.500"
+  },
+  {
+    "audioId": "20d143v0",
+    "spriteId": "1353",
+    "offset": -0.407,
+    "duration": 4.5,
+    "text": "Zeilen en een mast, dat kan van pas komen als de benzine op is.",
+    "timestamp": "903.000-907.500"
+  },
+  {
+    "audioId": "20d144v0",
+    "spriteId": "1354",
+    "offset": -0.632,
+    "duration": 6.0,
+    "text": "Een onderdeel van een ruimteschip met van die elegante vleugels, lekker hip!",
+    "timestamp": "908.000-914.000"
+  },
+  {
+    "audioId": "20d145v0",
+    "spriteId": "1355",
+    "offset": -0.339,
+    "duration": 6.0,
+    "text": "Ik heb een oom in Amerika die vliegtuigen bouwt, deze neus heb ik van hem gekregen.",
+    "timestamp": "914.500-920.500"
+  },
+  {
+    "audioId": "20d146v0",
+    "spriteId": "1356",
+    "offset": -0.627,
+    "duration": 3.5,
+    "text": "Een degelijke benzinetank, voor lange ritten.",
+    "timestamp": "921.000-924.500"
+  },
+  {
+    "audioId": "20d146v0",
+    "spriteId": "1356",
+    "offset": 3.373,
+    "duration": 5.0,
+    "text": "Je kunt hem zowel voorin als achterin monteren, en het liefst in de buurt van de wielen.",
+    "timestamp": "925.000-930.000"
+  },
+  {
+    "audioId": "20d147v0",
+    "spriteId": "1357",
+    "offset": -0.43,
+    "duration": 3.0,
+    "text": "Daarin bewaarde men vroeger bier.",
+    "timestamp": "930.500-933.500"
+  },
+  {
+    "audioId": "20d148v0",
+    "spriteId": "1358",
+    "offset": -0.515,
+    "duration": 1.5,
+    "text": "Een bumper.",
+    "timestamp": "934.000-935.500"
+  },
+  {
+    "audioId": "20d150v0",
+    "spriteId": "1359",
+    "offset": -0.225,
+    "duration": 4.5,
+    "text": "Stukken van oude vliegtuigen zijn volgens mij onverslijtbaar.",
+    "timestamp": "936.000-940.500"
+  },
+  {
+    "audioId": "20d151v0",
+    "spriteId": "1360",
+    "offset": -0.606,
+    "duration": 2.5,
+    "text": "Een naaimachine met pedalen.",
+    "timestamp": "941.000-943.500"
+  },
+  {
+    "audioId": "20d151v0",
+    "spriteId": "1360",
+    "offset": 2.394,
+    "duration": 5.5,
+    "text": "Als je dit als motor gebruikt, kun je jezelf op gang trappen, dat is nog gezond ook!",
+    "timestamp": "944.000-949.500"
+  },
+  {
+    "audioId": "20d152v0",
+    "spriteId": "1361",
+    "offset": -1.205,
+    "duration": 6.0,
+    "text": "De kassa van de dierentuin van Autostad krijgt een ereplaatsje op onze kar.",
+    "timestamp": "949.500-955.500"
+  },
+  {
+    "audioId": "20d153v0",
+    "spriteId": "1362",
+    "offset": -0.824,
+    "duration": 5.5,
+    "text": "Gebruik dit als neus voor je auto, dan heb je een mooi gestroomlijnde wagen.",
+    "timestamp": "956.000-961.500"
+  },
+  {
+    "audioId": "20d154v0",
+    "spriteId": "1363",
+    "offset": -0.766,
+    "duration": 3.5,
+    "text": "Tja, en waar wil je dat balkon monteren?",
+    "timestamp": "962.000-965.500"
+  },
+  {
+    "audioId": "20d155v0",
+    "spriteId": "1364",
+    "offset": -0.794,
+    "duration": 3.5,
+    "text": "Een hakblok, lekker veelzijdig.",
+    "timestamp": "966.000-969.500"
+  },
+  {
+    "audioId": "20d155v0",
+    "spriteId": "1364",
+    "offset": 3.206,
+    "duration": 3.5,
+    "text": "Je kunt erop zitten, maar je kunt het ook als wiel gebruiken.",
+    "timestamp": "970.000-973.500"
+  },
+  {
+    "audioId": "20d156v0",
+    "spriteId": "1365",
+    "offset": -0.702,
+    "duration": 2.5,
+    "text": "Dat is de toeter van een Ford T.",
+    "timestamp": "974.000-976.500"
+  },
+  {
+    "audioId": "20d157v0",
+    "spriteId": "1366",
+    "offset": -1.059,
+    "duration": 2.0,
+    "text": "Een degelijke accu.",
+    "timestamp": "976.500-978.500"
+  },
+  {
+    "audioId": "20d157v0",
+    "spriteId": "1366",
+    "offset": 1.441,
+    "duration": 5.5,
+    "text": "En onthou, een accu hoort in de buurt van de motor te zitten, naast de wielen.",
+    "timestamp": "979.000-984.500"
+  },
+  {
+    "audioId": "20d158v0",
+    "spriteId": "1367",
+    "offset": -0.624,
+    "duration": 4.5,
+    "text": "Tja, dat is zo'n kleine pruttelende ééncilinder tweetaktmotor.",
+    "timestamp": "985.000-989.500"
+  },
+  {
+    "audioId": "20d158v0",
+    "spriteId": "1367",
+    "offset": 4.376,
+    "duration": 3.0,
+    "text": "Je kunt hem zowel voorin als achterin de auto zetten.",
+    "timestamp": "990.000-993.000"
+  },
+  {
+    "audioId": "20d159v0",
+    "spriteId": "1368",
+    "offset": -0.782,
+    "duration": 4.0,
+    "text": "Vraaie velgen, geknipt voor een Amerikaan.",
+    "timestamp": "993.500-997.500"
+  },
+  {
+    "audioId": "20d160v0",
+    "spriteId": "1369",
+    "offset": -0.943,
+    "duration": 2.5,
+    "text": "Dubbele wielen, prima spul.",
+    "timestamp": "998.000-1000.500"
+  },
+  {
+    "audioId": "20d161v0",
+    "spriteId": "1370",
+    "offset": -1.041,
+    "duration": 3.5,
+    "text": "Ja, dat is echt prima spul.",
+    "timestamp": "1001.000-1004.500"
+  },
+  {
+    "audioId": "20d162v0",
+    "spriteId": "1371",
+    "offset": -0.846,
+    "duration": 3.5,
+    "text": "Ik dacht dat ik die oude spullen kwijt was.",
+    "timestamp": "1005.000-1008.500"
+  },
+  {
+    "audioId": "20d163v0",
+    "spriteId": "1372",
+    "offset": -0.703,
+    "duration": 3.5,
+    "text": "Je hebt daar prachtig materiaal gevonden.",
+    "timestamp": "1009.000-1012.500"
+  },
+  {
+    "audioId": "20d164v0",
+    "spriteId": "1373",
+    "offset": -0.41,
+    "duration": 2.5,
+    "text": "Heb je al eens met een vrachtwagen gereden?",
+    "timestamp": "1013.000-1015.500"
+  },
+  {
+    "audioId": "20d164v0",
+    "spriteId": "1373",
+    "offset": 2.59,
+    "duration": 2.5,
+    "text": "Dat is pas een heerlijk gevoel.",
+    "timestamp": "1016.000-1018.500"
+  },
+  {
+    "audioId": "20d165v0",
+    "spriteId": "1374",
+    "offset": -0.238,
+    "duration": 3.5,
+    "text": "Nee maar, de carrosserie van een Ferrari.",
+    "timestamp": "1019.000-1022.500"
+  },
+  {
+    "audioId": "20d166v0",
+    "spriteId": "1375",
+    "offset": -0.622,
+    "duration": 3.5,
+    "text": "In een vorig leven was dat een stofzuiger.",
+    "timestamp": "1023.000-1026.500"
+  },
+  {
+    "audioId": "20d166v0",
+    "spriteId": "1375",
+    "offset": 3.378,
+    "duration": 2.5,
+    "text": "Nu kun je hem gebruiken als uitlaat.",
+    "timestamp": "1027.000-1029.500"
+  },
+  {
+    "audioId": "20d167v0",
+    "spriteId": "1376",
+    "offset": -0.307,
+    "duration": 2.5,
+    "text": "De wielen van een kruiwagen.",
+    "timestamp": "1030.000-1032.500"
+  },
+  {
+    "audioId": "20d168v0",
+    "spriteId": "1377",
+    "offset": -0.686,
+    "duration": 5.0,
+    "text": "Moet je hier eens kijken, die ladder kan volgens mij goed van pas komen.",
+    "timestamp": "1032.500-1037.500"
+  },
+  {
+    "audioId": "20d169v0",
+    "spriteId": "1378",
+    "offset": -0.488,
+    "duration": 2.5,
+    "text": "Mooie oude rommel.",
+    "timestamp": "1038.000-1040.500"
+  },
+  {
+    "audioId": "20d170v0",
+    "spriteId": "1379",
+    "offset": -0.498,
+    "duration": 2.5,
+    "text": "Wat heb je nu allemaal gevonden?",
+    "timestamp": "1041.000-1043.500"
+  },
+  {
+    "audioId": "20d171v0",
+    "spriteId": "1380",
+    "offset": -0.501,
+    "duration": 4.5,
+    "text": "Wat leuk, je hebt spullen gevonden die ik al jaren kwijt was.",
+    "timestamp": "1044.000-1048.500"
+  },
+  {
+    "audioId": "20d172v0",
+    "spriteId": "1381",
+    "offset": -0.146,
+    "duration": 6.5,
+    "text": "Voor sommige mensen is dat afval, maar ik kan zowat alles opnieuw gebruiken en dat is goed voor het milieu.",
+    "timestamp": "1049.000-1055.500"
+  },
+  {
+    "audioId": "20d173v0",
+    "spriteId": "1382",
+    "offset": -0.511,
+    "duration": 2.0,
+    "text": "Mooie versiering.",
+    "timestamp": "1056.000-1058.000"
+  },
+  {
+    "audioId": "20d174v0",
+    "spriteId": "1383",
+    "offset": -0.344,
+    "duration": 5.0,
+    "text": "Ik vraag me af wat die spullen allemaal doorgemaakt hebben voor ze hier zijn beland.",
+    "timestamp": "1058.500-1063.500"
+  },
+  {
+    "audioId": "20d175v0",
+    "spriteId": "1384",
+    "offset": -0.089,
+    "duration": 3.0,
+    "text": "Waar is al die oude rommel eigenlijk heen?",
+    "timestamp": "1064.000-1067.000"
+  },
+  {
+    "audioId": "20d176v0",
+    "spriteId": "1385",
+    "offset": -0.082,
+    "duration": 1.5,
+    "text": "Een sofa.",
+    "timestamp": "1067.500-1069.000"
+  },
+  {
+    "audioId": "20d177v0",
+    "spriteId": "1386",
+    "offset": -0.153,
+    "duration": 4.5,
+    "text": "Dit is de voorkant van de oude racewagen van Jacky Nix.",
+    "timestamp": "1069.500-1074.000"
+  },
+  {
+    "audioId": "20d178v0",
+    "spriteId": "1387",
+    "offset": -0.451,
+    "duration": 4.0,
+    "text": "Vroeger was Jacky Nix een eerste klasse racepiloot.",
+    "timestamp": "1074.500-1078.500"
+  },
+  {
+    "audioId": "20d178v0",
+    "spriteId": "1387",
+    "offset": 4.049,
+    "duration": 3.0,
+    "text": "Daar staat de carrosserie van een van zijn auto's.",
+    "timestamp": "1079.000-1082.000"
+  },
+  {
+    "audioId": "20d179v0",
+    "spriteId": "1388",
+    "offset": 0.046,
+    "duration": 2.0,
+    "text": "Nou ja, eerste klasse.",
+    "timestamp": "1082.500-1084.500"
+  },
+  {
+    "audioId": "20d179v0",
+    "spriteId": "1388",
+    "offset": 2.546,
+    "duration": 2.0,
+    "text": "Tweede is eigenlijk juister.",
+    "timestamp": "1085.000-1087.000"
+  },
+  {
+    "audioId": "20d179v0",
+    "spriteId": "1388",
+    "offset": 4.546,
+    "duration": 2.5,
+    "text": "Jacky Nix heeft nooit een reis gewonnen.",
+    "timestamp": "1087.000-1089.500"
+  },
+  {
+    "audioId": "20d179v0",
+    "spriteId": "1388",
+    "offset": 7.546,
+    "duration": 3.0,
+    "text": "Eén keer werd hij tweede in die auto daar.",
+    "timestamp": "1090.000-1093.000"
+  },
+  {
+    "audioId": "20d180v0",
+    "spriteId": "1389",
+    "offset": -0.361,
+    "duration": 2.5,
+    "text": "Mooie velgen op die banden.",
+    "timestamp": "1093.500-1096.000"
+  },
+  {
+    "audioId": "20d133v0",
+    "spriteId": "1390",
+    "offset": 0.086,
+    "duration": 2.5,
+    "text": "Heb je al eens met een vrachtwagen gereden?",
+    "timestamp": "1096.500-1099.000"
+  },
+  {
+    "audioId": "20d133v0",
+    "spriteId": "1390",
+    "offset": 3.086,
+    "duration": 2.5,
+    "text": "Dat is pas een heerlijk gevoel.",
+    "timestamp": "1099.500-1102.000"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "audioId": "88d001v0",
+    "spriteId": "199",
+    "offset": -6.012,
+    "duration": 12.0,
+    "text": "Frambozensap, sap van blauwe bessen, aardbeiensap en fruitsap van zwarte bessen.",
+    "timestamp": "0.000-12.000"
+  },
+  {
+    "audioId": "88d001v0",
+    "spriteId": "199",
+    "offset": 5.988,
+    "duration": 3.0,
+    "text": "Hier hebben ze voor elke dorst wel een drankje.",
+    "timestamp": "12.000-15.000"
+  },
+  {
+    "audioId": "88d002v0",
+    "spriteId": "200",
+    "offset": -0.614,
+    "duration": 2.0,
+    "text": "Miel, we hebben een probleem.",
+    "timestamp": "15.000-17.000"
+  },
+  {
+    "audioId": "88d002v0",
+    "spriteId": "200",
+    "offset": 1.386,
+    "duration": 1.0,
+    "text": "De fruitsap is op.",
+    "timestamp": "17.000-18.000"
+  },
+  {
+    "audioId": "88d002v0",
+    "spriteId": "200",
+    "offset": 2.386,
+    "duration": 3.0,
+    "text": "Kun je mij een groot plezier doen en rap nog even wat neven halen?",
+    "timestamp": "18.000-21.000"
+  },
+  {
+    "audioId": "88d003v0",
+    "spriteId": "201",
+    "offset": -0.969,
+    "duration": 3.0,
+    "text": "Nou, ik zal mijn best doen.",
+    "timestamp": "21.000-24.000"
+  },
+  {
+    "audioId": "88d004v0",
+    "spriteId": "202",
+    "offset": -1.113,
+    "duration": 2.0,
+    "text": "Ja, natuurlijk.",
+    "timestamp": "24.000-26.000"
+  },
+  {
+    "audioId": "88d005v0",
+    "spriteId": "203",
+    "offset": -1.045,
+    "duration": 2.0,
+    "text": "Hartelijk bedankt.",
+    "timestamp": "26.000-28.000"
+  },
+  {
+    "audioId": "88d005v0",
+    "spriteId": "203",
+    "offset": 0.955,
+    "duration": 2.0,
+    "text": "Al dat fruitsap, jongens.",
+    "timestamp": "28.000-30.000"
+  },
+  {
+    "audioId": "88d005v0",
+    "spriteId": "203",
+    "offset": 2.955,
+    "duration": 1.0,
+    "text": "Fiesta maar.",
+    "timestamp": "30.000-31.000"
+  },
+  {
+    "audioId": "88d005v0",
+    "spriteId": "203",
+    "offset": 3.955,
+    "duration": 3.0,
+    "text": "Als dank krijg je mijn oude melkwagen.",
+    "timestamp": "31.000-34.000"
+  },
+  {
+    "audioId": "88d006v0",
+    "spriteId": "204",
+    "offset": -0.559,
+    "duration": 1.0,
+    "text": "Mooi zo.",
+    "timestamp": "34.000-35.000"
+  },
+  {
+    "audioId": "88d006v0",
+    "spriteId": "204",
+    "offset": 0.441,
+    "duration": 2.0,
+    "text": "Die komt goed van pas.",
+    "timestamp": "35.000-37.000"
+  }
+]

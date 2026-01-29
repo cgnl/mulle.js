@@ -1,0 +1,130 @@
+[
+  {
+    "audioId": "10e002v0",
+    "spriteId": "288",
+    "offset": -4.767,
+    "duration": 28.0,
+    "text": "Miel Monteur woont met zijn bokser Rivka aan de rand van het bos.",
+    "timestamp": "0.000-28.000"
+  },
+  {
+    "audioId": "10e005v0",
+    "spriteId": "289",
+    "offset": 9.857,
+    "duration": 4.0,
+    "text": "Achter een meer bij de bergen, helemaal aan het einde van de weg.",
+    "timestamp": "28.000-32.000"
+  },
+  {
+    "audioId": "10e005v0",
+    "spriteId": "289",
+    "offset": 20.857,
+    "duration": 8.0,
+    "text": "Miel is een vreemde vogel. Hij houdt alles bij. Apparaten, onderdelen en allerhande rommel.",
+    "timestamp": "39.000-47.000"
+  },
+  {
+    "audioId": "10e006v0",
+    "spriteId": "290",
+    "offset": -2.167,
+    "duration": 6.0,
+    "text": "Op een dag besluit Miel Monteur een auto te bouwen.",
+    "timestamp": "59.000-65.000"
+  },
+  {
+    "audioId": "10e006v0",
+    "spriteId": "290",
+    "offset": 3.833,
+    "duration": 5.0,
+    "text": "Hij wil naar het andere uiteinde van de weg rijden om te zien wat er daar te vinden is.",
+    "timestamp": "65.000-70.000"
+  },
+  {
+    "audioId": "10e006v0",
+    "spriteId": "290",
+    "offset": 8.833,
+    "duration": 8.0,
+    "text": "Want als de weg hier aan deze kant een einde heeft, dan moet er aan de andere kant toch ook een einde zijn, dacht Miel Monteur.",
+    "timestamp": "70.000-78.000"
+  },
+  {
+    "audioId": "10e006v0",
+    "spriteId": "290",
+    "offset": 16.833,
+    "duration": 3.0,
+    "text": "En dat wilde hij even gaan controleren.",
+    "timestamp": "78.000-81.000"
+  },
+  {
+    "audioId": "11d001v0",
+    "spriteId": "300",
+    "offset": -6.01,
+    "duration": 14.0,
+    "text": "Hallo, ik ben Miel Monteur. Wil jij me helpen om auto's te bouwen? Vul dan maar snel je naam in, dan kunnen we beginnen.",
+    "timestamp": "81.000-95.000"
+  },
+  {
+    "audioId": "11d001v0",
+    "spriteId": "300",
+    "offset": 7.99,
+    "duration": 5.0,
+    "text": "Als je al eerder auto's hebt gebouwd, klik dan op je naam in de lijst.",
+    "timestamp": "95.000-100.000"
+  },
+  {
+    "audioId": "11d002v0",
+    "spriteId": "301",
+    "offset": -0.539,
+    "duration": 6.0,
+    "text": "We gaan auto's bouwen. Vul snel je naam in, dan kunnen we naar de werkplaats gaan.",
+    "timestamp": "100.000-106.000"
+  },
+  {
+    "audioId": "11d003v0",
+    "spriteId": "302",
+    "offset": -0.586,
+    "duration": 6.0,
+    "text": "Hé, jij daar. Je moet eerst even je naam invullen voordat we kunnen beginnen, hoor.",
+    "timestamp": "106.000-112.000"
+  },
+  {
+    "audioId": "11d003v0",
+    "spriteId": "302",
+    "offset": 5.414,
+    "duration": 6.0,
+    "text": "Ik kan niet zomaar iedereen in mijn garage binnenlaten. Ik wil weten met wie ik te maken heb, hoor.",
+    "timestamp": "112.000-118.000"
+  },
+  {
+    "audioId": "11d004v0",
+    "spriteId": "303",
+    "offset": -0.792,
+    "duration": 6.0,
+    "text": "Wat een leuke spullen allemaal. Meenemen en bijhouden is mijn motto.",
+    "timestamp": "118.000-124.000"
+  },
+  {
+    "audioId": "11d005v0",
+    "spriteId": "304",
+    "offset": -0.949,
+    "duration": 5.0,
+    "text": "Als we eropuit willen trekken, moeten we nu beginnen te knutselen.",
+    "timestamp": "124.000-129.000"
+  },
+  {
+    "audioId": "11d006v0",
+    "spriteId": "305",
+    "offset": -0.813,
+    "duration": 5.0,
+    "text": "Vooruit, haast je toch eens wat, dan kunnen we aan de slag.",
+    "timestamp": "129.000-134.000"
+  },
+  {
+    "audioId": "11d008v0",
+    "spriteId": "307",
+    "offset": -3.738,
+    "duration": 10.0,
+    "text": "Wil je deze naam echt wissen? Er is geen plaats meer. Je moet eerst een naam wissen voordat je een nieuwe kunt invullen.",
+    "timestamp": "134.000-144.000"
+  }
+]

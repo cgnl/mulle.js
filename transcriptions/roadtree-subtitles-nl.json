@@ -1,0 +1,34 @@
+[
+  {
+    "audioId": "83d003v0",
+    "spriteId": "200",
+    "offset": 0.371,
+    "duration": 5.0,
+    "text": "Ah, verdorie, die motor is veel te zwak. Zo lukt dat nooit.",
+    "timestamp": "30.000-35.000"
+  },
+  {
+    "audioId": "83d007v0",
+    "spriteId": "202",
+    "offset": -2.388,
+    "duration": 6.0,
+    "text": "Wow, dat ging snel. Maar wat is dat daar?",
+    "timestamp": "36.000-42.000"
+  },
+  {
+    "audioId": "83d008v0",
+    "spriteId": "203",
+    "offset": 0.66,
+    "duration": 1.0,
+    "text": "Net wat ik nodig heb.",
+    "timestamp": "43.000-44.000"
+  },
+  {
+    "audioId": "83d009v0",
+    "spriteId": "204",
+    "offset": 0.089,
+    "duration": 7.0,
+    "text": "Wat een pech, er ligt een boom op de weg. Hier kan ik niet door.",
+    "timestamp": "45.000-52.000"
+  }
+]

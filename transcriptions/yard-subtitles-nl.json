@@ -1,0 +1,250 @@
+[
+  {
+    "audioId": "04d001v0",
+    "spriteId": "261",
+    "offset": 0.0,
+    "duration": 2.0,
+    "text": "Wat jammer! Geen post!",
+    "timestamp": "0.000-2.000"
+  },
+  {
+    "audioId": "04d013v0",
+    "spriteId": "272",
+    "offset": -0.052,
+    "duration": 7.0,
+    "text": "Kijk daar eens! Een pakje! Spannend! Ik ben dol op pakjes! Wat zou daar nou in zitten?",
+    "timestamp": "3.000-10.000"
+  },
+  {
+    "audioId": "04d014v0",
+    "spriteId": "273",
+    "offset": -0.568,
+    "duration": 5.0,
+    "text": "Nee maar! Er is een pakje gekomen! Wat leuk! Ik ben dol op pakjes!",
+    "timestamp": "11.000-16.000"
+  },
+  {
+    "audioId": "04d015v0",
+    "spriteId": "274",
+    "offset": -0.835,
+    "duration": 3.0,
+    "text": "Haha! Een pakje! Fantastisch!",
+    "timestamp": "17.000-20.000"
+  },
+  {
+    "audioId": "04d016v0",
+    "spriteId": "275",
+    "offset": -0.67,
+    "duration": 4.0,
+    "text": "Nee, de hele werkplaats ligt al vol met onderdelen!",
+    "timestamp": "21.000-25.000"
+  },
+  {
+    "audioId": "04d017v0",
+    "spriteId": "276",
+    "offset": -0.17,
+    "duration": 3.0,
+    "text": "Er is gewoon geen plaats voor nog meer spullen in de werkplaats!",
+    "timestamp": "26.000-29.000"
+  },
+  {
+    "audioId": "04d018v0",
+    "spriteId": "277",
+    "offset": -0.894,
+    "duration": 3.0,
+    "text": "Nu ligt de werkplaats propvol!",
+    "timestamp": "30.000-33.000"
+  },
+  {
+    "audioId": "04d020v0",
+    "spriteId": "279",
+    "offset": 0.097,
+    "duration": 4.0,
+    "text": "Kijk! Er is een brief gekomen! Maak hem maar snel open!",
+    "timestamp": "34.000-38.000"
+  },
+  {
+    "audioId": "04d021v0",
+    "spriteId": "280",
+    "offset": 0.195,
+    "duration": 3.0,
+    "text": "Leuk zeg! Staf heeft nieuwe spullen gebracht!",
+    "timestamp": "39.000-42.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 0.177,
+    "duration": 6.0,
+    "text": "Maak gebruik van onze gloednieuwe infrastructuur en stel je auto ten toon op de meest fantastische autoshow ter wereld!",
+    "timestamp": "43.000-49.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 7.177,
+    "duration": 6.0,
+    "text": "Alle auto's zijn welkom! Grote en kleine, hoge en lage, dikke en dunne, glanzende Amerikanen en roestige oude knarren!",
+    "timestamp": "50.000-56.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 13.177,
+    "duration": 4.0,
+    "text": "Kom en beproef je geluk! Hoeveel punten zal jouw auto krijgen?",
+    "timestamp": "56.000-60.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 18.177,
+    "duration": 4.0,
+    "text": "Hoe origineler, hoe specialer, hoe extravaganter, des te meer kans je maakt op een medaille!",
+    "timestamp": "61.000-65.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 23.177,
+    "duration": 4.0,
+    "text": "Hoe je onze autoshow kunt bereiken? Gewoon richting Noorden en dan altijd maar rechtdoor!",
+    "timestamp": "66.000-70.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 28.177,
+    "duration": 2.0,
+    "text": "Sla niet af naar Schrootland, want dan ben je mis!",
+    "timestamp": "71.000-73.000"
+  },
+  {
+    "audioId": "50d016v0",
+    "spriteId": "24",
+    "offset": 31.177,
+    "duration": 4.0,
+    "text": "Haast u, want er is maar een beperkt aantal plaatsen! Tot dan en alvast veel geluk!",
+    "timestamp": "74.000-78.000"
+  },
+  {
+    "audioId": "50d017v0",
+    "spriteId": "25",
+    "offset": -0.75,
+    "duration": 5.0,
+    "text": "Beste Miel! Heerbaar nodig ik u uit op de grootste freudzaap voor Afterworld bij mij.",
+    "timestamp": "79.000-84.000"
+  },
+  {
+    "audioId": "50d017v0",
+    "spriteId": "25",
+    "offset": 4.25,
+    "duration": 5.0,
+    "text": "Jacky Nix. Je weet me waarschijnlijk nog wel wonen, maar voor alle zekerheid leg ik het nog even uit.",
+    "timestamp": "84.000-89.000"
+  },
+  {
+    "audioId": "50d017v0",
+    "spriteId": "25",
+    "offset": 10.25,
+    "duration": 7.0,
+    "text": "Om naar mijn boerderij Villa de Roos te komen, rijd in de richting van de autoshow, Noortus, maar even voor de autoshow moet u links zakken.",
+    "timestamp": "90.000-97.000"
+  },
+  {
+    "audioId": "50d017v0",
+    "spriteId": "25",
+    "offset": 18.25,
+    "duration": 5.0,
+    "text": "Links, dat staat waar je op een duim rechts staat. Dan even rechtdoor en die is de Zuidstraat.",
+    "timestamp": "98.000-103.000"
+  },
+  {
+    "audioId": "50d017v0",
+    "spriteId": "25",
+    "offset": 24.25,
+    "duration": 3.0,
+    "text": "Ik hoop dat je kunt komen en dat je geen problemen met je auto hebt.",
+    "timestamp": "104.000-107.000"
+  },
+  {
+    "audioId": "50d017v0",
+    "spriteId": "25",
+    "offset": 28.25,
+    "duration": 2.0,
+    "text": "Grappig he! Tot binnenkort, uw vriend Jacky.",
+    "timestamp": "108.000-110.000"
+  },
+  {
+    "audioId": "50d021v0",
+    "spriteId": "29",
+    "offset": -0.629,
+    "duration": 5.0,
+    "text": "Liefste Miel, een ritje naar Vitamine-eiland zou je zeker goed doen.",
+    "timestamp": "111.000-116.000"
+  },
+  {
+    "audioId": "50d021v0",
+    "spriteId": "29",
+    "offset": 5.371,
+    "duration": 5.0,
+    "text": "Ik heb pruime taart voor je gebakken en ik zou zo graag nog eens accordion voor je spelen.",
+    "timestamp": "117.000-122.000"
+  },
+  {
+    "audioId": "50d021v0",
+    "spriteId": "29",
+    "offset": 11.371,
+    "duration": 3.0,
+    "text": "Je weet toch nog wel hoe je naar Vitamine-eiland moet rijden?",
+    "timestamp": "123.000-126.000"
+  },
+  {
+    "audioId": "50d021v0",
+    "spriteId": "29",
+    "offset": 15.371,
+    "duration": 3.0,
+    "text": "Voorbij de autoshow en dan de brug naar het eiland.",
+    "timestamp": "127.000-130.000"
+  },
+  {
+    "audioId": "50d021v0",
+    "spriteId": "29",
+    "offset": 19.371,
+    "duration": 4.0,
+    "text": "Lieve groetjes van Vicky. Ik wacht op je!",
+    "timestamp": "131.000-135.000"
+  },
+  {
+    "audioId": "50d022v0",
+    "spriteId": "30",
+    "offset": -1.689,
+    "duration": 17.0,
+    "text": "Aan alle autobouwers. Als u wilt testen wat de maximum snelheid van uw wagen is, of als u uw rijvaardigheid wilt bijschaven, kunt u zich, met uw voertuig uiteraard, aanmelden bij de racebaan De Pitstop, de snelste piste van Blauwater.",
+    "timestamp": "135.000-152.000"
+  },
+  {
+    "audioId": "50d022v0",
+    "spriteId": "30",
+    "offset": 16.311,
+    "duration": 4.0,
+    "text": "Snelle wagens en behendige chauffeurs maken kans op een medaille.",
+    "timestamp": "153.000-157.000"
+  },
+  {
+    "audioId": "50d022v0",
+    "spriteId": "30",
+    "offset": 21.311,
+    "duration": 4.0,
+    "text": "U kunt de racebaan bereiken door de hele tijd links te houden als u van het erf rijdt.",
+    "timestamp": "158.000-162.000"
+  },
+  {
+    "audioId": "50d022v0",
+    "spriteId": "30",
+    "offset": 25.311,
+    "duration": 7.0,
+    "text": "De directie herinnert u eraan dat u een ferryticket nodig hebt om tot bij de racebaan te geraken.",
+    "timestamp": "162.000-169.000"
+  }
+]

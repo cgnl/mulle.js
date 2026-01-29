@@ -1,0 +1,1 @@
+[#ObjectId: 9, #type: #rdest, #InnerRadius: 25, #OuterRadius: 45, #CustomObject:"", #DirResource: "85", #Sounds: ["31d016v0"], #FrameList: [#normal: ["31b014v0"], #Inner: ["31b014v0"], #Outer: ["31b014v0"]], #SetWhenDone:[#Cache:[#Dog, #GotDogOnce]], #CheckFor:[#Cache:[#GotDogOnce]], #IfFound:#NoDisplay, #SpriteInfo:[#Under:1]]

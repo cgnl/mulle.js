@@ -1,0 +1,1 @@
+[#ObjectId: 33, #type: #custom, #InnerRadius: 20, #OuterRadius: 0, #CustomObject:"Sound", #DirResource: "", #Sounds: [], #FrameList: [], #SetWhenDone:[], #CheckFor:[], #IfFound:#None, #SpriteInfo:[#Over:1]]

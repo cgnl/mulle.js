@@ -1,0 +1,348 @@
+{
+  "02.DXR": [
+    {
+      "offset": "0xf2fc",
+      "text": "MakeMulleSpeak"
+    }
+  ],
+  "03.DXR": [
+    {
+      "offset": "0xd0d5",
+      "text": "figgeClick"
+    },
+    {
+      "offset": "0x1754e",
+      "text": "checkFigge"
+    },
+    {
+      "offset": "0x175fc",
+      "text": "FiggeInterup"
+    },
+    {
+      "offset": "0x17643",
+      "text": "mouseOverMulle"
+    },
+    {
+      "offset": "0x1775b",
+      "text": "figgeIsComing"
+    },
+    {
+      "offset": "0x1779c",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x17878",
+      "text": "figgeBeenHere"
+    },
+    {
+      "offset": "0x17922",
+      "text": "mulleLayer"
+    },
+    {
+      "offset": "0x18267",
+      "text": "greetFigge"
+    },
+    {
+      "offset": "0x183b3",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x18472",
+      "text": "finishFigge"
+    },
+    {
+      "offset": "0x35a061",
+      "text": "6dziE9XuwTHh"
+    }
+  ],
+  "04.DXR": [
+    {
+      "offset": "0x8ca8",
+      "text": "mulleLayer"
+    },
+    {
+      "offset": "0x13528",
+      "text": "MulleCarTalk"
+    },
+    {
+      "offset": "0x14bc2",
+      "text": "mulleInCar"
+    },
+    {
+      "offset": "0x14bcd",
+      "text": "mulleStand"
+    },
+    {
+      "offset": "0x14e08",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x150f5",
+      "text": "setMulleSpeak"
+    },
+    {
+      "offset": "0x15111",
+      "text": "figgeBeenHere"
+    },
+    {
+      "offset": "0x1511f",
+      "text": "FiggeRemark"
+    },
+    {
+      "offset": "0x15b91",
+      "text": "figgeIsComing"
+    },
+    {
+      "offset": "0x21df9",
+      "text": "0startgiftstuffgarage12080305noCarXXXfenceoffroadBITD"
+    },
+    {
+      "offset": "0xfd5ce",
+      "text": "O5ssPstsOmPtOtsItsJtsPnOtnOOsPsOtssJOItOmOOIOIOIOIOO"
+    }
+  ],
+  "05.DXR": [
+    {
+      "offset": "0x3eeb0c",
+      "text": "utmOsOmOmOIOmOOIsOm"
+    },
+    {
+      "offset": "0x3efade",
+      "text": "IOssIOIHOmOOIOIIOIOIIOIOIOIOPI"
+    },
+    {
+      "offset": "0x3eff3c",
+      "text": "mOOIIOOIIOIIOs"
+    }
+  ],
+  "08.DXR": [
+    {
+      "offset": "0x145ae",
+      "text": "voor de auto"
+    },
+    {
+      "offset": "0x35bf5",
+      "text": "16,Lichtste auto medaille"
+    },
+    {
+      "offset": "0x360a6",
+      "text": "Lichtste auto medaille2ETR"
+    }
+  ],
+  "10.DXR": [
+    {
+      "offset": "0xd067",
+      "text": "ClickMulle"
+    },
+    {
+      "offset": "0x143d2",
+      "text": "in make mulle speak"
+    },
+    {
+      "offset": "0x14f8e",
+      "text": "autoFindSprites"
+    },
+    {
+      "offset": "0x15677",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x15813",
+      "text": "greetFigge"
+    },
+    {
+      "offset": "0x159e4",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x26c280",
+      "text": "autoFindSprites"
+    },
+    {
+      "offset": "0x26c969",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x26cb05",
+      "text": "greetFigge"
+    },
+    {
+      "offset": "0x26ccd6",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x2c1166",
+      "text": "FiggeLeave"
+    }
+  ],
+  "13.DXR": [
+    {
+      "offset": "0x5d11",
+      "text": "autoFindSprites"
+    }
+  ],
+  "83.DXR": [
+    {
+      "offset": "0x15990",
+      "text": "d utSitt2mulle pratPointPrat3PlingBilstartLeave"
+    }
+  ],
+  "87.DXR": [
+    {
+      "offset": "0x180c81",
+      "text": "kZIEOHGEVq"
+    }
+  ],
+  "88.DXR": [
+    {
+      "offset": "0x788d",
+      "text": "MulleSpegel"
+    },
+    {
+      "offset": "0x148ea",
+      "text": "lpMulle nekarJustDoItGranntackThingMulle tackLeaveDTIB"
+    }
+  ],
+  "92.DXR": [
+    {
+      "offset": "0x13274",
+      "text": "lpMulle nekarJustDoItJajamenssanGranntackThingMulle tackLeave"
+    }
+  ],
+  "00.CXT": [
+    {
+      "offset": "0x108f7",
+      "text": "MulleGlobals"
+    },
+    {
+      "offset": "0x1b7ae",
+      "text": "MulleGlobals"
+    },
+    {
+      "offset": "0x1cd9e",
+      "text": "Miel Monteur bouwt auto's"
+    },
+    {
+      "offset": "0x1cdc8",
+      "text": "Info over Miel Monteur"
+    },
+    {
+      "offset": "0x22201",
+      "text": "TDraw Mulles car. Set this behaviour to the first of 35 sprites reserved for the car"
+    },
+    {
+      "offset": "0x2519e",
+      "text": "For Figge:"
+    },
+    {
+      "offset": "0x2790d",
+      "text": "!PartId, 'Auto' or resource name:"
+    },
+    {
+      "offset": "0x289f2",
+      "text": "Play auto sounds:"
+    },
+    {
+      "offset": "0x29892",
+      "text": "MulleLjudTest"
+    },
+    {
+      "offset": "0x2ae7e",
+      "text": "getFiggeList"
+    },
+    {
+      "offset": "0x2aeda",
+      "text": "figgeIsComing"
+    },
+    {
+      "offset": "0x2aef9",
+      "text": "figgeBeenHere"
+    },
+    {
+      "offset": "0x2c758",
+      "text": "mulleLayer"
+    },
+    {
+      "offset": "0x2cfdc",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0xf519b",
+      "text": "PsOOsIOmOOIIOs"
+    },
+    {
+      "offset": "0xf5b33",
+      "text": "OPOsIIOIOmOOIIz"
+    },
+    {
+      "offset": "0xf6d46",
+      "text": "PIsOIIOIOsOIIOImOOIOIO"
+    },
+    {
+      "offset": "0xf70b0",
+      "text": "NIIsmOOIOt"
+    },
+    {
+      "offset": "0xf70de",
+      "text": "OIsIOIssOmOOIsOmssOss"
+    },
+    {
+      "offset": "0x3e78ce",
+      "text": "zvvplnstttpppmooiikknourqz"
+    },
+    {
+      "offset": "0x4a08f0",
+      "text": "Nieuwe auto"
+    }
+  ],
+  "CDDATA.CXT": [
+    {
+      "offset": "0x183f4d",
+      "text": "ziegqxyxuw"
+    },
+    {
+      "offset": "0x71a4da",
+      "text": "IOsOOsOtIPIOmOOI"
+    },
+    {
+      "offset": "0x71a739",
+      "text": "PtOstOOIOOmOOII"
+    },
+    {
+      "offset": "0x71e37a",
+      "text": "IOsOOsOtIPIOmOOI"
+    },
+    {
+      "offset": "0x71e5d9",
+      "text": "PtOstOOIOOmOOII"
+    },
+    {
+      "offset": "0x725905",
+      "text": "O6IOIOmtsstssIsJssJsntItssIstOmsmOOItstIIPmPstOmPmOIsPstm"
+    },
+    {
+      "offset": "0x72a0e7",
+      "text": "O6IOIOmtsstssIsJssJsntItssIstOmsmOOItstIIPmPstOmPmOIsPstm"
+    },
+    {
+      "offset": "0xb60c65",
+      "text": "xsqojkijkoyz"
+    },
+    {
+      "offset": "0x1d9f4c9",
+      "text": "zuspnmlkijknsy"
+    },
+    {
+      "offset": "0x1f5f448",
+      "text": "zielmlfZRVYgz"
+    },
+    {
+      "offset": "0x24fe47d",
+      "text": "xsqonkijkry"
+    },
+    {
+      "offset": "0x25cf668",
+      "text": "oziephjisinxeoolnrpfhjhttqwy"
+    }
+  ]
+}

@@ -1,0 +1,4252 @@
+{
+  "02.DXR": [
+    {
+      "offset": "0x63bd",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x7dda",
+      "text": "1E:\\Levande\\MulleMeck\\Dutch\\Movies\\Movies\\data.cst"
+    },
+    {
+      "offset": "0x8973",
+      "text": "MulleJunkAnimChart"
+    },
+    {
+      "offset": "0x8d2f",
+      "text": "MulleJunkBH"
+    },
+    {
+      "offset": "0xeca5",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xf2fc",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x18b96",
+      "text": "[#object: #Mulle, #frameListMember: \"MulleJunk\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"startH\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0x18cfa",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"startH\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #SendSp"
+    },
+    {
+      "offset": "0x18e52",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"startH\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #SendSp"
+    },
+    {
+      "offset": "0x18faa",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"startL\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #SendSp"
+    },
+    {
+      "offset": "0x19102",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"startL\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #SendSp"
+    },
+    {
+      "offset": "0x1925a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"startL\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #SendSp"
+    },
+    {
+      "offset": "0x195f2",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #SendSpriteMe"
+    },
+    {
+      "offset": "0x1e7ecb",
+      "text": "OsymOOIIrIrs{"
+    },
+    {
+      "offset": "0x204b48",
+      "text": "z|{vwspqkhfc`_]Z\\\\Y^]]`aagdgidkijkjjijngqpgrvmqzos"
+    },
+    {
+      "offset": "0x205e75",
+      "text": "uvmooilehgklqvy~"
+    },
+    {
+      "offset": "0x2d5e34",
+      "text": "}zsonjgfb`a`^[ZXVTSQPNKJKKIJKHHLMMPQSW[`fkpv}"
+    },
+    {
+      "offset": "0x2e0914",
+      "text": "yrkaYRLKIJKOU^is|"
+    },
+    {
+      "offset": "0x32c29e",
+      "text": "kzienYjk_nTZ^PdTXcO^UP]P_bXgX`h^pjkxl|uu"
+    },
+    {
+      "offset": "0x33bf1d",
+      "text": "~th]ZIEHCIMJFDHRZ_[[`gt"
+    },
+    {
+      "offset": "0x3a7284",
+      "text": "xrnkijkmnnmje`YSLD<4.,037>I[o"
+    },
+    {
+      "offset": "0x3c2b42",
+      "text": "~wymtskbeecbcRUPHQKIJKINSQY`bmttxrx{{"
+    }
+  ],
+  "03.DXR": [
+    {
+      "offset": "0xa02d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0xc90d",
+      "text": "GaragePortBH"
+    },
+    {
+      "offset": "0xc9b1",
+      "text": "MulleShopBH"
+    },
+    {
+      "offset": "0xd0d5",
+      "text": "figgeClick"
+    },
+    {
+      "offset": "0xd165",
+      "text": "interuptFiggeBH"
+    },
+    {
+      "offset": "0xd29d",
+      "text": "FiggeAnimChart"
+    },
+    {
+      "offset": "0xd343",
+      "text": "FiggeShopBH"
+    },
+    {
+      "offset": "0xd39d",
+      "text": "Figge_start"
+    },
+    {
+      "offset": "0x1754e",
+      "text": "checkFigge"
+    },
+    {
+      "offset": "0x175fc",
+      "text": "FiggeInterup"
+    },
+    {
+      "offset": "0x17611",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x17643",
+      "text": "mouseOverMulle"
+    },
+    {
+      "offset": "0x1775b",
+      "text": "figgeIsComing"
+    },
+    {
+      "offset": "0x1779c",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x17878",
+      "text": "figgeBeenHere"
+    },
+    {
+      "offset": "0x17922",
+      "text": "mulleLayer"
+    },
+    {
+      "offset": "0x18267",
+      "text": "greetFigge"
+    },
+    {
+      "offset": "0x183b3",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x18472",
+      "text": "finishFigge"
+    },
+    {
+      "offset": "0x1bffc",
+      "text": "[#object: #Custom, #frameListMember: \"Verkstad\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x1c160",
+      "text": "[#object: #Custom, #frameListMember: \"BuffaShop\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0x1c2c4",
+      "text": "[#object: #Custom, #frameListMember: \"Figge\", #movement: #Still, #customMovement: \"\", #firstFrame: \"figge_start\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x1e078",
+      "text": "[#object: #Custom, #frameListMember: \"Verkstad\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x1e1dc",
+      "text": "[#object: #Custom, #frameListMember: \"BuffaShop\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0x1e340",
+      "text": "[#object: #Custom, #frameListMember: \"Figge\", #movement: #Still, #customMovement: \"\", #firstFrame: \"figge_start\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x22f6a",
+      "text": "020407060812garageDTIBH"
+    },
+    {
+      "offset": "0x1ceb65",
+      "text": "nYKMIELC7>507?Qewzkb[XgsqndXPRZbp"
+    },
+    {
+      "offset": "0x1d617e",
+      "text": "}}{wwspspkijkfecbgebdggfhkmmklnrpqz"
+    },
+    {
+      "offset": "0x24d314",
+      "text": "c88Ll`N83CNT?,\"=OKG)-7OON:7AXcZIEP_wpbbdr"
+    },
+    {
+      "offset": "0x25afd4",
+      "text": "|vsrnlkjkhijjkkijkhfb_`bbcc`dgkortx|~~"
+    },
+    {
+      "offset": "0x28fe41",
+      "text": "mooiowk`g\\Sgq{"
+    },
+    {
+      "offset": "0x2b1a3f",
+      "text": "x|vqwtpohfhikijkiquuwuuy||ywvsxyx{|~"
+    },
+    {
+      "offset": "0x2d0e8d",
+      "text": "{{zvroid`]ZWTTSPONKIJKJKLNNQTX\\bhmr|"
+    },
+    {
+      "offset": "0x2f3f43",
+      "text": "}wm_TGDA;74421269<<>>;;:788;@FKNRV\\chmmmkijkiikoty||"
+    },
+    {
+      "offset": "0x302270",
+      "text": "yqsg_cZIE<354634?LITXYnuq|"
+    },
+    {
+      "offset": "0x303f56",
+      "text": "wipuirvng]fqbpaUtohm~m^f"
+    },
+    {
+      "offset": "0x311c54",
+      "text": "y{hjO4*:NYeYV`f^ZIECIGB?P]dps"
+    },
+    {
+      "offset": "0x3325c2",
+      "text": "}|xvxvvtorrrmmonjknklkijkkhijlijkklkjlllkmlnmnlnonlpppqrqrqssusuuwvwxxz|||}"
+    },
+    {
+      "offset": "0x35a061",
+      "text": "6dziE9XuwTHh"
+    },
+    {
+      "offset": "0x3a7276",
+      "text": "}{{xuwtqrpooollmlkllikkijkhimfincnmdnpctmkspprvpuyp{zt||w{|"
+    },
+    {
+      "offset": "0x418a41",
+      "text": "zxvtsqpnlmhjhhhiggfggehfhgfiehfhghihhhhhhikijkjkljnkqoqpqprwtvvxxzy|{"
+    },
+    {
+      "offset": "0x42b596",
+      "text": "{skikqpombdY^^]kijkamhpoo"
+    },
+    {
+      "offset": "0x45034d",
+      "text": "}{vpljhhd_]YXYURNNNOMKIJKLLLKMNPQPPQSUWWYZ\\_`bcdgkmnopqrvwxwxz|}{{|~"
+    },
+    {
+      "offset": "0x47ed95",
+      "text": "lkreV@50AUTOVQQZZLEHD@FG?DQ[j~"
+    },
+    {
+      "offset": "0x47fe84",
+      "text": "suysoojkncdebbacfd^dgbghhkijkkjlnqvtssuyv"
+    },
+    {
+      "offset": "0x491224",
+      "text": "qg`nu^X^XXXQTSNSSMGEGGIHHLQUSNQUSWZOQS]mYRe[dpdaarctqamu"
+    },
+    {
+      "offset": "0x49dfdd",
+      "text": "|zuuxmooimksrn{uyzz"
+    },
+    {
+      "offset": "0x4b0dab",
+      "text": "{~zyuvnnedYYU\\agdefkkijknsszx|}"
+    },
+    {
+      "offset": "0x4b836f",
+      "text": "zurqpljfc`]YVSPNLIIGHHHHGHIKLLKIJKNPQSTVZ]^aceefefhlorgilv"
+    },
+    {
+      "offset": "0x51c392",
+      "text": "wd[^emielrxzw{y{"
+    },
+    {
+      "offset": "0x58171f",
+      "text": "ziec]blrwyrnjhjx{~"
+    },
+    {
+      "offset": "0x5afe01",
+      "text": "}~mooibheejbtqswquwtz{ngj`^a^fdfia\\ltr"
+    },
+    {
+      "offset": "0x5eaa54",
+      "text": "~|zwwvtrnie`[XUSRRQQQQOOMLKIJKLNQUY\\`cfikmnoqrtuuvwwvwwxyz{|}|}||{zxwvuutttttsssssttvwy|~"
+    },
+    {
+      "offset": "0x601486",
+      "text": "|unf^UNKIJKIGC@>=>?@ABEINUZ^cfjmoppomkkkklloquz~"
+    },
+    {
+      "offset": "0x60733b",
+      "text": "}v{qgheeZiemxv|~"
+    },
+    {
+      "offset": "0x6227f3",
+      "text": "xqjedda^XQKIJKLJIHEDCEHLPRTTUWZ_begggffhknrvyz}"
+    },
+    {
+      "offset": "0x64b591",
+      "text": "zied^XXQLSTXckggdehsuw}"
+    },
+    {
+      "offset": "0x654c70",
+      "text": "~uqommigfebcegpwvrkijkjimtx~"
+    },
+    {
+      "offset": "0x66b1c7",
+      "text": "{yvpkeddeieihnprrqstvspkijklkjkntz"
+    },
+    {
+      "offset": "0x6a4ae3",
+      "text": "~~{}|{yyzyxttstrronmmmkijkjiiijhhiikkklmmorqqrtvxxyy{{~"
+    },
+    {
+      "offset": "0x6a4bd8",
+      "text": "{|{x}~yuuvxvspplilkihhhhe`_gigdcdilkijknqruwxwz{|"
+    },
+    {
+      "offset": "0x6d982d",
+      "text": "yvssnkijklmsvz{"
+    },
+    {
+      "offset": "0x719b1d",
+      "text": "}upklhfdfimic[[]bhjmooiegly"
+    },
+    {
+      "offset": "0x736fc7",
+      "text": "{wsomkijklnpswz}"
+    },
+    {
+      "offset": "0x7409cb",
+      "text": "ziejbRJF;-( $'"
+    },
+    {
+      "offset": "0x764dad",
+      "text": "}szkvytt`YYZieicbfbfhnuz}y~"
+    }
+  ],
+  "04.DXR": [
+    {
+      "offset": "0x8ca8",
+      "text": "mulleLayer"
+    },
+    {
+      "offset": "0x9319",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0xad36",
+      "text": "1E:\\Levande\\MulleMeck\\Dutch\\Movies\\Movies\\data.cst"
+    },
+    {
+      "offset": "0xbdcb",
+      "text": "MulleyardBH"
+    },
+    {
+      "offset": "0xbed1",
+      "text": "MulleCarBH"
+    },
+    {
+      "offset": "0xc5b9",
+      "text": "MulleCarAnimChart"
+    },
+    {
+      "offset": "0xc663",
+      "text": "MulleCarTalkAnimChart"
+    },
+    {
+      "offset": "0xce9b",
+      "text": "YrMulleAnimChart"
+    },
+    {
+      "offset": "0x13528",
+      "text": "MulleCarTalk"
+    },
+    {
+      "offset": "0x14bc2",
+      "text": "mulleInCar"
+    },
+    {
+      "offset": "0x14bcd",
+      "text": "mulleStand"
+    },
+    {
+      "offset": "0x14bef",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x14e08",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x150f5",
+      "text": "setMulleSpeak"
+    },
+    {
+      "offset": "0x15111",
+      "text": "figgeBeenHere"
+    },
+    {
+      "offset": "0x1511f",
+      "text": "FiggeRemark"
+    },
+    {
+      "offset": "0x15b91",
+      "text": "figgeIsComing"
+    },
+    {
+      "offset": "0x1b03c",
+      "text": "[#mediaName: \"garage\", #goToType: #marker]"
+    },
+    {
+      "offset": "0x1b188",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat"
+    },
+    {
+      "offset": "0x1b3f0",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"04a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path,"
+    },
+    {
+      "offset": "0x1b5e0",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"yr\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #"
+    },
+    {
+      "offset": "0x1b8ec",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat"
+    },
+    {
+      "offset": "0x1ba47",
+      "text": "![#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"yr\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: "
+    },
+    {
+      "offset": "0x1bb9f",
+      "text": "%[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"04a006v1\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path"
+    },
+    {
+      "offset": "0x1bd3c",
+      "text": "[#object: #Custom, #frameListMember: \"MulleCar\", #movement: #Wait, #customMovement: \"04a003v0\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x1bea4",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doWhat: #Send"
+    },
+    {
+      "offset": "0x1c004",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, #doWhat: #Sen"
+    },
+    {
+      "offset": "0x1d2ec",
+      "text": "[#mediaName: \"garage\", #goToType: #marker]"
+    },
+    {
+      "offset": "0x1d438",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat"
+    },
+    {
+      "offset": "0x1d6a0",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"04a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path,"
+    },
+    {
+      "offset": "0x1d890",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"yr\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #"
+    },
+    {
+      "offset": "0x1db9c",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat"
+    },
+    {
+      "offset": "0x1dcf8",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"yr\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #"
+    },
+    {
+      "offset": "0x1de50",
+      "text": "[#object: #Custom, #frameListMember: \"YrMulle\", #movement: #Custom, #customMovement: \"still\", #firstFrame: \"04a006v1\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path,"
+    },
+    {
+      "offset": "0x1dfec",
+      "text": "[#object: #Custom, #frameListMember: \"MulleCar\", #movement: #Wait, #customMovement: \"04a003v0\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x1e154",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doWhat: #Send"
+    },
+    {
+      "offset": "0x1e2b4",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, #doWhat: #Sen"
+    },
+    {
+      "offset": "0x21df9",
+      "text": "0startgiftstuffgarage12080305noCarXXXfenceoffroadBITD"
+    },
+    {
+      "offset": "0xfd5ce",
+      "text": "O5ssPstsOmPtOtsItsJtsPnOtnOOsPsOtssJOItOmOOIOIOIOIOO"
+    },
+    {
+      "offset": "0x10c09b",
+      "text": "uZIE>75EXjx"
+    },
+    {
+      "offset": "0x10c2ce",
+      "text": "qZIELPQZlxxqh^SPU^l"
+    },
+    {
+      "offset": "0x1c6e39",
+      "text": "~~wiff^VWUPMIELF8BFH>@>@EC=CFFKKJLNXX\\^gnppp"
+    },
+    {
+      "offset": "0x1ce3d7",
+      "text": "u{oukkkijkkkimpnw}"
+    },
+    {
+      "offset": "0x1d7e01",
+      "text": "tqkijklnu{"
+    },
+    {
+      "offset": "0x1db66a",
+      "text": "|vsolheb^\\XVQOONLLKIJKJJKMQTVX\\`cfhjnruxy{~"
+    },
+    {
+      "offset": "0x1f7b57",
+      "text": "`ZIEl[kZFSOqnqueba_nx"
+    },
+    {
+      "offset": "0x22140e",
+      "text": "{xwtrojhiiigbbdffedehkijkmsutvwz"
+    },
+    {
+      "offset": "0x2753be",
+      "text": "}xvnofb^X\\WW]T[^Zienuq"
+    },
+    {
+      "offset": "0x275832",
+      "text": "|wrojfa\\XVSNLKIJKIIIIJKMQSW[^afknqtvy{}"
+    },
+    {
+      "offset": "0x282336",
+      "text": "pZiE=Z68L?CbRSPEKIE@DMSilk"
+    },
+    {
+      "offset": "0x28c558",
+      "text": "}zieaXe]mfouuw{x|wvndsmnquvtzqtxtrrnkmhkbmmvuuqstklohjijjksvz|||y"
+    },
+    {
+      "offset": "0x2a6968",
+      "text": "ljf[`cZIEGBBNJGIE@JRU]fd]luz"
+    },
+    {
+      "offset": "0x2ab234",
+      "text": "pfriYfed]\\VWXFLXGPUOZVZieknotklxvroh|lommwomspnnssqrmvrupgnnjrki`jphuyi"
+    },
+    {
+      "offset": "0x2be3de",
+      "text": "dR_nzaHYjprRZiep"
+    },
+    {
+      "offset": "0x352b6c",
+      "text": "{yh`ZIEC:7;=BNXiry"
+    },
+    {
+      "offset": "0x368a41",
+      "text": "nX[epueYNMXfnaWWT[sziehmr}"
+    }
+  ],
+  "05.DXR": [
+    {
+      "offset": "0x148d1",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x27681",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x92310",
+      "text": "shbX[gmooib^ZVXbp{"
+    },
+    {
+      "offset": "0xed8b3",
+      "text": "~|{zywvvutsqomkijkosw{~"
+    },
+    {
+      "offset": "0xf8c2b",
+      "text": "~{xurpppnkijknu"
+    },
+    {
+      "offset": "0x132852",
+      "text": "|{{zxrlmonkijklkjhgijigffdaabacec`__^^\\XWWVUVVUVUUUVUSUUWYYYWVUUSPOMMOQRSVXXXXWXYY[[ZXXYZ[\\\\]_acddbbaacdfhhfeccfhjlprtsrtw{"
+    },
+    {
+      "offset": "0x1398fa",
+      "text": "}zyzxtsrrrnklmmkijkkmmjgefhfddeda`]YY\\]\\ZYYYYZYY[]_]\\Z[]\\^`bcfghjiggimrttrrqoprrrrpqssuvwzyz|~~}~}"
+    },
+    {
+      "offset": "0x145b39",
+      "text": "~tprxvkjpvtklvxvuotqfigge`^^fhdhmlotxzsz"
+    },
+    {
+      "offset": "0x155fe9",
+      "text": "~z{{tlkcXXVNKIJKNNMI?HONTSVXNJG>=?BDGHLROLN^e`dklmtrqrhgegonlnt}"
+    },
+    {
+      "offset": "0x1ebe34",
+      "text": "|vsqqqrtwwtpkijkostrnlnqrtstvwy{}~"
+    },
+    {
+      "offset": "0x1ef689",
+      "text": "~wtsw||zupkijkjfa^_adffdcdeeeca^\\_gossqkc__cmx"
+    },
+    {
+      "offset": "0x1f6a57",
+      "text": "xqptxytprwyujadpzzm^X`mqeQCFUcf[NKR^daWMKR\\dgd]TPS\\dhfb`bfhfb`chnplfdgkprqpruvtpkijkjgecdffdabflqsqnnsz}|wsrv~"
+    },
+    {
+      "offset": "0x210f6c",
+      "text": "zunmooidc\\^bchha][[]]^`]\\_bfkopuwtpg`XQTY]badjqy~"
+    },
+    {
+      "offset": "0x2306e3",
+      "text": "~|}|{yurnjec`^\\ZXWUQNKJIGFFFDA><::<=?><==>>>>@ABCCEFFILOONNQTWY[\\^_bdehjkmlkkllnpoonmlllmnnnopponnnmllllnnmmmqssqopnmlllkijkllmlmnmnptwyxvuuwz~"
+    },
+    {
+      "offset": "0x23445a",
+      "text": "{wtqnkfa^ZVRPKIFB?<:74347642220-*)))*+,--058887789;>CGJJJLOSW[_`_^_acehjlmjhfhjklkjijjijkllkjiihhjkkijkkjgffeefgikkjjiijjjjkjjkloqrrrrrrrtwyyyz|~"
+    },
+    {
+      "offset": "0x23f077",
+      "text": "}|{zwtqomnmljgec`_^]\\[ZYWTSSRPOQRPONOQRTTSUXYXXYXYYX[_acccdgjikkijklpttspmmpuxyzzxx{~"
+    },
+    {
+      "offset": "0x2433e8",
+      "text": "}zwuttvwvtrqqpppnkijkkjhecbcc`^\\]^^\\Z[ZYXWUTTTTTUXXVTRQPPPQPONLKLNOPPRSUX[^^^adgknpsvz~}"
+    },
+    {
+      "offset": "0x24e04f",
+      "text": "~}}~~}}|{zyyyxwutsqpppomlkklmmkijklmmlkkllmnnoppppopqqppqrssrrqponmnopppooonljjihijjjkkjijjkkkkjiiiklmnnmlmnqtwxxyyz{{}~"
+    },
+    {
+      "offset": "0x25c1b9",
+      "text": "}yurqnib]ZUQPRPOMJF@;7520120/.,-.-,*)+-.//258:<?@BEEILNQSWZZ]`bdfefghjmonoqpnkijknooppsuutrrrrpooonnmkjhhiheggfggihgdddegfeeedffefhghiimnorux|"
+    },
+    {
+      "offset": "0x25f67f",
+      "text": "~}}}}|zyxyzyxwvsrqrstttsrpnmlkjkmlkiiiihihggghhihgggeeedddfggggghhikkkkijklmoonnnnoppqrrssstttuvuuttsrsrrsuvwyzxutuwwwtstssvyyvtrqswz}"
+    },
+    {
+      "offset": "0x2617ce",
+      "text": "}zxwvuuvvtrpoonnnmkijklmligeb^\\^bdcbcefdeffcaacefgiigeccbbcefecbdhjjihhikmnnnmmnmmmorsrrrstttsuvwx{~"
+    },
+    {
+      "offset": "0x269734",
+      "text": "|{{{|{zywtstuvwwurppstsrpnlkijkklkhgghjlmljgfgijklljhijkkkkkkmprssrqqstwyzyxvuvy|}{yxxy{}"
+    },
+    {
+      "offset": "0x26d057",
+      "text": "~zxvuwxyxtpqtuvwvurpsvvwpjkijkjlkknmqsnkkkkihilpqnmjlqonnklnpqlhintxslmrtuurlkou||xrlnuz|{xx{|}zwx{{{{xxywtpqrtwxuprsuxwuuwyxwwwvuvvwwwvtrrssttuz}~"
+    },
+    {
+      "offset": "0x27f508",
+      "text": "~|xtsrnjd_^]ZWSQLHFEDDB?>>@ACCDDEEEFIJKLMNOSUWY[^__`adghhjkllkkmmkigiijiiijiijllkiijkkijkllklosuuw{"
+    },
+    {
+      "offset": "0x2b1b9e",
+      "text": "|wpknrsqollnpqrrrqrtqmjjklmpuvxxwtnjfffd`XQMNOQTXXWZ[]_^ZSKIJKMLMPU\\egdb`chfiqsomi`]``_^ckrvwwtv|"
+    },
+    {
+      "offset": "0x2e0520",
+      "text": "}zwyxtvvqmhhhfdaZUVWVROMIIFBBBEKNQSME????BB?9212116=CFEB@;8:=CILNRQRW_dgijlljiklkijkfed_Z]cfkruwyuolifgms{"
+    },
+    {
+      "offset": "0x2e21a6",
+      "text": "wsrolkrxz{ztkijkkjea]Z[[Z]b`\\XY\\[WVUSQOPQPQTSPOLJHFB>;:;;?@>?@?;;?DKSY[\\`ddefeghgknnlgfhhgedehkomihmx"
+    },
+    {
+      "offset": "0x2e4892",
+      "text": "~}}zuokknrttuspqrtx}~zwwvspnquvtrtne_YUSSUUTTUOFADJORRSSNIC><=?=740--*,27<=:6237>EHJJKIKSWX\\bipstutsqoosplkijkoru{|"
+    },
+    {
+      "offset": "0x2e59f0",
+      "text": "~yxwuux{ytnieb`]WPKNQOKHFEA<;747<<<<85/+)))*07:;<:8<BEFJNKIJKJGLX^_^_\\RLKLOT\\bhptvyvqmmpqnnprvsqqtz|~~|||~"
+    },
+    {
+      "offset": "0x2e707a",
+      "text": "~ti`_cc_]XUWYWSSTTTUTQNJJIHIHD@<94258;<;;:;;64<DKLJD<;=>?A?:8:=:66<ACHKIJKMMLOV]djnllpqstz"
+    },
+    {
+      "offset": "0x2e7bae",
+      "text": "zzxyzyzyxvrnprvz}zoe[VVZYSQRRUUOJEDECDFJLHFFFHKPSTRMHGDDD@BGJJJMLLOVbjiddghhhilkijkighjoy"
+    },
+    {
+      "offset": "0x2f5ab8",
+      "text": "~xrlfchjjhd^Z[^ba\\Z]_\\WPJIIMOOIB>?A@@>=??@CDDILMMIGJPSPQY\\_cfgd_\\^_^^a`]ZSQOOSUZ^`bejnqu}"
+    },
+    {
+      "offset": "0x3049ab",
+      "text": "yoe^ZUOKIJKKKMMKE>:4*)-27;<@A?BJPQPNMOMF@?CGJOW[XUSLA;603:;=?EOUTUVSQTVY_bcfeekonkinz"
+    },
+    {
+      "offset": "0x361f2b",
+      "text": "~}zwvuwy|}}|{zxusplkijkmopqrrsux{}~"
+    },
+    {
+      "offset": "0x3856e9",
+      "text": "|zzy{vvxxwwtpmkmkijkmoqv|"
+    },
+    {
+      "offset": "0x3eeb0c",
+      "text": "utmOsOmOmOIOmOOIsOm"
+    },
+    {
+      "offset": "0x3efade",
+      "text": "IOssIOIHOmOOIOIIOIOIIOIOIOIOPI"
+    },
+    {
+      "offset": "0x3eff3c",
+      "text": "mOOIIOOIIOIIOs"
+    },
+    {
+      "offset": "0x42ec4b",
+      "text": "p\\]cfhZIERYH>21?AB74>CFOY^jsoy"
+    },
+    {
+      "offset": "0x42f29a",
+      "text": "~zqxqqtmnhoquymjcTG?;9>D@CECLU^iw}zznfhdfjkijkelsv"
+    },
+    {
+      "offset": "0x4301ff",
+      "text": "xpkkrrmbVPJMSWUWUKIJKPX_a``_fnw"
+    },
+    {
+      "offset": "0x43b621",
+      "text": "}yxwrmhfgfec``accdedghklkkijkkkhggijkkkkmooppqsuvxzz|}}"
+    },
+    {
+      "offset": "0x445cf3",
+      "text": "}|z|}|wwuormlmklillknllmmljjgjkijklpqsrwvxyyz}}~~"
+    },
+    {
+      "offset": "0x47c386",
+      "text": "}~~vsuvyzqmkjjjheddchefgfcb``dehkijklnoportw{{}"
+    },
+    {
+      "offset": "0x4981bf",
+      "text": "z|xoupodfqlpllne_goedb_fi^bcmlqg^egxoehfosoniqyyrivkhxsyvgr|"
+    },
+    {
+      "offset": "0x498a4a",
+      "text": "~~}~~}{wutuutroppoonnmmlkijkklkkllmnpqsstvvxyyyyz}}"
+    },
+    {
+      "offset": "0x4b6cd9",
+      "text": "{xyussmnlkijkifiggidjfhggheiekijjklmnnrpprsqvquvtvwzx|x"
+    },
+    {
+      "offset": "0x4eafe2",
+      "text": "yoostrid_gglmooi_UV_t"
+    },
+    {
+      "offset": "0x4ebb5c",
+      "text": "wmqtofdnqe]gpm_Z_ldbksjimooipx"
+    },
+    {
+      "offset": "0x5028dd",
+      "text": "zieGTTL^h^Rn"
+    },
+    {
+      "offset": "0x51c7c1",
+      "text": "ysmkgca^ZUQNKIJKKLNOPSVY\\_bbcdcdehjlmooopqsuvxxxxyy{}~"
+    },
+    {
+      "offset": "0x551afe",
+      "text": "ziE>6=YTafr{"
+    },
+    {
+      "offset": "0x55f45e",
+      "text": "zx{uxuswstvqssprqppoqnommpnopnnnnnlmklkkkigjikjkijkomopmqrosprstuwwwy}}~"
+    },
+    {
+      "offset": "0x57259b",
+      "text": "|wpjc[UQLKKIJKNR[dlu|"
+    },
+    {
+      "offset": "0x57ae15",
+      "text": "lh]VQKRJBJEAEEOT\\ZZiebhch_dg\\__[jmrntvtpsplhejoiknsw"
+    },
+    {
+      "offset": "0x58421d",
+      "text": "okzie|{dg}o~jqqbm"
+    },
+    {
+      "offset": "0x5870e8",
+      "text": "a]_pnX\\Zie="
+    },
+    {
+      "offset": "0x58be07",
+      "text": "HZiebjedag{"
+    },
+    {
+      "offset": "0x5dce65",
+      "text": "~}yxvrostrqkidehjjhdbceghikijkoqrstw{}}}"
+    },
+    {
+      "offset": "0x624789",
+      "text": "}}{xyywvwusssutqoqqpmkmnmkijkihiihhhjkkiknoonoqsttvwwy{||{|}"
+    },
+    {
+      "offset": "0x65892d",
+      "text": "xwyzvsqrrpnjjlnonkijkkkhknpokiilstwrnlqxytts{{yww|z~}"
+    }
+  ],
+  "06.DXR": [
+    {
+      "offset": "0x48cd",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0xd341",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xf50ed",
+      "text": "~{{zywvtrrssqponmljihhhhhhhghhjkijkjlkikknnompsssuuwvvxxzy{x{{||x{}{"
+    },
+    {
+      "offset": "0xf6b0a",
+      "text": "}|zrjkme\\]\\SMOOIGGD@??;9::8;>;;?B@?DGKMORUY[^bfilqvx{"
+    },
+    {
+      "offset": "0xfed8e",
+      "text": "zsiec]_WcXV@GRVM>@CIMEH?GMOOIOSXZ\\_V]eokfiotxwxy"
+    },
+    {
+      "offset": "0x1873a0",
+      "text": "wqkijkpquyz|vrssxuoibaceknsz"
+    }
+  ],
+  "08.DXR": [
+    {
+      "offset": "0x47f9",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x61dc",
+      "text": "1E:\\Levande\\MulleMeck\\Dutch\\Movies\\Movies\\data.cst"
+    },
+    {
+      "offset": "0x8db1",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x145ae",
+      "text": "voor de auto"
+    },
+    {
+      "offset": "0x35bf5",
+      "text": "16,Lichtste auto medaille"
+    },
+    {
+      "offset": "0x360a6",
+      "text": "Lichtste auto medaille2ETR"
+    }
+  ],
+  "10.DXR": [
+    {
+      "offset": "0x944d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0xb863",
+      "text": "MulleShopBH"
+    },
+    {
+      "offset": "0xcdd7",
+      "text": "MulleLogBH"
+    },
+    {
+      "offset": "0xce5f",
+      "text": "MulleLogBodyBH"
+    },
+    {
+      "offset": "0xd067",
+      "text": "ClickMulle"
+    },
+    {
+      "offset": "0xdaeb",
+      "text": "MullePratAnimChart"
+    },
+    {
+      "offset": "0xe0d7",
+      "text": "MulleLoggAnimChart"
+    },
+    {
+      "offset": "0x11689",
+      "text": ",Autofind necessary sprites: (might be slow)"
+    },
+    {
+      "offset": "0x143d2",
+      "text": "in make mulle speak"
+    },
+    {
+      "offset": "0x14f8e",
+      "text": "autoFindSprites"
+    },
+    {
+      "offset": "0x1532c",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x15677",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x15813",
+      "text": "greetFigge"
+    },
+    {
+      "offset": "0x159e4",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x18e9e",
+      "text": "[#object: #Custom, #frameListMember: \"dig\", #movement: #Custom, #customMovement: \"dig\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x19025",
+      "text": "S[#object: #Custom, #frameListMember: \"dig\", #movement: #Custom, #customMovement: \"pull\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #do"
+    },
+    {
+      "offset": "0x191d9",
+      "text": "`[#object: #Custom, #frameListMember: \"dig\", #movement: #Custom, #customMovement: \"find\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #do"
+    },
+    {
+      "offset": "0x19362",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"look\", #firstFrame: \"doganim\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x194be",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"look\", #firstFrame: \"doganim\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x19682",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"SeeBattery\", #firstFrame: \"doganim\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none,"
+    },
+    {
+      "offset": "0x1981e",
+      "text": "[#object: #Custom, #frameListMember: \"MulleLogg\", #movement: #Still, #customMovement: \"\", #firstFrame: \"11a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #do"
+    },
+    {
+      "offset": "0x19986",
+      "text": "[#object: #Custom, #frameListMember: \"MullePrat\", #movement: #Still, #customMovement: \"\", #firstFrame: \"Mulleprat\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x19ae5",
+      "text": ":[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"sleep\", #firstFrame: \"11a002v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0x19ca9",
+      "text": "J[#AutoFind: 0, #RelativeSP: 1, #enterFieldSP: -8, #scrollerBehindSP: 0, #scrollerMidSP: 0, #scrollerUpSP: 0, #scrollerDownSP: 0, #arrowUpSP: 0, #arrowDownSP: 0, #draggerSP: 3, #trashSP: -7]"
+    },
+    {
+      "offset": "0x19f25",
+      "text": "~[#object: #Custom, #frameListMember: \"Dig\", #movement: #Custom, #customMovement: \"Throw\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x1a4c1",
+      "text": "G[#object: #Custom, #frameListMember: \"Battery\", #movement: #Custom, #customMovement: \"Battery\", #firstFrame: \"10a005v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #An"
+    },
+    {
+      "offset": "0x1a61d",
+      "text": "K[#object: #Custom, #frameListMember: \"battery\", #movement: #Custom, #customMovement: \"goback\", #firstFrame: \"10a005v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Ani"
+    },
+    {
+      "offset": "0x1aad6",
+      "text": "[#object: #Custom, #frameListMember: \"MullePrat\", #movement: #Still, #customMovement: \"\", #firstFrame: \"Mulleprat\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x1b1c2",
+      "text": "[#object: #Custom, #frameListMember: \"dig\", #movement: #Custom, #customMovement: \"dig\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x1b34a",
+      "text": "[#object: #Custom, #frameListMember: \"dig\", #movement: #Custom, #customMovement: \"pull\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doW"
+    },
+    {
+      "offset": "0x1b4fe",
+      "text": "[#object: #Custom, #frameListMember: \"dig\", #movement: #Custom, #customMovement: \"find\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doW"
+    },
+    {
+      "offset": "0x1b686",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"look\", #firstFrame: \"doganim\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x1b7e2",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"look\", #firstFrame: \"doganim\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x1b9a6",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"SeeBattery\", #firstFrame: \"doganim\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none,"
+    },
+    {
+      "offset": "0x1bb42",
+      "text": "[#object: #Custom, #frameListMember: \"MulleLogg\", #movement: #Still, #customMovement: \"\", #firstFrame: \"11a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #do"
+    },
+    {
+      "offset": "0x1bcaa",
+      "text": "[#object: #Custom, #frameListMember: \"MullePrat\", #movement: #Still, #customMovement: \"\", #firstFrame: \"Mulleprat\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x1be0a",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"sleep\", #firstFrame: \"11a002v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0x1bfce",
+      "text": "[#AutoFind: 0, #RelativeSP: 1, #enterFieldSP: -8, #scrollerBehindSP: 0, #scrollerMidSP: 0, #scrollerUpSP: 0, #scrollerDownSP: 0, #arrowUpSP: 0, #arrowDownSP: 0, #draggerSP: 3, #trashSP: -7]"
+    },
+    {
+      "offset": "0x1c24a",
+      "text": "[#object: #Custom, #frameListMember: \"Dig\", #movement: #Custom, #customMovement: \"Throw\", #firstFrame: \"10a004v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #do"
+    },
+    {
+      "offset": "0x1c7e6",
+      "text": "[#object: #Custom, #frameListMember: \"Battery\", #movement: #Custom, #customMovement: \"Battery\", #firstFrame: \"10a005v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Ani"
+    },
+    {
+      "offset": "0x1c942",
+      "text": "[#object: #Custom, #frameListMember: \"battery\", #movement: #Custom, #customMovement: \"goback\", #firstFrame: \"10a005v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim"
+    },
+    {
+      "offset": "0xc5570",
+      "text": "tnda_dfkijkjigaZSOOQWairz"
+    },
+    {
+      "offset": "0xca2fd",
+      "text": "~|zytspmmljijhkijkljklnmnnqquuvxxyz{z{}|~}"
+    },
+    {
+      "offset": "0xd8b97",
+      "text": "vssmiijkrtwtrqkgcb`dcgmkkjhimooiijifijosx||ztnokidghkqvyvusnkihgjmrwwvuvt}~yzyzwxy}"
+    },
+    {
+      "offset": "0x109e8a",
+      "text": "ztqkijkpu{~"
+    },
+    {
+      "offset": "0x10b159",
+      "text": "}||{{yxvwssqomkijkkoruxz}~"
+    },
+    {
+      "offset": "0x115afd",
+      "text": "ztmljjjjnkijkhkkmpx|"
+    },
+    {
+      "offset": "0x1486a8",
+      "text": "|wuqnjkijkkkmlgeghjgifd`YSSdormputuuswpxnttqlo{"
+    },
+    {
+      "offset": "0x16251d",
+      "text": "}|xrnkijklppsux|"
+    },
+    {
+      "offset": "0x175e77",
+      "text": "}yvsoolljjjikijknoquy|"
+    },
+    {
+      "offset": "0x176d98",
+      "text": "~|xsqomlkijkkmlmmoqsuz}"
+    },
+    {
+      "offset": "0x17bc59",
+      "text": "}zrpkijkntw{|~"
+    },
+    {
+      "offset": "0x18a7bb",
+      "text": "}yvtponnkkkijkjjjlmpsx}"
+    },
+    {
+      "offset": "0x26c280",
+      "text": "autoFindSprites"
+    },
+    {
+      "offset": "0x26c61e",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x26c969",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0x26cb05",
+      "text": "greetFigge"
+    },
+    {
+      "offset": "0x26ccd6",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x2c1166",
+      "text": "FiggeLeave"
+    },
+    {
+      "offset": "0x35893d",
+      "text": "|yz||ytroojkmnmlihhhhlmmmnjkijkmoqprorqptw{zyzxx{y~"
+    },
+    {
+      "offset": "0x5de8ec",
+      "text": "|phb^YQKIJKJGGHKLKKLOQPOPTY\\]^djrw|"
+    },
+    {
+      "offset": "0x5e60ad",
+      "text": "}ttpg]XX\\_[PMOOIB=>ACEFDHNOOPSSZ^^`ifhoolnsx|"
+    },
+    {
+      "offset": "0x5e6109",
+      "text": "zxwsmd`adaWNMOOIDACFHIGFLQQOOQSUWWX\\beiljntvx||"
+    },
+    {
+      "offset": "0x664e9f",
+      "text": "ziefWUQIID=50+**&\"$'*3;HMX]bjns}"
+    },
+    {
+      "offset": "0x6adff0",
+      "text": "ziEKT\\ulf\\ZPNZ\\_Z]]frwz"
+    },
+    {
+      "offset": "0x6b7b1e",
+      "text": "{vm[UZimooi`U="
+    }
+  ],
+  "12.DXR": [
+    {
+      "offset": "0x4dc5",
+      "text": "; Director application, Director will automatically include this font"
+    }
+  ],
+  "13.DXR": [
+    {
+      "offset": "0xf3d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x4825",
+      "text": ",Autofind necessary sprites: (might be slow)"
+    },
+    {
+      "offset": "0x5d11",
+      "text": "autoFindSprites"
+    },
+    {
+      "offset": "0x6185",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x6dbe",
+      "text": "[#AutoFind: 0, #RelativeSP: 1, #enterFieldSP: -5, #trashSP: 0, #scrollerBehindSP: -4, #scrollerMidSP: -3, #scrollerUpSP: 0, #scrollerDownSP: 0, #arrowUpSP: -2, #arrowDownSP: -1, #draggerSP: 0]"
+    },
+    {
+      "offset": "0x77fe",
+      "text": "[#AutoFind: 0, #RelativeSP: 1, #enterFieldSP: -5, #trashSP: 0, #scrollerBehindSP: -4, #scrollerMidSP: -3, #scrollerUpSP: 0, #scrollerDownSP: 0, #arrowUpSP: -2, #arrowDownSP: -1, #draggerSP: 0]"
+    },
+    {
+      "offset": "0x7f86",
+      "text": "[#AutoFind: 0, #RelativeSP: 1, #enterFieldSP: -5, #trashSP: 0, #scrollerBehindSP: -4, #scrollerMidSP: -3, #scrollerUpSP: 0, #scrollerDownSP: 0, #arrowUpSP: -2, #arrowDownSP: -1, #draggerSP: 0]"
+    }
+  ],
+  "18.DXR": [
+    {
+      "offset": "0x1ef1",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x593c",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x412a4",
+      "text": "ziemyzrWB37?JOJ>6,()7EQNC68AO\\fiecgfpz"
+    }
+  ],
+  "82.DXR": [
+    {
+      "offset": "0x4de9",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x878b",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xd0fb",
+      "text": "l[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xd290",
+      "text": "[#object: #Custom, #frameListMember: \"sitt\", #movement: #Custom, #customMovement: \"sitt\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #Anim, #doWhat: #G"
+    },
+    {
+      "offset": "0xd41b",
+      "text": "&[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xd56f",
+      "text": "*[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xd6c3",
+      "text": ".[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xd817",
+      "text": "2[#object: #Custom, #frameListMember: \"titt\", #movement: #Custom, #customMovement: \"suck\", #firstFrame: \"82a002v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #d"
+    },
+    {
+      "offset": "0xd973",
+      "text": ">[#object: #Custom, #frameListMember: \"Sitt\", #movement: #Custom, #customMovement: \"sitt\", #firstFrame: \"Sitt\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doWha"
+    },
+    {
+      "offset": "0xdb04",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xdc4f",
+      "text": "[[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"82d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doW"
+    },
+    {
+      "offset": "0xddab",
+      "text": "b[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xdf4f",
+      "text": "l[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xe0a3",
+      "text": "p[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xe1fb",
+      "text": "w[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xe3a0",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0xe660",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xe7e4",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"82d006v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xe944",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xea98",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xec20",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xeda8",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xef00",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xf024",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xf08c",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xf31b",
+      "text": ">[#object: #Custom, #frameListMember: \"WeakCar\", #movement: #Custom, #customMovement: \"svag\", #firstFrame: \"82a001v0\", #repeatIt: 1, #soundMember: \"82e001v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat"
+    },
+    {
+      "offset": "0xf487",
+      "text": "B[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xf5db",
+      "text": "F[#object: #Custom, #frameListMember: \"titt\", #movement: #Custom, #customMovement: \"suck\", #firstFrame: \"82a002v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #d"
+    },
+    {
+      "offset": "0xf78f",
+      "text": "P[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, "
+    },
+    {
+      "offset": "0xf8e3",
+      "text": "T[#object: #Custom, #frameListMember: \"help\", #movement: #Custom, #customMovement: \"help\", #firstFrame: \"82a002v0\", #repeatIt: 1, #soundMember: \"82d009v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0xfb58",
+      "text": "[#object: #Custom, #frameListMember: \"StrongCar\", #movement: #Custom, #customMovement: \"strong\", #firstFrame: \"82a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #An"
+    },
+    {
+      "offset": "0xfe64",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0xffb8",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0x1010c",
+      "text": "[#object: #Custom, #frameListMember: \"titt\", #movement: #Custom, #customMovement: \"suck\", #firstFrame: \"82a002v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #do"
+    },
+    {
+      "offset": "0x10268",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Custom, #customMovement: \"help\", #firstFrame: \"82a002v0\", #repeatIt: 1, #soundMember: \"82d009v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #s"
+    },
+    {
+      "offset": "0x10408",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10560",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0x10704",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0x109c4",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10b48",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"82d006v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0x10ca8",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10dfc",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10f84",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x1110c",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x11264",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x11388",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x113f0",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x11680",
+      "text": "[#object: #Custom, #frameListMember: \"WeakCar\", #movement: #Custom, #customMovement: \"svag\", #firstFrame: \"82a001v0\", #repeatIt: 1, #soundMember: \"82e001v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat:"
+    },
+    {
+      "offset": "0x117ec",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0x11940",
+      "text": "[#object: #Custom, #frameListMember: \"titt\", #movement: #Custom, #customMovement: \"suck\", #firstFrame: \"82a002v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #do"
+    },
+    {
+      "offset": "0x11af4",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0x11c48",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Custom, #customMovement: \"help\", #firstFrame: \"82a002v0\", #repeatIt: 1, #soundMember: \"82d009v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #s"
+    },
+    {
+      "offset": "0x11ebc",
+      "text": "[#object: #Custom, #frameListMember: \"StrongCar\", #movement: #Custom, #customMovement: \"strong\", #firstFrame: \"82a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #An"
+    },
+    {
+      "offset": "0x121c8",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0x1231c",
+      "text": "[#object: #Custom, #frameListMember: \"Moose\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"82a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0x12470",
+      "text": "[#object: #Custom, #frameListMember: \"titt\", #movement: #Custom, #customMovement: \"suck\", #firstFrame: \"82a002v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #do"
+    },
+    {
+      "offset": "0x125cc",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Custom, #customMovement: \"help\", #firstFrame: \"82a002v0\", #repeatIt: 1, #soundMember: \"82d009v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #s"
+    },
+    {
+      "offset": "0x15a55",
+      "text": "/startCantDoItMulle tvekarJustDoItMulletalkLeave"
+    },
+    {
+      "offset": "0xa5020",
+      "text": "~{y|{yusrlropqoomlgilpiplghmgjupmooimtpijuu{xv"
+    },
+    {
+      "offset": "0xa8bd6",
+      "text": "{vodcaWTXRT`cQ`mielomw"
+    },
+    {
+      "offset": "0xaeae1",
+      "text": "}~|zzwwusrpommmmlkkijkjmnnpoqqqstvyxyz|~~"
+    },
+    {
+      "offset": "0xc5c8d",
+      "text": "seejjgWDDOTOYryi`_SHJF>Mh{~sqqjijkqz|rge\\Q[hf`a[VXXSTafWHIMW[SD;@GHF>4/+,38<EMLGFC;@C:9BFHNWaa`hfZ]nw|"
+    },
+    {
+      "offset": "0xcc826",
+      "text": "~vpkijkikv"
+    },
+    {
+      "offset": "0xffaac",
+      "text": "ywleXPMKKIJKQWZ^^cekmpty"
+    },
+    {
+      "offset": "0x100b97",
+      "text": "~|qojgeeeUFIGGED>;@?=:348EHB@?JMHINZaeiimny"
+    }
+  ],
+  "83.DXR": [
+    {
+      "offset": "0x4e9d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x96fe",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xe21f",
+      "text": "Y[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xe664",
+      "text": "[#object: #Custom, #frameListMember: \"Weakcar\", #movement: #Still, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xe85f",
+      "text": "#[#object: #Custom, #frameListMember: \"spegel\", #movement: #Custom, #customMovement: \"in\", #firstFrame: \"spegel\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doW"
+    },
+    {
+      "offset": "0xe9bb",
+      "text": "'[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound,"
+    },
+    {
+      "offset": "0xeb73",
+      "text": "1[#object: #Custom, #frameListMember: \"Sitt\", #movement: #Custom, #customMovement: \"Sitt\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xecd3",
+      "text": "5[#object: #Buffa, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xee27",
+      "text": "9[#object: #Buffa, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFram"
+    },
+    {
+      "offset": "0xefc3",
+      "text": "I[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xf05f",
+      "text": "M[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextMarker, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xf347",
+      "text": "o[#object: #Custom, #frameListMember: \"spegel\", #movement: #Custom, #customMovement: \"in\", #firstFrame: \"spegel\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doW"
+    },
+    {
+      "offset": "0xf4a3",
+      "text": "s[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d006v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound,"
+    },
+    {
+      "offset": "0xf62f",
+      "text": "z[#object: #Custom, #frameListMember: \"Sitt\", #movement: #Custom, #customMovement: \"Sitt\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xf78f",
+      "text": "~[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xf8e4",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xfa9c",
+      "text": "[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Custom, #customMovement: \"Pek\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d007v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #so"
+    },
+    {
+      "offset": "0xfc04",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xfd58",
+      "text": "[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d008v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0xfeb8",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10098",
+      "text": "[#object: #Custom, #frameListMember: \"WeakCar\", #movement: #Custom, #customMovement: \"Svag\", #firstFrame: \"83a001v0\", #repeatIt: 1, #soundMember: \"83e001v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat:"
+    },
+    {
+      "offset": "0x10284",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"help\", #repeatIt: 1, #soundMember: \"83d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doW"
+    },
+    {
+      "offset": "0x103e0",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"help\", #repeatIt: 1, #soundMember: \"83d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doW"
+    },
+    {
+      "offset": "0x10984",
+      "text": "[#object: #Custom, #frameListMember: \"Weakcar\", #movement: #Still, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoN"
+    },
+    {
+      "offset": "0x10b80",
+      "text": "[#object: #Custom, #frameListMember: \"spegel\", #movement: #Custom, #customMovement: \"in\", #firstFrame: \"spegel\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x10cdc",
+      "text": "[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0x10e94",
+      "text": "[#object: #Custom, #frameListMember: \"Sitt\", #movement: #Custom, #customMovement: \"Sitt\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #do"
+    },
+    {
+      "offset": "0x10ff4",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0x11148",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0x112e4",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x11380",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextMarker, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x11668",
+      "text": "[#object: #Custom, #frameListMember: \"spegel\", #movement: #Custom, #customMovement: \"in\", #firstFrame: \"spegel\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x117c4",
+      "text": "[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d006v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0x11950",
+      "text": "[#object: #Custom, #frameListMember: \"Sitt\", #movement: #Custom, #customMovement: \"Sitt\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #do"
+    },
+    {
+      "offset": "0x11ab0",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x11c04",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x11dbc",
+      "text": "[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Custom, #customMovement: \"Pek\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d007v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #so"
+    },
+    {
+      "offset": "0x11f24",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x12078",
+      "text": "[#object: #Custom, #frameListMember: \"Spegel\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Spegel\", #repeatIt: 1, #soundMember: \"83d008v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0x121d8",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x123b8",
+      "text": "[#object: #Custom, #frameListMember: \"WeakCar\", #movement: #Custom, #customMovement: \"Svag\", #firstFrame: \"83a001v0\", #repeatIt: 1, #soundMember: \"83e001v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat:"
+    },
+    {
+      "offset": "0x125a4",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"help\", #repeatIt: 1, #soundMember: \"83d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doW"
+    },
+    {
+      "offset": "0x12700",
+      "text": "[#object: #Custom, #frameListMember: \"help\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"help\", #repeatIt: 1, #soundMember: \"83d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doW"
+    },
+    {
+      "offset": "0x15959",
+      "text": "estartCantDoItstillSittMulle svagWait & BackJustDoItTr"
+    },
+    {
+      "offset": "0x15990",
+      "text": "d utSitt2mulle pratPointPrat3PlingBilstartLeave"
+    },
+    {
+      "offset": "0xd2340",
+      "text": "~{y|{yusrlropqoomlgilpiplghmgjupmooimtpijuu{xv"
+    },
+    {
+      "offset": "0xd5ef6",
+      "text": "{vodcaWTXRT`cQ`mielomw"
+    },
+    {
+      "offset": "0xdf74e",
+      "text": "~uosppouropirvomjmooiwmdginrrnspnv"
+    },
+    {
+      "offset": "0xfac79",
+      "text": "xfZTT^d\\VUSSSRRRUX[_bec\\VTYdhikmooiba^XWZ`ehmpndYQQXZ[a`SOUWZ\\WSS\\ipsrjdeghjg`]cgcbmvux~"
+    },
+    {
+      "offset": "0x103f90",
+      "text": "~~ztw{zwwxvtutrpmkmqppuvpjkkijkhgijklllifdbcfhknmkjhhebdfeddefffimpnmkhdcgighkhhptuw}}{{yxvrruurqpqrprspoommqtuuwwtqproosvxwx|~|yy|yw{}|}~}{}}{{~"
+    },
+    {
+      "offset": "0x10ef71",
+      "text": "}rjlh^Z]bdccaWKIJKPVX[\\\\]]Z]a]TNJGLTVY_cbcdd]QMNPZfd_aa_bdb\\USV^dd\\VVQKNRX\\_ehd`fnrtvvsux{"
+    },
+    {
+      "offset": "0x121f8d",
+      "text": "{}|{}z|z{yxxywwxtwvvvvtusssrprqqppqnqoononmnnmnmmmmlljlikijkikiikigihhihjihhighffhfghghhfhghgjhhihghfghfggfgfgfgghhhjjilhljjkijjllkkjljiijjiijkjjihjihjgkjikjjmjmjlmmknljmkllkmkmkmmlooppoprrqsrtruuvvxw"
+    },
+    {
+      "offset": "0x123210",
+      "text": "}vspuxwuvtqqpliffdbbcba]\\_\\[WWROJHHJKMLI?855:@CJH?:94468=?BEFFC>;=999<=>IQTRKIFINTZ\\ajkijknoopsx{"
+    },
+    {
+      "offset": "0x12c4e9",
+      "text": "~ztqlkijkqz"
+    },
+    {
+      "offset": "0x1863d3",
+      "text": "xtspmnje`]YRRPMMLLHFGDFHHIKONMNKIJKKLPSUXXX\\^aejnqtvvwwy}"
+    }
+  ],
+  "84.DXR": [
+    {
+      "offset": "0x4d61",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x7770",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xbaf2",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xbc56",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xbdba",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xbf1e",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xc136",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xc1d2",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xc26e",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xc469",
+      "text": "'[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"84d001v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: "
+    },
+    {
+      "offset": "0xcb7a",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xccde",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xce42",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xcfa6",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xd1be",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xd25a",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xd2f6",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xdd4e",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xdeb2",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe016",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe17a",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xe392",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe42e",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe4ca",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe6c6",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"84d001v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0x5f581",
+      "text": "u~vrwnupmlmikijkhffmetoowr{z"
+    },
+    {
+      "offset": "0x5f704",
+      "text": "g{fmncpchlgpnppnslspkqilgikfkijknrrvz~{"
+    },
+    {
+      "offset": "0x6079b",
+      "text": "xzurqoqoppnjfhecc_``^\\\\d_bicfdchjkijkkoprvuvwxwvy|}||"
+    }
+  ],
+  "85.DXR": [
+    {
+      "offset": "0x4d89",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x7ce4",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xbfac",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xc110",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xc274",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xc3d8",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xc5f0",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"85e001v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #no"
+    },
+    {
+      "offset": "0xc954",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"85D002V0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0xd034",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xd198",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xd2fc",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xd460",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xd678",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"85e001v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #no"
+    },
+    {
+      "offset": "0xe208",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe36c",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe4d0",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe634",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xe84c",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"85e001v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #no"
+    },
+    {
+      "offset": "0xebb0",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"Talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"85D002V0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0xa8ee1",
+      "text": "xpmigc]ZUTRMMKIJKMLKNPTVX\\]adhiiorswvxyz}}~"
+    },
+    {
+      "offset": "0xad014",
+      "text": "|wof`ZWROMLLLKKIJKLMLLLLMMORUY\\`dksz"
+    },
+    {
+      "offset": "0xc6f04",
+      "text": "~zwutrple_XSPNMLKIJKMQTX[^``````a`^\\ZXY\\`eiloty"
+    }
+  ],
+  "86.DXR": [
+    {
+      "offset": "0x4e4d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x92fd",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xd717",
+      "text": "'[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xd857",
+      "text": "+[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWhat: #Go"
+    },
+    {
+      "offset": "0xd9d3",
+      "text": "i[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d004v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWhat: #Go"
+    },
+    {
+      "offset": "0xdb83",
+      "text": "v[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xdd30",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xde70",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xe018",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d006v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #sound, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xe193",
+      "text": "8[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xe2d3",
+      "text": "@[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xe413",
+      "text": "{[#object: #Mulle, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #doWhat: #GoNextFram"
+    },
+    {
+      "offset": "0xe5f0",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xe8d0",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"86d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0xea3c",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xebff",
+      "text": ")[#object: #Custom, #frameListMember: \"Cat\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextF"
+    },
+    {
+      "offset": "0xed43",
+      "text": "-[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"GetDown\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"86e004v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Anim, "
+    },
+    {
+      "offset": "0xeea3",
+      "text": "1[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"FinalDown\", #firstFrame: \"86a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim"
+    },
+    {
+      "offset": "0xf003",
+      "text": "5[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"IntoArms\", #firstFrame: \"86a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim,"
+    },
+    {
+      "offset": "0xf163",
+      "text": "9[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"ArmsUp\", #firstFrame: \"86a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0xf4d8",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xf620",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xf774",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0xf8c4",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xfa0c",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0xfb5c",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xfca4",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xfdec",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xff34",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d005v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x10084",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFr"
+    },
+    {
+      "offset": "0x103d0",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0x10510",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0x10650",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0x1082c",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0x10b0c",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"86d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0x10c78",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"Wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x10e3c",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFr"
+    },
+    {
+      "offset": "0x10f80",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"GetDown\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"86e004v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Anim, #"
+    },
+    {
+      "offset": "0x110e0",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"FinalDown\", #firstFrame: \"86a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim,"
+    },
+    {
+      "offset": "0x11240",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"IntoArms\", #firstFrame: \"86a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim, "
+    },
+    {
+      "offset": "0x113a0",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Custom, #customMovement: \"ArmsUp\", #firstFrame: \"86a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x11714",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x1185c",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x119b0",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x11b00",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x11c48",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x11d98",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x11ee0",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x12028",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x12170",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"86d005v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x122c0",
+      "text": "[#object: #Custom, #frameListMember: \"Cat\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFr"
+    },
+    {
+      "offset": "0x13865f",
+      "text": "j\\YgiSclv`V]ZIEPTIKRUHIGO@FIPLJRQUT[]_cfor|"
+    },
+    {
+      "offset": "0x15ff0d",
+      "text": "xoeWPMVhjZIEPUXWX[elhfmv"
+    },
+    {
+      "offset": "0x176913",
+      "text": "~|{xxurqmnnnmkijknpoqpsuwy{|}"
+    },
+    {
+      "offset": "0x18c577",
+      "text": "|vrlgdbbb`_]]^`cfijmnptvyz{{yzyxxuspmkijkkmoosvz"
+    },
+    {
+      "offset": "0x1975bf",
+      "text": "~~~~~|}{|{nnxqzie"
+    },
+    {
+      "offset": "0x1cc965",
+      "text": "{xwuqjegggkkijkorrpquvxzyzxy|||}{ywuwyz{|yyyz~"
+    },
+    {
+      "offset": "0x1e260c",
+      "text": "|yuqnkijkosy~"
+    },
+    {
+      "offset": "0x1f9f94",
+      "text": "~}yxwusrqpnmlkijkijkhkijlhhjihjgjhifkhikinjkpiqmorprrrusutpyswvyuzxv~u|z~~y"
+    }
+  ],
+  "87.DXR": [
+    {
+      "offset": "0x1f15",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x51e3",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x83de",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 1, #soundMember: \"87d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound"
+    },
+    {
+      "offset": "0x8542",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0x869a",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x87ee",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x8942",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x8a96",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x8bea",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 1, #soundMember: \"87d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound"
+    },
+    {
+      "offset": "0x8d4e",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0x8ea6",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x8ffa",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x914e",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x92a2",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x93f6",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 1, #soundMember: \"87d005v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound"
+    },
+    {
+      "offset": "0x9629",
+      "text": ";[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x97b1",
+      "text": "F[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x9906",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Still, #customMovement: \"\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat"
+    },
+    {
+      "offset": "0x9a62",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"87d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0x9bca",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"vink\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x9d2e",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat:"
+    },
+    {
+      "offset": "0x9e86",
+      "text": "[#object: #Custom, #frameListMember: \"Saft\", #movement: #Custom, #customMovement: \"saft\", #firstFrame: \"87a001v0\", #repeatIt: 1, #soundMember: \"87e001v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #s"
+    },
+    {
+      "offset": "0xa6f5",
+      "text": "b[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xa9e9",
+      "text": "|[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xab3e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xac92",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xade6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xaf3a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"87d003v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xb096",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xb1e6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xb336",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xb48a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xb5de",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xb732",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"87d004v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xb88e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xb9da",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xbb2e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"87d006v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xbc8a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xbdda",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xbf66",
+      "text": "ovement: \"\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame, #movePathName: \"\", #toLoc: \"\", #nrOfSteps: 0, #pathRelati"
+    },
+    {
+      "offset": "0xc076",
+      "text": "[#object: #Custom, #frameListMember: \"Saft\", #movement: #Custom, #customMovement: \"saft\", #firstFrame: \"87a001v0\", #repeatIt: 1, #soundMember: \"87e001v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #s"
+    },
+    {
+      "offset": "0xc8e6",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"start\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0xcbda",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xcd2e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xce82",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xcfd6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xd12a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"87d003v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xd286",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xd3d6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xd526",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xd67a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xd7ce",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xd922",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"87d004v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xda7e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xdbca",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xdd1e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"87d006v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xde7a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xdfca",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xec588",
+      "text": "cWQQb]LT^@=I4COaPD4:O^\\JHBZieTUZfxyoonw"
+    },
+    {
+      "offset": "0x177f32",
+      "text": "|zx{ysnkijkga`fmrqliikligiouzyvxy|~|y{{{}}"
+    },
+    {
+      "offset": "0x180c81",
+      "text": "kZIEOHGEVq"
+    }
+  ],
+  "88.DXR": [
+    {
+      "offset": "0x4e81",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x788d",
+      "text": "MulleSpegel"
+    },
+    {
+      "offset": "0x8507",
+      "text": "MulleAnimChart"
+    },
+    {
+      "offset": "0x9887",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xda9e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xdbf2",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"glad\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat:"
+    },
+    {
+      "offset": "0xdd4e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xdea6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xdffe",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"88d003v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0xe1c5",
+      "text": "?[#object: #Mulle, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: "
+    },
+    {
+      "offset": "0xe31d",
+      "text": "C[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"ledsen\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0xe47d",
+      "text": "X[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, #doWhat: #"
+    },
+    {
+      "offset": "0xe5c9",
+      "text": "\\[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"88d005v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0xe71d",
+      "text": "j[#object: #Custom, #frameListMember: \"Slang\", #movement: #Custom, #customMovement: \"pump\", #firstFrame: \"88a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0xe881",
+      "text": "n[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #"
+    },
+    {
+      "offset": "0xe9d6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"88d006v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0xeb6e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xecc6",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xee0e",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Ledsen\", #repeatIt: 1, #soundMember: \"88d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #soun"
+    },
+    {
+      "offset": "0xefa6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #doWhat: #G"
+    },
+    {
+      "offset": "0xf132",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #doWhat: #G"
+    },
+    {
+      "offset": "0xf28e",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"ledsen\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xf422",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"ledsen\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xf5b2",
+      "text": "[#object: #Custom, #frameListMember: \"POJK3\", #movement: #Custom, #customMovement: \"WAIT\", #firstFrame: \"POJK3\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0xf6da",
+      "text": "[#object: #Custom, #frameListMember: \"POJK2\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"POJK2\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xf89a",
+      "text": "[#object: #Custom, #frameListMember: \"Pojk1\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"Pojk1\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xfa86",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xfc81",
+      "text": ":[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xff72",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x100ca",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x10222",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"88d003v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0x103ea",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Still, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #"
+    },
+    {
+      "offset": "0x10542",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"ledsen\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0x106a2",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, #doWhat: #G"
+    },
+    {
+      "offset": "0x107ee",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"88d005v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0x10942",
+      "text": "[#object: #Custom, #frameListMember: \"Slang\", #movement: #Custom, #customMovement: \"pump\", #firstFrame: \"88a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x10aa6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x10bfa",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"88d006v0\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0x10d92",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x10eea",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0x11032",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"Ledsen\", #repeatIt: 1, #soundMember: \"88d002v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #soun"
+    },
+    {
+      "offset": "0x111ca",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #doWhat: #G"
+    },
+    {
+      "offset": "0x11356",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"MulleSpegel\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Path, #doWhat: #G"
+    },
+    {
+      "offset": "0x114b2",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"ledsen\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0x11646",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"ledsen\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0x117d6",
+      "text": "[#object: #Custom, #frameListMember: \"POJK3\", #movement: #Custom, #customMovement: \"WAIT\", #firstFrame: \"POJK3\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x118fe",
+      "text": "[#object: #Custom, #frameListMember: \"POJK2\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"POJK2\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x11abe",
+      "text": "[#object: #Custom, #frameListMember: \"Pojk1\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"Pojk1\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0x11caa",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x11ea6",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x148ea",
+      "text": "lpMulle nekarJustDoItGranntackThingMulle tackLeaveDTIB"
+    },
+    {
+      "offset": "0xef3ef",
+      "text": "|tokijknrv{"
+    },
+    {
+      "offset": "0xff118",
+      "text": "ytllb^afmooilp|}ztussppjklmqrvu|"
+    },
+    {
+      "offset": "0x13b02c",
+      "text": "~}xvrnokkijkjlkigecbcccba`a_bbcegijllkllnrrrrqsuuwxyz~"
+    },
+    {
+      "offset": "0x15d9eb",
+      "text": "~}}wvqwvrnonmiigbccaYY[`_\\Y\\aa[X\\```c_cdjkbjmooimxqwwt}~x|"
+    },
+    {
+      "offset": "0x173eb0",
+      "text": "ziemw}~toz"
+    }
+  ],
+  "89.DXR": [
+    {
+      "offset": "0x4d79",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x7ab1",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xd76f",
+      "text": "l[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xd8fb",
+      "text": "v[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xe0ec",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xe240",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xe398",
+      "text": "[#object: #Custom, #frameListMember: \"fire\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"89n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xe4f8",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xe650",
+      "text": "[#object: #Custom, #frameListMember: \"fire\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"89n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xe89f",
+      "text": "%[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe93b",
+      "text": ".[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextMarker, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe9eb",
+      "text": "2[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"89d007v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: "
+    },
+    {
+      "offset": "0xeb53",
+      "text": "6[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #"
+    },
+    {
+      "offset": "0xecb7",
+      "text": ":[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #"
+    },
+    {
+      "offset": "0xf148",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xf29c",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xf3f4",
+      "text": "[#object: #Custom, #frameListMember: \"fire\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"89n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xf554",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xf9a0",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0xfb2c",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x1031c",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10470",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x105c8",
+      "text": "[#object: #Custom, #frameListMember: \"fire\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"89n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x10728",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0x10880",
+      "text": "[#object: #Custom, #frameListMember: \"fire\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"89n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x10ad0",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x10b6c",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextMarker, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x10c1c",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"89d007v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0x10d84",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x10ee8",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe0f92",
+      "text": "umooimomoolqtrhjmjekrru{xtrqnostuyzwvvvsqqrrpprvwsrtrmooqvyyxxzywx{"
+    },
+    {
+      "offset": "0x13df84",
+      "text": "|zxvtrponmliihhiikjljkijkkkkkkmoqrsuuxyz{{}~"
+    },
+    {
+      "offset": "0x13fef2",
+      "text": "{umgbYUOLEEB@BDGFKIJKIIGGCCCCEHLOUZ^ciosvxyyyxwxyz|"
+    },
+    {
+      "offset": "0x1522d5",
+      "text": "\\^fZiE%.HMC[cIGK."
+    },
+    {
+      "offset": "0x15a7f5",
+      "text": "sxowpOZffdI@8EKB?=675/+(70<;3)*=@8?@GGLPENRZiea\\jnouw{"
+    }
+  ],
+  "90.DXR": [
+    {
+      "offset": "0x4d75",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x7a85",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xd407",
+      "text": "l[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xd593",
+      "text": "v[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xdd0c",
+      "text": "[#object: #Custom, #frameListMember: \"computer\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"90n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none"
+    },
+    {
+      "offset": "0xdea4",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xdf74",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe184",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"90d007v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0xe2ec",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xe450",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xed90",
+      "text": "[#object: #Custom, #frameListMember: \"computer\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"90n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none"
+    },
+    {
+      "offset": "0xef28",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xeff8",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xf208",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"90d007v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0xf660",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0xf7ec",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xff64",
+      "text": "[#object: #Custom, #frameListMember: \"computer\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"90n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none"
+    },
+    {
+      "offset": "0x100fc",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x101cc",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x103dc",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"90d007v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0x10544",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x106a8",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x70af7",
+      "text": "{rnmoqrqqrsuvsolkklkijklqz"
+    },
+    {
+      "offset": "0x729d3",
+      "text": "|yxsnmmmmkjihhfehlnnkigfdcegghhhjlkijkmpqtutw}"
+    },
+    {
+      "offset": "0x9555f",
+      "text": "|urrqonkijkilqssuwx{}"
+    },
+    {
+      "offset": "0xb5dae",
+      "text": "l]YU_daaRD</).259560&%!\"*9EJLMFHMQ]oz"
+    },
+    {
+      "offset": "0xb996b",
+      "text": "xw\\WZIEME/,2:45.+,5,),.$+27154:BVY[`os"
+    },
+    {
+      "offset": "0xce363",
+      "text": "~zzvqokijkiijijkkllnnrqrruw}~"
+    },
+    {
+      "offset": "0x1025a2",
+      "text": "hd`U]aZIEOL8:RL;GK?IJRWX_]Z[Viwpw"
+    },
+    {
+      "offset": "0x10630c",
+      "text": "{vrollkijkijiiggfhjllmoppsuvy{~"
+    },
+    {
+      "offset": "0x10b9de",
+      "text": "}~~zwwy|thejkkhhoqkebchgdfiggedgieedacilqrrrspoptyzwz|||yw{}ytuxz{yxxxwww{}~"
+    },
+    {
+      "offset": "0x13d684",
+      "text": "}zieinzxzusutwvxwunhhgqtyyxvsusxy}|{}"
+    },
+    {
+      "offset": "0x15791f",
+      "text": "}zuqmlgc_YVSRPNKIJKMMLLNPQRRRQSWX[]_bgknrvy~"
+    }
+  ],
+  "91.DXR": [
+    {
+      "offset": "0x4d6d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x79ab",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xd447",
+      "text": "l[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xd5d3",
+      "text": "v[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xdd0c",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xdd74",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xde94",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"91d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0xdffb",
+      "text": "![#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #"
+    },
+    {
+      "offset": "0xe15f",
+      "text": "%[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #"
+    },
+    {
+      "offset": "0xe640",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xed78",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xede0",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xef00",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"91d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0xf068",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xf1cc",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xf688",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0xf814",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xff4c",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xffb4",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #GoNextFrame, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x100d4",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"91d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0x1023c",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x103a0",
+      "text": "[#object: #Custom, #frameListMember: \"MuBil\", #movement: #Custom, #customMovement: \"wait\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0x970b3",
+      "text": "~~ytuwronnlkkjkhhkkijklnppswtvz|}"
+    },
+    {
+      "offset": "0xb0eda",
+      "text": "~wv|wqmlmooicchkb_iusfcilsslltvx}}~"
+    },
+    {
+      "offset": "0xc129a",
+      "text": "~}{zwusrpnmlljjihgfgggghjkkkijkmoqrsttvy|}~"
+    },
+    {
+      "offset": "0xce2f6",
+      "text": "}bZIEFBLTV^ghm"
+    },
+    {
+      "offset": "0x116dfd",
+      "text": "{xzxupkijkqv"
+    }
+  ],
+  "92.DXR": [
+    {
+      "offset": "0x34d5",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x67bd",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xb602",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xb776",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xb8f2",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xba66",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xbba6",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d004v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xbd22",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xbed5",
+      "text": "4[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xc029",
+      "text": "8[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xc17d",
+      "text": "Y[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d006v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWhat: #Go"
+    },
+    {
+      "offset": "0xc2c5",
+      "text": "k[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame"
+    },
+    {
+      "offset": "0xc43a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xc586",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xc9de",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"lookfront\", #firstFrame: \"04a003v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Ani"
+    },
+    {
+      "offset": "0xcb42",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"92d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0xccaa",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"vink\", #firstFrame: \"04a003v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xce0e",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"04a003v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat:"
+    },
+    {
+      "offset": "0xd0f6",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xd252",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xd3b2",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xd671",
+      "text": "([#object: #Custom, #frameListMember: \"neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d002v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0xd7c5",
+      "text": ",[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #G"
+    },
+    {
+      "offset": "0xd90d",
+      "text": "0[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d002v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0xda61",
+      "text": "4[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d005v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #d"
+    },
+    {
+      "offset": "0xdbb5",
+      "text": "8[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Custom, #customMovement: \"Blink\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xdd11",
+      "text": "<[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xdf26",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xe0da",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xe22e",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNe"
+    },
+    {
+      "offset": "0xe382",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d006v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWhat: #GoN"
+    },
+    {
+      "offset": "0xe4ca",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xe63e",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xe78a",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat: #GoNextFrame,"
+    },
+    {
+      "offset": "0xebe2",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"lookfront\", #firstFrame: \"04a003v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Ani"
+    },
+    {
+      "offset": "0xed46",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"04a003v0\", #repeatIt: 1, #soundMember: \"92d007v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #"
+    },
+    {
+      "offset": "0xeeae",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Custom, #customMovement: \"vink\", #firstFrame: \"04a003v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #d"
+    },
+    {
+      "offset": "0xf012",
+      "text": "[#object: #Custom, #frameListMember: \"Mubil\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"04a003v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #Path, #doWhat:"
+    },
+    {
+      "offset": "0xf2fa",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xf456",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xf5b6",
+      "text": "[#object: #Custom, #frameListMember: \"dog\", #movement: #Custom, #customMovement: \"wift\", #firstFrame: \"85a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doW"
+    },
+    {
+      "offset": "0xf876",
+      "text": "[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d002v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0xf9ca",
+      "text": "[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Wait, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWhat: #Go"
+    },
+    {
+      "offset": "0xfb12",
+      "text": "[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d002v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0xfc66",
+      "text": "[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"92d005v0\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #sound, #do"
+    },
+    {
+      "offset": "0xfdba",
+      "text": "[#object: #Custom, #frameListMember: \"Neighbour\", #movement: #Custom, #customMovement: \"Blink\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0xff16",
+      "text": "[#object: #Custom, #frameListMember: \"neighbour\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 1, #waitForWhat: #none, #doWh"
+    },
+    {
+      "offset": "0x13274",
+      "text": "lpMulle nekarJustDoItJajamenssanGranntackThingMulle tackLeave"
+    },
+    {
+      "offset": "0x1003ad",
+      "text": "npuukihpv_]`]Zielqsmxsrz~"
+    },
+    {
+      "offset": "0x11d476",
+      "text": "}|{zzz{{zywusqqprtuusqomkijklmmnoppqqpqpqqsuxz}"
+    },
+    {
+      "offset": "0x13c1b8",
+      "text": "rW>-(<YZIEE:244&"
+    },
+    {
+      "offset": "0x191c8f",
+      "text": "zskijkllfhgehb_acbabciou{~"
+    },
+    {
+      "offset": "0x1965cc",
+      "text": "tibxwtmX]YRRmOOINIATKG7GPK=GIHIDKLSOeSTSW]ljhgkvov|w|~"
+    }
+  ],
+  "93.DXR": [
+    {
+      "offset": "0x4d7d",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x7af1",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xdc7d",
+      "text": "l[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWha"
+    },
+    {
+      "offset": "0xdea2",
+      "text": "[#object: #Custom, #frameListMember: \"fish\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"93n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xe1cd",
+      "text": "T[#object: #Custom, #frameListMember: \"fish\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"93n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #"
+    },
+    {
+      "offset": "0xe2fa",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xe395",
+      "text": "Z[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #none, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xeeea",
+      "text": "[#object: #Custom, #frameListMember: \"fish\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"93n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xf216",
+      "text": "[#object: #Custom, #frameListMember: \"fish\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"93n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0xf342",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xf3de",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #none, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xfe9a",
+      "text": "[#object: #Buffa, #frameListMember: \"\", #movement: #Custom, #customMovement: \"getup\", #firstFrame: \"00a006v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #none, #doWhat"
+    },
+    {
+      "offset": "0x100be",
+      "text": "[#object: #Custom, #frameListMember: \"fish\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"93n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x103ea",
+      "text": "[#object: #Custom, #frameListMember: \"fish\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"93n001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #none, #d"
+    },
+    {
+      "offset": "0x10516",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 0, #waitFrames: \"\", #doWhat: #none, #soundName: \"\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0x105b2",
+      "text": "[#isPart: 1, #id: \"Auto\", #freq: 2, #waitFrames: \"Sound\", #doWhat: #none, #soundName: \"00e028v0\", #repeatSound: 0]"
+    },
+    {
+      "offset": "0xef95c",
+      "text": "{sqqqollnqtnjhjkijkr{"
+    },
+    {
+      "offset": "0x143ba1",
+      "text": "f_bZfwuwzie_QGBCGIW[\\VKC<856;?APSPQJEHCHPNV^bhjghgdelmoux{"
+    },
+    {
+      "offset": "0x14862e",
+      "text": "k}rziezu}}i"
+    },
+    {
+      "offset": "0x176c8c",
+      "text": "siqziensdblhadia[fgb`cjd]gsgfikyfpxuuz~|"
+    }
+  ],
+  "94.DXR": [
+    {
+      "offset": "0x4e05",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x794d",
+      "text": "MulleTurnAnimChart"
+    },
+    {
+      "offset": "0x8ea7",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0xe574",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"JudgeUp\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWhat"
+    },
+    {
+      "offset": "0xe6d8",
+      "text": "[#object: #Custom, #frameListMember: \"JudgeUp\", #movement: #Still, #customMovement: \"Talk\", #firstFrame: \"94a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0xe8c4",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"JudgeDown\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0xeab4",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"94d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xedeb",
+      "text": "\"[#object: #Custom, #frameListMember: \"MulleTurn\", #movement: #Custom, #customMovement: \"turn\", #firstFrame: \"00a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Ani"
+    },
+    {
+      "offset": "0xf12b",
+      "text": "C[#object: #Custom, #frameListMember: \"Thing\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"00e028v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound,"
+    },
+    {
+      "offset": "0xf353",
+      "text": "S[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"94a001v0\", #repeatIt: 1, #soundMember: \"94d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: "
+    },
+    {
+      "offset": "0xf5c4",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"JudgeUp\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWhat"
+    },
+    {
+      "offset": "0xf728",
+      "text": "[#object: #Custom, #frameListMember: \"JudgeUp\", #movement: #Still, #customMovement: \"Talk\", #firstFrame: \"94a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0xf914",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"JudgeDown\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0xfb04",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"94d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0xfe3c",
+      "text": "[#object: #Custom, #frameListMember: \"MulleTurn\", #movement: #Custom, #customMovement: \"turn\", #firstFrame: \"00a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim"
+    },
+    {
+      "offset": "0x10798",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"JudgeUp\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWhat"
+    },
+    {
+      "offset": "0x108fc",
+      "text": "[#object: #Custom, #frameListMember: \"JudgeUp\", #movement: #Still, #customMovement: \"Talk\", #firstFrame: \"94a001v0\", #repeatIt: 1, #soundMember: \"\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0x10ae8",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"JudgeDown\", #firstFrame: \"\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 0, #waitForWhat: #Anim, #doWh"
+    },
+    {
+      "offset": "0x10cd8",
+      "text": "[#object: #Mulle, #frameListMember: \"\", #movement: #Talk, #customMovement: \"\", #firstFrame: \"00a001v0\", #repeatIt: 1, #soundMember: \"94d009v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #sound, #doWh"
+    },
+    {
+      "offset": "0x11010",
+      "text": "[#object: #Custom, #frameListMember: \"MulleTurn\", #movement: #Custom, #customMovement: \"turn\", #firstFrame: \"00a001v0\", #repeatIt: 0, #soundMember: \"\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #Anim"
+    },
+    {
+      "offset": "0x11350",
+      "text": "[#object: #Custom, #frameListMember: \"Thing\", #movement: #Custom, #customMovement: \"blink\", #firstFrame: \"\", #repeatIt: 1, #soundMember: \"00e028v0\", #syncTalk: 0, #autoSound: 1, #waitForWhat: #sound, "
+    },
+    {
+      "offset": "0x11578",
+      "text": "[#object: #Custom, #frameListMember: \"Judge\", #movement: #Custom, #customMovement: \"talk\", #firstFrame: \"94a001v0\", #repeatIt: 1, #soundMember: \"94d003v0\", #syncTalk: 1, #autoSound: 0, #waitForWhat: #"
+    },
+    {
+      "offset": "0xaf280",
+      "text": "}xsojd`]YVSQNLKIJKMPPQRVY]bcegknrwxz|"
+    },
+    {
+      "offset": "0xc4864",
+      "text": "{zvvzunecdchff_`fbbbakfiggeeqqrosrvxzz~"
+    },
+    {
+      "offset": "0xcb714",
+      "text": "~yurlhfc^ZWUQMLKIJKJLNQTW^bfiosx}"
+    },
+    {
+      "offset": "0xcd2d0",
+      "text": "yytqoqsmmngbggdifgekijkoqmpsvx{"
+    },
+    {
+      "offset": "0xf746f",
+      "text": "wpiifjgWXYTLLWPKKIKIJKHKFAFLSPSZSNS^cagj`[\\dkqxvusmpy"
+    },
+    {
+      "offset": "0x12d02f",
+      "text": "~tmgd[TQNIEDDEGLMMPRPPX_^]`ca`ejkijkilrvxy|}"
+    },
+    {
+      "offset": "0x14fe01",
+      "text": "ynnlkijkjffmtj[[cf_UUaonmnu"
+    },
+    {
+      "offset": "0x157fc5",
+      "text": "r`n~ziedMM\\Q8:gx\\W[UQe"
+    },
+    {
+      "offset": "0x182a1c",
+      "text": "~|{xtxwootsmkmjeehighjgeefeehkijkkhhnqnotwwx{{z|"
+    },
+    {
+      "offset": "0x1adfe1",
+      "text": "*jtiulKTjjeovmszie"
+    },
+    {
+      "offset": "0x1df0da",
+      "text": "g\\Zdfmg_xziE'"
+    }
+  ],
+  "LBSTART.DXR": [
+    {
+      "offset": "0x2eb0",
+      "text": "tes met siLp = t]["
+    },
+    {
+      "offset": "0x2f40",
+      "text": "tes met dnRp= r odnaoc(m(tnupmetiLts"
+    },
+    {
+      "offset": "0x329c",
+      "text": "tes met ceRpst= teg orPaer(p,stcw ihuJhc"
+    },
+    {
+      "offset": "0x32f0",
+      "text": "tes met Rpce= stteg orPaer(ptc,smys (lobliP\"& \"es rt(gnicihwnuJh)))k"
+    },
+    {
+      "offset": "0x4353",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x2af66",
+      "text": "~{xuunnokijkoy|"
+    }
+  ],
+  "UNLOAD.DXR": [
+    {
+      "offset": "0x875",
+      "text": "; Director application, Director will automatically include this font"
+    },
+    {
+      "offset": "0x2251",
+      "text": "C:\\dok\\Mulle\\MvNoProt\\00.cst"
+    },
+    {
+      "offset": "0x2677",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x26e3",
+      "text": "C:\\dok\\Mulle\\MvNoProt"
+    },
+    {
+      "offset": "0x27a2",
+      "text": "C:\\dok\\Mulle\\MvNoProt"
+    },
+    {
+      "offset": "0x3017",
+      "text": "; Director application, Director will automatically include this font"
+    }
+  ],
+  "00.CXT": [
+    {
+      "offset": "0x108f7",
+      "text": "MulleGlobals"
+    },
+    {
+      "offset": "0x132f5",
+      "text": "MulleFreezeAnimChart"
+    },
+    {
+      "offset": "0x134d1",
+      "text": "MulleAnimChart"
+    },
+    {
+      "offset": "0x1b7ae",
+      "text": "MulleGlobals"
+    },
+    {
+      "offset": "0x1cd9e",
+      "text": "Miel Monteur bouwt auto's"
+    },
+    {
+      "offset": "0x1cdc8",
+      "text": "Info over Miel Monteur"
+    },
+    {
+      "offset": "0x1cde4",
+      "text": "c:\\transpos\\mielauto\\autos\\"
+    },
+    {
+      "offset": "0x22201",
+      "text": "TDraw Mulles car. Set this behaviour to the first of 35 sprites reserved for the car"
+    },
+    {
+      "offset": "0x2519e",
+      "text": "For Figge:"
+    },
+    {
+      "offset": "0x2790d",
+      "text": "!PartId, 'Auto' or resource name:"
+    },
+    {
+      "offset": "0x289f2",
+      "text": "Play auto sounds:"
+    },
+    {
+      "offset": "0x29892",
+      "text": "MulleLjudTest"
+    },
+    {
+      "offset": "0x2ae7e",
+      "text": "getFiggeList"
+    },
+    {
+      "offset": "0x2ae98",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x2aeda",
+      "text": "figgeIsComing"
+    },
+    {
+      "offset": "0x2aef9",
+      "text": "figgeBeenHere"
+    },
+    {
+      "offset": "0x2c758",
+      "text": "mulleLayer"
+    },
+    {
+      "offset": "0x2cfdc",
+      "text": "MakeMulleSpeak"
+    },
+    {
+      "offset": "0xf519b",
+      "text": "PsOOsIOmOOIIOs"
+    },
+    {
+      "offset": "0xf5b33",
+      "text": "OPOsIIOIOmOOIIz"
+    },
+    {
+      "offset": "0xf6d46",
+      "text": "PIsOIIOIOsOIIOImOOIOIO"
+    },
+    {
+      "offset": "0xf70b0",
+      "text": "NIIsmOOIOt"
+    },
+    {
+      "offset": "0xf70de",
+      "text": "OIsIOIssOmOOIsOmssOss"
+    },
+    {
+      "offset": "0x3c256d",
+      "text": "~|}{yyyvtux{yyzyywupopstrrqoqsqsvuuxxutttrmlkijkoqpnkkkjnsqnnkjihhilkhcadfc`begfc`]]_cfeeghgedhmqtrqstvtqsvvxy{|yvwyzyuruw{|xutvwuuy~"
+    },
+    {
+      "offset": "0x3d0c65",
+      "text": "|||{zxwvvvvvwxwtstttttttuuusqpppomoomkkjjjijlkijkoqpqrtvvttuvx{{{zz|}}}}~"
+    },
+    {
+      "offset": "0x3dfa72",
+      "text": "~|{yxxxwuqonooorqppokijklmopsttsqmnrsssqpqpopqtwwuussutsqonoppqrrvz{}{yzxuw{|~~{"
+    },
+    {
+      "offset": "0x3e206d",
+      "text": "}yyyz}|wvvssrljkijkigjlljjkknoprstw{}}||z}"
+    },
+    {
+      "offset": "0x3e78ce",
+      "text": "zvvplnstttpppmooiikknourqz"
+    },
+    {
+      "offset": "0x432d82",
+      "text": "~}|{|zwwwtqrsqppnnoonlkihhijkkijkkllmmlkjkklmopopprrrrsstvx{}~~~}{{|"
+    },
+    {
+      "offset": "0x4a08f0",
+      "text": "Nieuwe auto"
+    },
+    {
+      "offset": "0x4f3f51",
+      "text": "~qe`elnjhilkkjkijkotux~"
+    }
+  ],
+  "CDDATA.CXT": [
+    {
+      "offset": "0x5bcc5",
+      "text": "gMulleGlobals"
+    },
+    {
+      "offset": "0x5c61c",
+      "text": "[#UserId: \"\", #Car: [#Parts: [1,82,133,152], #Name: \"\", #Medals: [], #CacheList:[:]], #Junk: [], #NrOfBuiltCars: 0, #Saves: [], #CompletedMissions: [], #OwnStuff:[:], #myLastPile: 1, #gifts: [], #toYa"
+    },
+    {
+      "offset": "0x183f4d",
+      "text": "ziegqxyxuw"
+    },
+    {
+      "offset": "0x1e471c",
+      "text": "vqyziess`epx{"
+    },
+    {
+      "offset": "0x1ee3d8",
+      "text": "|yzz{{vwsvvstrrorjpinlmkijklmkkmjqmqjonlvprryu~z{{}|"
+    },
+    {
+      "offset": "0x2198fa",
+      "text": "|zxupmlkijkjfb`abdfhgecccdfhiihfeefjlnoonoqsvz}"
+    },
+    {
+      "offset": "0x23c03d",
+      "text": "|wspmkijknruy"
+    },
+    {
+      "offset": "0x25df99",
+      "text": "~jWKIJKVdjljnrpsqYU`z"
+    },
+    {
+      "offset": "0x274413",
+      "text": "zie[QTYWV]o"
+    },
+    {
+      "offset": "0x3193d4",
+      "text": "|y}|{zwzw{qoswsmmooifbhhqmefvsjpuqylypsu"
+    },
+    {
+      "offset": "0x31a7c5",
+      "text": "~|{xtrqnkijkkkkheda`_``aaaa`__`bcfijjnppqqsvz}~}|"
+    },
+    {
+      "offset": "0x32bf13",
+      "text": "xrnfZPKIJKID@;65658=>;:;97:>CGJMPQUWZ]aehlnnosuw|"
+    },
+    {
+      "offset": "0x56155c",
+      "text": "zieemutqd]ar"
+    },
+    {
+      "offset": "0x57d4b4",
+      "text": "zZIELW]bkx"
+    },
+    {
+      "offset": "0x62a6da",
+      "text": "}|vyuttnmkijklpoqttwwvvtsqmlheeda`_]^^_abbbebdebheedecidgegihnlosquvw{|~"
+    },
+    {
+      "offset": "0x687362",
+      "text": "~wsmjkijkmsx"
+    },
+    {
+      "offset": "0x71a4da",
+      "text": "IOsOOsOtIPIOmOOI"
+    },
+    {
+      "offset": "0x71a739",
+      "text": "PtOstOOIOOmOOII"
+    },
+    {
+      "offset": "0x71e37a",
+      "text": "IOsOOsOtIPIOmOOI"
+    },
+    {
+      "offset": "0x71e5d9",
+      "text": "PtOstOOIOOmOOII"
+    },
+    {
+      "offset": "0x725905",
+      "text": "O6IOIOmtsstssIsJssJsntItssIstOmsmOOItstIIPmPstOmPmOIsPstm"
+    },
+    {
+      "offset": "0x72a0e7",
+      "text": "O6IOIOmtsstssIsJssJsntItssIstOmsmOOItstIIPmPstOmPmOIsPstm"
+    },
+    {
+      "offset": "0x929f18",
+      "text": "|xtplkklnrvxxyxvrnkijkmoqrsvy|"
+    },
+    {
+      "offset": "0x93210b",
+      "text": "|wromooib_abcb__agpwyyxxwy~"
+    },
+    {
+      "offset": "0x933814",
+      "text": "{xvtrrssttsqpqrttromkijknrx}"
+    },
+    {
+      "offset": "0x940904",
+      "text": "~{{vru{wokijkigmtzyutvxyz|"
+    },
+    {
+      "offset": "0x94ca54",
+      "text": "~{{ywurnkijkloquvvxz|}{ywvurrsw"
+    },
+    {
+      "offset": "0x99a751",
+      "text": "}uqppprswyz}|{vrokijkmqnqtqmga`]XZ]^egilijhfijlry|}"
+    },
+    {
+      "offset": "0x9a0179",
+      "text": "~xutpppkijkgdcfijklljfabcfihebabecdgglnkgdehgjnmosrpqplptuxyxuv{"
+    },
+    {
+      "offset": "0x9fd084",
+      "text": "}vpkijkkq~"
+    },
+    {
+      "offset": "0xa094db",
+      "text": "~{yvvuupmiijlkijklorsrsqnmkljhdaadhkmorw~"
+    },
+    {
+      "offset": "0xa1032c",
+      "text": "~wsnikijksuw}y}~yxyuuvyy||"
+    },
+    {
+      "offset": "0xad0bc7",
+      "text": "~|yxuttsqnmjjklmlkijknoppnnnopqrqqqrsvxy{{|}}"
+    },
+    {
+      "offset": "0xb137de",
+      "text": "}zwvvspmkijkifdecefffghiloquxx|"
+    },
+    {
+      "offset": "0xb60c65",
+      "text": "xsqojkijkoyz"
+    },
+    {
+      "offset": "0xb6b140",
+      "text": "~xvsqnpoptvxzyyxutqnlkijknrv{"
+    },
+    {
+      "offset": "0xb8823b",
+      "text": "v\\daaR@H<8+"
+    },
+    {
+      "offset": "0xb9a7dc",
+      "text": "}wpmkijklmru|"
+    },
+    {
+      "offset": "0xbae262",
+      "text": "~qaUTOLS]dp"
+    },
+    {
+      "offset": "0xbf6a4a",
+      "text": "|ywrqkijklopqsuvwxuqnkjkmoqrtv{"
+    },
+    {
+      "offset": "0xc1b5b0",
+      "text": "[\\CM[\\pZieq"
+    },
+    {
+      "offset": "0xc2a035",
+      "text": "~{{|zxzxrmlkjhggfcadghhihihiijikijknossxy|}|"
+    },
+    {
+      "offset": "0xc46e15",
+      "text": "|zvvrqqnnkijknoqqqpppprqpqqprrstsrtssvrrrqstvvxyyzxz{z|zxxxyzyxzzy}{{}}}~~}"
+    },
+    {
+      "offset": "0xc4b3e7",
+      "text": "sXSYa\\JSRB=:KKIJK>=9LOLTPRQK[deehujnu~"
+    },
+    {
+      "offset": "0xc577ae",
+      "text": "ujeaYNC>?DDEEJT\\cdcfjmlkijklpw~"
+    },
+    {
+      "offset": "0xc57951",
+      "text": "|ujb[Y]_glrvx~}}{rpkijkqw"
+    },
+    {
+      "offset": "0xc9bfd6",
+      "text": "}xsojd`]YVSQNLKIJKMPPQRVY]bcegknrwxz|"
+    },
+    {
+      "offset": "0xcb15ba",
+      "text": "{zvvzunecdchff_`fbbbakfiggeeqqrosrvxzz~"
+    },
+    {
+      "offset": "0xcb846a",
+      "text": "~yurlhfc^ZWUQMLKIJKJLNQTW^bfiosx}"
+    },
+    {
+      "offset": "0x101f800",
+      "text": "KIJKQ{QKQvvRQvKRQRvv|{"
+    },
+    {
+      "offset": "0x12531f7",
+      "text": "KiJKW|W2,,33,33,33WXX|X|"
+    },
+    {
+      "offset": "0x15dbac2",
+      "text": "yrzopaUTOOMCIOZ^^djy"
+    },
+    {
+      "offset": "0x15ea137",
+      "text": "|ttnmcUTLIKJKIJKMZ_hlsv{"
+    },
+    {
+      "offset": "0x1623931",
+      "text": "ypmmooid`_fq{"
+    },
+    {
+      "offset": "0x1693c77",
+      "text": "|zuusturqqpmkijkllnnnrtxy{"
+    },
+    {
+      "offset": "0x16988a4",
+      "text": "xuwt|sckradhZieRh]ei_hleentvvjut|}z"
+    },
+    {
+      "offset": "0x172b7d0",
+      "text": "}zwqmkhd`_\\ZVUSPONNLJKKJJLLKKKKKJJKIJKKLNPSUX[^bfknrvz~"
+    },
+    {
+      "offset": "0x1746984",
+      "text": "|vvrjd_``_`bffghkmonjgdehiijjkjmrwz{zz{{{|{|}{|{{yvtsrpmkiggghilnnljhhjkijkjlnqprwz"
+    },
+    {
+      "offset": "0x1765697",
+      "text": "th~~o_ORjq`MT]jri]caREAHZi^W[fdb[dkqe_juu||rmmf_ceemnjkijkrqkiqw~{}"
+    },
+    {
+      "offset": "0x1771830",
+      "text": "zyw|xqsotokijklfijhhehjfjiohhomngllssmqtuypvwuzyzxw{|{y}x"
+    },
+    {
+      "offset": "0x178a203",
+      "text": "w|m|shldaaRXNXVRVFPOPSOX\\W_S^`blhonptsv|"
+    },
+    {
+      "offset": "0x179a313",
+      "text": "~zsolmppqnjhgjmqrqnkklnqrqnkijknpppmllmprssrrrsuxz|||}~"
+    },
+    {
+      "offset": "0x17a2116",
+      "text": "}vrolhdbeks{}}zvtrpnlkjkkkijkoqrokheefimquz}"
+    },
+    {
+      "offset": "0x17a6b04",
+      "text": "{vurnjhgda`_]XUSRPNNOLJJKKIJKLLMNONOQRTWZ]_bfimqw{"
+    },
+    {
+      "offset": "0x17edb4b",
+      "text": "~zupmikkijklonkjkjnopuz"
+    },
+    {
+      "offset": "0x17fc1f7",
+      "text": "xvutmooifgheade_be`bgdfiinnpsvt{}|}"
+    },
+    {
+      "offset": "0x1815596",
+      "text": "|xuvxuxwsrolnljkopkgjhdfeikkijkiimrsuwvttuy{"
+    },
+    {
+      "offset": "0x1819f26",
+      "text": "xsf`[\\clmiel"
+    },
+    {
+      "offset": "0x1896eed",
+      "text": "yogcZY`a`cb]^dikopkijkmtzzy}"
+    },
+    {
+      "offset": "0x18b726d",
+      "text": "~|yxwxwvrpmlkkijkloruz"
+    },
+    {
+      "offset": "0x18c3c69",
+      "text": "~{wrqopqppmkijkoqsssutxz}"
+    },
+    {
+      "offset": "0x18c8c6c",
+      "text": "xokijkifdfkv}"
+    },
+    {
+      "offset": "0x1929d72",
+      "text": "yttqmjfhloqsrqnljkkijkmptux|"
+    },
+    {
+      "offset": "0x194b4fc",
+      "text": "~smkijklot|"
+    },
+    {
+      "offset": "0x19d4098",
+      "text": "zzwqg\\XVUUPKIJKIIJOQQOPT[^a`bglpqux"
+    },
+    {
+      "offset": "0x19e9559",
+      "text": "{yytonpica_[XUTQNMKIJKMPSVZ`ejpvz}"
+    },
+    {
+      "offset": "0x19e9695",
+      "text": "~|{ywutrpnmkjjjihiiiijjjjjkkijkklmnooprsuvxy{}"
+    },
+    {
+      "offset": "0x19ea691",
+      "text": "wrmjeeebdefhlosxy|}|~}~~}}xxuvvvvwwvtsqsqsnmkijkklptw|"
+    },
+    {
+      "offset": "0x19f71cb",
+      "text": "~|xttqonlijkijkjknonprrtvvwxxyzzz{{z{{{{{{{||||||||||{||{{{zz{{z{{{|}}~"
+    },
+    {
+      "offset": "0x1a00533",
+      "text": "yo`\\OQAUkhoa_VcmdlZIEGSZPPSNbA635WJX_Qe`YlZYWPeRQ^VohonebY`psms"
+    },
+    {
+      "offset": "0x1a1fcaa",
+      "text": "bZIEE@6BA049("
+    },
+    {
+      "offset": "0x1a30057",
+      "text": "&-(\"#,23BKOY`gmiel{"
+    },
+    {
+      "offset": "0x1a3d377",
+      "text": "}{yvtqonmkigfggggefggiighiikijkmnnoruwyy{"
+    },
+    {
+      "offset": "0x1a9446a",
+      "text": "}ztokijklqswz"
+    },
+    {
+      "offset": "0x1ac67c1",
+      "text": "dXLZieO=7Obpf]^p"
+    },
+    {
+      "offset": "0x1af0c67",
+      "text": "|aUTOE:--0?EHLZn"
+    },
+    {
+      "offset": "0x1b054ce",
+      "text": "~}|}|}}}}z|{zxvvvvwuttvuuutrqppnmlmllmlkkllkkijklmllnorrrtsuvwxwxy{}}~"
+    },
+    {
+      "offset": "0x1b1712e",
+      "text": "}~{z{zyywvxuuusqrpoomkkkijigjifjhhjhhkijkjklmnnppqrrrtvxvxzy||{}}"
+    },
+    {
+      "offset": "0x1b3fb30",
+      "text": "p[JGV^mrzreZIEJ_l"
+    },
+    {
+      "offset": "0x1ba0292",
+      "text": "dZIE9:EG^dyu"
+    },
+    {
+      "offset": "0x1bd06bf",
+      "text": "FP-7FPcdzie`WSRHE>@NSs"
+    },
+    {
+      "offset": "0x1be7154",
+      "text": "~{|}{vmkijkow{"
+    },
+    {
+      "offset": "0x1c34f5f",
+      "text": "~{ttvyuqnpssmielnkh`dijigmtx|z~"
+    },
+    {
+      "offset": "0x1c77d13",
+      "text": "vli^PJKIJKJKRX^fpz"
+    },
+    {
+      "offset": "0x1caab69",
+      "text": "|yqmkijkjfhghnqqnligihgfb^^_abdhkpsv{"
+    },
+    {
+      "offset": "0x1cfb3e9",
+      "text": "}|yxvsdhmkighgjkijkhgggieZ\\afdhjgjmnqrprvyvusvyzwxrivwhv"
+    },
+    {
+      "offset": "0x1d2b035",
+      "text": "zswrulbgab]\\eYX\\XTQNPQSMOOIMMSWUW]^`kkpssvvttuvyrrnmqmrjjpoppjstwztyrq~t"
+    },
+    {
+      "offset": "0x1d37622",
+      "text": "~}{{yyvuvsqoonmmlkkjklkijkkklmmnoppqsstuvxyz{}~"
+    },
+    {
+      "offset": "0x1d7d8a1",
+      "text": "zieq{nljeaW]^][U`e[Y^ojc^heecnxztw"
+    },
+    {
+      "offset": "0x1d9f4c9",
+      "text": "zuspnmlkijknsy"
+    },
+    {
+      "offset": "0x1dbc2bf",
+      "text": "~}~}}}{{}}zwtsroopooonmkijkmkmmoortvxz"
+    },
+    {
+      "offset": "0x1dca451",
+      "text": "$A45F?;ZIEUVQfkleml"
+    },
+    {
+      "offset": "0x1dfc274",
+      "text": "|reZIE?@SVis|"
+    },
+    {
+      "offset": "0x1e70704",
+      "text": "}~zyyusurppolkijkjhhgijehjfjfglgkmjsinpovmqxor}qy{z|x|}"
+    },
+    {
+      "offset": "0x1e7a508",
+      "text": "w\\_nwkUNQMTbQ45EWQ=<EDEMNEBTZZIET\\`mf[\\`luqkvr{"
+    },
+    {
+      "offset": "0x1e8f683",
+      "text": "|vrmkijkns{"
+    },
+    {
+      "offset": "0x1ebdbc3",
+      "text": "{tssqrohggfdb_[ZYSNKIJKLLMPSX_ejotw{"
+    },
+    {
+      "offset": "0x1ed1564",
+      "text": "~|xsqonllkhhgffefffeffdeffghiiijjjjllllkkijkklmmprux}"
+    },
+    {
+      "offset": "0x1f1c17b",
+      "text": "v}wkdXJLSTafceklrrmv{y{zwuruyvnicaccisvuz|{zx{|{wurqrtx"
+    },
+    {
+      "offset": "0x1f22c2f",
+      "text": "~|{yywtrrppopmkijkkihghjjjiklnopqstyz}|"
+    },
+    {
+      "offset": "0x1f5f448",
+      "text": "zielmlfZRVYgz"
+    },
+    {
+      "offset": "0x1f5fad9",
+      "text": "~{zzyxuuuutqoopppomkijkmmmmlnnnoqpommnrtuwwwyy|"
+    },
+    {
+      "offset": "0x1fafd5a",
+      "text": "||yvspomkjkkkijkmnmmlopmlmpsrqpsuxzyvw{|~}}|zyz|"
+    },
+    {
+      "offset": "0x1fb01a1",
+      "text": "yqnkkijkmorqtrttqnmljiijmsuxwz||z{}{ywvtsqrrvyz{z|"
+    },
+    {
+      "offset": "0x1fd0038",
+      "text": "~wpkea_[ZXUTQPONMLKKIJKLPRUX[_dhkortuvxyz{|~"
+    },
+    {
+      "offset": "0x2015434",
+      "text": "ulaUTOJC=82+$"
+    },
+    {
+      "offset": "0x203303b",
+      "text": "v~y~|vmielnopihchku{yxyr"
+    },
+    {
+      "offset": "0x2094bd7",
+      "text": "unh`XPKIJKHFIKOPRPSVYXY[[^^^^abbbccdgikotz"
+    },
+    {
+      "offset": "0x20c1af3",
+      "text": "xutlgfagqrmooijpnpyvjjhir|"
+    },
+    {
+      "offset": "0x20f34c5",
+      "text": "xziekvxsl^_YVTRKGMB=AIEELHRZVQMX[ff^^bfjrtutnnpmmphimnecfcafmg_]\\flmolsusqut}"
+    },
+    {
+      "offset": "0x20f5e1b",
+      "text": "vo]Vah_VHDRSSME=@DJMCABKNLHDCP^WVRPZie`acmwysqv{"
+    },
+    {
+      "offset": "0x211ad0c",
+      "text": "~}wttqqsromkijklnonmnmnqrrrpnnopppomlkjiikmlkhggikklljklmpqrssstvxyz{|{|~"
+    },
+    {
+      "offset": "0x2140739",
+      "text": "~}ytqoqpnkijkjigkmoopqsvwxy{~"
+    },
+    {
+      "offset": "0x216604a",
+      "text": "|xsnjgda^ZWTSRPOLKIJKKLNNNPRTVY\\_bfgilorux{}"
+    },
+    {
+      "offset": "0x21b46af",
+      "text": "xmhfcZTVTKIJKD=>?:7336999:?DEITX\\acfiejlmonlnouz~"
+    },
+    {
+      "offset": "0x2289049",
+      "text": "}m[TajqhQ748=IZieRDDMYdfb[NHN`w"
+    },
+    {
+      "offset": "0x22df9df",
+      "text": "paSTafWGDBFA@<517??<55.7ICH?<GPOONTWciba`l"
+    },
+    {
+      "offset": "0x22eb009",
+      "text": "~vukijkrsqhjcecb_dggbe]dgiihgiosryy"
+    },
+    {
+      "offset": "0x22ed5f1",
+      "text": "xqpppmnjkicefemokijkkqnpxyy~"
+    },
+    {
+      "offset": "0x23a0667",
+      "text": "tp|}uxurrkwnj_gw^hddm`knapmpsgnqqnpqsclmooivxf{zz"
+    },
+    {
+      "offset": "0x23a36dd",
+      "text": "{yroprmqorrqvvxtsokhhikijkknrwyyxxxy{yzyu{z}}~"
+    },
+    {
+      "offset": "0x23e8dd9",
+      "text": "voelqZIEA<:-"
+    },
+    {
+      "offset": "0x2432998",
+      "text": "yta_`aidWMC@CEKE>@>@@;:AFKIJKMWYY\\]`kpsrrvx|"
+    },
+    {
+      "offset": "0x24806fb",
+      "text": "rtrJ=RLGOEDR?*$)28@6>11F9@<@MZZ\\QZZhfhqx"
+    },
+    {
+      "offset": "0x24a24ca",
+      "text": "zrmfa]ZXUTRQRPPONMKKIJKKLLMPSVY\\_bfhjlnprstvwy|"
+    },
+    {
+      "offset": "0x24fe47d",
+      "text": "xsqonkijkry"
+    },
+    {
+      "offset": "0x251233f",
+      "text": "|||wvupnonllkijkhiifefedfddeghjmmortwzz|~"
+    },
+    {
+      "offset": "0x25264f8",
+      "text": "|ustpoja^[VYVROKIJKLLJHEGGILMOPRUY]`bbcddhijmnoqtwz|~"
+    },
+    {
+      "offset": "0x2572b17",
+      "text": "~}zvtqpnlkiijhkijkkmllmmqsvxxww{zzzz|}"
+    },
+    {
+      "offset": "0x25844e7",
+      "text": "{wvwrkfdec_XSSUUPKIJKJFFFGJKIHFGMQRRRVY]_adglqtvy{"
+    },
+    {
+      "offset": "0x25cf668",
+      "text": "oziephjisinxeoolnrpfhjhttqwy"
+    },
+    {
+      "offset": "0x25e53a3",
+      "text": "zquvm[bmZIEBGH?8IE>DJ<>CGVWU]jnex"
+    },
+    {
+      "offset": "0x262de42",
+      "text": "|zie_OL@<1+#"
+    },
+    {
+      "offset": "0x2649ad0",
+      "text": "ulfcfiggedaZRRZhovy|"
+    },
+    {
+      "offset": "0x265d807",
+      "text": "pukbUWURWYQZV`ajnotppnkijkgfgcflqu}~"
+    },
+    {
+      "offset": "0x267f2bb",
+      "text": "wvzzsvusqqqpqoklkjjmliikijklmkjlmilopnnepsq{txyxzy~v|xk{u{"
+    },
+    {
+      "offset": "0x2689931",
+      "text": "}ypkga\\]bddimqsuutsqokijkqtz{"
+    },
+    {
+      "offset": "0x26b880e",
+      "text": "sshZie\\Y\\ZVQWQNHPVXTNQRYYa\\X]ceddgluytumpx"
+    },
+    {
+      "offset": "0x26d51ef",
+      "text": "~|{|{z{zyz{|}}{zywusspomkijkkjkkjijhgfecba`]]^^_acgiilopnotux|{srytpv|"
+    },
+    {
+      "offset": "0x26e951e",
+      "text": "~}}||{zzyxxwvutrrsrrpoooponlkmonmkijkmnnmllmopppppqqstttttuvxyyyyz{}}~~"
+    },
+    {
+      "offset": "0x2726997",
+      "text": "}xurokgc^[WUSPNKKIJKLLLLLLMOQSTTTTUVXYZ[\\^`dgjmoqsux|~"
+    },
+    {
+      "offset": "0x2734590",
+      "text": "m{rquslnelojeegbcWfU_]T^XRYZIeHV`RZdQ]TXY]`UhYhXl_lkbmdeg[uctxdtmvy|"
+    },
+    {
+      "offset": "0x278924e",
+      "text": "ytplgca`__`abeefhghijkkijkkmmnnqqsuwy{}~~"
+    },
+    {
+      "offset": "0x279ef8b",
+      "text": "}saZIE>@DIS\\ku"
+    },
+    {
+      "offset": "0x27b3c8c",
+      "text": "~xspmhd_[YXWTOKIJKKIGEFGIKLNOQRUX\\_aaabfjmpru{"
+    },
+    {
+      "offset": "0x27cd282",
+      "text": "xty~~tdTKIJKKD;0)&'))(*($\"!"
+    },
+    {
+      "offset": "0x2800c88",
+      "text": "npncb]YSSTX^adhjkijknmmlfhhjqxz~"
+    },
+    {
+      "offset": "0x280b9a5",
+      "text": "zvqmkijknruy|"
+    },
+    {
+      "offset": "0x28559e6",
+      "text": "|{zutsoonkkkijkkmnptuuy{|"
+    },
+    {
+      "offset": "0x285d022",
+      "text": "yvsnqlfiggeb_gikkhioopusvzxxww|~|yxz|{xwxx|zutx{}|}|"
+    },
+    {
+      "offset": "0x28605cb",
+      "text": "jjZ`[W`Xdi]^VZfad\\\\aafaddkmjf`ddihglmooijinqnpnqstwtyz{|zzz~}"
+    },
+    {
+      "offset": "0x2895207",
+      "text": "}tppvvjZXadZIEMUSMHFKRYXUSY`edcht{"
+    },
+    {
+      "offset": "0x28b306a",
+      "text": "~}wsqnlkkijkjjhhefdcc`^]^_bcgkouy"
+    },
+    {
+      "offset": "0x2904857",
+      "text": "{vwtnkijkptwy"
+    },
+    {
+      "offset": "0x29082a2",
+      "text": "~yurplhlgkijkjkhffdehmkrwx|"
+    }
+  ]
+}

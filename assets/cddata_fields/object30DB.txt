@@ -1,0 +1,1 @@
+[#ObjectId: 30, #type: #custom, #InnerRadius: 25, #OuterRadius: 30, #CustomObject:"Hill", #DirResource: "", #Sounds: ["05d004v0", "05d005v0"], #FrameList: [], #SetWhenDone:[#Medals:[1]], #CheckFor:[], #IfFound:#None, #SpriteInfo:[]]

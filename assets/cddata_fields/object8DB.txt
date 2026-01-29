@@ -1,0 +1,1 @@
+[#ObjectId: 8, #type: #rdest, #InnerRadius: 25, #OuterRadius: 45, #CustomObject:"", #DirResource: "83", #Sounds: ["31d015v0"], #FrameList: [#normal: ["31b011v0"], #Inner: ["31b011v0"], #Outer: ["31b011v0"]], #SetWhenDone:[#Cache:[#TreeInRoad], #Parts:[#Random]], #CheckFor:[#Cache:[#TreeInRoad], #Parts:[#Random]], #IfFound:#NoDisplay, #SpriteInfo:[#Under:1]]

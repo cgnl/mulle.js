@@ -1,0 +1,1 @@
+[#Actions:[#Still:[1], #Wait:[[#RndHold, 1, 11, 45], #Blink], #Talk:[2,3,[#RndFrame, [2,3,4,5]],4,5], #Blink:[6]], #Paths:[]]

@@ -1,0 +1,1 @@
+[#Actions:[#Still:[10], #Wait:[10,#Still], #Talk:[10,12,13,14,15,16,17,18]],#Paths:[#Test:[point(100,100), point(200,200)]]]

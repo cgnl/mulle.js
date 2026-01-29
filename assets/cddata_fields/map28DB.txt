@@ -1,0 +1,1 @@
+[#MapId: 28, #objects: [[33, point(468, 20), [#Sound:"31d007v0"]], [31, point(468, 15), [#InnerRadius:205]], [7, point(415, 60), [#EnterDir:12, #Board:point(100, 360)]], [6, point(360, 266), [#Show:1]], [29, point(131,266), [#FrameList:["31b043v0"]]]], #MapImage: "30b028v0", #Topology: "30t028v0"]

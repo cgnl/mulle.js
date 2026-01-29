@@ -1,0 +1,32 @@
+[
+  {
+    "name": "garage",
+    "keys_ref": 4,
+    "keys_nl": 4,
+    "missing_whisper": 0
+  },
+  {
+    "name": "carparts",
+    "keys_ref": 7,
+    "keys_nl": 7,
+    "missing_whisper": 0
+  },
+  {
+    "name": "figgeferrum",
+    "keys_ref": 5,
+    "keys_nl": 5,
+    "missing_whisper": 0
+  },
+  {
+    "name": "viola",
+    "keys_ref": 3,
+    "keys_nl": 3,
+    "missing_whisper": 3
+  },
+  {
+    "name": "yard",
+    "keys_ref": 1,
+    "keys_nl": 1,
+    "missing_whisper": 0
+  }
+]

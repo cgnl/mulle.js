@@ -1,0 +1,1 @@
+[#MapId: 4, #objects: [[30, point(540, 200), [#HillType:#SmallHill]], [32, point(260, 40), [#Direction:1]], [6, point(250, 167), [#Show:1]], [9, point(130, 210), []]], #MapImage: "30b004v0", #Topology: "30t004v0"]

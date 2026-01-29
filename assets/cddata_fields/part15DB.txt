@@ -1,0 +1,1 @@
+[#partId: 15, #master: 14, #MorphsTo: 0, #description: "", #junkView: "", #UseView: "20b015v2", #UseView2: "", #offset: [-217, 20], #Properties: [#Weight: 4, #LoadCapacity: 5, #FunnyFactor: 2, #Color: 6], #Requires: [#b1, #a5, #a6, #a7], #Covers: [#a5, #a6, #a7, #b1], #new: [[#a4, [28, -1], [-10, 0]]]]

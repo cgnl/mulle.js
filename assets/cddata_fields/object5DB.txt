@@ -1,0 +1,1 @@
+[#ObjectId: 5, #type: #dest, #InnerRadius: 15, #OuterRadius: 25, #CustomObject:"", #DirResource: "88", #Sounds: ["31d019v0"], #FrameList: [#normal: ["Dummy"], #Inner: ["Dummy"], #Outer: ["Dummy"]], #SetWhenDone:[#Parts:[162], #Missions:[3]], #CheckFor:[#Cache:[#Lemonade], #Missions:[3]], #IfFound:#None, #SpriteInfo:[#Under:1]]

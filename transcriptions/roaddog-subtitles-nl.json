@@ -1,0 +1,18 @@
+[
+  {
+    "audioId": "85e001v0",
+    "spriteId": "190",
+    "offset": 0.0,
+    "duration": 13.0,
+    "text": "Welwel Laika, wat doe jij hier? Jij woont toch bij Stafsgroot?",
+    "timestamp": "0.000-13.000"
+  },
+  {
+    "audioId": "85d002v0",
+    "spriteId": "201",
+    "offset": -0.687,
+    "duration": 10.0,
+    "text": "Wel, kleine Laika, ben je weer eens verloren gelopen? Kom, dan breng ik je met de auto terug naar Staf. Hij zal helemaal ongerust zijn!",
+    "timestamp": "13.000-23.000"
+  }
+]

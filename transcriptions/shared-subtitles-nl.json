@@ -1,0 +1,130 @@
+[
+  {
+    "audioId": "02e010v0",
+    "spriteId": "416",
+    "offset": 0.0,
+    "duration": 7.3,
+    "text": "De vliegtuig in de weiland soapt eraan.",
+    "timestamp": "0.000-7.300"
+  },
+  {
+    "audioId": "09d001v0",
+    "spriteId": "469",
+    "offset": -20.52,
+    "duration": 23.0,
+    "text": "Klik hier om de auto af te breken.",
+    "timestamp": "60.000-83.000"
+  },
+  {
+    "audioId": "09d002v0",
+    "spriteId": "470",
+    "offset": -0.896,
+    "duration": 3.3,
+    "text": "Klik hier om je diploma te bekijken.",
+    "timestamp": "83.000-86.300"
+  },
+  {
+    "audioId": "09d003v0",
+    "spriteId": "471",
+    "offset": 0.057,
+    "duration": 3.0,
+    "text": "Wil je stoppen met spelen, klik dan hier.",
+    "timestamp": "87.300-90.300"
+  },
+  {
+    "audioId": "09d004v0",
+    "spriteId": "472",
+    "offset": -0.676,
+    "duration": 5.0,
+    "text": "Klik hier als je dit scherm wil afsluiten om verder te spelen.",
+    "timestamp": "90.300-95.300"
+  },
+  {
+    "audioId": "09d005v0",
+    "spriteId": "473",
+    "offset": -0.427,
+    "duration": 5.0,
+    "text": "Kies of je de auto wil besturen met de pijltoetsen of met de muis.",
+    "timestamp": "95.300-100.300"
+  },
+  {
+    "audioId": "09d006v0",
+    "spriteId": "474",
+    "offset": -0.628,
+    "duration": 4.0,
+    "text": "Als je hier klikt, kom je op Miels Erf terecht.",
+    "timestamp": "100.300-104.300"
+  },
+  {
+    "audioId": "05e011v0",
+    "spriteId": "486",
+    "offset": 2.965,
+    "duration": 4.0,
+    "text": "De vliegtuig wordt gesneden.",
+    "timestamp": "116.300-120.300"
+  },
+  {
+    "audioId": "05e018v0",
+    "spriteId": "487",
+    "offset": -0.365,
+    "duration": 2.0,
+    "text": "De vliegtuig stapt op.",
+    "timestamp": "120.300-122.300"
+  },
+  {
+    "audioId": "05e018v0",
+    "spriteId": "487",
+    "offset": 1.635,
+    "duration": 7.0,
+    "text": "De vliegtuig wordt gesneden.",
+    "timestamp": "122.300-129.300"
+  },
+  {
+    "audioId": "05e025v0",
+    "spriteId": "488",
+    "offset": -0.701,
+    "duration": 7.0,
+    "text": "De vliegtuig stapt op.",
+    "timestamp": "129.300-136.300"
+  },
+  {
+    "audioId": "05e032v0",
+    "spriteId": "489",
+    "offset": -1.107,
+    "duration": 8.0,
+    "text": "De vliegtuig stapt op.",
+    "timestamp": "136.300-144.300"
+  },
+  {
+    "audioId": "05e053v0",
+    "spriteId": "490",
+    "offset": -0.626,
+    "duration": 8.0,
+    "text": "De vliegtuig staat op.",
+    "timestamp": "144.300-152.300"
+  },
+  {
+    "audioId": "05e060v0",
+    "spriteId": "491",
+    "offset": -0.917,
+    "duration": 8.0,
+    "text": "De vliegtuig staat op.",
+    "timestamp": "152.300-160.300"
+  },
+  {
+    "audioId": "05e067v0",
+    "spriteId": "492",
+    "offset": -0.152,
+    "duration": 7.0,
+    "text": "De vliegtuig staat op.",
+    "timestamp": "160.300-167.300"
+  },
+  {
+    "audioId": "05e074v0",
+    "spriteId": "493",
+    "offset": -0.346,
+    "duration": 3.0,
+    "text": "Ondertitels ingediend door de Amara.org gemeenschap",
+    "timestamp": "167.300-170.300"
+  }
+]

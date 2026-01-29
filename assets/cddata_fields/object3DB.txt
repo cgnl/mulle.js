@@ -1,0 +1,1 @@
+[#ObjectId: 3, #type: #custom, #InnerRadius: 35, #OuterRadius: 45, #CustomObject:"Ferry", #DirResource: "", #Sounds: ["31d008v0", "31d009v0", "31e005v0"], #FrameList: [#normal: ["31b015v0"]], #SetWhenDone:0, #CheckFor:[#UserStuff:[#FerryTicket]], #IfFound:0, #SpriteInfo:[#Under:1]]

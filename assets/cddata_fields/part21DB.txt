@@ -1,0 +1,1 @@
+[#partId: 21, #master: 0, #MorphsTo: 0, #description: "20d043v0", #junkView: "20b021v1", #UseView: "20b021v2", #UseView2: "20b021v3", #offset: [0, 0], #Properties: [#Weight: 4, #Color: 4, #LoadCapacity: 2], #Requires: [#b4], #Covers: [#a15, #a16, #a17, #b4], #new: 0]

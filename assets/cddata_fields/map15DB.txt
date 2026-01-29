@@ -1,0 +1,1 @@
+[#MapId: 15, #objects: [[4, point(380, 110), []], [1, point(438, 320), []]], #MapImage: "30b015v0", #Topology: "30t015v0"]

@@ -1,0 +1,1 @@
+[#ObjectId: 6, #type: #custom, #InnerRadius: 15, #OuterRadius: 25, #CustomObject:"Gas", #DirResource: "", #Sounds: ["31e006v0"], #FrameList: [#normal: ["Bensinmack"]], #SetWhenDone:0, #CheckFor:0, #IfFound:#None, #SpriteInfo:[#Under:1]]

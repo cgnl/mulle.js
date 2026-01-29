@@ -1,0 +1,1 @@
+[#UserId: "", #Car: [#Parts: [1,82,133,152], #Name: "", #Medals: [], #CacheList:[:]], #Junk: [], #NrOfBuiltCars: 0, #Saves: [], #CompletedMissions: [], #OwnStuff:[:], #myLastPile: 1, #gifts: [], #toYardThroughDoor: TRUE, #givenMissions: [], #figgeIsComing: FALSE, #missionIsComing: FALSE]]

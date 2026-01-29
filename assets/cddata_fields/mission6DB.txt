@@ -1,0 +1,1 @@
+[#MissionId: 6, #type: #Telephone, #image: "", #sound: "50d020v0"]

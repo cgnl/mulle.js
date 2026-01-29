@@ -1,0 +1,18 @@
+[
+  {
+    "audioId": "07d002v0",
+    "spriteId": "17",
+    "offset": 0.0,
+    "duration": 5.0,
+    "text": "Om deze auto te bouwen heb je jammer genoeg niet genoeg materiaal in voorraad.",
+    "timestamp": "0.000-5.000"
+  },
+  {
+    "audioId": "07d002v0",
+    "spriteId": "17",
+    "offset": 5.0,
+    "duration": 4.0,
+    "text": "Je zult nog even moeten wachten tot je meer onderdelen op je schroothoop hebt.",
+    "timestamp": "5.000-9.000"
+  }
+]

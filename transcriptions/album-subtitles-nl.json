@@ -1,0 +1,106 @@
+[
+  {
+    "audioId": "06d001v0",
+    "spriteId": "137",
+    "offset": -5.056,
+    "duration": 10.0,
+    "text": "Kies op welke pagina je de foto wil plakken. Klik daarna op de pijl.",
+    "timestamp": "0.000-10.000"
+  },
+  {
+    "audioId": "06d003v0",
+    "spriteId": "139",
+    "offset": -2.752,
+    "duration": 5.0,
+    "text": "Hoe wil je je auto noemen? Wil je je kar geen naam geven?",
+    "timestamp": "10.000-15.000"
+  },
+  {
+    "audioId": "06d004v0",
+    "spriteId": "140",
+    "offset": -0.374,
+    "duration": 3.0,
+    "text": "Wil je deze auto echt vervangen door een andere?",
+    "timestamp": "15.000-18.000"
+  },
+  {
+    "audioId": "06d007v0",
+    "spriteId": "143",
+    "offset": -0.796,
+    "duration": 5.0,
+    "text": "Hiermee sla je auto's op de harde schijf van je computer op.",
+    "timestamp": "18.000-23.000"
+  },
+  {
+    "audioId": "06d007v0",
+    "spriteId": "143",
+    "offset": 4.204,
+    "duration": 6.0,
+    "text": "Daarna kun je ze via het internet versturen. Dan kunnen je vriendjes er ook eens mee rijden.",
+    "timestamp": "23.000-29.000"
+  },
+  {
+    "audioId": "07d001v0",
+    "spriteId": "145",
+    "offset": -0.196,
+    "duration": 6.0,
+    "text": "Welke auto wil je nu bouwen? Kies een pagina en klik op de pijl.",
+    "timestamp": "29.000-35.000"
+  },
+  {
+    "audioId": "07d002v0",
+    "spriteId": "146",
+    "offset": -0.239,
+    "duration": 5.0,
+    "text": "Om deze auto te bouwen heb je jammer genoeg niet genoeg materiaal in voorraad.",
+    "timestamp": "35.000-40.000"
+  },
+  {
+    "audioId": "07d002v0",
+    "spriteId": "146",
+    "offset": 4.761,
+    "duration": 5.0,
+    "text": "Je zult nog even moeten wachten tot je meer onderdelen op je schroothoop hebt.",
+    "timestamp": "40.000-45.000"
+  },
+  {
+    "audioId": "07d003v0",
+    "spriteId": "147",
+    "offset": -0.419,
+    "duration": 5.0,
+    "text": "Wat doe je nou? Ben je vergeten dat je geen auto's hebt opgeslagen?",
+    "timestamp": "45.000-50.000"
+  },
+  {
+    "audioId": "07d004v0",
+    "spriteId": "148",
+    "offset": -0.502,
+    "duration": 6.0,
+    "text": "Hiermee roep je een auto op die je hebt opgeslagen in het fotoalbum.",
+    "timestamp": "50.000-56.000"
+  },
+  {
+    "audioId": "07d005v0",
+    "spriteId": "149",
+    "offset": 0.011,
+    "duration": 4.0,
+    "text": "Hier roep je auto's op van de harde schijf van je computer.",
+    "timestamp": "56.000-60.000"
+  },
+  {
+    "audioId": "07d005v0",
+    "spriteId": "149",
+    "offset": 4.011,
+    "duration": 5.0,
+    "text": "Als je bijvoorbeeld auto's van het internet hebt gehaald, dan vind je die hier.",
+    "timestamp": "60.000-65.000"
+  },
+  {
+    "audioId": "07d006v0",
+    "spriteId": "150",
+    "offset": -0.027,
+    "duration": 4.0,
+    "text": "Je weet toch dat de auto die in de werkplaats staat afgebroken wordt.",
+    "timestamp": "65.000-69.000"
+  }
+]

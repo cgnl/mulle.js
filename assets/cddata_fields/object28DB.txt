@@ -1,0 +1,1 @@
+[#ObjectId: 28, #type: #custom, #InnerRadius: 25, #OuterRadius: 45, #CustomObject:"FarAway", #DirResource: "", #Sounds: [], #FrameList: [#normal: ["Dummy"]], #SetWhenDone:[#Medals:[2]], #CheckFor:[#Medals:[2]], #IfFound:#NoDisplay, #SpriteInfo:[#Under:1]]

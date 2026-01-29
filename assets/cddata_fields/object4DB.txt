@@ -1,0 +1,1 @@
+[#ObjectId: 4, #type: #dest, #InnerRadius: 15, #OuterRadius: 25, #CustomObject:"", #DirResource: "94", #Sounds: ["31d025v0", "31d027v0"], #FrameList: [#normal: ["Dummy"], #Inner: ["Dummy"], #Outer: ["Dummy"]], #SetWhenDone:[#Medals:[4], #Cache:[#Exhibition], #Missions:[2]], #CheckFor:[#Medals:[4], #Cache:[#Exhibition]], #IfFound:#NoEnter, #SpriteInfo:[#Under:1]]

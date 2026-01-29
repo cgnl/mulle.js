@@ -1,0 +1,43 @@
+{
+  "carparts.json": {
+    "20d142v0": {
+      "lines": [
+        "Geel,",
+        "altijd mooi."
+      ]
+    }
+  },
+  "figgeferrum.json": {
+    "92d003v0": {
+      "lines": [
+        "- Nee.",
+        "Ik heb je hond niet gezien."
+      ]
+    },
+    "92d004v0": {
+      "lines": [
+        "Ja hoor!",
+        "Ze zit in mijn auto."
+      ]
+    }
+  },
+  "garage.json": {
+    "03d045v0": {
+      "lines": [
+        "- Kijk daar eens!",
+        "- Het is Staf Schroot!",
+        "- de schroothandelaar.",
+        "- Heb je mijn spullen meegebracht?"
+      ]
+    }
+  },
+  "yard.json": {
+    "04d001v0": {
+      "lines": [
+        "-",
+        "Wat jammer,",
+        "geen post vandaag."
+      ]
+    }
+  }
+}

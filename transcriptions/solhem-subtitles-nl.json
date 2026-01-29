@@ -1,0 +1,362 @@
+[
+  {
+    "audioId": "86e001v0",
+    "spriteId": "181",
+    "offset": 0.0,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "0.000-2.000"
+  },
+  {
+    "audioId": "86e003v0",
+    "spriteId": "183",
+    "offset": -1.01,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "3.040-5.040"
+  },
+  {
+    "audioId": "86e004v0",
+    "spriteId": "184",
+    "offset": -1.194,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "5.040-7.040"
+  },
+  {
+    "audioId": "86e004v0",
+    "spriteId": "184",
+    "offset": 0.806,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "7.040-9.040"
+  },
+  {
+    "audioId": "86e004v0",
+    "spriteId": "184",
+    "offset": 2.806,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "9.040-11.040"
+  },
+  {
+    "audioId": "86e005v0",
+    "spriteId": "185",
+    "offset": -0.095,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "11.040-13.040"
+  },
+  {
+    "audioId": "86e005v0",
+    "spriteId": "185",
+    "offset": 1.905,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "13.040-15.040"
+  },
+  {
+    "audioId": "86e005v0",
+    "spriteId": "185",
+    "offset": 3.905,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "15.040-17.040"
+  },
+  {
+    "audioId": "86e005v0",
+    "spriteId": "185",
+    "offset": 5.905,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "17.040-19.040"
+  },
+  {
+    "audioId": "86e005v0",
+    "spriteId": "185",
+    "offset": 7.905,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "19.040-21.040"
+  },
+  {
+    "audioId": "86e005v0",
+    "spriteId": "185",
+    "offset": 9.905,
+    "duration": 2.0,
+    "text": "Meer!",
+    "timestamp": "21.040-23.040"
+  },
+  {
+    "audioId": "86d001v0",
+    "spriteId": "200",
+    "offset": 0.419,
+    "duration": 2.0,
+    "text": "Jevrouw Sien is de lerares van het dorp.",
+    "timestamp": "23.040-25.040"
+  },
+  {
+    "audioId": "86d001v0",
+    "spriteId": "200",
+    "offset": 2.419,
+    "duration": 2.0,
+    "text": "Ik denk dat ze een beetje",
+    "timestamp": "25.040-27.040"
+  },
+  {
+    "audioId": "86d001v0",
+    "spriteId": "200",
+    "offset": 4.419,
+    "duration": 2.0,
+    "text": "verliefd is op Miel,",
+    "timestamp": "27.040-29.040"
+  },
+  {
+    "audioId": "86d001v0",
+    "spriteId": "200",
+    "offset": 6.419,
+    "duration": 2.0,
+    "text": "maar Miel heeft dat nog niet gemerkt.",
+    "timestamp": "29.040-31.040"
+  },
+  {
+    "audioId": "86d001v0",
+    "spriteId": "200",
+    "offset": 8.419,
+    "duration": 2.0,
+    "text": "Die zit altijd met zijn kop onder",
+    "timestamp": "31.040-33.040"
+  },
+  {
+    "audioId": "86d001v0",
+    "spriteId": "200",
+    "offset": 10.419,
+    "duration": 2.0,
+    "text": "een of andere motorkap.",
+    "timestamp": "33.040-35.040"
+  },
+  {
+    "audioId": "86d002v0",
+    "spriteId": "201",
+    "offset": -0.645,
+    "duration": 2.0,
+    "text": "Goed dat je er bent, Miel.",
+    "timestamp": "35.040-37.040"
+  },
+  {
+    "audioId": "86d002v0",
+    "spriteId": "201",
+    "offset": 1.355,
+    "duration": 2.0,
+    "text": "Molly is weer in een boom geklommen.",
+    "timestamp": "37.040-39.040"
+  },
+  {
+    "audioId": "86d002v0",
+    "spriteId": "201",
+    "offset": 3.355,
+    "duration": 2.0,
+    "text": "Kun jij haar weer naar beneden halen?",
+    "timestamp": "39.040-41.040"
+  },
+  {
+    "audioId": "86d002v0",
+    "spriteId": "201",
+    "offset": 5.355,
+    "duration": 2.0,
+    "text": "Alsjeblieft.",
+    "timestamp": "41.040-43.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": -1.314,
+    "duration": 2.0,
+    "text": "Goh,",
+    "timestamp": "43.040-45.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": 0.686,
+    "duration": 2.0,
+    "text": "wat zou ik je graag helpen,",
+    "timestamp": "45.040-47.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": 2.686,
+    "duration": 2.0,
+    "text": "maar ik kan niet.",
+    "timestamp": "47.040-49.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": 4.686,
+    "duration": 2.0,
+    "text": "Ik heb niet de juiste spullen meegebracht.",
+    "timestamp": "49.040-51.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": 6.686,
+    "duration": 2.0,
+    "text": "Maar als je even geduld hebt,",
+    "timestamp": "51.040-53.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": 8.686,
+    "duration": 2.0,
+    "text": "ga ik snel mijn auto ombouwen.",
+    "timestamp": "53.040-55.040"
+  },
+  {
+    "audioId": "86d003v0",
+    "spriteId": "202",
+    "offset": 10.686,
+    "duration": 2.0,
+    "text": "Ik ben zo terug.",
+    "timestamp": "55.040-57.040"
+  },
+  {
+    "audioId": "86d004v0",
+    "spriteId": "203",
+    "offset": -0.907,
+    "duration": 2.0,
+    "text": "Tjongejonge,",
+    "timestamp": "57.040-59.040"
+  },
+  {
+    "audioId": "86d004v0",
+    "spriteId": "203",
+    "offset": 1.093,
+    "duration": 2.0,
+    "text": "als je van een probleem spreekt.",
+    "timestamp": "59.040-61.040"
+  },
+  {
+    "audioId": "86d005v0",
+    "spriteId": "204",
+    "offset": -1.401,
+    "duration": 2.0,
+    "text": "Bedankt",
+    "timestamp": "61.040-63.040"
+  },
+  {
+    "audioId": "86d005v0",
+    "spriteId": "204",
+    "offset": 0.599,
+    "duration": 2.0,
+    "text": "voor je hulp, liefste Miel.",
+    "timestamp": "63.040-65.040"
+  },
+  {
+    "audioId": "86d005v0",
+    "spriteId": "204",
+    "offset": 2.599,
+    "duration": 2.0,
+    "text": "Hier, een paar tickets",
+    "timestamp": "65.040-67.040"
+  },
+  {
+    "audioId": "86d005v0",
+    "spriteId": "204",
+    "offset": 4.599,
+    "duration": 2.0,
+    "text": "voor de ferry. Misschien kun jij",
+    "timestamp": "67.040-69.040"
+  },
+  {
+    "audioId": "86d005v0",
+    "spriteId": "204",
+    "offset": 6.599,
+    "duration": 2.0,
+    "text": "ze wel gebruiken. Ik kan",
+    "timestamp": "69.040-71.040"
+  },
+  {
+    "audioId": "86d005v0",
+    "spriteId": "204",
+    "offset": 8.599,
+    "duration": 2.0,
+    "text": "hier toch niet weg.",
+    "timestamp": "71.040-73.040"
+  },
+  {
+    "audioId": "86d006v0",
+    "spriteId": "205",
+    "offset": -0.2,
+    "duration": 2.0,
+    "text": "Nou, hartstikke bedankt.",
+    "timestamp": "73.040-75.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": -0.872,
+    "duration": 2.0,
+    "text": "Ja, ik heb je",
+    "timestamp": "75.040-77.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 1.128,
+    "duration": 2.0,
+    "text": "vrouw Sien geholpen om haar",
+    "timestamp": "77.040-79.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 3.128,
+    "duration": 2.0,
+    "text": "kat uit de boom te halen.",
+    "timestamp": "79.040-81.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 5.128,
+    "duration": 2.0,
+    "text": "Wat was ze in de wolken!",
+    "timestamp": "81.040-83.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 7.128,
+    "duration": 2.0,
+    "text": "Ze heeft me zelfs een ticket voor de ferry",
+    "timestamp": "83.040-85.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 9.128,
+    "duration": 2.0,
+    "text": "meegegeven. Zou ze een beetje",
+    "timestamp": "85.040-87.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 11.128,
+    "duration": 2.0,
+    "text": "verliefd op mij zijn?",
+    "timestamp": "87.040-89.040"
+  },
+  {
+    "audioId": "86d007v0",
+    "spriteId": "206",
+    "offset": 13.128,
+    "duration": 2.0,
+    "text": "Ik kan het haast niet geloven!",
+    "timestamp": "89.040-91.040"
+  }
+]

@@ -1,0 +1,1 @@
+[#ObjectId: 32, #type: #Custom, #InnerRadius: 25, #OuterRadius: 1, #CustomObject:"Stop", #DirResource: "", #Sounds: [], #FrameList: [1:["31b016v0"], 2:["31b017v0"], 3:["31b018v0"], 4:["31b019v0"]], #SetWhenDone:[], #CheckFor:[], #IfFound:#None, #SpriteInfo:[#Under:1]]

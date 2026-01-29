@@ -1,0 +1,1 @@
+[#ObjectId: 7, #type: #custom, #InnerRadius: 25, #OuterRadius: 45, #CustomObject:"Racing", #DirResource: "", #Sounds: ["31e007v0", "31e008v0"], #FrameList: [#Board: ["31b045v0"], #Goal:["Dummy"]], #SetWhenDone:[#Medals:[5], #Missions:[8]], #CheckFor:0, #IfFound:#None, #SpriteInfo:[#Under:4]]

@@ -1,0 +1,147 @@
+
+Extracting TXTS chunks from: 00.CXT
+
+Total TXTS chunks found: 30
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 02.DXR
+
+Total TXTS chunks found: 1
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 03.DXR
+
+Total TXTS chunks found: 15
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 04.DXR
+
+Total TXTS chunks found: 0
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 05.DXR
+
+Total TXTS chunks found: 3
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 06.DXR
+
+Total TXTS chunks found: 6
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 08.DXR
+
+Total TXTS chunks found: 9
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 10.DXR
+
+Total TXTS chunks found: 30
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 12.DXR
+
+Total TXTS chunks found: 0
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 13.DXR
+
+Total TXTS chunks found: 9
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 18.DXR
+
+Total TXTS chunks found: 0
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 82.DXR
+
+Total TXTS chunks found: 21
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 83.DXR
+
+Total TXTS chunks found: 15
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 84.DXR
+
+Total TXTS chunks found: 3
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 85.DXR
+
+Total TXTS chunks found: 6
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 86.DXR
+
+Total TXTS chunks found: 6
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 87.DXR
+
+Total TXTS chunks found: 6
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 88.DXR
+
+Total TXTS chunks found: 18
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 89.DXR
+
+Total TXTS chunks found: 3
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 90.DXR
+
+Total TXTS chunks found: 4
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 91.DXR
+
+Total TXTS chunks found: 3
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 92.DXR
+
+Total TXTS chunks found: 7
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 93.DXR
+
+Total TXTS chunks found: 3
+Successfully decoded: 0
+
+Extracting TXTS chunks from: 94.DXR
+
+Total TXTS chunks found: 12
+Successfully decoded: 0
+
+Extracting TXTS chunks from: CDDATA.CXT
+
+Total TXTS chunks found: 1302
+Successfully decoded: 0
+
+Extracting TXTS chunks from: LBSTART.DXR
+
+Total TXTS chunks found: 0
+Successfully decoded: 0
+
+Extracting TXTS chunks from: TEMPPLUG.CXT
+
+Total TXTS chunks found: 0
+Successfully decoded: 0
+
+Extracting TXTS chunks from: UNLOAD.DXR
+
+Total TXTS chunks found: 0
+Successfully decoded: 0
+
+======================================================================
+All results saved to: /Users/sander/projects/mulle-meck-game/txts_all_results.json
+
+======================================================================
+Searching for Dutch language patterns...
+======================================================================

@@ -1,0 +1,42 @@
+[
+  {
+    "audioId": "91e001v0",
+    "spriteId": "174",
+    "offset": 0.0,
+    "duration": 17.0,
+    "text": "Boris Blaff is een echte avonturier. Hij heeft de hele wereld rondgereisd.",
+    "timestamp": "0.000-17.000"
+  },
+  {
+    "audioId": "91d001v0",
+    "spriteId": "200",
+    "offset": 5.609,
+    "duration": 7.0,
+    "text": "Nu heeft hij een hondenkennel en hij kent honderden spannende verhalen over de verre landen die hij heeft gezien.",
+    "timestamp": "17.000-24.000"
+  },
+  {
+    "audioId": "91d003v0",
+    "spriteId": "201",
+    "offset": -0.494,
+    "duration": 9.0,
+    "text": "Op een avond, toen Boris verteld had over de tijd toen hij goudzoeker was in Alaska, kreeg Miel de wagen waarin Boris al het goud bewaarde.",
+    "timestamp": "24.000-33.000"
+  },
+  {
+    "audioId": "91d007v0",
+    "spriteId": "202",
+    "offset": -1.073,
+    "duration": 7.0,
+    "text": "Ik ga graag op bezoek bij die goeie ouwe Boris. Hij kan zo'n spannende verhalen vertellen.",
+    "timestamp": "33.000-40.000"
+  },
+  {
+    "audioId": "91d007v0",
+    "spriteId": "202",
+    "offset": 5.927,
+    "duration": 9.0,
+    "text": "Ik kan daar uuuren naar zitten luisteren, zelfs zolang dat ik alles en iedereen vergeet, zelfs mijn garage.",
+    "timestamp": "40.000-49.000"
+  }
+]

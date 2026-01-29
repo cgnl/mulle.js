@@ -1,0 +1,914 @@
+[
+  {
+    "audioId": "31e001v0",
+    "spriteId": "565",
+    "offset": 0.0,
+    "duration": 10.82,
+    "text": "de",
+    "timestamp": "0.000-10.820"
+  },
+  {
+    "audioId": "31e001v0",
+    "spriteId": "565",
+    "offset": 10.82,
+    "duration": 3.1,
+    "text": "de",
+    "timestamp": "10.820-13.920"
+  },
+  {
+    "audioId": "31e002v0",
+    "spriteId": "566",
+    "offset": 0.952,
+    "duration": 6.22,
+    "text": "de",
+    "timestamp": "13.920-20.140"
+  },
+  {
+    "audioId": "31e003v0",
+    "spriteId": "567",
+    "offset": 0.027,
+    "duration": 7.0,
+    "text": "de",
+    "timestamp": "20.140-27.140"
+  },
+  {
+    "audioId": "31e006v0",
+    "spriteId": "570",
+    "offset": 3.104,
+    "duration": 1.32,
+    "text": "ja",
+    "timestamp": "39.940-41.260"
+  },
+  {
+    "audioId": "31e007v0",
+    "spriteId": "571",
+    "offset": -0.065,
+    "duration": 6.52,
+    "text": "de",
+    "timestamp": "41.260-47.780"
+  },
+  {
+    "audioId": "31e008v0",
+    "spriteId": "572",
+    "offset": -0.002,
+    "duration": 4.52,
+    "text": "een",
+    "timestamp": "48.000-52.520"
+  },
+  {
+    "audioId": "31d001v0",
+    "spriteId": "573",
+    "offset": 0.047,
+    "duration": 4.32,
+    "text": "toen ergens misschien ganстрanders",
+    "timestamp": "52.520-56.840"
+  },
+  {
+    "audioId": "31d002v0",
+    "spriteId": "574",
+    "offset": 0.685,
+    "duration": 4.76,
+    "text": "door ging te gaan pas op zij alirasmee gaf vorige maand",
+    "timestamp": "56.840-61.600"
+  },
+  {
+    "audioId": "31d003v0",
+    "spriteId": "575",
+    "offset": -0.007,
+    "duration": 2.42,
+    "text": "nu komen we bij een beruchte",
+    "timestamp": "61.600-64.020"
+  },
+  {
+    "audioId": "31d004v0",
+    "spriteId": "576",
+    "offset": 0.023,
+    "duration": 1.04,
+    "text": "nu gaat de brug hoog",
+    "timestamp": "64.020-65.060"
+  },
+  {
+    "audioId": "31d004v0",
+    "spriteId": "576",
+    "offset": 1.063,
+    "duration": 2.24,
+    "text": "op maar om de motivo door te laten",
+    "timestamp": "65.060-67.300"
+  },
+  {
+    "audioId": "31d004v0",
+    "spriteId": "576",
+    "offset": 3.303,
+    "duration": 2.5,
+    "text": "we zullen moeten wachten volgens iedereen",
+    "timestamp": "67.300-69.800"
+  },
+  {
+    "audioId": "31d004v0",
+    "spriteId": "576",
+    "offset": 5.803,
+    "duration": 1.92,
+    "text": "niks anders of",
+    "timestamp": "69.800-71.720"
+  },
+  {
+    "audioId": "31d005v0",
+    "spriteId": "577",
+    "offset": 0.038,
+    "duration": 2.36,
+    "text": "daar komt de herrie",
+    "timestamp": "71.720-74.080"
+  },
+  {
+    "audioId": "31d006v0",
+    "spriteId": "578",
+    "offset": 0.022,
+    "duration": 1.34,
+    "text": "een tijdstolvede",
+    "timestamp": "74.080-75.420"
+  },
+  {
+    "audioId": "31d006v0",
+    "spriteId": "578",
+    "offset": 1.362,
+    "duration": 0.8,
+    "text": "vol",
+    "timestamp": "75.420-76.220"
+  },
+  {
+    "audioId": "31d006v0",
+    "spriteId": "578",
+    "offset": 2.162,
+    "duration": 4.82,
+    "text": "hier kun je benzine tanken of je elektrische motor opladen",
+    "timestamp": "76.220-81.040"
+  },
+  {
+    "audioId": "31d007v0",
+    "spriteId": "579",
+    "offset": -0.072,
+    "duration": 3.04,
+    "text": "daar ligt de racebaan de pitstop",
+    "timestamp": "81.040-84.080"
+  },
+  {
+    "audioId": "31d007v0",
+    "spriteId": "579",
+    "offset": 2.968,
+    "duration": 2.88,
+    "text": "daar kun je testen hoe snel je wagen is",
+    "timestamp": "84.080-86.960"
+  },
+  {
+    "audioId": "31d007v0",
+    "spriteId": "579",
+    "offset": 5.848,
+    "duration": 3.8,
+    "text": "als je het durft tenminste",
+    "timestamp": "86.960-90.760"
+  },
+  {
+    "audioId": "31d008v0",
+    "spriteId": "580",
+    "offset": 0.727,
+    "duration": 4.48,
+    "text": "als je mee wilt varen moet je een ticket hebben",
+    "timestamp": "90.760-95.240"
+  },
+  {
+    "audioId": "31d009v0",
+    "spriteId": "581",
+    "offset": 0.604,
+    "duration": 1.26,
+    "text": "dat gaat goed",
+    "timestamp": "95.240-96.500"
+  },
+  {
+    "audioId": "31d009v0",
+    "spriteId": "581",
+    "offset": 1.864,
+    "duration": 2.74,
+    "text": "maar je hebt wel een ticket nodig",
+    "timestamp": "96.500-99.240"
+  },
+  {
+    "audioId": "31d010v0",
+    "spriteId": "582",
+    "offset": -0.076,
+    "duration": 3.46,
+    "text": "zware auto's wegen soms wel erg veel",
+    "timestamp": "99.240-102.700"
+  },
+  {
+    "audioId": "31d010v0",
+    "spriteId": "582",
+    "offset": 3.384,
+    "duration": 2.56,
+    "text": "en dan zakt de brug in",
+    "timestamp": "102.700-105.260"
+  },
+  {
+    "audioId": "31d011v0",
+    "spriteId": "583",
+    "offset": -0.09,
+    "duration": 3.12,
+    "text": "ja daar is een tankstation",
+    "timestamp": "105.260-108.380"
+  },
+  {
+    "audioId": "31d012v0",
+    "spriteId": "584",
+    "offset": -0.155,
+    "duration": 2.4,
+    "text": "nog een tankstation",
+    "timestamp": "108.380-110.780"
+  },
+  {
+    "audioId": "31d013v0",
+    "spriteId": "585",
+    "offset": -0.143,
+    "duration": 1.32,
+    "text": "moet je tanken",
+    "timestamp": "110.780-112.100"
+  },
+  {
+    "audioId": "31d013v0",
+    "spriteId": "585",
+    "offset": 1.177,
+    "duration": 2.64,
+    "text": "dan heb je daar een tankstation",
+    "timestamp": "112.100-114.740"
+  },
+  {
+    "audioId": "31d014v0",
+    "spriteId": "586",
+    "offset": -0.102,
+    "duration": 3.2,
+    "text": "jeetje daar zit iemand vast in de modder",
+    "timestamp": "114.740-117.940"
+  },
+  {
+    "audioId": "31d014v0",
+    "spriteId": "586",
+    "offset": 3.098,
+    "duration": 2.92,
+    "text": "die moeten we gaan helpen",
+    "timestamp": "117.940-120.860"
+  },
+  {
+    "audioId": "31d015v0",
+    "spriteId": "587",
+    "offset": 0.53,
+    "duration": 1.56,
+    "text": "oei een boom op de weg",
+    "timestamp": "120.860-122.420"
+  },
+  {
+    "audioId": "31d015v0",
+    "spriteId": "587",
+    "offset": 2.09,
+    "duration": 1.88,
+    "text": "hier kan ik niet meer door",
+    "timestamp": "122.420-124.300"
+  },
+  {
+    "audioId": "31d015v0",
+    "spriteId": "587",
+    "offset": 3.97,
+    "duration": 2.92,
+    "text": "wat een pech",
+    "timestamp": "124.300-127.220"
+  },
+  {
+    "audioId": "31d016v0",
+    "spriteId": "588",
+    "offset": 0.747,
+    "duration": 1.32,
+    "text": "we moeten stoppen",
+    "timestamp": "127.220-128.540"
+  },
+  {
+    "audioId": "31d016v0",
+    "spriteId": "588",
+    "offset": 2.067,
+    "duration": 2.92,
+    "text": "daar staat een hond langs de weg",
+    "timestamp": "128.540-131.460"
+  },
+  {
+    "audioId": "31d017v0",
+    "spriteId": "589",
+    "offset": -0.143,
+    "duration": 3.24,
+    "text": "daar ligt villa de beschonken boskrekel",
+    "timestamp": "131.460-134.700"
+  },
+  {
+    "audioId": "31d017v0",
+    "spriteId": "589",
+    "offset": 3.097,
+    "duration": 2.44,
+    "text": "daar woont je vrouw Zien",
+    "timestamp": "134.700-137.140"
+  },
+  {
+    "audioId": "31d018v0",
+    "spriteId": "590",
+    "offset": -0.142,
+    "duration": 4.32,
+    "text": "hier is de fruitsap fabriek van frank petanque",
+    "timestamp": "137.140-141.460"
+  },
+  {
+    "audioId": "31d019v0",
+    "spriteId": "591",
+    "offset": -0.149,
+    "duration": 4.48,
+    "text": "hier organiseert jacky nix een fruitsap vijf",
+    "timestamp": "141.460-145.940"
+  },
+  {
+    "audioId": "31d020v0",
+    "spriteId": "592",
+    "offset": -0.133,
+    "duration": 1.96,
+    "text": "dit is vitamine eiland",
+    "timestamp": "145.940-147.900"
+  },
+  {
+    "audioId": "31d020v0",
+    "spriteId": "592",
+    "offset": 1.827,
+    "duration": 1.96,
+    "text": "hier woont Vicky Vitamine",
+    "timestamp": "147.900-149.860"
+  },
+  {
+    "audioId": "31d020v0",
+    "spriteId": "592",
+    "offset": 3.787,
+    "duration": 3.04,
+    "text": "ze speelt dolgraag accordeon",
+    "timestamp": "149.860-152.900"
+  },
+  {
+    "audioId": "31d021v0",
+    "spriteId": "593",
+    "offset": -0.147,
+    "duration": 2.56,
+    "text": "nu zijn we heel ver weg van huis",
+    "timestamp": "152.900-155.460"
+  },
+  {
+    "audioId": "31d021v0",
+    "spriteId": "593",
+    "offset": 2.413,
+    "duration": 1.48,
+    "text": "hier woont niemand",
+    "timestamp": "155.460-156.940"
+  },
+  {
+    "audioId": "31d021v0",
+    "spriteId": "593",
+    "offset": 3.893,
+    "duration": 1.2,
+    "text": "behalve",
+    "timestamp": "156.940-158.140"
+  },
+  {
+    "audioId": "31d021v0",
+    "spriteId": "593",
+    "offset": 5.093,
+    "duration": 1.36,
+    "text": "Peggy PC",
+    "timestamp": "158.140-159.500"
+  },
+  {
+    "audioId": "31d021v0",
+    "spriteId": "593",
+    "offset": 6.453,
+    "duration": 2.2,
+    "text": "helemaal alleen of toch niet",
+    "timestamp": "159.500-161.700"
+  },
+  {
+    "audioId": "31d021v0",
+    "spriteId": "593",
+    "offset": 8.653,
+    "duration": 5.0,
+    "text": "met haar computer voelt ze zich verbonden met de hele wereld",
+    "timestamp": "161.700-166.700"
+  },
+  {
+    "audioId": "31d022v0",
+    "spriteId": "594",
+    "offset": -0.134,
+    "duration": 1.2,
+    "text": "Boris Blaf",
+    "timestamp": "166.700-167.900"
+  },
+  {
+    "audioId": "31d022v0",
+    "spriteId": "594",
+    "offset": 1.066,
+    "duration": 3.48,
+    "text": "woont met zijn honden hoog in de bergen",
+    "timestamp": "167.900-171.380"
+  },
+  {
+    "audioId": "31d023v0",
+    "spriteId": "595",
+    "offset": -0.124,
+    "duration": 1.76,
+    "text": "hier woont Staf Schroot",
+    "timestamp": "171.380-173.140"
+  },
+  {
+    "audioId": "31d023v0",
+    "spriteId": "595",
+    "offset": 1.636,
+    "duration": 1.48,
+    "text": "de schroothandelaar",
+    "timestamp": "173.140-174.620"
+  },
+  {
+    "audioId": "31d023v0",
+    "spriteId": "595",
+    "offset": 3.116,
+    "duration": 2.96,
+    "text": "maar dat had je wel al door zeker",
+    "timestamp": "174.620-177.580"
+  },
+  {
+    "audioId": "31d024v0",
+    "spriteId": "596",
+    "offset": -0.124,
+    "duration": 1.96,
+    "text": "hier ligt de zee",
+    "timestamp": "177.580-179.540"
+  },
+  {
+    "audioId": "31d025v0",
+    "spriteId": "597",
+    "offset": -0.115,
+    "duration": 2.56,
+    "text": "dit hier is de autoshow",
+    "timestamp": "179.540-182.100"
+  },
+  {
+    "audioId": "31d025v0",
+    "spriteId": "597",
+    "offset": 2.445,
+    "duration": 0.88,
+    "text": "zeg eens",
+    "timestamp": "182.100-182.980"
+  },
+  {
+    "audioId": "31d025v0",
+    "spriteId": "597",
+    "offset": 3.325,
+    "duration": 3.36,
+    "text": "zou jij je mooie kar hier ook niet eens ten toon stellen",
+    "timestamp": "182.980-186.340"
+  },
+  {
+    "audioId": "31d025v0",
+    "spriteId": "597",
+    "offset": 6.685,
+    "duration": 1.84,
+    "text": "dan win je misschien wel een medaille",
+    "timestamp": "186.340-188.180"
+  },
+  {
+    "audioId": "31d025v0",
+    "spriteId": "597",
+    "offset": 8.525,
+    "duration": 2.32,
+    "text": "je weet maar nooit",
+    "timestamp": "188.180-190.500"
+  },
+  {
+    "audioId": "31d026v0",
+    "spriteId": "598",
+    "offset": -0.132,
+    "duration": 1.72,
+    "text": "kijk hier eens",
+    "timestamp": "190.500-192.220"
+  },
+  {
+    "audioId": "31d026v0",
+    "spriteId": "598",
+    "offset": 1.588,
+    "duration": 2.96,
+    "text": "wat is dat voor een ding",
+    "timestamp": "192.220-195.180"
+  },
+  {
+    "audioId": "31d027v0",
+    "spriteId": "625",
+    "offset": 0.486,
+    "duration": 0.68,
+    "text": "jammer",
+    "timestamp": "195.180-195.860"
+  },
+  {
+    "audioId": "31d027v0",
+    "spriteId": "625",
+    "offset": 1.166,
+    "duration": 2.48,
+    "text": "maar deze kar hebben we al geschout",
+    "timestamp": "195.860-198.340"
+  },
+  {
+    "audioId": "31d027v0",
+    "spriteId": "625",
+    "offset": 3.646,
+    "duration": 3.76,
+    "text": "je mag elke auto maar één keer ten toon stellen",
+    "timestamp": "198.340-202.100"
+  },
+  {
+    "audioId": "31d027v0",
+    "spriteId": "625",
+    "offset": 7.406,
+    "duration": 1.88,
+    "text": "ik vind het ook jammer",
+    "timestamp": "202.100-203.980"
+  },
+  {
+    "audioId": "31d027v0",
+    "spriteId": "625",
+    "offset": 9.286,
+    "duration": 1.88,
+    "text": "maar dat zijn nu eenmaal de regels",
+    "timestamp": "203.980-205.860"
+  },
+  {
+    "audioId": "31d027v0",
+    "spriteId": "625",
+    "offset": 11.166,
+    "duration": 2.0,
+    "text": "niks aan te doen",
+    "timestamp": "205.860-207.860"
+  },
+  {
+    "audioId": "05e071v0",
+    "spriteId": "294",
+    "offset": -4.815,
+    "duration": 7.0,
+    "text": "de",
+    "timestamp": "241.180-248.180"
+  },
+  {
+    "audioId": "05e075v0",
+    "spriteId": "298",
+    "offset": 0.059,
+    "duration": 2.04,
+    "text": "de",
+    "timestamp": "251.420-253.460"
+  },
+  {
+    "audioId": "05e076v0",
+    "spriteId": "299",
+    "offset": -3.139,
+    "duration": 7.0,
+    "text": "de",
+    "timestamp": "253.460-260.460"
+  },
+  {
+    "audioId": "05e077v0",
+    "spriteId": "300",
+    "offset": -0.117,
+    "duration": 4.4,
+    "text": "de",
+    "timestamp": "261.900-266.300"
+  },
+  {
+    "audioId": "05e078v0",
+    "spriteId": "301",
+    "offset": -1.28,
+    "duration": 7.0,
+    "text": "de",
+    "timestamp": "266.300-273.300"
+  },
+  {
+    "audioId": "05e079v0",
+    "spriteId": "302",
+    "offset": 0.494,
+    "duration": 7.0,
+    "text": "de",
+    "timestamp": "273.300-280.300"
+  },
+  {
+    "audioId": "05e012v0",
+    "spriteId": "309",
+    "offset": -0.186,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "280.820-282.820"
+  },
+  {
+    "audioId": "05e014v0",
+    "spriteId": "311",
+    "offset": -0.937,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "282.820-284.820"
+  },
+  {
+    "audioId": "05e016v0",
+    "spriteId": "313",
+    "offset": -1.494,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "284.820-286.820"
+  },
+  {
+    "audioId": "05d001v0",
+    "spriteId": "325",
+    "offset": -0.699,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "286.820-288.820"
+  },
+  {
+    "audioId": "05d001v0",
+    "spriteId": "325",
+    "offset": 1.301,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "288.820-290.820"
+  },
+  {
+    "audioId": "05d001v0",
+    "spriteId": "325",
+    "offset": 3.301,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "290.820-292.820"
+  },
+  {
+    "audioId": "05d002v0",
+    "spriteId": "326",
+    "offset": 0.258,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "292.820-294.820"
+  },
+  {
+    "audioId": "05d002v0",
+    "spriteId": "326",
+    "offset": 2.258,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "294.820-296.820"
+  },
+  {
+    "audioId": "05d002v0",
+    "spriteId": "326",
+    "offset": 4.258,
+    "duration": 2.0,
+    "text": "de",
+    "timestamp": "296.820-298.820"
+  },
+  {
+    "audioId": "05d003v0",
+    "spriteId": "327",
+    "offset": -0.048,
+    "duration": 7.0,
+    "text": "de",
+    "timestamp": "298.820-305.820"
+  },
+  {
+    "audioId": "05d004v0",
+    "spriteId": "328",
+    "offset": 0.115,
+    "duration": 5.0,
+    "text": "de",
+    "timestamp": "305.820-310.820"
+  },
+  {
+    "audioId": "05d005v0",
+    "spriteId": "329",
+    "offset": -2.583,
+    "duration": 12.0,
+    "text": "de",
+    "timestamp": "310.820-322.820"
+  },
+  {
+    "audioId": "05d006v0",
+    "spriteId": "330",
+    "offset": 4.174,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "322.820-332.820"
+  },
+  {
+    "audioId": "05d007v0",
+    "spriteId": "331",
+    "offset": 3.758,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "332.820-342.820"
+  },
+  {
+    "audioId": "05d008v0",
+    "spriteId": "332",
+    "offset": 1.437,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "342.820-352.820"
+  },
+  {
+    "audioId": "05d009v0",
+    "spriteId": "333",
+    "offset": 2.332,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "352.820-362.820"
+  },
+  {
+    "audioId": "05d010v0",
+    "spriteId": "334",
+    "offset": 0.913,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "362.820-372.820"
+  },
+  {
+    "audioId": "05d012v0",
+    "spriteId": "336",
+    "offset": -4.148,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "372.820-382.820"
+  },
+  {
+    "audioId": "05d014v0",
+    "spriteId": "338",
+    "offset": -3.833,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "382.820-392.820"
+  },
+  {
+    "audioId": "05d015v0",
+    "spriteId": "339",
+    "offset": 1.856,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "392.820-402.820"
+  },
+  {
+    "audioId": "05d016v0",
+    "spriteId": "340",
+    "offset": 3.481,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "402.820-412.820"
+  },
+  {
+    "audioId": "05d017v0",
+    "spriteId": "341",
+    "offset": 3.178,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "412.820-422.820"
+  },
+  {
+    "audioId": "05e010v0",
+    "spriteId": "243",
+    "offset": -3.679,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "422.820-432.820"
+  },
+  {
+    "audioId": "05e014v0",
+    "spriteId": "247",
+    "offset": -1.215,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "432.820-442.820"
+  },
+  {
+    "audioId": "05e019v0",
+    "spriteId": "252",
+    "offset": -3.358,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "442.820-452.820"
+  },
+  {
+    "audioId": "05e022v0",
+    "spriteId": "255",
+    "offset": -6.192,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "452.820-462.820"
+  },
+  {
+    "audioId": "05e024v0",
+    "spriteId": "257",
+    "offset": -3.38,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "462.820-472.820"
+  },
+  {
+    "audioId": "05e026v0",
+    "spriteId": "259",
+    "offset": 0.001,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "472.820-482.820"
+  },
+  {
+    "audioId": "05e029v0",
+    "spriteId": "262",
+    "offset": -2.432,
+    "duration": 9.0,
+    "text": "de",
+    "timestamp": "482.820-491.820"
+  },
+  {
+    "audioId": "05e033v0",
+    "spriteId": "266",
+    "offset": -3.766,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "491.820-501.820"
+  },
+  {
+    "audioId": "05e036v0",
+    "spriteId": "269",
+    "offset": -5.094,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "501.820-511.820"
+  },
+  {
+    "audioId": "05e038v0",
+    "spriteId": "271",
+    "offset": -1.726,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "511.820-521.820"
+  },
+  {
+    "audioId": "05e054v0",
+    "spriteId": "277",
+    "offset": 3.599,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "521.820-531.820"
+  },
+  {
+    "audioId": "05e057v0",
+    "spriteId": "280",
+    "offset": -5.269,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "531.820-541.820"
+  },
+  {
+    "audioId": "05e061v0",
+    "spriteId": "284",
+    "offset": -4.522,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "541.820-551.820"
+  },
+  {
+    "audioId": "05e063v0",
+    "spriteId": "286",
+    "offset": -1.311,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "551.820-561.820"
+  },
+  {
+    "audioId": "05e063v0",
+    "spriteId": "286",
+    "offset": 8.689,
+    "duration": 8.0,
+    "text": "de",
+    "timestamp": "561.820-569.820"
+  },
+  {
+    "audioId": "05e066v0",
+    "spriteId": "289",
+    "offset": -3.864,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "569.820-579.820"
+  },
+  {
+    "audioId": "05e066v0",
+    "spriteId": "289",
+    "offset": 6.136,
+    "duration": 10.0,
+    "text": "de",
+    "timestamp": "579.820-589.820"
+  }
+]

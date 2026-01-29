@@ -1,0 +1,1 @@
+[#ObjectId: 2, #type: #dest, #InnerRadius: 15, #OuterRadius: 25, #CustomObject:"", #DirResource: "86", #Sounds: ["31d017v0"], #FrameList: [#normal: ["Dummy"], #Inner: ["Dummy"], #Outer: ["Dummy"]], #SetWhenDone:[#UserStuff:[#FerryTicket], #Missions:[5]], #CheckFor:[#Parts:[173]], #IfFound:#None, #SpriteInfo:[#Under:1]]

@@ -1,0 +1,1 @@
+[#ObjectId: 24, #type: #dest, #InnerRadius: 25, #OuterRadius: 45, #CustomObject:"", #DirResource: "84", #Sounds: ["31d026v0"], #FrameList: [#normal: ["31b044v0"], #Inner: ["31b044v0"], #Outer: ["31b044v0"]], #SetWhenDone:[#Cache:[#RoadThing6], #Parts:[9, #Random]], #CheckFor:[#Cache:[#RoadThing6], #Parts:[9, #Random]], #IfFound:#NoDisplay, #SpriteInfo:[#Under:1]]

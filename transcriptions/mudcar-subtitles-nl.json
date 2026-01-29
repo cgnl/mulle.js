@@ -1,0 +1,90 @@
+[
+  {
+    "audioId": "82d009v0",
+    "spriteId": "83",
+    "offset": 0.0,
+    "duration": 2.08,
+    "text": "Eh, hallo?",
+    "timestamp": "0.000-2.080"
+  },
+  {
+    "audioId": "82d009v0",
+    "spriteId": "83",
+    "offset": 2.08,
+    "duration": 0.96,
+    "text": "Help!",
+    "timestamp": "2.080-3.040"
+  },
+  {
+    "audioId": "82d009v0",
+    "spriteId": "83",
+    "offset": 3.04,
+    "duration": 2.0,
+    "text": "Ik zit vast in de leraar!",
+    "timestamp": "3.040-5.040"
+  },
+  {
+    "audioId": "82d003v0",
+    "spriteId": "200",
+    "offset": 0.015,
+    "duration": 1.44,
+    "text": "Nee, dat lukt niet!",
+    "timestamp": "25.560-27.000"
+  },
+  {
+    "audioId": "82d003v0",
+    "spriteId": "200",
+    "offset": 1.455,
+    "duration": 2.0,
+    "text": "De motor is niet krachtig genoeg!",
+    "timestamp": "27.000-29.000"
+  },
+  {
+    "audioId": "82d003v0",
+    "spriteId": "200",
+    "offset": 3.655,
+    "duration": 2.0,
+    "text": "We hebben niet voldoende paardenkracht!",
+    "timestamp": "29.200-31.200"
+  },
+  {
+    "audioId": "82d006v0",
+    "spriteId": "201",
+    "offset": -0.024,
+    "duration": 3.36,
+    "text": "Zo, onze goede taat voor vandaag zit er weer op!",
+    "timestamp": "32.320-35.680"
+  },
+  {
+    "audioId": "82d006v0",
+    "spriteId": "201",
+    "offset": 3.336,
+    "duration": 1.52,
+    "text": "En kijk eens!",
+    "timestamp": "35.680-37.200"
+  },
+  {
+    "audioId": "82d006v0",
+    "spriteId": "201",
+    "offset": 4.856,
+    "duration": 2.0,
+    "text": "Dat kan nog van Bas komen!",
+    "timestamp": "37.200-39.200"
+  },
+  {
+    "audioId": "82d009v0",
+    "spriteId": "202",
+    "offset": 0.0,
+    "duration": 1.0,
+    "text": "Help!",
+    "timestamp": "40.200-41.200"
+  },
+  {
+    "audioId": "82d009v0",
+    "spriteId": "202",
+    "offset": 1.0,
+    "duration": 2.0,
+    "text": "Ik zit vast in de modder!",
+    "timestamp": "41.200-43.200"
+  }
+]

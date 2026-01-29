@@ -1,0 +1,1 @@
+[#ObjectId: 29, #type: #custom, #InnerRadius: 0, #OuterRadius: 0, #CustomObject:"Picture", #DirResource: "", #Sounds: [], #FrameList: [#normal: ["31b043v0"]], #SetWhenDone:[], #CheckFor:[], #IfFound:#NoDisplay, #SpriteInfo:[#Over:1]]

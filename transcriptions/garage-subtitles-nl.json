@@ -1,0 +1,490 @@
+[
+  {
+    "audioId": "03e009v0",
+    "spriteId": "107",
+    "offset": -1.344,
+    "duration": 18.6,
+    "text": "Zal ik de auto mee naar buiten duwen of wil je er nog wat aan knutselen?",
+    "timestamp": "0.000-18.600"
+  },
+  {
+    "audioId": "03d006v0",
+    "spriteId": "209",
+    "offset": -1.078,
+    "duration": 5.16,
+    "text": "Ziezo, de wielen zitten erop. Nu kunnen we de auto naar buiten duwen.",
+    "timestamp": "18.600-23.760"
+  },
+  {
+    "audioId": "03d006v0",
+    "spriteId": "209",
+    "offset": 4.082,
+    "duration": 6.08,
+    "text": "Of wil je er nog wat aan verder morrelen? Nu kunnen we de auto eindelijk verplaatsen.",
+    "timestamp": "23.760-29.840"
+  },
+  {
+    "audioId": "03d007v0",
+    "spriteId": "210",
+    "offset": 2.654,
+    "duration": 4.24,
+    "text": "Als je niets meer wilt toevoegen, help ik je wel even om hem uit de garage te duwen.",
+    "timestamp": "30.200-34.440"
+  },
+  {
+    "audioId": "03d010v0",
+    "spriteId": "212",
+    "offset": -3.163,
+    "duration": 5.52,
+    "text": "Nu rollen we de auto naar buiten. Klaar voor de start? Dan rollen we de auto naar",
+    "timestamp": "35.600-41.120"
+  },
+  {
+    "audioId": "03d011v0",
+    "spriteId": "213",
+    "offset": -1.586,
+    "duration": 7.36,
+    "text": "buiten. Maar hier klopt iets niet. Even nadenken hoe we die auto kunnen laten rijden. Maar zitten",
+    "timestamp": "41.120-48.480"
+  },
+  {
+    "audioId": "03d012v0",
+    "spriteId": "214",
+    "offset": -2.125,
+    "duration": 7.28,
+    "text": "er wel wielen op? Nou, zonder wielen lukt het niet hoor. Zelfs geen halve centimeter krijg je die",
+    "timestamp": "48.480-55.760"
+  },
+  {
+    "audioId": "03d012v0",
+    "spriteId": "214",
+    "offset": 5.155,
+    "duration": 5.52,
+    "text": "auto vooruit. Neem dat maar van me aan. Volgens mij is er iets mis met de motor.",
+    "timestamp": "55.760-61.280"
+  },
+  {
+    "audioId": "03d014v0",
+    "spriteId": "216",
+    "offset": -0.034,
+    "duration": 6.48,
+    "text": "Waar zit de accu? Die heb je nodig voor de stroom. Geen benzine. De benzinetank is niet",
+    "timestamp": "62.480-68.960"
+  },
+  {
+    "audioId": "03d015v0",
+    "spriteId": "217",
+    "offset": 2.369,
+    "duration": 7.44,
+    "text": "gewoon leeg. Er is zelfs helemaal geen benzinetank, klungel! Zeg, zit er wel een versnellingsbak in",
+    "timestamp": "68.960-76.400"
+  },
+  {
+    "audioId": "03d016v0",
+    "spriteId": "218",
+    "offset": 2.101,
+    "duration": 5.16,
+    "text": "je kar? Nou, zonder versnellingsbak kan de motor de wielen niet laten draaien. Dus van",
+    "timestamp": "76.400-81.560"
+  },
+  {
+    "audioId": "03d016v0",
+    "spriteId": "218",
+    "offset": 7.261,
+    "duration": 6.96,
+    "text": "rijden komt in zo'n geval niks terecht. Zeker weten! Het stuurwiel, het woord zegt het zelf al,",
+    "timestamp": "81.560-88.520"
+  },
+  {
+    "audioId": "03d017v0",
+    "spriteId": "219",
+    "offset": 2.472,
+    "duration": 6.76,
+    "text": "om de auto te besturen. Het wordt wel eens het vijfde wiel aan de wagen genoemd. En ik ook soms,",
+    "timestamp": "88.520-95.280"
+  },
+  {
+    "audioId": "03d018v0",
+    "spriteId": "220",
+    "offset": -2.837,
+    "duration": 6.96,
+    "text": "maar dat is een ander verhaal. Stop, stop, stop! Wacht eens even! Hoe ga je remmen dan?",
+    "timestamp": "95.280-102.240"
+  },
+  {
+    "audioId": "03d019v0",
+    "spriteId": "221",
+    "offset": -1.322,
+    "duration": 7.76,
+    "text": "Toet, toet! Je kunt toch niet rijden zonder toeter? De uitlaatgassen moeten toch ergens",
+    "timestamp": "102.240-110.000"
+  },
+  {
+    "audioId": "03d020v0",
+    "spriteId": "222",
+    "offset": 2.033,
+    "duration": 7.16,
+    "text": "uitkomen en dat kan het best uit de uitlaatpijp, als je het mij vraagt. Zonder koplampen is het",
+    "timestamp": "110.000-117.160"
+  },
+  {
+    "audioId": "03d021v0",
+    "spriteId": "223",
+    "offset": 1.324,
+    "duration": 6.08,
+    "text": "s'nachts gewoon stikdonker. Dan rij je voor je het weet met je smikkel tegen de eerste de beste boom",
+    "timestamp": "117.160-123.240"
+  },
+  {
+    "audioId": "03d027v0",
+    "spriteId": "226",
+    "offset": -1.494,
+    "duration": 8.04,
+    "text": "aan. Denk je dat je nog wat andere spullen kunt monteren? Ziezo, de accu, de versnellingsbak en",
+    "timestamp": "123.240-131.280"
+  },
+  {
+    "audioId": "03d028v0",
+    "spriteId": "227",
+    "offset": 2.72,
+    "duration": 7.12,
+    "text": "de remmen zitten erin. Dan kan ik nu de rest monteren. Moet je kijken! De versnellingsbak",
+    "timestamp": "131.280-138.400"
+  },
+  {
+    "audioId": "03d029v0",
+    "spriteId": "228",
+    "offset": 2.197,
+    "duration": 5.12,
+    "text": "zit niet op de juiste plek. Hoe wil je nou dat ik bij die versnellingspool kan om te schakelen",
+    "timestamp": "138.480-143.600"
+  },
+  {
+    "audioId": "03d030v0",
+    "spriteId": "229",
+    "offset": -2.79,
+    "duration": 6.12,
+    "text": "terwijl ik achter het stuur zit? Ik wil me niet teveel bemoeien hoor, maar je hebt geen remmen.",
+    "timestamp": "143.600-149.720"
+  },
+  {
+    "audioId": "03d030v0",
+    "spriteId": "229",
+    "offset": 3.33,
+    "duration": 6.76,
+    "text": "Die moeten op de as van de wielen zitten en je moet ze monteren voordat je de wielen op de assen",
+    "timestamp": "149.720-156.480"
+  },
+  {
+    "audioId": "03d031v0",
+    "spriteId": "230",
+    "offset": -1.691,
+    "duration": 7.68,
+    "text": "schroeft. Vergeet niet de accu te monteren, want zonder accu kun je de motor niet starten. De accu",
+    "timestamp": "156.480-164.160"
+  },
+  {
+    "audioId": "03d031v0",
+    "spriteId": "230",
+    "offset": 6.349,
+    "duration": 7.28,
+    "text": "kan voorin of achterin zitten, dat mag je zelf kiezen. De schroothoop ligt vol, er kan zelfs",
+    "timestamp": "164.520-171.800"
+  },
+  {
+    "audioId": "03d034v0",
+    "spriteId": "233",
+    "offset": -2.353,
+    "duration": 7.2,
+    "text": "geen moertje meer bij. Nou, dat ziet er niet slecht uit, dat moet ik toegeven. Wat een",
+    "timestamp": "171.800-179.000"
+  },
+  {
+    "audioId": "03d035v0",
+    "spriteId": "234",
+    "offset": 0.365,
+    "duration": 6.88,
+    "text": "vernuftig staaltje techniek, echt een blitse koets hoor, dit lijkt poedpoed wel. Kijk eens aan,",
+    "timestamp": "179.000-185.880"
+  },
+  {
+    "audioId": "03d037v0",
+    "spriteId": "236",
+    "offset": -3.14,
+    "duration": 7.6,
+    "text": "dat heb je alleraardigst geknutseld. Mooi gedaan, dat is een te gekke kar. Wat een lijn,",
+    "timestamp": "186.400-194.000"
+  },
+  {
+    "audioId": "03d039v0",
+    "spriteId": "238",
+    "offset": -2.876,
+    "duration": 8.6,
+    "text": "dat ziet er fraai uit. Er zit geen bank in, waar wil je nou dat ik zit? Met dit onderdeel kun je nu",
+    "timestamp": "194.000-202.600"
+  },
+  {
+    "audioId": "03d041v0",
+    "spriteId": "240",
+    "offset": -2.256,
+    "duration": 7.28,
+    "text": "niets aanvangen. Wat wil je daar nou mee aanvangen? Leg maar weer weg, je kunt het nu niet gebruiken.",
+    "timestamp": "202.600-209.880"
+  },
+  {
+    "audioId": "03d042v0",
+    "spriteId": "241",
+    "offset": -1.324,
+    "duration": 8.52,
+    "text": "Hmm, daar kun je nu net niets mee beginnen. Nu komt Stafschroot zeker met nieuwe onderdelen",
+    "timestamp": "209.880-218.400"
+  },
+  {
+    "audioId": "03d045v0",
+    "spriteId": "244",
+    "offset": -4.56,
+    "duration": 9.36,
+    "text": "naar Miel's garage. Zeg Miel, kijk eens aan wie we daar hebben, Stafschroot en heb je wat",
+    "timestamp": "218.400-227.760"
+  },
+  {
+    "audioId": "03d046v0",
+    "spriteId": "245",
+    "offset": -2.701,
+    "duration": 8.8,
+    "text": "onderdelen voor me meegebracht? Ja ja, maak je maar geen zorgen, ik leg ze op het erf en dan",
+    "timestamp": "227.760-236.560"
+  },
+  {
+    "audioId": "03d046v0",
+    "spriteId": "245",
+    "offset": 6.099,
+    "duration": 12.88,
+    "text": "kun je ze zelf sorteren. Sorry, maar ik moet ervan door. Dag. Hmm, ik ben benieuwd. Hmm, even kijken.",
+    "timestamp": "236.560-249.440"
+  },
+  {
+    "audioId": "03d052v0",
+    "spriteId": "251",
+    "offset": -9.767,
+    "duration": 12.04,
+    "text": "Hmm, ja ja. Hmm, we zullen eens kijken. Hmm, goed zo. Nou, dan kunnen we nu beginnen te knutselen.",
+    "timestamp": "249.440-261.480"
+  },
+  {
+    "audioId": "03d052v0",
+    "spriteId": "251",
+    "offset": 2.753,
+    "duration": 5.12,
+    "text": "Je vindt de nodige stukken voor de auto op de schroothoop. Ga naar buiten door die kleine",
+    "timestamp": "261.960-267.080"
+  },
+  {
+    "audioId": "03d053v0",
+    "spriteId": "252",
+    "offset": -3.649,
+    "duration": 6.48,
+    "text": "deur met het raam erin, dan vind je het wel. Oké, aan de slag. Zullen we dan nu eens gaan",
+    "timestamp": "267.080-273.560"
+  },
+  {
+    "audioId": "03d054v0",
+    "spriteId": "253",
+    "offset": -3.493,
+    "duration": 7.52,
+    "text": "kijken wat er allemaal op de schroothoop ligt? Joepie, dan gaan we nu auto's bouwen. Zullen we",
+    "timestamp": "273.560-281.080"
+  },
+  {
+    "audioId": "03d055v0",
+    "spriteId": "254",
+    "offset": 0.281,
+    "duration": 5.84,
+    "text": "er maar aan beginnen? Buiten op de schroothoop vind je alles wat je nodig hebt, daar is de deur.",
+    "timestamp": "281.080-286.920"
+  },
+  {
+    "audioId": "03d056v0",
+    "spriteId": "255",
+    "offset": -0.237,
+    "duration": 7.0,
+    "text": "Ja ja, nu is het de hoogste tijd om snel een auto te bouwen. Als je de carrosserie wilt losmaken",
+    "timestamp": "287.920-294.920"
+  },
+  {
+    "audioId": "03d057v0",
+    "spriteId": "256",
+    "offset": 1.707,
+    "duration": 6.76,
+    "text": "zul je eerst alles wat je erop hebt gemonteerd moeten weghalen. Heb je wat hulp nodig bij het",
+    "timestamp": "294.920-301.680"
+  },
+  {
+    "audioId": "03d058v0",
+    "spriteId": "257",
+    "offset": 1.388,
+    "duration": 4.76,
+    "text": "monteren van de spullen? Klik dan even op de voorwerpen om te zien waar ze moeten komen.",
+    "timestamp": "301.680-306.440"
+  },
+  {
+    "audioId": "03d059v0",
+    "spriteId": "258",
+    "offset": -0.05,
+    "duration": 6.44,
+    "text": "Was dat alles wat je wilde weten? Oké, dan kunnen we rustig verder bouwen. Looking good,",
+    "timestamp": "307.720-314.160"
+  },
+  {
+    "audioId": "03d061v0",
+    "spriteId": "263",
+    "offset": -2.584,
+    "duration": 7.56,
+    "text": "zoals ze in Amerika zeggen. Ben je tevreden met deze auto of wil je er nog wat aan borrelen? Wil",
+    "timestamp": "314.720-322.280"
+  },
+  {
+    "audioId": "03d062v0",
+    "spriteId": "264",
+    "offset": 0.097,
+    "duration": 5.72,
+    "text": "je wat goede raad van een oude rot in het vak? Om auto's te bouwen moet je heel precies te werk",
+    "timestamp": "322.280-328.000"
+  },
+  {
+    "audioId": "50d001v0",
+    "spriteId": "23",
+    "offset": -3.24,
+    "duration": 8.24,
+    "text": "gaan, zo hoort dat nu eenmaal. Zal ik je nu eens wat vertellen? Die dekselse hond van mij, Laika,",
+    "timestamp": "328.000-336.240"
+  },
+  {
+    "audioId": "50d001v0",
+    "spriteId": "23",
+    "offset": 5.6,
+    "duration": 7.44,
+    "text": "is er weer vandoor. Verdorie toch, dat is al de tweede keer deze week. Ik moet hem zo snel",
+    "timestamp": "336.840-344.280"
+  },
+  {
+    "audioId": "50d001v0",
+    "spriteId": "23",
+    "offset": 13.04,
+    "duration": 9.48,
+    "text": "mogelijk terugvinden. Miel, zou jij me kunnen helpen met zoeken? Dag Miel, Peggy hier, Peggy PC.",
+    "timestamp": "344.280-353.760"
+  },
+  {
+    "audioId": "50d018v0",
+    "spriteId": "26",
+    "offset": 2.847,
+    "duration": 5.72,
+    "text": "Ik heb net een nieuw spelletje van het internet gehaald. Het ziet er erg leuk uit, maar je moet",
+    "timestamp": "353.760-359.480"
+  },
+  {
+    "audioId": "50d018v0",
+    "spriteId": "26",
+    "offset": 8.567,
+    "duration": 6.24,
+    "text": "wel met z'n tweeën zijn om het te spelen. Heb je geen zin om te komen? Alsjeblieft. Je weet wel",
+    "timestamp": "359.480-365.720"
+  },
+  {
+    "audioId": "50d018v0",
+    "spriteId": "26",
+    "offset": 14.807,
+    "duration": 5.92,
+    "text": "waar ik woon, he? Richting Autoshow en net ervoor naar het zuiden en dan altijd rechtdoor. Kom maar",
+    "timestamp": "365.720-371.640"
+  },
+  {
+    "audioId": "50d018v0",
+    "spriteId": "26",
+    "offset": 20.727,
+    "duration": 7.52,
+    "text": "snel, ik zet de computer alvast aan. Vele groetjes. Haastje, ik heb zo'n zin om te spelen. Tot dan.",
+    "timestamp": "371.640-379.160"
+  },
+  {
+    "audioId": "50d019v0",
+    "spriteId": "27",
+    "offset": -1.252,
+    "duration": 9.04,
+    "text": "Miel, zien hier. Ik ben helemaal overstuur. Mijn kat is weer in de boom geklommen en ze kan er niet",
+    "timestamp": "379.160-388.200"
+  },
+  {
+    "audioId": "50d019v0",
+    "spriteId": "27",
+    "offset": 7.908,
+    "duration": 7.72,
+    "text": "meer uit. Ze ziet daar zo hard verscheurende miauwen. Volgens mij heeft ze hoogtevrees en",
+    "timestamp": "388.320-396.040"
+  },
+  {
+    "audioId": "50d019v0",
+    "spriteId": "27",
+    "offset": 15.628,
+    "duration": 8.84,
+    "text": "is ze doodsbang. Het is echt vreselijk. Lieve Miel, wil je me alsjeblieft komen helpen? Kom snel",
+    "timestamp": "396.040-404.880"
+  },
+  {
+    "audioId": "50d019v0",
+    "spriteId": "27",
+    "offset": 24.468,
+    "duration": 7.76,
+    "text": "en neem de kortste weg, want het is dringend. Rij voorbij Schrootland. Je weet wel, de schroothandel",
+    "timestamp": "404.880-412.640"
+  },
+  {
+    "audioId": "50d019v0",
+    "spriteId": "27",
+    "offset": 32.228,
+    "duration": 8.84,
+    "text": "van Stafschroot. Bij de splitsing sla je linksaf. Ik hoop dat je snel kunt komen. Groetjes. Hoi,",
+    "timestamp": "412.640-421.480"
+  },
+  {
+    "audioId": "50d020v0",
+    "spriteId": "28",
+    "offset": 0.169,
+    "duration": 9.44,
+    "text": "Team Miel. Boris hier, Boris Blaf. Volgens mij is het alweer eeuwen geleden dat je nog hier bent",
+    "timestamp": "421.480-430.920"
+  },
+  {
+    "audioId": "50d020v0",
+    "spriteId": "28",
+    "offset": 9.609,
+    "duration": 7.08,
+    "text": "geweest. Waarom leg je je moersleutel niet even aan de kant om me nog eens te bezoeken? De boog",
+    "timestamp": "430.920-438.000"
+  },
+  {
+    "audioId": "50d020v0",
+    "spriteId": "28",
+    "offset": 16.849,
+    "duration": 7.8,
+    "text": "kan toch niet altijd gespannen staan? Kom gewoon eens een borrel drinken. De fles staat altijd klaar.",
+    "timestamp": "438.160-445.960"
+  },
+  {
+    "audioId": "50d020v0",
+    "spriteId": "28",
+    "offset": 24.649,
+    "duration": 7.76,
+    "text": "Ik woon nog altijd in de bergen. Volg gewoon de wegwijzers naar de hondenpas. Dan vind je het",
+    "timestamp": "445.960-453.720"
+  },
+  {
+    "audioId": "50d020v0",
+    "spriteId": "28",
+    "offset": 32.409,
+    "duration": 8.12,
+    "text": "wel. Tot binnenkort. En breng je hond maar mee. Dat zou ik leuk vinden. Je oude gabber, Boris.",
+    "timestamp": "453.720-461.840"
+  }
+]
