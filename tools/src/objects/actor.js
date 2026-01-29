@@ -221,42 +221,113 @@ class MulleActor extends MulleSprite {
       for (var i = 0; i < 4; i++) f.push([b, 42 + i])
       this.addAnimation('jump2', f, 10, false)
     } else if (this.actorName === 'christina') {
-      // Christina Colombus - Boat expert NPC from boten/04.DXR
-      // Member 42 (04a002v0) = idle/standing frame
-      // Members 42-74 = animation frames (talk, wave, etc.)
-      b = 'boten/04.DXR'
+      // Christina Colombus - Boat expert NPC from boten_04.DXR
+      // Based on TalkToMeAnimChart (Internal/30.txt):
+      // AnimChart frame N → Director member 41 + N (04a002v0 starts at member 42)
+      // Original Lingo: #Talk:[21,23,24,25,26,27,28,29], #Scratch:[2-6], #ScratchHead:[11-16], #LookAround:[17-19]
+      b = 'boten_04.DXR'
+      const base = 41  // Frame 1 = Member 42, so offset is 41
 
-      this.setDirectorMember(b, 42)
+      this.setDirectorMember(b, base + 1)  // Frame 1 = idle
 
-      // Idle animation (standing still)
-      this.addAnimation('idle', [ [b, 42] ], 10, true, false)
+      // Idle/Still animation - frame 1
+      this.addAnimation('idle', [ [b, base + 1] ], 10, true, false)
 
-      // Talk animation - uses frames 42-70 (various mouth/gesture positions)
+      // Talk animation - original: #Talk:[21,23,24,25,26,27,28,29]
       this.addAnimation('talkPlayer', [
-        [b, 42], [b, 43], [b, 44], [b, 45], [b, 46], [b, 47], [b, 48],
-        [b, 49], [b, 50], [b, 51], [b, 52], [b, 53], [b, 54], [b, 55]
+        [b, base + 21], [b, base + 23], [b, base + 24], [b, base + 25],
+        [b, base + 26], [b, base + 27], [b, base + 28], [b, base + 29]
       ], 10, true, false)
 
-      // Look at player
-      this.addAnimation('lookPlayer', [ [b, 42], [b, 43] ], 5, true, false)
+      // Look at player - frame 1 (same as idle, looking forward)
+      this.addAnimation('lookPlayer', [ [b, base + 1] ], 5, true, false)
 
-      // Wave animation (members 56-70 seem to be waving/gesturing)
-      this.addAnimation('wave', [
-        [b, 56], [b, 57], [b, 58], [b, 59], [b, 60], [b, 61], [b, 62],
-        [b, 63], [b, 64], [b, 65], [b, 66], [b, 67], [b, 68], [b, 69], [b, 70]
+      // Scratch animation - original: #Scratch:[2,3,4,5,6,5,6,5,4,3,2,1]
+      this.addAnimation('scratch', [
+        [b, base + 2], [b, base + 3], [b, base + 4], [b, base + 5], [b, base + 6],
+        [b, base + 5], [b, base + 6], [b, base + 5], [b, base + 4], [b, base + 3],
+        [b, base + 2], [b, base + 1]
+      ], 10, false, false)
+
+      // ScratchHead animation - original: #ScratchHead:[11,12,13,14,15,16,15,16,15,14,13,12,11,1]
+      // (simplified, original has #RndHold for frame 15)
+      this.addAnimation('scratchHead', [
+        [b, base + 11], [b, base + 12], [b, base + 13], [b, base + 14],
+        [b, base + 15], [b, base + 16], [b, base + 15], [b, base + 16],
+        [b, base + 15], [b, base + 14], [b, base + 13], [b, base + 12],
+        [b, base + 11], [b, base + 1]
       ], 8, false, false)
+
+      // LookAround animation - original: #LookAround:[17,17,17...18,19,19...18,18,1]
+      this.addAnimation('lookAround', [
+        [b, base + 17], [b, base + 17], [b, base + 17], [b, base + 17],
+        [b, base + 18], [b, base + 19], [b, base + 19], [b, base + 19],
+        [b, base + 18], [b, base + 18], [b, base + 1]
+      ], 6, false, false)
 
       this.talkAnimation = 'talkPlayer'
       this.silenceAnimation = 'idle'
     } else if (this.actorName === 'christinaQuay') {
-      // Christina at the quay/dock (alternative position)
-      // Uses different animation frames from 04.DXR
-      b = 'boten/04.DXR'
+      // Christina at the quay/dock - Based on QuayAnimChart (Internal/29.txt)
+      // This uses the SAME sprite sheet as 'christina' (04a002v0, member 42+)
+      // Original Lingo: #Talk:[30,31,32,33,34,35,36], #GoPee:[1-33 with sound]
+      b = 'boten_04.DXR'
+      const base = 41  // Frame 1 = Member 42
 
-      this.setDirectorMember(b, 75)  // 04a003v0
+      this.setDirectorMember(b, base + 1)  // Frame 1 = idle
 
-      this.addAnimation('idle', [ [b, 75], [b, 76] ], 5, true, false)
-      this.addAnimation('talkPlayer', [ [b, 75], [b, 76], [b, 77], [b, 78], [b, 79], [b, 80], [b, 81] ], 10, true, false)
+      // Idle/Still animation - frame 1
+      this.addAnimation('idle', [ [b, base + 1] ], 10, true, false)
+
+      // Talk animation - original: #Talk:[30,31,32,33,34,35,36]
+      this.addAnimation('talkPlayer', [
+        [b, base + 30], [b, base + 31], [b, base + 32], [b, base + 33],
+        [b, base + 34], [b, base + 35], [b, base + 36]
+      ], 10, true, false)
+
+      // Look at player
+      this.addAnimation('lookPlayer', [ [b, base + 1] ], 5, true, false)
+
+      // Scratch animation - same as christina: #Scratch:[2,3,4,5,6,5,6,5,4,3,2,1]
+      this.addAnimation('scratch', [
+        [b, base + 2], [b, base + 3], [b, base + 4], [b, base + 5], [b, base + 6],
+        [b, base + 5], [b, base + 6], [b, base + 5], [b, base + 4], [b, base + 3],
+        [b, base + 2], [b, base + 1]
+      ], 10, false, false)
+
+      // ScratchHead animation - same as christina
+      this.addAnimation('scratchHead', [
+        [b, base + 11], [b, base + 12], [b, base + 13], [b, base + 14],
+        [b, base + 15], [b, base + 16], [b, base + 15], [b, base + 16],
+        [b, base + 15], [b, base + 14], [b, base + 13], [b, base + 12],
+        [b, base + 11], [b, base + 1]
+      ], 8, false, false)
+
+      // LookAround animation - same as christina
+      this.addAnimation('lookAround', [
+        [b, base + 17], [b, base + 17], [b, base + 17], [b, base + 17],
+        [b, base + 18], [b, base + 19], [b, base + 19], [b, base + 19],
+        [b, base + 18], [b, base + 18], [b, base + 1]
+      ], 6, false, false)
+
+      // GoPee animation - original: #GoPee:[1,2,3,...33] with sound "00e111v1"
+      // This is a long animation sequence (frames 1-33)
+      this.addAnimation('goPee', [
+        [b, base + 1], [b, base + 2], [b, base + 3], [b, base + 4], [b, base + 5],
+        [b, base + 6], [b, base + 7], [b, base + 8], [b, base + 9], [b, base + 10],
+        [b, base + 11], [b, base + 12], [b, base + 13], [b, base + 30], [b, base + 31],
+        [b, base + 32], [b, base + 32], [b, base + 32], [b, base + 33], [b, base + 33],
+        [b, base + 33], [b, base + 32], [b, base + 32], [b, base + 32], [b, base + 32],
+        [b, base + 32], [b, base + 32], [b, base + 32], [b, base + 32], [b, base + 32],
+        [b, base + 33], [b, base + 33], [b, base + 33], [b, base + 32], [b, base + 32],
+        [b, base + 32], [b, base + 33], [b, base + 33], [b, base + 33], [b, base + 32],
+        [b, base + 32], [b, base + 32], [b, base + 33], [b, base + 33], [b, base + 33],
+        [b, base + 32], [b, base + 31], [b, base + 30], [b, base + 14], [b, base + 15],
+        [b, base + 16], [b, base + 17], [b, base + 18], [b, base + 19], [b, base + 20],
+        [b, base + 21], [b, base + 22], [b, base + 23], [b, base + 24], [b, base + 25],
+        [b, base + 26], [b, base + 27], [b, base + 28], [b, base + 29]
+      ], 8, false, false)
+      // Note: Sound "00e111v1" should be triggered when this animation plays
 
       this.talkAnimation = 'talkPlayer'
       this.silenceAnimation = 'idle'
