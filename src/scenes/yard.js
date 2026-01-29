@@ -9,6 +9,7 @@ import MulleCarPart from '../objects/carpart'
 import MulleActor from '../objects/actor'
 import SubtitleLoader from '../objects/SubtitleLoader'
 import MulleMissions from '../struct/missions'
+import ExternalParts from '../struct/externalParts'
 
 class YardState extends MulleState {
   preload () {
@@ -29,6 +30,9 @@ class YardState extends MulleState {
     this.junkParts = null
     this.door_side = null
     this.door_garage = null
+    
+    // Phase 3: Mail state machine
+    this.mailState = 'empty' // 'empty' | 'arrived' | 'delivering'
 
     this.game.physics.startSystem(Phaser.Physics.ARCADE)
     this.game.physics.arcade.gravity.y = 800
@@ -37,30 +41,47 @@ class YardState extends MulleState {
     background.setDirectorMember('04.DXR', 37)
     this.game.add.existing(background)
 
+    // Phase 2: Take snapshot of car parts when entering yard
+    this.takeCarSnapshot()
+
+    // Phase 4: Check for postal gifts
+    this.checkPostal()
+
     // Mission system
     this.missionSystem = new MulleMissions(this.game)
+    
+    // Phase 2: Only show mail if missionIsComing is true (car was built/modified)
+    const user = this.game.mulle.user
     const mailMission = this.missionSystem.getPendingMailMission()
+    const shouldShowMail = mailMission && user.missionIsComing
     const phoneMission = this.missionSystem.getPendingTelephoneMission()
 
     // Mailbox (EXACT Lingo implementation from MailBH)
+    // Phase 2: Only show full mailbox if missionIsComing (car was modified)
+    // Phase 3: Use state machine for mail delivery
     let mailbox
-    if (mailMission) {
+    if (shouldShowMail) {
       // Mail has arrived - show full mailbox (02b005v0)
+      this.mailState = 'arrived'
       mailbox = new MulleButton(this.game, 320, 240, {
         imageDefault: ['CDDATA.CXT', 906], // 02b005v0 from Lingo
         click: () => {
-          this.kickMail(mailMission)
+          if (this.mailState === 'arrived') {
+            this.kickMail(mailMission)
+          }
         }
       })
     } else {
       // Empty mailbox (04n001v0)
+      this.mailState = 'empty'
       mailbox = new MulleButton(this.game, 320, 240, {
         imageDefault: ['04.DXR', 42],
         imageHover: ['04.DXR', 43],
         soundDefault: '04e009v0',
         soundHover: '04e010v0',
         click: () => {
-          if (this.mulleActor) {
+          // Phase 3: Empty mailbox click
+          if (this.mailState === 'empty' && this.mulleActor) {
             this.mulleActor.talk('04d001v0') // No mail
           }
         }
@@ -137,6 +158,9 @@ class YardState extends MulleState {
       var go_road = new MulleButton(this.game, 320, 240, {
         imageDefault: ['04.DXR', 16],
         click: (a) => {
+          // Phase 2: Check if car was modified since entering yard
+          this.checkCarModified()
+          
           this.game.mulle.activeCutscene = '00b008v0'
           this.game.mulle.lastSession = null
           this.game.mulle.user.Car.resetCache()
@@ -219,6 +243,36 @@ class YardState extends MulleState {
     }
 
     console.log('Yard', 'through door')
+  }
+
+  /**
+   * Phase 2: Take snapshot of current car parts for comparison
+   */
+  takeCarSnapshot () {
+    const user = this.game.mulle.user
+    const currentParts = user.Car.Parts ? [...user.Car.Parts].sort() : []
+    user.enterPartsSnapshot = JSON.stringify(currentParts)
+    console.debug('[yard] Car snapshot taken:', currentParts)
+  }
+
+  /**
+   * Phase 2: Check if car was modified since entering yard
+   * If yes, increment NrOfBuiltCars and set missionIsComing
+   */
+  checkCarModified () {
+    const user = this.game.mulle.user
+    const currentParts = user.Car.Parts ? [...user.Car.Parts].sort() : []
+    const currentSnapshot = JSON.stringify(currentParts)
+    
+    if (user.enterPartsSnapshot && user.enterPartsSnapshot !== currentSnapshot) {
+      user.NrOfBuiltCars++
+      user.missionIsComing = true
+      console.debug('[yard] Car modified! NrOfBuiltCars:', user.NrOfBuiltCars, 'missionIsComing:', user.missionIsComing)
+    } else {
+      console.debug('[yard] Car not modified, no new mission')
+    }
+    
+    user.save()
   }
 
   /**
@@ -306,9 +360,14 @@ class YardState extends MulleState {
 
   /**
    * kickMail - EXACT Lingo implementation from Missions.ls
+   * Phase 3: Added input locking and state machine
    */
   kickMail (mission) {
     console.log('kickMail:', mission)
+    
+    // Phase 3: Lock input during mail delivery
+    this.game.mulle.setInputLocked(true)
+    this.mailState = 'delivering'
     
     // Mark mission as given
     this.missionSystem.markAsGiven(mission.id)
@@ -342,7 +401,7 @@ class YardState extends MulleState {
       })
     }
     
-    // Also allow click to finish
+    // Also allow click to finish (after audio is done)
     this.mailClickFinish = this.game.input.onDown.add(() => {
       if (this.currentSound && !this.currentSound.isPlaying) {
         this.finishMail()
@@ -352,9 +411,13 @@ class YardState extends MulleState {
 
   /**
    * finishMail - EXACT Lingo implementation from Missions.ls
+   * Phase 3: Added input unlocking and state machine reset
    */
   finishMail () {
     console.log('finishMail')
+    
+    // Prevent double-finish
+    if (this.mailState !== 'delivering') return
     
     // Hide mail overlay
     if (this.mailOverlay) {
@@ -372,6 +435,151 @@ class YardState extends MulleState {
       this.game.input.onDown.remove(this.mailClickFinish)
       this.mailClickFinish = null
     }
+    
+    // Phase 3: Reset state and unlock input
+    this.mailState = 'empty'
+    this.game.mulle.setInputLocked(false)
+    
+    // Save state
+    this.game.mulle.user.save()
+  }
+
+  /**
+   * Phase 4: Check for postal gifts
+   * Based on Lingo's checKPostal() from startmovie.ls
+   */
+  checkPostal () {
+    const user = this.game.mulle.user
+    const externalParts = new ExternalParts(this.game)
+    
+    // Get new gifts (1-3 random parts not yet offered)
+    const newGifts = externalParts.getCurrentlyAvailable('Postal')
+    
+    if (newGifts.length === 0) {
+      console.debug('[yard] No new postal gifts')
+      return
+    }
+    
+    // Add to gifts queue and postal history
+    newGifts.forEach(partId => {
+      user.gifts.push(partId)
+      user.PostalHistory.push(partId)
+    })
+    
+    console.debug('[yard] Added postal gifts:', newGifts)
+    user.save()
+    
+    // Show gift UI after a short delay (let scene initialize first)
+    this.game.time.events.add(500, () => {
+      this.showGiftPackage()
+    })
+  }
+
+  /**
+   * Phase 4: Show gift package sprite
+   * Based on Lingo's giftSprite handling in startmovie.ls
+   * Package sprite: 04.DXR member 272 (04b004v0)
+   */
+  showGiftPackage () {
+    const user = this.game.mulle.user
+    
+    if (user.gifts.length === 0) return
+    
+    console.log('[yard] Showing gift package, gifts:', user.gifts)
+    
+    // Mulle talks about package (random 04d013/14/15)
+    if (this.mulleActor) {
+      const packageLines = ['04d013v0', '04d014v0', '04d015v0']
+      const randomLine = packageLines[Math.floor(Math.random() * packageLines.length)]
+      this.mulleActor.talk(randomLine)
+    }
+    
+    // Show gift sprite at (180, 410) - position from Lingo
+    // 04.DXR member 272 = 04b004v0 (package sprite)
+    this.giftSprite = new MulleButton(this.game, 180, 410, {
+      imageDefault: ['04.DXR', 272],
+      click: () => this.clickGiftPackage()
+    })
+    this.giftSprite.cursor = 'Click'
+    this.game.add.existing(this.giftSprite)
+  }
+
+  /**
+   * Phase 4: Handle click on gift package
+   * Shows address note overlay with audio
+   * Based on Lingo's packageBH behavior script
+   */
+  clickGiftPackage () {
+    console.log('[yard] Gift package clicked')
+    
+    // Lock input during gift claiming
+    this.game.mulle.setInputLocked(true)
+    
+    // Show address note at (320, 240)
+    // 04.DXR member 274 = 04b006v0 (address note)
+    this.addressNote = new MulleSprite(this.game, 320, 240)
+    this.addressNote.setDirectorMember('04.DXR', 274)
+    this.game.add.existing(this.addressNote)
+    
+    // Play audio 04d023v0 (reading the note)
+    this.currentSound = this.game.mulle.playAudio('04d023v0', () => {
+      // After audio: enable click on note to claim gifts
+      this.addressNote.inputEnabled = true
+      this.addressNote.events.onInputDown.add(() => this.claimGifts())
+    })
+    
+    // Also allow click to claim after audio
+    this.giftClickFinish = this.game.input.onDown.add(() => {
+      if (this.currentSound && !this.currentSound.isPlaying) {
+        this.claimGifts()
+      }
+    })
+  }
+
+  /**
+   * Phase 4: Claim the gifts and add to yard
+   * Based on Lingo's noteBH behavior script
+   */
+  claimGifts () {
+    const user = this.game.mulle.user
+    
+    // Prevent double-claim
+    if (!this.addressNote) return
+    
+    console.log('[yard] Claiming gifts:', user.gifts)
+    
+    // Add gifts to yard (random positions)
+    user.gifts.forEach(partId => {
+      const x = this.game.rnd.integerInRange(100, 540)
+      const y = this.game.rnd.integerInRange(350, 430)
+      user.addPart('yard', partId, new Phaser.Point(x, y), true)
+    })
+    
+    // Clear gifts queue
+    user.gifts = []
+    user.save()
+    
+    // Hide UI
+    if (this.giftSprite) {
+      this.giftSprite.destroy()
+      this.giftSprite = null
+    }
+    if (this.addressNote) {
+      this.addressNote.destroy()
+      this.addressNote = null
+    }
+    
+    // Remove click listener
+    if (this.giftClickFinish) {
+      this.game.input.onDown.remove(this.giftClickFinish)
+      this.giftClickFinish = null
+    }
+    
+    // Unlock input
+    this.game.mulle.setInputLocked(false)
+    
+    // Restart scene to show new parts
+    this.game.state.restart()
   }
 
   shutdown () {
