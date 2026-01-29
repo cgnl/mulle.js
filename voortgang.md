@@ -12,7 +12,7 @@ Integreren van twee Miel Monteur games in de JS remake:
 
 ---
 
-## Status: FASE 13 - LINGO COMPARISON FIXES
+## Status: FASE 14 - INVENTORY & QUEST SYSTEEM
 
 ### Voltooide Bestemmingen (29-01-2026)
 
@@ -159,6 +159,77 @@ Integreren van twee Miel Monteur games in de JS remake:
   - Nieuwe iconen: skull, ant, maze, anchor, wreck, house
   - "Nog niet beschikbaar" melding voor ongeïmplementeerde locaties
 
+### Fase 14: Inventory & Quest Systeem (29-01-2026)
+
+Gevalideerd tegen originele Lingo code uit `boten_CDDATA.CXT/Standalone/`:
+- User data structuur: `1.txt`
+- Pickup objects: `1953.txt` (Bible), `1954.txt` (Swimring), `1955.txt` (DoctorBag)
+- Compass checks: `1957.txt`, `1958.txt` (FogEdge)
+- Quest destinations: `1967-1976.txt`
+- Racing/Medal: `1989.txt` - `SetWhenDone:[#Medals:[2]]`
+- Medal namen: `boten_08.DXR/Internal/81-86.txt`
+
+- [x] **inventory.js** - Sea inventory manager (NIEUW)
+  - `INVENTORY_ITEMS` constante met 6 items:
+    - Bible (Object 4): sprite `31b001v0`, sounds `31d001v0/31d009v0/31e005v0`
+    - Swimring (Object 5): sprite `31b002v0`, sounds `31d008v0/31d009v0/31e005v0`
+    - DoctorBag (Object 6): sprite `31b003v0`, sounds `05d118v0/31d009v0/31e005v0`
+    - Compass (Object 7): voor mist navigatie
+    - Diary: voor Sam bij de vuurtoren
+    - RottenFish: voor de visser
+  - `MulleSeaInventory` class:
+    - `addItem(name)` - Originele: `SetWhenDone:[#Inventory:[#Bible]]`
+    - `removeItem(name)` - Bij delivery aan NPC
+    - `hasItem(name)` - Originele: `CheckFor:[#Inventory:[#Bible]]`
+    - `shouldShowPickup(name)` - Level + NotGivenMissions check
+    - Blueprint support: `addBlueprint()`, `hasBlueprint()`
+
+- [x] **medals.js** - Medal systeem (NIEUW)
+  - `SEA_MEDALS` constante met 6 medailles:
+    1. Lange-afstands-medaille - reach_sven (cave.js)
+    2. Snelheids-medaille - win_race (racing, uit `1989.txt`)
+    3. Vrachtschip-medaille - deliver_rottenfish (fisherman.js)
+    4. Meest-blitse-boot-medaille - showboat_5points (showboat.js)
+    5. Duik-medaille - dive_wrakbaai (diving.js)
+    6. Luxe-medaille - princess_tour (birgit.js)
+  - `MulleSeaMedals` class:
+    - `awardMedal(id)` - Originele: `SetWhenDone:[#Medals:[2]]`
+    - `hasMedal(id)` - Check via MulleBoat.Medals
+    - `checkTrigger(name)` - Automatische toekenning op trigger
+
+- [x] **savedata.js** - Uitgebreid met quest velden
+  - Nieuwe velden (uit `1.txt` originele user data):
+    - `SeaInventory`: `{ items: {}, blueprints: { Blueprint1: {} } }`
+    - `SeaLevel`: 1-5 (uit `CheckFor:[#Level:[2,3,4,5]]`)
+    - `givenSeaMissions`: [] (uit `#givenMissions: []`)
+    - `deliveryMade`: false (uit `#deliveryMade: FALSE`)
+    - `veryFirstTime`: true (uit `#veryFirstTime: TRUE`)
+  - Nieuwe helper methodes:
+    - `isSeaMissionGiven(id)` - voor `CheckFor:[#NotGivenMissions:[1]]`
+    - `giveSeaMission(id)` - markeer missie als gegeven
+    - `isSeaMissionCompleted(id)` / `completeSeaMission(id)`
+    - `getSeaLevel()` / `setSeaLevel(level)` / `increaseSeaLevel()`
+    - `meetsSeaLevelRequirement(minLevel)`
+    - `isVeryFirstTime()` / `markNotFirstTime()`
+
+- [x] **game.js** - Managers geïnitialiseerd
+  - Import: `MulleSeaInventory`, `MulleSeaMedals`
+  - `this.mulle.seaInventory` - Sea inventory manager
+  - `this.mulle.seaMedals` - Sea medal manager
+
+#### Lingo Validatie Matrix:
+| Originele Lingo | JS Implementatie | Bestand |
+|-----------------|------------------|---------|
+| `#Inventory:[#Blueprint1:[:]]` | `SeaInventory.blueprints.Blueprint1` | savedata.js |
+| `SetWhenDone:[#Inventory:[#Bible]]` | `seaInventory.addItem('Bible')` | inventory.js |
+| `CheckFor:[#Inventory:[#Bible]]` | `seaInventory.hasItem('Bible')` | inventory.js |
+| `CheckFor:[#NotGivenMissions:[1]]` | `user.isSeaMissionGiven(1)` | savedata.js |
+| `CheckFor:[#Level:[2,3,4,5]]` | `user.meetsSeaLevelRequirement(2)` | savedata.js |
+| `SetWhenDone:[#Medals:[2]]` | `seaMedals.awardMedal(2)` | medals.js |
+| `#givenMissions: []` | `user.givenSeaMissions` | savedata.js |
+| `#deliveryMade: FALSE` | `user.deliveryMade` | savedata.js |
+| `#veryFirstTime: TRUE` | `user.veryFirstTime` | savedata.js |
+
 ---
 
 ## Audio Overzicht (Volledig)
@@ -215,7 +286,9 @@ src/
 └── struct/
     ├── boatdata.js      - MulleBoat class
     ├── seaworld.js      - MulleSeaWorld class
-    └── seamap.js        - MulleSeaMap class
+    ├── seamap.js        - MulleSeaMap class
+    ├── inventory.js     - MulleSeaInventory class (NIEUW Fase 14)
+    └── medals.js        - MulleSeaMedals class (NIEUW Fase 14)
 ```
 
 ### Geregistreerde Scenes in game.js
@@ -303,4 +376,31 @@ https://mielboten.dtun.nl
 
 ---
 
-*Laatst bijgewerkt: 29 januari 2026 - Fase 12 Part Descriptions Geïmplementeerd*
+## Volgende Stappen (Fase 15+)
+
+### Fase 15: Pickup Objects
+- [ ] `pickup.js` - Pickup object class voor Bible, Swimring, DoctorBag
+- [ ] seaworld.js integratie - spawn pickups gebaseerd op level/mission state
+- [ ] Pickup animatie met `Trans` sprite (33b010v0, 33b009v0, 33b021v0)
+
+### Fase 16: NPC Quest Handling
+- [ ] preacher.js - Accept Bible → give Part 99, complete mission 4
+- [ ] birgit.js - Accept Swimring/DoctorBag, Princess LuxuryFactor check
+- [ ] lighthouse.js - Diary quest → map expansion
+- [ ] fisherman.js - Accept RottenFish → Vrachtschip-medaille
+- [ ] mia.js - Give Watertank (17) + Compass (46), Bench check
+- [ ] cave.js - Compass check, Lange-afstands-medaille
+
+### Fase 17: Racing Mini-game
+- [ ] racing.js - Object 2 uit 1989.txt
+- [ ] Timer, checkpoints, win condition
+- [ ] Snelheids-medaille (medal 2) toekenning
+
+### Fase 18: Medal Completion
+- [ ] showboat.js - Meest-blitse-boot-medaille bij 5+ punten
+- [ ] diving.js - Duik-medaille
+- [ ] birgit.js - Luxe-medaille (Princess LuxuryFactor check)
+
+---
+
+*Laatst bijgewerkt: 29 januari 2026 - Fase 14 Inventory & Quest Systeem Geïmplementeerd*

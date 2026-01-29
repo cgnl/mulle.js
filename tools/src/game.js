@@ -37,6 +37,22 @@ import OceanState from 'scenes/ocean'
 import CreditsState from 'scenes/credits'
 import WorldSelectState from 'scenes/worldselect'
 import BoatyardState from 'scenes/boatyard'
+import SeaWorldState from 'scenes/seaworld'
+import ShowBoatState from 'scenes/showboat'
+import LighthouseState from 'scenes/lighthouse'
+import MiaState from 'scenes/mia'
+import SurferState from 'scenes/surfer'
+import PreacherState from 'scenes/preacher'
+import DivingState from 'scenes/diving'
+import ViolaBoatState from 'scenes/viola_boat'
+import BirgitState from 'scenes/birgit'
+import CaveState from 'scenes/cave'
+import BoatJunkState from 'scenes/boat_junk'
+import ErsonIntroState from 'scenes/erson_intro'
+import HarborState from 'scenes/harbor'
+import FishermanState from 'scenes/fisherman'
+import WaterPumpState from 'scenes/waterpump'
+import WhaleState from 'scenes/whale'
 
 // var requireScenes = require.context('scenes', true, /\.js$/);
 // requireScenes.keys().forEach(requireScenes);
@@ -46,6 +62,8 @@ import MulleSubtitle from 'objects/subtitle'
 import MulleAudio from 'objects/audio'
 
 import MulleSave from 'struct/savedata'
+import MulleSeaInventory from 'struct/inventory'
+import MulleSeaMedals from 'struct/medals'
 // import PluginState from './scenes/plugin'
 // import TreeCarState from './scenes/treecar'
 import MudCarState from './scenes/mudcar'
@@ -159,17 +177,20 @@ class MulleGame extends Phaser.Game {
       '70': 'zee_event70',
       '71': 'zee_event71',
       '76': 'zee_event76',
-      '77': 'zee_event77',
-      '78': 'zee_event78',
+      '77': 'birgitbeach',
+      '78': 'preacher',
       '79': 'zee_event79',
-      '80': 'zee_event80',
-      '81': 'zee_event81',
+      '80': 'lighthouse',
+      '81': 'surfbeach',
       '83': 'zee_event83',
-      '84': 'zee_event84',
+      '84': 'viola_boat',
       '85': 'zee_event85',
       '86': 'zee_event86',
-      '87': 'zee_event87',
-      '88': 'zee_event88'
+      '87': 'diving',
+      '88': 'zee_event88',
+      
+      // Showboat scene (boat exhibition)
+      'SHOWBOAT': 'showboat'
     }
 
     this.mulle.states = {
@@ -208,7 +229,23 @@ class MulleGame extends Phaser.Game {
       carshow: CarShowState, // 94
 
       // === BOTEN (Zee) SCENES ===
-      boatyard: BoatyardState // Boat building workshop
+      boatyard: BoatyardState, // Boat building workshop (boten_04.DXR)
+      boat_junk: BoatJunkState, // Boat parts storage shed (boten_02.DXR)
+      seaworld: SeaWorldState, // Sea navigation (sailing)
+      showboat: ShowBoatState, // Boat show/exhibition
+      lighthouse: LighthouseState, // Sam's lighthouse (boten_80.DXR)
+      mia: MiaState, // Mia's Island (boten_83.DXR)
+      surfbeach: SurferState, // Sur's surf beach (boten_81.DXR)
+      preacher: PreacherState, // Dominee's church island (boten_78.DXR)
+      diving: DivingState, // Underwater diving spot (boten_87.DXR)
+      birgitbeach: BirgitState, // Birgit's beach with dogs (boten_77.DXR)
+      viola_boat: ViolaBoatState, // Viola's house - boat version (boten_84.DXR)
+      cave: CaveState, // Sven's cave with bat (boten_86.DXR)
+      erson_intro: ErsonIntroState, // Erson tutorial intro (boten_70.DXR)
+      harbor: HarborState, // Harbor tutorial with rope (boten_71.DXR)
+      fisherman: FishermanState, // Fisherman on pier (boten_79.DXR)
+      waterpump: WaterPumpState, // Water pump/fountain (boten_85.DXR)
+      whale: WhaleState // Whale watching (boten_88.DXR)
 
     }
 
@@ -300,6 +337,13 @@ class MulleGame extends Phaser.Game {
     this.mulle.getBoatPart = function (id) {
       return this.BoatPartsDB[id]
     }
+
+    // === SEA INVENTORY & MEDAL MANAGERS ===
+    // Gebaseerd op originele Lingo user data structuur
+    // Inventory items: Bible, Swimring, DoctorBag, Compass, Diary, RottenFish
+    // Medals: 6 medailles uit boten_08.DXR/Internal/81-86.txt
+    this.mulle.seaInventory = new MulleSeaInventory(this)
+    this.mulle.seaMedals = new MulleSeaMedals(this)
 
     this.mulle.UsersDB = []
     this.mulle.saveData = function () {

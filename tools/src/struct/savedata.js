@@ -99,16 +99,64 @@ class MulleSave {
     this.Boat = new MulleBoat(this.game)
 
     // Boat junk piles (equivalent to Junk for cars)
+    // Based on original Lingo user data: #Junk: []
+    // Categories based on boat part properties (similar to car junk piles)
     this.BoatJunk = {
-      boatyard: {},      // Boatyard floor
-      dock: {},          // Dock area
-      warehouse: {}      // Storage warehouse
+      shopFloor: {},     // Boatyard floor (visible in boatyard scene)
+      Category1: {},     // Rompen (hulls)
+      Category2: {},     // Motoren (engines)
+      Category3: {},     // Zeilen (sails)
+      Category4: {},     // Besturing (steering)
+      Category5: {},     // Roeispanen (oars)
+      Category6: {}      // Accessoires (accessories)
     }
+    
+    this.myLastBoatPile = 1  // Last visited boat junk category
 
     // Boat-specific tracking
     this.NrOfBuiltBoats = 0
     this.savedBoats = []
     this.CompletedSeaMissions = []
+    
+    // Christina Colombus progression system (equivalent to Figge for boats)
+    this.ChristinaVisits = 0
+    this.ChristinaUnlocks = {
+      tier1: false,  // 2+ boats built: 3 parts
+      tier2: false,  // 4+ boats built: 4 parts
+      tier3: false,  // 7+ boats built: 5 parts
+      vip: false     // VIP status marker
+    }
+    this.christinaIsComing = false  // Flag to trigger Christina visit
+
+    // === SEA INVENTORY & QUEST SYSTEM ===
+    // Gebaseerd op originele Lingo user data (boten_CDDATA.CXT/Standalone/1.txt):
+    // #Inventory:[#Blueprint1:[:]], #givenMissions: [], #deliveryMade: FALSE, #veryFirstTime: TRUE
+    
+    // Sea Inventory - quest items en blueprints
+    // Items: Bible, Swimring, DoctorBag, Compass, Diary, RottenFish
+    this.SeaInventory = {
+      items: {},           // { Bible: true, Swimring: true, ... }
+      blueprints: {        // Originele Lingo: #Blueprint1:[:]
+        Blueprint1: {}
+      }
+    }
+
+    // Sea Level (1-5) - bepaalt welke pickups zichtbaar zijn
+    // Uit CheckFor:[#Level:[2,3,4,5]] in object definities (1953-1955.txt)
+    // Level 2+: Bible pickup beschikbaar
+    // Level 3+: Swimring, DoctorBag pickups beschikbaar
+    this.SeaLevel = 1
+
+    // Given sea missions - voorkomt re-triggering van pickups
+    // Originele Lingo: #givenMissions: []
+    // Gebruikt in CheckFor:[#NotGivenMissions:[1]] (1953.txt, etc.)
+    this.givenSeaMissions = []
+
+    // Delivery tracking - originele Lingo: #deliveryMade: FALSE
+    this.deliveryMade = false
+
+    // Very first time flag - originele Lingo: #veryFirstTime: TRUE
+    this.veryFirstTime = true
 
     this.language = this.game.mulle.defaultLanguage // 'swedish'
   }
@@ -313,17 +361,44 @@ class MulleSave {
     // Boat data
     this.Boat = new MulleBoat(this.game, data.Boat)
 
-    // Boat junk piles
+    // Boat junk piles - with category structure for boat_junk scene
     this.BoatJunk = data.BoatJunk || {
-      boatyard: {},
-      dock: {},
-      warehouse: {}
+      shopFloor: {},
+      Category1: {},
+      Category2: {},
+      Category3: {},
+      Category4: {},
+      Category5: {},
+      Category6: {}
     }
+    
+    this.myLastBoatPile = data.myLastBoatPile || 1
 
     // Boat tracking
     this.NrOfBuiltBoats = data.NrOfBuiltBoats || 0
     this.savedBoats = data.savedBoats || []
     this.CompletedSeaMissions = data.CompletedSeaMissions || []
+    
+    // Christina Colombus progression system
+    this.ChristinaVisits = data.ChristinaVisits || 0
+    this.ChristinaUnlocks = data.ChristinaUnlocks || {
+      tier1: false,
+      tier2: false,
+      tier3: false,
+      vip: false
+    }
+    this.christinaIsComing = data.christinaIsComing || false
+
+    // === SEA INVENTORY & QUEST SYSTEM ===
+    // Laden van inventory, level, en quest data
+    this.SeaInventory = data.SeaInventory || {
+      items: {},
+      blueprints: { Blueprint1: {} }
+    }
+    this.SeaLevel = data.SeaLevel || 1
+    this.givenSeaMissions = data.givenSeaMissions || []
+    this.deliveryMade = data.deliveryMade || false
+    this.veryFirstTime = data.veryFirstTime !== undefined ? data.veryFirstTime : true
 
     this.language = data.language || this.game.mulle.defaultLanguage
   }
@@ -356,10 +431,134 @@ class MulleSave {
       activeWorld: this.activeWorld,
       Boat: this.Boat,
       BoatJunk: this.BoatJunk,
+      myLastBoatPile: this.myLastBoatPile,
       NrOfBuiltBoats: this.NrOfBuiltBoats,
       savedBoats: this.savedBoats,
       CompletedSeaMissions: this.CompletedSeaMissions,
+      ChristinaVisits: this.ChristinaVisits,
+      ChristinaUnlocks: this.ChristinaUnlocks,
+      christinaIsComing: this.christinaIsComing,
+      // === SEA INVENTORY & QUEST SYSTEM ===
+      SeaInventory: this.SeaInventory,
+      SeaLevel: this.SeaLevel,
+      givenSeaMissions: this.givenSeaMissions,
+      deliveryMade: this.deliveryMade,
+      veryFirstTime: this.veryFirstTime,
       language: this.language
+    }
+  }
+
+  // === SEA INVENTORY & QUEST HELPER METHODS ===
+
+  /**
+   * Check if sea mission is given (to prevent re-triggering pickups)
+   * Originele Lingo: CheckFor:[#NotGivenMissions:[1]]
+   * 
+   * @param {number} missionId - Mission ID
+   * @returns {boolean}
+   */
+  isSeaMissionGiven (missionId) {
+    return this.givenSeaMissions.indexOf(missionId) !== -1
+  }
+
+  /**
+   * Mark sea mission as given
+   * Voorkomt dat pickup opnieuw verschijnt
+   * 
+   * @param {number} missionId - Mission ID
+   */
+  giveSeaMission (missionId) {
+    if (!this.isSeaMissionGiven(missionId)) {
+      this.givenSeaMissions.push(missionId)
+      console.log('[SaveData] Sea mission given:', missionId)
+      this.save()
+    }
+  }
+
+  /**
+   * Check if sea mission is completed
+   * 
+   * @param {number} missionId - Mission ID
+   * @returns {boolean}
+   */
+  isSeaMissionCompleted (missionId) {
+    return this.CompletedSeaMissions.indexOf(missionId) !== -1
+  }
+
+  /**
+   * Complete sea mission
+   * Originele Lingo: SetWhenDone:[#Missions:[4]]
+   * 
+   * @param {number} missionId - Mission ID
+   */
+  completeSeaMission (missionId) {
+    if (!this.isSeaMissionCompleted(missionId)) {
+      this.CompletedSeaMissions.push(missionId)
+      console.log('[SaveData] Sea mission completed:', missionId)
+      this.save()
+    }
+  }
+
+  /**
+   * Get current sea level (1-5)
+   * @returns {number}
+   */
+  getSeaLevel () {
+    return this.SeaLevel
+  }
+
+  /**
+   * Set sea level (1-5)
+   * @param {number} level - New level (clamped to 1-5)
+   */
+  setSeaLevel (level) {
+    this.SeaLevel = Math.max(1, Math.min(5, level))
+    console.log('[SaveData] Sea level set to:', this.SeaLevel)
+    this.save()
+  }
+
+  /**
+   * Increase sea level by 1 (max 5)
+   * @returns {boolean} True if level was increased
+   */
+  increaseSeaLevel () {
+    if (this.SeaLevel < 5) {
+      this.SeaLevel++
+      console.log('[SaveData] Sea level increased to:', this.SeaLevel)
+      this.save()
+      return true
+    }
+    return false
+  }
+
+  /**
+   * Check level requirement
+   * Originele Lingo: CheckFor:[#Level:[2,3,4,5]]
+   * 
+   * @param {number} minLevel - Minimum required level
+   * @returns {boolean}
+   */
+  meetsSeaLevelRequirement (minLevel) {
+    return this.SeaLevel >= minLevel
+  }
+
+  /**
+   * Check if this is the very first time playing
+   * Originele Lingo: #veryFirstTime: TRUE
+   * @returns {boolean}
+   */
+  isVeryFirstTime () {
+    return this.veryFirstTime === true
+  }
+
+  /**
+   * Mark that player has started (no longer first time)
+   */
+  markNotFirstTime () {
+    if (this.veryFirstTime) {
+      this.veryFirstTime = false
+      console.log('[SaveData] No longer first time')
+      this.save()
     }
   }
 }

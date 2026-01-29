@@ -20,7 +20,8 @@ var toLoad = [
   'Hill',
   'Stop',
   'Sound',
-  'Teleport'
+  'Teleport',
+  'Pickup'  // Fase 15: Sea pickup objects (Bible, Swimring, DoctorBag)
 ]
 
 var MapObjects = {}

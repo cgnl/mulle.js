@@ -23,6 +23,17 @@ class LoadState extends Phaser.State {
 
     this.game.load.pack('carparts', 'assets/carparts.json', null, this)
 
+    // Boat game assets (Scheepswerf / Recht Door Zee)
+    this.game.load.pack('boatyard', 'assets/boatyard.json', null, this)
+    this.game.load.pack('boatbuild', 'assets/boatbuild.json', null, this)
+    this.game.load.pack('boatparts', 'assets/boatparts.json', null, this)
+    this.game.load.pack('boatsail', 'assets/boatsail.json', null, this)
+    this.game.load.pack('boat_bls', 'assets/boat_bls.json', null, this)
+    this.game.load.pack('boat_bms', 'assets/boat_bms.json', null, this)
+    this.game.load.pack('boat_bss', 'assets/boat_bss.json', null, this)
+    this.game.load.pack('seaworld', 'assets/seaworld.json', null, this)
+    this.game.load.pack('showboat', 'assets/showboat.json', null, this)
+
     this.game.load.pack('shared', 'assets/shared.json', null, this)
     // this.game.load.pack('voices', 'assets_new/voices.json', null, this);
     this.game.load.pack('ui', 'assets/ui.json', null, this)
@@ -93,6 +104,12 @@ class LoadState extends Phaser.State {
     this.game.mulle.addAudio('shared')
 
     this.game.mulle.addAudio('carparts')
+
+    // Add boat audio sprites
+    this.game.mulle.addAudio('boatyard')
+    this.game.mulle.addAudio('boatbuild')
+    this.game.mulle.addAudio('boatparts')
+    this.game.mulle.addAudio('showboat')
 
     this.game.mulle.loadData()
   }

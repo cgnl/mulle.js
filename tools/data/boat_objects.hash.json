@@ -1,0 +1,122 @@
+{
+  "4": {
+    "ObjectId": 4,
+    "type": "#rdest",
+    "InnerRadius": 45,
+    "OuterRadius": 55,
+    "CustomObject": "Pickup",
+    "DirResource": "",
+    "Sounds": ["31d001v0", "31d009v0", "31e005v0"],
+    "FrameList": {
+      "normal": ["31b001v0"],
+      "Trans": "33b010v0"
+    },
+    "SetWhenDone": {
+      "Inventory": ["Bible"]
+    },
+    "CheckFor": {
+      "NotGivenMissions": [1],
+      "Level": [2, 3, 4, 5],
+      "Inventory": ["Bible"]
+    },
+    "IfFound": "#NoDisplay",
+    "SpriteInfo": {"Under": 1},
+    "_comment": "Bible pickup - boten_CDDATA.CXT/Standalone/1953.txt"
+  },
+  "5": {
+    "ObjectId": 5,
+    "type": "#rdest",
+    "InnerRadius": 45,
+    "OuterRadius": 55,
+    "CustomObject": "Pickup",
+    "DirResource": "",
+    "Sounds": ["31d008v0", "31d009v0", "31e005v0"],
+    "FrameList": {
+      "normal": ["31b002v0"],
+      "Trans": "33b009v0"
+    },
+    "SetWhenDone": {
+      "Inventory": ["Swimring"]
+    },
+    "CheckFor": {
+      "NotGivenMissions": [2],
+      "Level": [3, 4, 5],
+      "Inventory": ["Swimring"]
+    },
+    "IfFound": "#NoDisplay",
+    "SpriteInfo": {"Under": 1},
+    "_comment": "Swimring pickup - boten_CDDATA.CXT/Standalone/1954.txt"
+  },
+  "6": {
+    "ObjectId": 6,
+    "type": "#rdest",
+    "InnerRadius": 45,
+    "OuterRadius": 55,
+    "CustomObject": "Pickup",
+    "DirResource": "",
+    "Sounds": ["05d118v0", "31d009v0", "31e005v0"],
+    "FrameList": {
+      "normal": ["31b003v0"],
+      "Trans": "33b021v0"
+    },
+    "SetWhenDone": {
+      "Inventory": ["DoctorBag"]
+    },
+    "CheckFor": {
+      "NotGivenMissions": [3],
+      "Level": [3, 4, 5],
+      "Inventory": ["DoctorBag"]
+    },
+    "IfFound": "#NoDisplay",
+    "SpriteInfo": {"Under": 1},
+    "_comment": "DoctorBag pickup - boten_CDDATA.CXT/Standalone/1955.txt"
+  },
+  "10": {
+    "ObjectId": 10,
+    "type": "#rdest",
+    "InnerRadius": 45,
+    "OuterRadius": 65,
+    "CustomObject": "",
+    "DirResource": "70",
+    "Sounds": [],
+    "FrameList": {
+      "normal": ["31b004v0"],
+      "Inner": ["31b004v0"],
+      "Outer": ["31b004v0"]
+    },
+    "SetWhenDone": {
+      "Missions": [15]
+    },
+    "CheckFor": {
+      "Parts": ["#Random"],
+      "NotGivenMissions": [15],
+      "Level": [2, 3, 4, 5]
+    },
+    "IfFound": "#NoDisplay",
+    "SpriteInfo": {"Under": 1},
+    "_comment": "Erson encounter to scene 70 - boten_CDDATA.CXT/Standalone/1963.txt"
+  },
+  "11": {
+    "ObjectId": 11,
+    "type": "#rdest",
+    "InnerRadius": 45,
+    "OuterRadius": 65,
+    "CustomObject": "",
+    "DirResource": "71",
+    "Sounds": [],
+    "FrameList": {
+      "normal": ["31b004v0"],
+      "Inner": ["31b004v0"],
+      "Outer": ["31b004v0"]
+    },
+    "SetWhenDone": {},
+    "CheckFor": {
+      "Parts": ["#Random"],
+      "NotGivenMissions": [14],
+      "Level": [2, 3, 4, 5]
+    },
+    "IfFound": "#NoDisplay",
+    "SpriteInfo": {"Under": 1},
+    "_comment": "Erson encounter to scene 71 - boten_CDDATA.CXT/Standalone/1964.txt"
+  }
+}

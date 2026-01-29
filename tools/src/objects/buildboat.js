@@ -120,8 +120,8 @@ class MulleBuildBoat extends Phaser.Group {
       if (partData.UseView) {
         let sprite_fg = new MulleSprite(this.game, 0, 0)
         
-        // Boat parts use boten/CDDATA.CXT
-        const loaded = sprite_fg.setDirectorMember('boten/CDDATA.CXT', partData.UseView)
+        // Boat parts use boten_CDDATA.CXT
+        const loaded = sprite_fg.setDirectorMember('boten_CDDATA.CXT', partData.UseView)
         
         if (!loaded) {
           // Fallback: try loading by frame name
@@ -166,7 +166,7 @@ class MulleBuildBoat extends Phaser.Group {
       // Create background sprite (UseView2)
       if (partData.UseView2) {
         let sprite_bg = new MulleSprite(this.game, 0, 0)
-        sprite_bg.setDirectorMember('boten/CDDATA.CXT', partData.UseView2)
+        sprite_bg.setDirectorMember('boten_CDDATA.CXT', partData.UseView2)
         
         sprite_bg.partId = partId
         sprite_bg.layer = partData.Requires && partData.Requires !== 0

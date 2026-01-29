@@ -20,9 +20,9 @@ class WorldSelectState extends MulleState {
     
     this.game.mulle.addAudio('worldselect')
 
-    // Background - use a generic background for now
+    // Background from 18.DXR (world select scene)
     const background = new MulleSprite(this.game, 320, 240)
-    background.setDirectorMember('10.DXR', 2) // Menu background
+    background.setDirectorMember('18.DXR', 8)
     this.game.add.existing(background)
 
     // Title
