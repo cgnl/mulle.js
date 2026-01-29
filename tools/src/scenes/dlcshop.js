@@ -23,10 +23,23 @@ class DLCShopState extends MulleState {
   create() {
     super.create()
     
-    // Background
-    const bg = new MulleSprite(this.game, 320, 240)
-    bg.setDirectorMember('10.DXR', 2)  // Menu background
-    this.game.add.existing(bg)
+    // Solid background color first (prevents bleed-through from previous scene)
+    this.game.stage.backgroundColor = '#d4a574'  // Warm brown/tan color matching shop theme
+    
+    // Draw a solid background rectangle that fills the entire screen
+    const bgRect = this.game.add.graphics(0, 0)
+    bgRect.beginFill(0xd4a574)  // Same warm brown
+    bgRect.drawRect(0, 0, 640, 480)
+    bgRect.endFill()
+    
+    // Optional: Add a decorative pattern or texture layer
+    const decorBg = this.game.add.graphics(0, 0)
+    decorBg.beginFill(0xc49464, 0.3)  // Slightly darker, semi-transparent
+    // Simple stripe pattern
+    for (let i = 0; i < 640; i += 20) {
+      decorBg.drawRect(i, 0, 10, 480)
+    }
+    decorBg.endFill()
     
     // Title
     const title = this.game.add.text(320, 40, 'Oom Otto\'s Winkel', {
@@ -155,6 +168,9 @@ class DLCShopState extends MulleState {
   
   /**
    * Purchase DLC package
+   * Based on original Lingo: pakket*.cst files contain #Postal arrays
+   * Parts are NOT given immediately - they come via postal system (mailbox in yard)
+   * 
    * @param {string} packageId - Package identifier
    * @param {Array} parts - Array of part definitions
    */
@@ -168,17 +184,16 @@ class DLCShopState extends MulleState {
     
     this.game.mulle.user.DLCPurchased.push(packageId)
     
-    // Add parts to inventory
-    // Note: Parts need to be added to the PartsDB and made available in garage
-    // This is a simplified implementation - full integration would require:
-    // 1. Adding parts to game.mulle.PartsDB
-    // 2. Making sprites available
-    // 3. Adding to yard/garage inventories
+    // Original Lingo behavior:
+    // - pakket*.cst adds parts to #Postal distribution channel
+    // - Parts come via checkPostal() when visiting yard
+    // - 1-3 parts per yard visit until all are received
+    // - Parts tracked in PostalHistory to avoid duplicates
+    //
+    // We just mark DLC as purchased - ExternalParts.getUnlockedDLCParts() 
+    // will include these parts in the postal pool automatically
     
-    parts.forEach(part => {
-      console.log('[DLCShop] Added part:', part.name, part.id)
-      // In real implementation: this.game.mulle.user.addPart('yard', part.id, null, true)
-    })
+    console.log('[DLCShop] DLC unlocked! Parts will arrive via mailbox in yard.')
     
     this.game.mulle.user.save()
     
@@ -200,7 +215,7 @@ class DLCShopState extends MulleState {
     })
     successText.anchor.set(0.5)
     
-    const detailText = this.game.add.text(320, 250, `${parts.length} nieuwe onderdelen\nbeschikbaar in de garage!`, {
+    const detailText = this.game.add.text(320, 250, `${parts.length} onderdelen komen\nvia de brievenbus in je tuin!`, {
       font: '20px Arial',
       fill: '#ffffff',
       align: 'center'
