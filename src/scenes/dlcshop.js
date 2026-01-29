@@ -23,10 +23,23 @@ class DLCShopState extends MulleState {
   create() {
     super.create()
     
-    // Background
-    const bg = new MulleSprite(this.game, 320, 240)
-    bg.setDirectorMember('10.DXR', 2)  // Menu background
-    this.game.add.existing(bg)
+    // Solid background color first (prevents bleed-through from previous scene)
+    this.game.stage.backgroundColor = '#d4a574'  // Warm brown/tan color matching shop theme
+    
+    // Draw a solid background rectangle that fills the entire screen
+    const bgRect = this.game.add.graphics(0, 0)
+    bgRect.beginFill(0xd4a574)  // Same warm brown
+    bgRect.drawRect(0, 0, 640, 480)
+    bgRect.endFill()
+    
+    // Optional: Add a decorative pattern or texture layer
+    const decorBg = this.game.add.graphics(0, 0)
+    decorBg.beginFill(0xc49464, 0.3)  // Slightly darker, semi-transparent
+    // Simple stripe pattern
+    for (let i = 0; i < 640; i += 20) {
+      decorBg.drawRect(i, 0, 10, 480)
+    }
+    decorBg.endFill()
     
     // Title
     const title = this.game.add.text(320, 40, 'Oom Otto\'s Winkel', {

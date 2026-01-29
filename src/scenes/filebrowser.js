@@ -23,7 +23,16 @@ class FileBrowserState extends MulleState {
   create() {
     super.create()
     
-    // Background
+    // Solid background color first (prevents bleed-through from previous scene)
+    this.game.stage.backgroundColor = '#8B7355'  // Warm brown color matching rustic theme
+    
+    // Draw a solid background rectangle that fills the entire screen
+    const bgRect = this.game.add.graphics(0, 0)
+    bgRect.beginFill(0x8B7355)
+    bgRect.drawRect(0, 0, 640, 480)
+    bgRect.endFill()
+    
+    // Original sprite background on top
     const bg = new MulleSprite(this.game, 320, 240)
     bg.setDirectorMember('10.DXR', 2)  // Menu background
     this.game.add.existing(bg)
