@@ -1,0 +1,1 @@
+{"worldselect": [{"type": "atlasJSONHash", "key": "worldselect-sprites-0", "textureURL": "assets/worldselect-sprites-0.png", "atlasURL": "assets/worldselect-sprites-0.json", "atlasData": null}, {"type": "audiosprite", "key": "worldselect-audio", "urls": "assets/worldselect-audio.ogg", "jsonURL": "assets/worldselect-audio.json", "jsonData": null}]}

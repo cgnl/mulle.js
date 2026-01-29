@@ -1,0 +1,1 @@
+copy deployment\ffmpeg_dll\*.dll %WINDIR%\System32

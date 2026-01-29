@@ -1,0 +1,38 @@
+{
+  "92d002v0": {
+    "lines": [
+      "- Mijn {Salka} is weer weggelopen,",
+      "- Heb je hem gezien?"
+    ],
+    "actor": "figge"
+  },
+  "92d003v0": {
+    "lines": [
+      "- Nee",
+      "Ik heb je hond niet gezien."
+    ],
+    "actor": "mulle"
+  },
+  "92d004v0": {
+    "lines": [
+      "Jawel",
+      "hij zit in mijn auto"
+    ],
+    "actor": "mulle"
+  },
+  "92d005v0": {
+    "lines": [
+      "Bedankt dat je {Salka} gevonden hebt",
+      "die bengel",
+      "Ik geef je een jerrycan benzine voor de moeite"
+    ],
+    "actor": "figge"
+  },
+  "92d006v0": {
+    "lines": [
+      "Dank je wel",
+      "nu kan ik nog verder rijden"
+    ],
+    "actor": "figge"
+  }
+}

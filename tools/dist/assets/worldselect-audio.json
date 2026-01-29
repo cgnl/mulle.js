@@ -1,0 +1,1 @@
+{"resources": ["assets/worldselect-audio.ogg"], "spritemap": {"32": {"start": 0.0, "end": 5.258, "loop": false, "data": {"dirName": "18d001v0", "dirFile": "18.DXR", "dirNum": 32, "cue": [[0, "talk"], [2670, "silence"], [3178, "talk"]]}}}}

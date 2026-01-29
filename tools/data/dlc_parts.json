@@ -1,0 +1,91 @@
+{
+  "dlc_oom_otto": {
+    "name": "Oom Otto uit Amerika",
+    "parts": [
+      {
+        "id": 500,
+        "name": "Voorkant Amerikaanse taxi",
+        "category": "front",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 501,
+        "name": "Middenstuk Amerikaanse taxi",
+        "category": "middle",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 502,
+        "name": "Achterkant Amerikaanse taxi",
+        "category": "back",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 503,
+        "name": "Voorbumper",
+        "category": "front_bumper",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 504,
+        "name": "Voorkant oude racewagen Jacky Nix",
+        "category": "front",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 505,
+        "name": "Middenstuk oude racewagen Jacky Nix",
+        "category": "middle",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 506,
+        "name": "Achterkant oude racewagen Jacky Nix",
+        "category": "back",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 507,
+        "name": "Taxi bordje 1",
+        "category": "decoration",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 508,
+        "name": "Taxi bordje 2",
+        "category": "decoration",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 509,
+        "name": "Achterkant balkon",
+        "category": "back_decoration",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 510,
+        "name": "Houten kist bank",
+        "category": "seat",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 511,
+        "name": "Toeter 1",
+        "category": "horn",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 512,
+        "name": "Toeter 2",
+        "category": "horn",
+        "source": "dlc_oom_otto"
+      },
+      {
+        "id": 513,
+        "name": "Wijnvat benzinetank",
+        "category": "fuel_tank",
+        "source": "dlc_oom_otto"
+      }
+    ]
+  }
+}

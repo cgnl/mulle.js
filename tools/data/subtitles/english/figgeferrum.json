@@ -1,0 +1,38 @@
+{
+  "92d002v0": {
+    "lines": [
+      "- My {Salka} ran away again,",
+      "- Have you seen him?"
+    ],
+    "actor": "figge"
+  },
+  "92d003v0": {
+    "lines": [
+      "- Nope",
+      "I haven't seen your dog."
+    ],
+    "actor": "mulle"
+  },
+  "92d004v0": {
+    "lines": [
+      "Yes I have",
+      "he's sitting in my car"
+    ],
+    "actor": "mulle"
+  },
+  "92d005v0": {
+    "lines": [
+      "Thank you for finding {Salka}",
+      "that bastard dog",
+      "I'll give you a can of gas for the trouble"
+    ],
+    "actor": "figge"
+  },
+  "92d006v0": {
+    "lines": [
+      "Thanks a lot",
+      "now I can drive even further"
+    ],
+    "actor": "figge"
+  }
+}
