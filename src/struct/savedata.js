@@ -83,6 +83,10 @@ class MulleSave {
     
     // DLC tracking
     this.DLCPurchased = []
+    
+    // Phase 0: Additional persistent fields
+    this.enterPartsSnapshot = null
+    this.PostalHistory = []
 
     this.language = this.game.mulle.defaultLanguage // 'swedish'
   }
@@ -194,19 +198,31 @@ class MulleSave {
 
     this.Junk = data.Junk
 
-    this.NrOfBuiltCars = data.NrOfBuiltCars
-    this.Saves = data.Saves
-    this.CompletedMissions = data.CompletedMissions
-    this.OwnStuff = data.OwnStuff ? data.OwnStuff : []
-    this.myLastPile = data.myLastPile
-    this.gifts = data.gifts
-    this.toYardThroughDoor = data.toYardThroughDoor
-    this.givenMissions = data.givenMissions
-    this.figgeIsComing = data.figgeIsComing
-    this.missionIsComing = data.missionIsComing
-    this.savedCars = data.savedCars
+    this.NrOfBuiltCars = data.NrOfBuiltCars || 0
+    this.Saves = data.Saves || []
+    this.CompletedMissions = data.CompletedMissions || []
+    this.OwnStuff = data.OwnStuff || []
+    this.myLastPile = data.myLastPile || 1
+    this.gifts = data.gifts || []
+    this.toYardThroughDoor = data.toYardThroughDoor !== undefined ? data.toYardThroughDoor : true
+    this.givenMissions = data.givenMissions || []
+    this.figgeIsComing = data.figgeIsComing || false
+    this.missionIsComing = data.missionIsComing || false
+    this.savedCars = data.savedCars || []
+    
+    // Phase 0: Load additional persistent fields
+    this.DLCPurchased = data.DLCPurchased || []
+    this.FiggeVisits = data.FiggeVisits || 0
+    this.FiggeUnlocks = data.FiggeUnlocks || {
+      tier1: false,
+      tier2: false,
+      tier3: false,
+      vip: false
+    }
+    this.enterPartsSnapshot = data.enterPartsSnapshot || null
+    this.PostalHistory = data.PostalHistory || []
 
-    this.language = this.game.mulle.defaultLanguage // data.language ? data.language : this.game.mulle.defaultLanguage
+    this.language = data.language || this.game.mulle.defaultLanguage
   }
 
   toJSON () {
@@ -219,7 +235,18 @@ class MulleSave {
       OwnStuff: this.OwnStuff,
       givenMissions: this.givenMissions,
       myLastPile: this.myLastPile,
-      savedCars: this.savedCars
+      savedCars: this.savedCars,
+      // Phase 0: Save all relevant fields for persistence
+      gifts: this.gifts,
+      missionIsComing: this.missionIsComing,
+      figgeIsComing: this.figgeIsComing,
+      toYardThroughDoor: this.toYardThroughDoor,
+      DLCPurchased: this.DLCPurchased,
+      FiggeVisits: this.FiggeVisits,
+      FiggeUnlocks: this.FiggeUnlocks,
+      enterPartsSnapshot: this.enterPartsSnapshot,
+      PostalHistory: this.PostalHistory,
+      language: this.language
     }
   }
 }

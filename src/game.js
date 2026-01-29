@@ -402,6 +402,19 @@ class MulleGame extends Phaser.Game {
     }
 
     this.mulle.net = new MulleNet(this)
+
+    // Phase 1: Input locking system
+    this.mulle.inputLocked = false
+    
+    /**
+     * Lock or unlock all game input
+     * @param {boolean} locked - true to lock, false to unlock
+     */
+    this.mulle.setInputLocked = function (locked) {
+      this.inputLocked = locked
+      this.game.input.enabled = !locked
+      console.debug('[input]', locked ? 'locked' : 'unlocked')
+    }
   }
 
   /**
