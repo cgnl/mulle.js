@@ -304,8 +304,12 @@ class MulleSprite extends PhaserSpriteBase {
       // Director members for one logical sprite can resolve from a more specific atlas
       // than the initial placeholder frame. Prefer rebasing onto the animation atlas
       // instead of throwing a browser-console error during runtime.
-      this.loadTexture(key, frames_offset[0])
-      console.debug('[sprite-anim] Rebased sprite to animation atlas', name, key)
+      // Guard: only rebase if the target frame exists in the new atlas
+      const targetAtlas = this.game.cache.getImage(key, true)
+      if (targetAtlas && targetAtlas.frameData && targetAtlas.frameData.getFrameByName(frames_offset[0])) {
+        this.loadTexture(key, frames_offset[0])
+        console.debug('[sprite-anim] Rebased sprite to animation atlas', name, key)
+      }
     }
 
     // BUG FIX #1: Changed frame rate from 10 FPS to 12 FPS (Director default)

@@ -2712,8 +2712,8 @@ class BoatyardState extends MulleState {
         })
       }
     } catch (e) {
-      console.warn('[Boatyard] Could not play Mulle sound:', sound, e)
-      // BUG FIX #13: OKToTalk state management - ensure reset on error
+      // Audio may fail if Web Audio context isn't ready or sprite not yet decoded
+      console.debug('[Boatyard] Audio not ready for:', sound)
       this.onMulleTalkStopped()
     }
   }
