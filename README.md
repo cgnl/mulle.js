@@ -31,23 +31,23 @@ All game logic was extracted from the original Director/Lingo scripts using a cu
 
 ## Requirements
 
-You need to own the original CD-ROMs in any supported language:
+You need the original CD-ROM ISOs in any supported language. They are available on the Internet Archive:
 
-| Language | Cars ISO | Boats ISO |
-|----------|----------|-----------|
-| 🇳🇱 Dutch | `mullebil_nl.iso` | `mullebat_nl.iso` |
-| 🇸🇪 Swedish | `mullebil_sv.iso` | `mullebat_sv.iso` |
-| 🇳🇴 Norwegian | `mullebil_no.iso` | — |
-| 🇩🇰 Danish | `mullebil_da.iso` | — |
+| Language | Cars | Boats |
+|----------|------|-------|
+| 🇳🇱 Dutch | [Miel Monteur bouwt auto's](https://archive.org/details/1.mielmonteurbouwtautosiso) | [Miel Monteur recht door zee](https://archive.org/details/2.mielmonteurrechtdoorzee) |
+| 🇸🇪 Swedish | [Bygg bilar med Mulle Meck](https://archive.org/details/byggbilarmedmullemeck) | [Mulle Meck bygger båtar](https://archive.org/details/mullemeckbyggerbatar) |
+| 🇳🇴 Norwegian | [Bygg biler med Mulle Mekk](https://archive.org/details/bygg-biler-med-mulle-mekk) | — |
+| 🇩🇰 Danish | [Byg bil med Mulle Meck](https://archive.org/details/byg-bil-med-mulle-meck) | — |
 
 ## Quick Start (Docker)
 
 The easiest way to run is with Docker:
 
 ```bash
-# Place your ISOs in iso/
-cp /path/to/mullebil_nl.iso iso/
-cp /path/to/mullebat_nl.iso iso/
+# Download ISOs from archive.org and place them in iso/
+mkdir -p iso
+# (or use the build script: python3 build_scripts/build.py nl download)
 
 # Build and run (set GAME_LANG to your language: nl, sv, no, da)
 docker build -f Dockerfile.boten --build-arg GAME_LANG=nl -t mielboten .
@@ -129,7 +129,7 @@ npx playwright test
 Original games by [Levande Böcker](https://en.wikipedia.org/wiki/Levande_B%C3%B6cker) / George Johansson & Jens Ahlbom.  
 Dutch localization: Miel Monteur © Levande Böcker.
 
-This is a fan project for preservation purposes. You must own the original games to use it.
+This is a fan project for preservation purposes.
 
 ## License
 
