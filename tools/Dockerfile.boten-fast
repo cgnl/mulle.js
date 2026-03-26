@@ -1,0 +1,76 @@
+# Miel Monteur Boten Edition — FAST CODE-ONLY REBUILD
+# Requires: docker build -f Dockerfile.boten-base -t mielboten-base .
+# Then:     docker build -f Dockerfile.boten-fast -t mielboten .
+# ~10-15 seconds for code-only changes!
+
+ARG GAME_LANG=nl
+
+# Stage 1: Reuse pre-built assets from base image
+FROM mielboten-base AS builder_py
+# Assets are already built — nothing to do here
+
+# Stage 2: Node.js build — npm install is cached, only webpack reruns
+FROM node:18-bookworm AS builder_js
+ARG SERVER_ADDRESS
+ENV SERVER_ADDRESS=${SERVER_ADDRESS}
+WORKDIR /build
+
+# Layer 1: package files (rarely change → cached after first build)
+COPY ./package.json .
+COPY ./package-lock.json .
+RUN --mount=type=cache,target=/root/.npm \
+    npm install && \
+    npm install -g sass
+
+# Layer 2: webpack config (rarely changes → cached)
+COPY ./webpack.common.js .
+COPY ./webpack.prod.js .
+
+# Layer 3: topography (from base, rarely changes)
+COPY --from=builder_py /build/topography ./topography
+COPY ./build_scripts/topography.js .
+RUN node ./topography.js ./topography || echo "Topography JS skipped"
+
+# Layer 4: source code — THIS is the only layer that changes on code edits
+COPY ./src ./src
+COPY ./data ./data
+
+# Webpack with filesystem cache (persists across builds via BuildKit cache mount)
+RUN --mount=type=cache,target=/build/.webpack-cache \
+    WEBPACK_CACHE_DIR=/build/.webpack-cache \
+    npx webpack-cli -c webpack.prod.js
+
+# Sass (fast, <1s)
+RUN sass ./src/style.scss ./dist/style.css
+
+# Stage 3: Final web server (layers are cached unless code changed)
+FROM httpd:bookworm AS web_run
+EXPOSE 80
+ARG GAME_LANG=nl
+WORKDIR /usr/local/apache2/htdocs
+
+RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf && \
+    apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Copy pre-built assets from base (cached, not rebuilt)
+COPY --from=builder_py /build/assets_${GAME_LANG} ./assets
+COPY --from=builder_py /build/dist .
+
+# Copy webpack output (this layer changes on code edits)
+COPY --from=builder_js /build/dist .
+
+# Copy topography
+RUN mkdir -p ./assets/topography
+COPY --from=builder_js /build/topography/topograph* ./assets/topography/
+
+# Copy static files
+COPY ./src/index_cdn.html ./index.html
+COPY ./data ./data
+COPY ./info ./info
+COPY ./progress ./progress
+
+RUN echo "Miel Monteur Boten Edition (${GAME_LANG}) — fast build" > /version.txt && \
+    echo "Built: $(date)" >> /version.txt
+
+HEALTHCHECK --interval=30s --timeout=3s \
+    CMD curl -f http://localhost/ || exit 1

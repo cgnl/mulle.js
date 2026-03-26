@@ -1,0 +1,2323 @@
+{
+  "00": {
+    "total_scripts": 47,
+    "total_handlers": 101,
+    "total_lines": 5963,
+    "unique_transitions": [
+      "#next",
+      "05",
+      "13",
+      "Sink",
+      "frame",
+      "frame+1"
+    ],
+    "unique_inventory_items": [
+      "DrivenTimes",
+      "index",
+      "tmpInventory",
+      "tmpItem"
+    ],
+    "unique_audio_cues": [
+      "00d007v0",
+      "00d008v0",
+      "00d009v0",
+      "00d039v0",
+      "00d041v0",
+      "00d042v0",
+      "00d043v0",
+      "00d044v0",
+      "00d045v0",
+      "00d046v0",
+      "00d048v0",
+      "00d049v0",
+      "00d050v0",
+      "00d051v0",
+      "00d053v0",
+      "00d054v0",
+      "00d055v0",
+      "00d056v0",
+      "00d067v0",
+      "00d069v0",
+      "00d071v0",
+      "00d072v0",
+      "00d073v0",
+      "00d074v0",
+      "00d075v0",
+      "00d076v0",
+      "00d077v0",
+      "00d078v0",
+      "00d079v0",
+      "00e110v0",
+      "03d008v0",
+      "03d009v0",
+      "03d010v0",
+      "03d011v0",
+      "03d012v0",
+      "03d014v0",
+      "03d015v0",
+      "04d009v0",
+      "04d024v0",
+      "04d025v0",
+      "04d026v0",
+      "04d048v0",
+      "04d056v0",
+      "05e018v0",
+      "05e018v1",
+      "05e022v0",
+      "05e026v0",
+      "05e030v0",
+      "05e034v0",
+      "05e053v0",
+      "05e056v0",
+      "09d001v0",
+      "09d002v0",
+      "09d003v0",
+      "09d005v0",
+      "09d006v0",
+      "09d058v0",
+      "09d059v0",
+      "09d060v0",
+      "09d061v0",
+      "09d062v0",
+      "09d063v0",
+      "09d064v0",
+      "20d163v0",
+      "50d001v0",
+      "50d002v0",
+      "50d003v0",
+      "50d004v0",
+      "50d005v0",
+      "50d006v0",
+      "50d007v0",
+      "50d008v0",
+      "50d009v0",
+      "50d013v0",
+      "50d014v0"
+    ],
+    "unique_state_fields": [
+      "HullBackOffset",
+      "HullFrontOffset",
+      "boatViewHandler",
+      "externalParts",
+      "hullBackInsideOffset",
+      "hullFrontInsideOffset",
+      "junkPileHandlers",
+      "junkViewHandler",
+      "levelHandler",
+      "loopMaster",
+      "mouseMaster",
+      "parts",
+      "rudderBackOffset",
+      "rudderFrontOffset",
+      "user",
+      "users",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [
+      ".dxr"
+    ],
+    "inventory_op_count": 4,
+    "transition_count": 8,
+    "state_ref_count": 70
+  },
+  "01": {
+    "total_scripts": 8,
+    "total_handlers": 11,
+    "total_lines": 344,
+    "unique_transitions": [
+      "04",
+      "15",
+      "Quay",
+      "frame"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "00d001v0",
+      "00d002v0",
+      "00d003v0",
+      "00d004v0",
+      "00d005v0",
+      "00e104v0",
+      "00e107v0",
+      "00e108v0",
+      "00e109v0",
+      "00e110v0",
+      "01d001v0",
+      "01d002v0",
+      "01d003v0",
+      "01d004v0",
+      "01d005v0",
+      "01d006v0",
+      "01d007v0",
+      "01d009v0",
+      "01e001v0",
+      "01e002v0",
+      "01e003v0",
+      "01e005v0",
+      "01e006v0",
+      "01e007v0",
+      "01e008v0",
+      "01e009v0",
+      "01e010v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "boatViewHandler",
+      "firstTimeList",
+      "loopMaster",
+      "user",
+      "weather"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 4,
+    "state_ref_count": 7
+  },
+  "02": {
+    "total_scripts": 4,
+    "total_handlers": 8,
+    "total_lines": 131,
+    "unique_transitions": [
+      "02",
+      "03",
+      "04",
+      "NewShelf"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "00d001v0",
+      "00d002v0",
+      "00d003v0",
+      "00d004v0",
+      "00d005v0",
+      "00e110v0",
+      "02d002v0",
+      "02d003v0",
+      "02d004v0",
+      "02e003v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "enterShelf",
+      "firstTimeList",
+      "loopMaster",
+      "weather"
+    ],
+    "unique_global_calls": [
+      "setSky"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 4,
+    "state_ref_count": 7
+  },
+  "03": {
+    "total_scripts": 12,
+    "total_handlers": 15,
+    "total_lines": 247,
+    "unique_transitions": [
+      "02",
+      "03",
+      "04",
+      "Gift",
+      "frame"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "00d001v0",
+      "00d002v0",
+      "00d003v0",
+      "00d004v0",
+      "00d005v0",
+      "00e110v0",
+      "03d001v0",
+      "03d002v0",
+      "03d003v0",
+      "03d004v0",
+      "03d005v0",
+      "03d006v0",
+      "03d007v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "enterShelf",
+      "firstTimeList",
+      "gotNewParts",
+      "loopMaster",
+      "user",
+      "weather"
+    ],
+    "unique_global_calls": [
+      "setSky"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 10,
+    "state_ref_count": 20
+  },
+  "04": {
+    "total_scripts": 17,
+    "total_handlers": 20,
+    "total_lines": 572,
+    "unique_transitions": [
+      "01",
+      "03",
+      "04",
+      "MetalWorld",
+      "WoodWorld",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "tmpFirst"
+    ],
+    "unique_audio_cues": [
+      "00d001v0",
+      "00d002v0",
+      "00d003v0",
+      "00d004v0",
+      "00d005v0",
+      "00d010v0",
+      "00d011v0",
+      "00d012v0",
+      "00d013v0",
+      "00d075v0",
+      "00e104v0",
+      "00e107v0",
+      "00e108v0",
+      "00e109v0",
+      "00e110v0",
+      "04d001v0",
+      "04d002v0",
+      "04d003v0",
+      "04d004v0",
+      "04d007v0",
+      "04d010v0",
+      "04d012v0",
+      "04d013v0",
+      "04d014v0",
+      "04d015v0",
+      "04d016v0",
+      "04d017v0",
+      "04d018v0",
+      "04d019v0",
+      "04d020v0",
+      "04d022v0",
+      "04d023v0",
+      "04d027v0",
+      "04d028v0",
+      "04d029v0",
+      "04d030v0",
+      "04d032v0",
+      "04d034v0",
+      "04d035v0",
+      "04d036v0",
+      "04d037v0",
+      "04d038v0",
+      "04d039v0",
+      "04d040v0",
+      "04d041v0",
+      "04d042v0",
+      "04d043v0",
+      "04d044v0",
+      "04d045v0",
+      "04d046v0",
+      "04d047v0",
+      "04d049v0",
+      "04d051v0",
+      "04d052v0",
+      "04d053v0",
+      "04d054v0",
+      "04d055v0",
+      "04e005v0",
+      "04e006v0",
+      "04e998v0",
+      "04e999v0",
+      "50d012v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "externalParts",
+      "firstTimeList",
+      "gotNewHull",
+      "gotNewParts",
+      "loopMaster",
+      "radioHandler",
+      "user",
+      "weather"
+    ],
+    "unique_global_calls": [
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      1,
+      2,
+      13,
+      20
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 9,
+    "state_ref_count": 12
+  },
+  "05": {
+    "total_scripts": 39,
+    "total_handlers": 93,
+    "total_lines": 3892,
+    "unique_transitions": [
+      "01",
+      "08",
+      "13",
+      "Leave",
+      "frame",
+      "frame+1"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "DrivenTimes",
+      "Fished",
+      "Fishingrod",
+      "MapPiece1",
+      "MapPiece2",
+      "MapPiece3",
+      "Pills",
+      "tmpItem"
+    ],
+    "unique_audio_cues": [
+      "00e101v0",
+      "00e110v0",
+      "05d001v0",
+      "05d005v0",
+      "05d018v0",
+      "05d023v0",
+      "05d045v0",
+      "05d051v0",
+      "05d055v0",
+      "05d056v0",
+      "05d057v0",
+      "05d066v0",
+      "05d120v0",
+      "05d125v0",
+      "05d126v0",
+      "05d127v0",
+      "05d128v0",
+      "05d129v0",
+      "05d130v0",
+      "05d131v0",
+      "05d135v0",
+      "05d136v0",
+      "05d137v0",
+      "05e008v1",
+      "05e016v0",
+      "05e016v1",
+      "05e018v0",
+      "05e018v1",
+      "05e019v0",
+      "05e019v1",
+      "05e020v0",
+      "05e022v0",
+      "05e023v0",
+      "05e024v0",
+      "05e024v1",
+      "05e026v0",
+      "05e027v0",
+      "05e030v0",
+      "05e031v0",
+      "05e032v1",
+      "05e033v0",
+      "05e033v1",
+      "05e034v0",
+      "05e035v0",
+      "05e043v0",
+      "05e044v0",
+      "05e044v1",
+      "05e052v0",
+      "05e052v1",
+      "05e053v0",
+      "05e054v0",
+      "05e055v0",
+      "05e056v0",
+      "05e057v0",
+      "05e058v0",
+      "05e059v0",
+      "05e060v0",
+      "09d001v0",
+      "09d002v0",
+      "09d003v0",
+      "09d005v0",
+      "09d006v0",
+      "09d058v0",
+      "09d059v0",
+      "09d060v0",
+      "09d061v0",
+      "09d062v0",
+      "09d063v0",
+      "09d064v0",
+      "19d001v0",
+      "19d002v0",
+      "19d003v0",
+      "19d004v0",
+      "19d006v0",
+      "19d007v0",
+      "19d008v0",
+      "19d009v0",
+      "19d010v0",
+      "19d011v0",
+      "19d012v0",
+      "19d013v0",
+      "19d014v0",
+      "19d015v0",
+      "19d016v0",
+      "33e007v0",
+      "33e011v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "availableXtras",
+      "levelHandler",
+      "loopMaster",
+      "maps",
+      "mouseMaster",
+      "parts",
+      "radioHandler",
+      "user",
+      "weather",
+      "world",
+      "worlds"
+    ],
+    "unique_global_calls": [
+      "AmbienceSound",
+      "MulleSez"
+    ],
+    "unique_mission_ids": [
+      3,
+      14,
+      15
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 16,
+    "transition_count": 6,
+    "state_ref_count": 34
+  },
+  "06": {
+    "total_scripts": 19,
+    "total_handlers": 42,
+    "total_lines": 1185,
+    "unique_transitions": [
+      "04",
+      "Leave",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "BluePrint3",
+      "Blueprint1",
+      "Blueprint2"
+    ],
+    "unique_audio_cues": [
+      "06d001v0",
+      "06d002v0",
+      "06d004v0",
+      "06d007v0",
+      "06e001v0",
+      "06e002v0",
+      "06e003v0",
+      "07d001v0",
+      "07d002v0",
+      "07d003v0",
+      "07d005v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "boatViewHandler",
+      "checkmemory",
+      "loopMaster",
+      "parts",
+      "user"
+    ],
+    "unique_global_calls": [
+      "drawBoat"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 4,
+    "state_ref_count": 13
+  },
+  "08": {
+    "total_scripts": 12,
+    "total_handlers": 18,
+    "total_lines": 367,
+    "unique_transitions": [
+      "Leave",
+      "frame"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "WhereFrom",
+      "boatViewHandler",
+      "parts",
+      "user"
+    ],
+    "unique_global_calls": [
+      "drawBoat"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 2,
+    "state_ref_count": 7
+  },
+  "10": {
+    "total_scripts": 1,
+    "total_handlers": 2,
+    "total_lines": 50,
+    "unique_transitions": [
+      "11"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "10e001v0"
+    ],
+    "unique_state_fields": [],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 1,
+    "state_ref_count": 0
+  },
+  "11": {
+    "total_scripts": 26,
+    "total_handlers": 47,
+    "total_lines": 991,
+    "unique_transitions": [
+      "#next",
+      "03",
+      "12",
+      "IntroStart",
+      "Wait",
+      "frame",
+      "frame+1",
+      "marker+1"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "11d001v0",
+      "11d003v0",
+      "11d004v0",
+      "11d006v0",
+      "11d007v0",
+      "11d008v0",
+      "70e001v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "users"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 16,
+    "state_ref_count": 4
+  },
+  "12": {
+    "total_scripts": 23,
+    "total_handlers": 25,
+    "total_lines": 91,
+    "unique_transitions": [
+      "01.dir",
+      "frame"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 22,
+    "state_ref_count": 0
+  },
+  "13": {
+    "total_scripts": 7,
+    "total_handlers": 11,
+    "total_lines": 59,
+    "unique_transitions": [
+      "Eldmatch",
+      "frame",
+      "frame+1"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "04e004v0"
+    ],
+    "unique_state_fields": [],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 5,
+    "state_ref_count": 0
+  },
+  "14": {
+    "total_scripts": 10,
+    "total_handlers": 25,
+    "total_lines": 869,
+    "unique_transitions": [
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "BluePrint3",
+      "Blueprint1",
+      "Blueprint2"
+    ],
+    "unique_audio_cues": [
+      "07d002v0"
+    ],
+    "unique_state_fields": [
+      "boatViewHandler",
+      "user"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 1,
+    "state_ref_count": 2
+  },
+  "15": {
+    "total_scripts": 11,
+    "total_handlers": 31,
+    "total_lines": 526,
+    "unique_transitions": [
+      "01",
+      "MainMenu",
+      "Shipyard",
+      "Small",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "BluePrint3",
+      "Blueprint1",
+      "Blueprint2",
+      "inventoryCheck"
+    ],
+    "unique_audio_cues": [
+      "00e110v0",
+      "15d000v0",
+      "15d027v0",
+      "15d028v0",
+      "15e001v0",
+      "15e002v0",
+      "15e004v0",
+      "15e005v0"
+    ],
+    "unique_state_fields": [
+      "boatViewHandler",
+      "firstTimeList",
+      "gotNewHull",
+      "loopMaster",
+      "user"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 5,
+    "transition_count": 5,
+    "state_ref_count": 13
+  },
+  "70": {
+    "total_scripts": 5,
+    "total_handlers": 7,
+    "total_lines": 59,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Suit",
+      "helmet"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [
+      15
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 3,
+    "state_ref_count": 3
+  },
+  "71": {
+    "total_scripts": 8,
+    "total_handlers": 10,
+    "total_lines": 72,
+    "unique_transitions": [
+      "frame",
+      "frame+1",
+      "myMarker"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [
+      14
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 8,
+    "state_ref_count": 3
+  },
+  "76": {
+    "total_scripts": 7,
+    "total_handlers": 10,
+    "total_lines": 69,
+    "unique_transitions": [
+      "Start",
+      "frame",
+      "leave"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "76e002v1"
+    ],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      6
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 6,
+    "state_ref_count": 3
+  },
+  "77": {
+    "total_scripts": 25,
+    "total_handlers": 25,
+    "total_lines": 241,
+    "unique_transitions": [
+      "CantDoItDogBag",
+      "DeliverMapBag",
+      "JustDoItBag",
+      "JustDoItDogBag",
+      "JustDoItPrimaBag",
+      "SCJustDoItPrimaBag",
+      "SCcantDoItPrimaBag",
+      "cantDoItPrimaBag",
+      "deliverMapRing",
+      "frame",
+      "frame+1",
+      "leave",
+      "myMarker",
+      "notrip",
+      "ringleave",
+      "trip"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "Blinddog",
+      "DoctorBag",
+      "MapPiece1",
+      "Pills",
+      "Swimring"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "primaTrip",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      2,
+      3,
+      4,
+      5,
+      22
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 27,
+    "transition_count": 29,
+    "state_ref_count": 13
+  },
+  "78": {
+    "total_scripts": 6,
+    "total_handlers": 8,
+    "total_lines": 88,
+    "unique_transitions": [
+      "BibleLeave",
+      "frame",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "tmpStuffNeeded"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      1,
+      20
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 4,
+    "transition_count": 4,
+    "state_ref_count": 4
+  },
+  "79": {
+    "total_scripts": 12,
+    "total_handlers": 14,
+    "total_lines": 88,
+    "unique_transitions": [
+      "anchorleave",
+      "burkLeave",
+      "cantDoIt",
+      "frame",
+      "justDoIt",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "tmpStuffNeeded"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      17
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 9,
+    "state_ref_count": 3
+  },
+  "80": {
+    "total_scripts": 10,
+    "total_handlers": 13,
+    "total_lines": 101,
+    "unique_transitions": [
+      "Story1",
+      "Story2",
+      "frame",
+      "leave",
+      "myMarker",
+      "story2",
+      "story3"
+    ],
+    "unique_inventory_items": [
+      "Diary",
+      "MapPiece2"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      7,
+      18,
+      19
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 4,
+    "transition_count": 8,
+    "state_ref_count": 3
+  },
+  "81": {
+    "total_scripts": 8,
+    "total_handlers": 9,
+    "total_lines": 74,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "RottenFish"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      9
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 5,
+    "state_ref_count": 3
+  },
+  "83": {
+    "total_scripts": 14,
+    "total_handlers": 16,
+    "total_lines": 116,
+    "unique_transitions": [
+      "boatride",
+      "boatride2",
+      "boatride3",
+      "frame",
+      "infiniteJustDoIt2",
+      "justDoITluck2",
+      "justdoit2",
+      "leave",
+      "myMarker",
+      "start",
+      "story1"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      13,
+      25
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 12,
+    "state_ref_count": 5
+  },
+  "84": {
+    "total_scripts": 12,
+    "total_handlers": 15,
+    "total_lines": 157,
+    "unique_transitions": [
+      "frame",
+      "frame+1",
+      "justDoittank",
+      "justdoItTank",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "helmet"
+    ],
+    "unique_audio_cues": [
+      "04d027v0",
+      "04d029v0",
+      "05d109v0",
+      "83d019v0",
+      "84e007v0"
+    ],
+    "unique_state_fields": [
+      "boatViewHandler",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      10,
+      11,
+      21
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 1,
+    "transition_count": 9,
+    "state_ref_count": 6
+  },
+  "85": {
+    "total_scripts": 6,
+    "total_handlers": 8,
+    "total_lines": 74,
+    "unique_transitions": [
+      "Start",
+      "StartDiary",
+      "frame",
+      "frame+1",
+      "leave",
+      "suit"
+    ],
+    "unique_inventory_items": [
+      "Diary",
+      "Suit"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat"
+    ],
+    "unique_mission_ids": [
+      7,
+      8
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 7,
+    "state_ref_count": 2
+  },
+  "86": {
+    "total_scripts": 8,
+    "total_handlers": 13,
+    "total_lines": 182,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "medalStart",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Blinddog",
+      "MapPiece3"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [
+      4,
+      8,
+      10
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 4,
+    "transition_count": 5,
+    "state_ref_count": 2
+  },
+  "87": {
+    "total_scripts": 6,
+    "total_handlers": 9,
+    "total_lines": 66,
+    "unique_transitions": [
+      "frame",
+      "myMarker",
+      "start"
+    ],
+    "unique_inventory_items": [
+      "Suit",
+      "helmet"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      12,
+      23
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 6,
+    "state_ref_count": 4
+  },
+  "88": {
+    "total_scripts": 4,
+    "total_handlers": 7,
+    "total_lines": 57,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "myMarker",
+      "start"
+    ],
+    "unique_inventory_items": [
+      "Fishingrod"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      11,
+      24
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 1,
+    "transition_count": 4,
+    "state_ref_count": 3
+  },
+  "CDdata": {
+    "total_scripts": 14,
+    "total_handlers": 42,
+    "total_lines": 1053,
+    "unique_transitions": [],
+    "unique_inventory_items": [
+      "tmpStuff"
+    ],
+    "unique_audio_cues": [
+      "05d005v0",
+      "05d006v0"
+    ],
+    "unique_state_fields": [
+      "levelHandler",
+      "user"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 1,
+    "transition_count": 0,
+    "state_ref_count": 4
+  },
+  "LBstart": {
+    "total_scripts": 6,
+    "total_handlers": 6,
+    "total_lines": 18,
+    "unique_transitions": [
+      "10",
+      "Leave",
+      "frame"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 3,
+    "state_ref_count": 0
+  },
+  "StartCD": {
+    "total_scripts": 6,
+    "total_handlers": 3,
+    "total_lines": 207,
+    "unique_transitions": [],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 0,
+    "state_ref_count": 0
+  },
+  "boat_02": {
+    "total_scripts": 4,
+    "total_handlers": 8,
+    "total_lines": 131,
+    "unique_transitions": [
+      "02",
+      "03",
+      "04",
+      "NewShelf"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "00d001v0",
+      "00d002v0",
+      "00d003v0",
+      "00d004v0",
+      "00d005v0",
+      "00e110v0",
+      "02d002v0",
+      "02d003v0",
+      "02d004v0",
+      "02e003v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "enterShelf",
+      "firstTimeList",
+      "loopMaster",
+      "weather"
+    ],
+    "unique_global_calls": [
+      "setSky"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 4,
+    "state_ref_count": 7
+  },
+  "boat_04": {
+    "total_scripts": 17,
+    "total_handlers": 20,
+    "total_lines": 572,
+    "unique_transitions": [
+      "01",
+      "03",
+      "04",
+      "MetalWorld",
+      "WoodWorld",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "tmpFirst"
+    ],
+    "unique_audio_cues": [
+      "00d001v0",
+      "00d002v0",
+      "00d003v0",
+      "00d004v0",
+      "00d005v0",
+      "00d010v0",
+      "00d011v0",
+      "00d012v0",
+      "00d013v0",
+      "00d075v0",
+      "00e104v0",
+      "00e107v0",
+      "00e108v0",
+      "00e109v0",
+      "00e110v0",
+      "04d001v0",
+      "04d002v0",
+      "04d003v0",
+      "04d004v0",
+      "04d007v0",
+      "04d010v0",
+      "04d012v0",
+      "04d013v0",
+      "04d014v0",
+      "04d015v0",
+      "04d016v0",
+      "04d017v0",
+      "04d018v0",
+      "04d019v0",
+      "04d020v0",
+      "04d022v0",
+      "04d023v0",
+      "04d027v0",
+      "04d028v0",
+      "04d029v0",
+      "04d030v0",
+      "04d032v0",
+      "04d034v0",
+      "04d035v0",
+      "04d036v0",
+      "04d037v0",
+      "04d038v0",
+      "04d039v0",
+      "04d040v0",
+      "04d041v0",
+      "04d042v0",
+      "04d043v0",
+      "04d044v0",
+      "04d045v0",
+      "04d046v0",
+      "04d047v0",
+      "04d049v0",
+      "04d051v0",
+      "04d052v0",
+      "04d053v0",
+      "04d054v0",
+      "04d055v0",
+      "04e005v0",
+      "04e006v0",
+      "04e998v0",
+      "04e999v0",
+      "50d012v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "externalParts",
+      "firstTimeList",
+      "gotNewHull",
+      "gotNewParts",
+      "loopMaster",
+      "radioHandler",
+      "user",
+      "weather"
+    ],
+    "unique_global_calls": [
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      1,
+      2,
+      13,
+      20
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 9,
+    "state_ref_count": 12
+  },
+  "boat_05": {
+    "total_scripts": 39,
+    "total_handlers": 93,
+    "total_lines": 3892,
+    "unique_transitions": [
+      "01",
+      "08",
+      "13",
+      "Leave",
+      "frame",
+      "frame+1"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "DrivenTimes",
+      "Fished",
+      "Fishingrod",
+      "MapPiece1",
+      "MapPiece2",
+      "MapPiece3",
+      "Pills",
+      "tmpItem"
+    ],
+    "unique_audio_cues": [
+      "00e101v0",
+      "00e110v0",
+      "05d001v0",
+      "05d005v0",
+      "05d018v0",
+      "05d023v0",
+      "05d045v0",
+      "05d051v0",
+      "05d055v0",
+      "05d056v0",
+      "05d057v0",
+      "05d066v0",
+      "05d120v0",
+      "05d125v0",
+      "05d126v0",
+      "05d127v0",
+      "05d128v0",
+      "05d129v0",
+      "05d130v0",
+      "05d131v0",
+      "05d135v0",
+      "05d136v0",
+      "05d137v0",
+      "05e008v1",
+      "05e016v0",
+      "05e016v1",
+      "05e018v0",
+      "05e018v1",
+      "05e019v0",
+      "05e019v1",
+      "05e020v0",
+      "05e022v0",
+      "05e023v0",
+      "05e024v0",
+      "05e024v1",
+      "05e026v0",
+      "05e027v0",
+      "05e030v0",
+      "05e031v0",
+      "05e032v1",
+      "05e033v0",
+      "05e033v1",
+      "05e034v0",
+      "05e035v0",
+      "05e043v0",
+      "05e044v0",
+      "05e044v1",
+      "05e052v0",
+      "05e052v1",
+      "05e053v0",
+      "05e054v0",
+      "05e055v0",
+      "05e056v0",
+      "05e057v0",
+      "05e058v0",
+      "05e059v0",
+      "05e060v0",
+      "09d001v0",
+      "09d002v0",
+      "09d003v0",
+      "09d005v0",
+      "09d006v0",
+      "09d058v0",
+      "09d059v0",
+      "09d060v0",
+      "09d061v0",
+      "09d062v0",
+      "09d063v0",
+      "09d064v0",
+      "19d001v0",
+      "19d002v0",
+      "19d003v0",
+      "19d004v0",
+      "19d006v0",
+      "19d007v0",
+      "19d008v0",
+      "19d009v0",
+      "19d010v0",
+      "19d011v0",
+      "19d012v0",
+      "19d013v0",
+      "19d014v0",
+      "19d015v0",
+      "19d016v0",
+      "33e007v0",
+      "33e011v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "availableXtras",
+      "levelHandler",
+      "loopMaster",
+      "maps",
+      "mouseMaster",
+      "parts",
+      "radioHandler",
+      "user",
+      "weather",
+      "world",
+      "worlds"
+    ],
+    "unique_global_calls": [
+      "AmbienceSound",
+      "MulleSez"
+    ],
+    "unique_mission_ids": [
+      3,
+      14,
+      15
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 16,
+    "transition_count": 6,
+    "state_ref_count": 34
+  },
+  "boat_06": {
+    "total_scripts": 19,
+    "total_handlers": 42,
+    "total_lines": 1185,
+    "unique_transitions": [
+      "04",
+      "Leave",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "BluePrint3",
+      "Blueprint1",
+      "Blueprint2"
+    ],
+    "unique_audio_cues": [
+      "06d001v0",
+      "06d002v0",
+      "06d004v0",
+      "06d007v0",
+      "06e001v0",
+      "06e002v0",
+      "06e003v0",
+      "07d001v0",
+      "07d002v0",
+      "07d003v0",
+      "07d005v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "boatViewHandler",
+      "checkmemory",
+      "loopMaster",
+      "parts",
+      "user"
+    ],
+    "unique_global_calls": [
+      "drawBoat"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 4,
+    "state_ref_count": 13
+  },
+  "boat_08": {
+    "total_scripts": 12,
+    "total_handlers": 18,
+    "total_lines": 367,
+    "unique_transitions": [
+      "Leave",
+      "frame"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "WhereFrom",
+      "boatViewHandler",
+      "parts",
+      "user"
+    ],
+    "unique_global_calls": [
+      "drawBoat"
+    ],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 2,
+    "state_ref_count": 7
+  },
+  "boat_11": {
+    "total_scripts": 26,
+    "total_handlers": 47,
+    "total_lines": 991,
+    "unique_transitions": [
+      "#next",
+      "03",
+      "12",
+      "IntroStart",
+      "Wait",
+      "frame",
+      "frame+1",
+      "marker+1"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "11d001v0",
+      "11d003v0",
+      "11d004v0",
+      "11d006v0",
+      "11d007v0",
+      "11d008v0",
+      "70e001v0"
+    ],
+    "unique_state_fields": [
+      "WhereFrom",
+      "users"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 16,
+    "state_ref_count": 4
+  },
+  "boat_14": {
+    "total_scripts": 10,
+    "total_handlers": 25,
+    "total_lines": 869,
+    "unique_transitions": [
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "BluePrint3",
+      "Blueprint1",
+      "Blueprint2"
+    ],
+    "unique_audio_cues": [
+      "07d002v0"
+    ],
+    "unique_state_fields": [
+      "boatViewHandler",
+      "user"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 1,
+    "state_ref_count": 2
+  },
+  "boat_15": {
+    "total_scripts": 11,
+    "total_handlers": 31,
+    "total_lines": 526,
+    "unique_transitions": [
+      "01",
+      "MainMenu",
+      "Shipyard",
+      "Small",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "BluePrint3",
+      "Blueprint1",
+      "Blueprint2",
+      "inventoryCheck"
+    ],
+    "unique_audio_cues": [
+      "00e110v0",
+      "15d000v0",
+      "15d027v0",
+      "15d028v0",
+      "15e001v0",
+      "15e002v0",
+      "15e004v0",
+      "15e005v0"
+    ],
+    "unique_state_fields": [
+      "boatViewHandler",
+      "firstTimeList",
+      "gotNewHull",
+      "loopMaster",
+      "user"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 5,
+    "transition_count": 5,
+    "state_ref_count": 13
+  },
+  "boat_70": {
+    "total_scripts": 5,
+    "total_handlers": 7,
+    "total_lines": 59,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Suit",
+      "helmet"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [
+      15
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 3,
+    "state_ref_count": 3
+  },
+  "boat_71": {
+    "total_scripts": 8,
+    "total_handlers": 10,
+    "total_lines": 72,
+    "unique_transitions": [
+      "frame",
+      "frame+1",
+      "myMarker"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [
+      14
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 8,
+    "state_ref_count": 3
+  },
+  "boat_76": {
+    "total_scripts": 7,
+    "total_handlers": 10,
+    "total_lines": 69,
+    "unique_transitions": [
+      "Start",
+      "frame",
+      "leave"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [
+      "76e002v1"
+    ],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      6
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 6,
+    "state_ref_count": 3
+  },
+  "boat_77": {
+    "total_scripts": 25,
+    "total_handlers": 25,
+    "total_lines": 241,
+    "unique_transitions": [
+      "CantDoItDogBag",
+      "DeliverMapBag",
+      "JustDoItBag",
+      "JustDoItDogBag",
+      "JustDoItPrimaBag",
+      "SCJustDoItPrimaBag",
+      "SCcantDoItPrimaBag",
+      "cantDoItPrimaBag",
+      "deliverMapRing",
+      "frame",
+      "frame+1",
+      "leave",
+      "myMarker",
+      "notrip",
+      "ringleave",
+      "trip"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "Blinddog",
+      "DoctorBag",
+      "MapPiece1",
+      "Pills",
+      "Swimring"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "primaTrip",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      2,
+      3,
+      4,
+      5,
+      22
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 27,
+    "transition_count": 29,
+    "state_ref_count": 13
+  },
+  "boat_78": {
+    "total_scripts": 6,
+    "total_handlers": 8,
+    "total_lines": 88,
+    "unique_transitions": [
+      "BibleLeave",
+      "frame",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "tmpStuffNeeded"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      1,
+      20
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 4,
+    "transition_count": 4,
+    "state_ref_count": 4
+  },
+  "boat_79": {
+    "total_scripts": 12,
+    "total_handlers": 14,
+    "total_lines": 88,
+    "unique_transitions": [
+      "anchorleave",
+      "burkLeave",
+      "cantDoIt",
+      "frame",
+      "justDoIt",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Belly",
+      "tmpStuffNeeded"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      17
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 9,
+    "state_ref_count": 3
+  },
+  "boat_81": {
+    "total_scripts": 8,
+    "total_handlers": 9,
+    "total_lines": 74,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "RottenFish"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      9
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 5,
+    "state_ref_count": 3
+  },
+  "boat_83": {
+    "total_scripts": 14,
+    "total_handlers": 16,
+    "total_lines": 116,
+    "unique_transitions": [
+      "boatride",
+      "boatride2",
+      "boatride3",
+      "frame",
+      "infiniteJustDoIt2",
+      "justDoITluck2",
+      "justdoit2",
+      "leave",
+      "myMarker",
+      "start",
+      "story1"
+    ],
+    "unique_inventory_items": [],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      13,
+      25
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 0,
+    "transition_count": 12,
+    "state_ref_count": 5
+  },
+  "boat_84": {
+    "total_scripts": 12,
+    "total_handlers": 15,
+    "total_lines": 157,
+    "unique_transitions": [
+      "frame",
+      "frame+1",
+      "justDoittank",
+      "justdoItTank",
+      "leave",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "helmet"
+    ],
+    "unique_audio_cues": [
+      "04d027v0",
+      "04d029v0",
+      "05d109v0",
+      "83d019v0",
+      "84e007v0"
+    ],
+    "unique_state_fields": [
+      "boatViewHandler",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      10,
+      11,
+      21
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 1,
+    "transition_count": 9,
+    "state_ref_count": 6
+  },
+  "boat_85": {
+    "total_scripts": 6,
+    "total_handlers": 8,
+    "total_lines": 74,
+    "unique_transitions": [
+      "Start",
+      "StartDiary",
+      "frame",
+      "frame+1",
+      "leave",
+      "suit"
+    ],
+    "unique_inventory_items": [
+      "Diary",
+      "Suit"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat"
+    ],
+    "unique_mission_ids": [
+      7,
+      8
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 3,
+    "transition_count": 7,
+    "state_ref_count": 2
+  },
+  "boat_86": {
+    "total_scripts": 8,
+    "total_handlers": 13,
+    "total_lines": 182,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "medalStart",
+      "myMarker"
+    ],
+    "unique_inventory_items": [
+      "Blinddog",
+      "MapPiece3"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [
+      4,
+      8,
+      10
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 4,
+    "transition_count": 5,
+    "state_ref_count": 2
+  },
+  "boat_87": {
+    "total_scripts": 6,
+    "total_handlers": 9,
+    "total_lines": 66,
+    "unique_transitions": [
+      "frame",
+      "myMarker",
+      "start"
+    ],
+    "unique_inventory_items": [
+      "Suit",
+      "helmet"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "externalParts",
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      12,
+      23
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 6,
+    "state_ref_count": 4
+  },
+  "boat_88": {
+    "total_scripts": 4,
+    "total_handlers": 7,
+    "total_lines": 57,
+    "unique_transitions": [
+      "frame",
+      "leave",
+      "myMarker",
+      "start"
+    ],
+    "unique_inventory_items": [
+      "Fishingrod"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [
+      "drawBoat",
+      "setSky"
+    ],
+    "unique_mission_ids": [
+      11,
+      24
+    ],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 1,
+    "transition_count": 4,
+    "state_ref_count": 3
+  },
+  "shared_00": {
+    "total_scripts": 47,
+    "total_handlers": 101,
+    "total_lines": 5963,
+    "unique_transitions": [
+      "#next",
+      "05",
+      "13",
+      "Sink",
+      "frame",
+      "frame+1"
+    ],
+    "unique_inventory_items": [
+      "DrivenTimes",
+      "index",
+      "tmpInventory",
+      "tmpItem"
+    ],
+    "unique_audio_cues": [
+      "00d007v0",
+      "00d008v0",
+      "00d009v0",
+      "00d039v0",
+      "00d041v0",
+      "00d042v0",
+      "00d043v0",
+      "00d044v0",
+      "00d045v0",
+      "00d046v0",
+      "00d048v0",
+      "00d049v0",
+      "00d050v0",
+      "00d051v0",
+      "00d053v0",
+      "00d054v0",
+      "00d055v0",
+      "00d056v0",
+      "00d067v0",
+      "00d069v0",
+      "00d071v0",
+      "00d072v0",
+      "00d073v0",
+      "00d074v0",
+      "00d075v0",
+      "00d076v0",
+      "00d077v0",
+      "00d078v0",
+      "00d079v0",
+      "00e110v0",
+      "03d008v0",
+      "03d009v0",
+      "03d010v0",
+      "03d011v0",
+      "03d012v0",
+      "03d014v0",
+      "03d015v0",
+      "04d009v0",
+      "04d024v0",
+      "04d025v0",
+      "04d026v0",
+      "04d048v0",
+      "04d056v0",
+      "05e018v0",
+      "05e018v1",
+      "05e022v0",
+      "05e026v0",
+      "05e030v0",
+      "05e034v0",
+      "05e053v0",
+      "05e056v0",
+      "09d001v0",
+      "09d002v0",
+      "09d003v0",
+      "09d005v0",
+      "09d006v0",
+      "09d058v0",
+      "09d059v0",
+      "09d060v0",
+      "09d061v0",
+      "09d062v0",
+      "09d063v0",
+      "09d064v0",
+      "20d163v0",
+      "50d001v0",
+      "50d002v0",
+      "50d003v0",
+      "50d004v0",
+      "50d005v0",
+      "50d006v0",
+      "50d007v0",
+      "50d008v0",
+      "50d009v0",
+      "50d013v0",
+      "50d014v0"
+    ],
+    "unique_state_fields": [
+      "HullBackOffset",
+      "HullFrontOffset",
+      "boatViewHandler",
+      "externalParts",
+      "hullBackInsideOffset",
+      "hullFrontInsideOffset",
+      "junkPileHandlers",
+      "junkViewHandler",
+      "levelHandler",
+      "loopMaster",
+      "mouseMaster",
+      "parts",
+      "rudderBackOffset",
+      "rudderFrontOffset",
+      "user",
+      "users",
+      "weather",
+      "world"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [
+      ".dxr"
+    ],
+    "inventory_op_count": 4,
+    "transition_count": 8,
+    "state_ref_count": 70
+  },
+  "showboat": {
+    "total_scripts": 14,
+    "total_handlers": 16,
+    "total_lines": 156,
+    "unique_transitions": [
+      "05",
+      "frame"
+    ],
+    "unique_inventory_items": [
+      "DrivenTimes"
+    ],
+    "unique_audio_cues": [],
+    "unique_state_fields": [
+      "user"
+    ],
+    "unique_global_calls": [],
+    "unique_mission_ids": [],
+    "unique_dxr_refs": [],
+    "inventory_op_count": 2,
+    "transition_count": 6,
+    "state_ref_count": 1
+  }
+}

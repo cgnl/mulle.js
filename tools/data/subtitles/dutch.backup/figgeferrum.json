@@ -1,0 +1,38 @@
+{
+  "92d002v0": {
+    "actor": "staf",
+    "lines": [
+      "Miel, Ratis, Laika is weer gaan lopen.",
+      "Heb jij haar toevallig gezien?"
+    ]
+  },
+  "92d003v0": {
+    "actor": "miel",
+    "lines": [
+      "- Nee.",
+      "Ik heb je hond niet gezien."
+    ]
+  },
+  "92d004v0": {
+    "actor": "miel",
+    "lines": [
+      "Ja hoor!",
+      "Ze zit in mijn auto."
+    ]
+  },
+  "92d005v0": {
+    "actor": "staf",
+    "lines": [
+      "Bedankt Miel, dat je Laika thuis hebt gebracht.",
+      "Kleine rakker.",
+      "Miel, voor de moeite krijg je een Sericam benzine van me."
+    ]
+  },
+  "92d006v0": {
+    "actor": "staf",
+    "lines": [
+      "Nou, bedankt.",
+      "Nu kan ik nog een heel end verder rijden."
+    ]
+  }
+}

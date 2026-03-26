@@ -1,0 +1,835 @@
+{
+  "summary": {
+    "total_scripts": 713,
+    "total_handlers_in_ast": 2587,
+    "handlers_with_contracts": 1981,
+    "total_execution_paths": 13345,
+    "behavioral_paths": 2921,
+    "total_conditionals": 78122,
+    "total_tests_generated": 6960,
+    "test_files_generated": 53
+  },
+  "by_handler_type": {
+    "cue": {
+      "handlers": 10,
+      "behavioral_paths": 9
+    },
+    "custom": {
+      "handlers": 961,
+      "behavioral_paths": 445
+    },
+    "frame": {
+      "handlers": 326,
+      "behavioral_paths": 334
+    },
+    "keyboard": {
+      "handlers": 11,
+      "behavioral_paths": 1
+    },
+    "lifecycle": {
+      "handlers": 405,
+      "behavioral_paths": 203
+    },
+    "loop": {
+      "handlers": 52,
+      "behavioral_paths": 270
+    },
+    "mouse": {
+      "handlers": 115,
+      "behavioral_paths": 27
+    },
+    "movie": {
+      "handlers": 43,
+      "behavioral_paths": 1618
+    },
+    "sprite": {
+      "handlers": 58,
+      "behavioral_paths": 14
+    }
+  },
+  "by_folder": {
+    "00": {
+      "scripts": 47,
+      "handlers": 358,
+      "total_paths": 2148,
+      "behavioral_paths": 65,
+      "conditionals": 11613,
+      "tests_generated": 1975,
+      "handler_types": {
+        "frame": 5,
+        "sprite": 4,
+        "lifecycle": 68,
+        "custom": 267,
+        "mouse": 6,
+        "movie": 3,
+        "loop": 5
+      }
+    },
+    "01": {
+      "scripts": 5,
+      "handlers": 12,
+      "total_paths": 81,
+      "behavioral_paths": 16,
+      "conditionals": 257,
+      "tests_generated": 80,
+      "handler_types": {
+        "frame": 3,
+        "mouse": 1,
+        "custom": 4,
+        "lifecycle": 3,
+        "loop": 1
+      }
+    },
+    "02": {
+      "scripts": 4,
+      "handlers": 8,
+      "total_paths": 50,
+      "behavioral_paths": 33,
+      "conditionals": 220,
+      "tests_generated": 1,
+      "handler_types": {
+        "frame": 3,
+        "lifecycle": 3,
+        "custom": 1,
+        "loop": 1
+      }
+    },
+    "03": {
+      "scripts": 10,
+      "handlers": 15,
+      "total_paths": 48,
+      "behavioral_paths": 12,
+      "conditionals": 137,
+      "tests_generated": 48,
+      "handler_types": {
+        "frame": 8,
+        "custom": 3,
+        "lifecycle": 3,
+        "loop": 1
+      }
+    },
+    "04": {
+      "scripts": 12,
+      "handlers": 26,
+      "total_paths": 167,
+      "behavioral_paths": 59,
+      "conditionals": 663,
+      "tests_generated": 5,
+      "handler_types": {
+        "frame": 10,
+        "custom": 9,
+        "sprite": 2,
+        "mouse": 1,
+        "lifecycle": 3,
+        "loop": 1
+      }
+    },
+    "05": {
+      "scripts": 36,
+      "handlers": 169,
+      "total_paths": 1845,
+      "behavioral_paths": 182,
+      "conditionals": 13459,
+      "tests_generated": 4,
+      "handler_types": {
+        "loop": 13,
+        "mouse": 9,
+        "sprite": 2,
+        "frame": 2,
+        "custom": 90,
+        "lifecycle": 50,
+        "keyboard": 2,
+        "movie": 1
+      }
+    },
+    "06": {
+      "scripts": 16,
+      "handlers": 53,
+      "total_paths": 208,
+      "behavioral_paths": 19,
+      "conditionals": 592,
+      "tests_generated": 1,
+      "handler_types": {
+        "frame": 4,
+        "loop": 1,
+        "keyboard": 1,
+        "mouse": 7,
+        "custom": 32,
+        "sprite": 2,
+        "lifecycle": 6
+      }
+    },
+    "08": {
+      "scripts": 10,
+      "handlers": 17,
+      "total_paths": 65,
+      "behavioral_paths": 10,
+      "conditionals": 181,
+      "tests_generated": 2,
+      "handler_types": {
+        "frame": 3,
+        "mouse": 3,
+        "custom": 5,
+        "sprite": 2,
+        "lifecycle": 4
+      }
+    },
+    "10": {
+      "scripts": 1,
+      "handlers": 2,
+      "total_paths": 34,
+      "behavioral_paths": 32,
+      "conditionals": 162,
+      "tests_generated": 34,
+      "handler_types": {
+        "movie": 1,
+        "custom": 1
+      }
+    },
+    "11": {
+      "scripts": 18,
+      "handlers": 55,
+      "total_paths": 227,
+      "behavioral_paths": 24,
+      "conditionals": 669,
+      "tests_generated": 7,
+      "handler_types": {
+        "sprite": 3,
+        "keyboard": 1,
+        "custom": 26,
+        "mouse": 6,
+        "frame": 11,
+        "cue": 2,
+        "loop": 3,
+        "lifecycle": 2,
+        "movie": 1
+      }
+    },
+    "12": {
+      "scripts": 22,
+      "handlers": 24,
+      "total_paths": 25,
+      "behavioral_paths": 24,
+      "conditionals": 2,
+      "tests_generated": 25,
+      "handler_types": {
+        "frame": 21,
+        "cue": 1,
+        "mouse": 1,
+        "keyboard": 1
+      }
+    },
+    "13": {
+      "scripts": 5,
+      "handlers": 5,
+      "total_paths": 10,
+      "behavioral_paths": 6,
+      "conditionals": 11,
+      "tests_generated": 10,
+      "handler_types": {
+        "frame": 4,
+        "mouse": 1
+      }
+    },
+    "14": {
+      "scripts": 10,
+      "handlers": 38,
+      "total_paths": 306,
+      "behavioral_paths": 16,
+      "conditionals": 1343,
+      "tests_generated": 0,
+      "handler_types": {
+        "frame": 3,
+        "mouse": 9,
+        "custom": 20,
+        "sprite": 3,
+        "keyboard": 1,
+        "movie": 1,
+        "loop": 1
+      }
+    },
+    "15": {
+      "scripts": 11,
+      "handlers": 32,
+      "total_paths": 141,
+      "behavioral_paths": 8,
+      "conditionals": 451,
+      "tests_generated": 4,
+      "handler_types": {
+        "frame": 5,
+        "sprite": 5,
+        "mouse": 14,
+        "custom": 5,
+        "lifecycle": 2,
+        "movie": 1
+      }
+    },
+    "70": {
+      "scripts": 4,
+      "handlers": 7,
+      "total_paths": 16,
+      "behavioral_paths": 14,
+      "conditionals": 38,
+      "tests_generated": 2,
+      "handler_types": {
+        "frame": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "71": {
+      "scripts": 7,
+      "handlers": 11,
+      "total_paths": 17,
+      "behavioral_paths": 15,
+      "conditionals": 18,
+      "tests_generated": 2,
+      "handler_types": {
+        "frame": 6,
+        "cue": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "76": {
+      "scripts": 7,
+      "handlers": 10,
+      "total_paths": 19,
+      "behavioral_paths": 17,
+      "conditionals": 38,
+      "tests_generated": 4,
+      "handler_types": {
+        "frame": 6,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "77": {
+      "scripts": 22,
+      "handlers": 26,
+      "total_paths": 174,
+      "behavioral_paths": 169,
+      "conditionals": 2098,
+      "tests_generated": 33,
+      "handler_types": {
+        "frame": 20,
+        "sprite": 1,
+        "lifecycle": 3,
+        "movie": 1,
+        "custom": 1
+      }
+    },
+    "78": {
+      "scripts": 5,
+      "handlers": 8,
+      "total_paths": 91,
+      "behavioral_paths": 89,
+      "conditionals": 620,
+      "tests_generated": 6,
+      "handler_types": {
+        "frame": 4,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "79": {
+      "scripts": 10,
+      "handlers": 13,
+      "total_paths": 20,
+      "behavioral_paths": 17,
+      "conditionals": 24,
+      "tests_generated": 7,
+      "handler_types": {
+        "frame": 8,
+        "sprite": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "80": {
+      "scripts": 9,
+      "handlers": 13,
+      "total_paths": 144,
+      "behavioral_paths": 138,
+      "conditionals": 1090,
+      "tests_generated": 141,
+      "handler_types": {
+        "frame": 8,
+        "cue": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "81": {
+      "scripts": 6,
+      "handlers": 9,
+      "total_paths": 16,
+      "behavioral_paths": 14,
+      "conditionals": 26,
+      "tests_generated": 3,
+      "handler_types": {
+        "frame": 5,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "83": {
+      "scripts": 12,
+      "handlers": 16,
+      "total_paths": 77,
+      "behavioral_paths": 75,
+      "conditionals": 452,
+      "tests_generated": 13,
+      "handler_types": {
+        "sprite": 1,
+        "frame": 11,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "84": {
+      "scripts": 10,
+      "handlers": 14,
+      "total_paths": 132,
+      "behavioral_paths": 118,
+      "conditionals": 788,
+      "tests_generated": 8,
+      "handler_types": {
+        "frame": 7,
+        "sprite": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "85": {
+      "scripts": 6,
+      "handlers": 9,
+      "total_paths": 138,
+      "behavioral_paths": 134,
+      "conditionals": 951,
+      "tests_generated": 7,
+      "handler_types": {
+        "frame": 4,
+        "cue": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "86": {
+      "scripts": 7,
+      "handlers": 13,
+      "total_paths": 282,
+      "behavioral_paths": 138,
+      "conditionals": 2298,
+      "tests_generated": 5,
+      "handler_types": {
+        "frame": 6,
+        "custom": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "87": {
+      "scripts": 6,
+      "handlers": 9,
+      "total_paths": 24,
+      "behavioral_paths": 22,
+      "conditionals": 68,
+      "tests_generated": 3,
+      "handler_types": {
+        "frame": 5,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "88": {
+      "scripts": 4,
+      "handlers": 7,
+      "total_paths": 22,
+      "behavioral_paths": 20,
+      "conditionals": 68,
+      "tests_generated": 4,
+      "handler_types": {
+        "frame": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "CDdata": {
+      "scripts": 14,
+      "handlers": 68,
+      "total_paths": 443,
+      "behavioral_paths": 26,
+      "conditionals": 1995,
+      "tests_generated": 414,
+      "handler_types": {
+        "lifecycle": 41,
+        "custom": 27
+      }
+    },
+    "LBstart": {
+      "scripts": 3,
+      "handlers": 3,
+      "total_paths": 4,
+      "behavioral_paths": 3,
+      "conditionals": 2,
+      "tests_generated": 4,
+      "handler_types": {
+        "mouse": 1,
+        "frame": 2
+      }
+    },
+    "StartCD": {
+      "scripts": 4,
+      "handlers": 6,
+      "total_paths": 156,
+      "behavioral_paths": 128,
+      "conditionals": 1078,
+      "tests_generated": 154,
+      "handler_types": {
+        "custom": 5,
+        "lifecycle": 1
+      }
+    },
+    "boat_02": {
+      "scripts": 4,
+      "handlers": 8,
+      "total_paths": 50,
+      "behavioral_paths": 33,
+      "conditionals": 220,
+      "tests_generated": 49,
+      "handler_types": {
+        "frame": 3,
+        "lifecycle": 3,
+        "custom": 1,
+        "loop": 1
+      }
+    },
+    "boat_04": {
+      "scripts": 12,
+      "handlers": 26,
+      "total_paths": 167,
+      "behavioral_paths": 59,
+      "conditionals": 663,
+      "tests_generated": 166,
+      "handler_types": {
+        "frame": 10,
+        "custom": 9,
+        "sprite": 2,
+        "mouse": 1,
+        "lifecycle": 3,
+        "loop": 1
+      }
+    },
+    "boat_05": {
+      "scripts": 36,
+      "handlers": 169,
+      "total_paths": 1845,
+      "behavioral_paths": 182,
+      "conditionals": 13459,
+      "tests_generated": 1798,
+      "handler_types": {
+        "loop": 13,
+        "mouse": 9,
+        "sprite": 2,
+        "frame": 2,
+        "custom": 90,
+        "lifecycle": 50,
+        "keyboard": 2,
+        "movie": 1
+      }
+    },
+    "boat_06": {
+      "scripts": 16,
+      "handlers": 53,
+      "total_paths": 208,
+      "behavioral_paths": 19,
+      "conditionals": 592,
+      "tests_generated": 197,
+      "handler_types": {
+        "frame": 4,
+        "loop": 1,
+        "keyboard": 1,
+        "mouse": 7,
+        "custom": 32,
+        "sprite": 2,
+        "lifecycle": 6
+      }
+    },
+    "boat_08": {
+      "scripts": 10,
+      "handlers": 17,
+      "total_paths": 65,
+      "behavioral_paths": 10,
+      "conditionals": 181,
+      "tests_generated": 62,
+      "handler_types": {
+        "frame": 3,
+        "mouse": 3,
+        "custom": 5,
+        "sprite": 2,
+        "lifecycle": 4
+      }
+    },
+    "boat_11": {
+      "scripts": 18,
+      "handlers": 55,
+      "total_paths": 227,
+      "behavioral_paths": 24,
+      "conditionals": 669,
+      "tests_generated": 216,
+      "handler_types": {
+        "sprite": 3,
+        "keyboard": 1,
+        "custom": 26,
+        "mouse": 6,
+        "frame": 11,
+        "cue": 2,
+        "loop": 3,
+        "lifecycle": 2,
+        "movie": 1
+      }
+    },
+    "boat_14": {
+      "scripts": 10,
+      "handlers": 38,
+      "total_paths": 306,
+      "behavioral_paths": 16,
+      "conditionals": 1343,
+      "tests_generated": 299,
+      "handler_types": {
+        "frame": 3,
+        "mouse": 9,
+        "custom": 20,
+        "sprite": 3,
+        "keyboard": 1,
+        "movie": 1,
+        "loop": 1
+      }
+    },
+    "boat_15": {
+      "scripts": 11,
+      "handlers": 32,
+      "total_paths": 141,
+      "behavioral_paths": 8,
+      "conditionals": 451,
+      "tests_generated": 135,
+      "handler_types": {
+        "frame": 5,
+        "sprite": 5,
+        "mouse": 14,
+        "custom": 5,
+        "lifecycle": 2,
+        "movie": 1
+      }
+    },
+    "boat_70": {
+      "scripts": 4,
+      "handlers": 7,
+      "total_paths": 16,
+      "behavioral_paths": 14,
+      "conditionals": 38,
+      "tests_generated": 14,
+      "handler_types": {
+        "frame": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_71": {
+      "scripts": 7,
+      "handlers": 11,
+      "total_paths": 17,
+      "behavioral_paths": 15,
+      "conditionals": 18,
+      "tests_generated": 15,
+      "handler_types": {
+        "frame": 6,
+        "cue": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_76": {
+      "scripts": 7,
+      "handlers": 10,
+      "total_paths": 19,
+      "behavioral_paths": 17,
+      "conditionals": 38,
+      "tests_generated": 17,
+      "handler_types": {
+        "frame": 6,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_77": {
+      "scripts": 22,
+      "handlers": 26,
+      "total_paths": 174,
+      "behavioral_paths": 169,
+      "conditionals": 2098,
+      "tests_generated": 172,
+      "handler_types": {
+        "frame": 20,
+        "sprite": 1,
+        "lifecycle": 3,
+        "movie": 1,
+        "custom": 1
+      }
+    },
+    "boat_78": {
+      "scripts": 5,
+      "handlers": 8,
+      "total_paths": 91,
+      "behavioral_paths": 89,
+      "conditionals": 620,
+      "tests_generated": 89,
+      "handler_types": {
+        "frame": 4,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_79": {
+      "scripts": 10,
+      "handlers": 13,
+      "total_paths": 20,
+      "behavioral_paths": 17,
+      "conditionals": 24,
+      "tests_generated": 17,
+      "handler_types": {
+        "frame": 8,
+        "sprite": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_81": {
+      "scripts": 6,
+      "handlers": 9,
+      "total_paths": 16,
+      "behavioral_paths": 14,
+      "conditionals": 26,
+      "tests_generated": 14,
+      "handler_types": {
+        "frame": 5,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_83": {
+      "scripts": 12,
+      "handlers": 16,
+      "total_paths": 77,
+      "behavioral_paths": 75,
+      "conditionals": 452,
+      "tests_generated": 75,
+      "handler_types": {
+        "sprite": 1,
+        "frame": 11,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_84": {
+      "scripts": 10,
+      "handlers": 14,
+      "total_paths": 132,
+      "behavioral_paths": 118,
+      "conditionals": 788,
+      "tests_generated": 130,
+      "handler_types": {
+        "frame": 7,
+        "sprite": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_85": {
+      "scripts": 6,
+      "handlers": 9,
+      "total_paths": 138,
+      "behavioral_paths": 134,
+      "conditionals": 951,
+      "tests_generated": 136,
+      "handler_types": {
+        "frame": 4,
+        "cue": 1,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_86": {
+      "scripts": 7,
+      "handlers": 13,
+      "total_paths": 282,
+      "behavioral_paths": 138,
+      "conditionals": 2298,
+      "tests_generated": 280,
+      "handler_types": {
+        "frame": 6,
+        "custom": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_87": {
+      "scripts": 6,
+      "handlers": 9,
+      "total_paths": 24,
+      "behavioral_paths": 22,
+      "conditionals": 68,
+      "tests_generated": 22,
+      "handler_types": {
+        "frame": 5,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "boat_88": {
+      "scripts": 4,
+      "handlers": 7,
+      "total_paths": 22,
+      "behavioral_paths": 20,
+      "conditionals": 68,
+      "tests_generated": 20,
+      "handler_types": {
+        "frame": 3,
+        "lifecycle": 3,
+        "movie": 1
+      }
+    },
+    "shared_00": {
+      "scripts": 47,
+      "handlers": 358,
+      "total_paths": 2148,
+      "behavioral_paths": 65,
+      "conditionals": 11613,
+      "tests_generated": 1,
+      "handler_types": {
+        "frame": 5,
+        "sprite": 4,
+        "lifecycle": 68,
+        "custom": 267,
+        "mouse": 6,
+        "movie": 3,
+        "loop": 5
+      }
+    },
+    "showboat": {
+      "scripts": 13,
+      "handlers": 17,
+      "total_paths": 30,
+      "behavioral_paths": 20,
+      "conditionals": 32,
+      "tests_generated": 30,
+      "handler_types": {
+        "frame": 12,
+        "custom": 3,
+        "movie": 1,
+        "mouse": 1
+      }
+    }
+  }
+}

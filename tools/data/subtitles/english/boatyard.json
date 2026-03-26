@@ -1,0 +1,33 @@
+{
+  "04d001v0": {
+    "lines": [
+      "Welcome to the shipyard!",
+      "I am Christina Columbus"
+    ],
+    "actor": "christina"
+  },
+  "04d002v0": {
+    "lines": [
+      "Here you can build boats",
+      "Choose parts from the shop",
+      "And place them on your boat"
+    ],
+    "actor": "christina"
+  },
+  "04d003v0": {
+    "lines": [
+      "Press the red button",
+      "To go sailing!",
+      "Have fun at sea"
+    ],
+    "actor": "christina"
+  },
+  "04d004v0": {
+    "lines": [
+      "You don't have any parts left!",
+      "Come back later when you",
+      "have found new parts"
+    ],
+    "actor": "christina"
+  }
+}

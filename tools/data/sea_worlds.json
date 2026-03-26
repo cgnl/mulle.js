@@ -1,0 +1,19 @@
+{
+  "Da Hood": {
+    "WorldId": "Da Hood",
+    "map": [],
+    "symbol": "32b001v0",
+    "SymbolPosition": 1,
+    "StartMap": {
+      "x": 2,
+      "y": 6
+    },
+    "StartCoordinate": {
+      "x": 520,
+      "y": 190
+    },
+    "StartDirection": 4,
+    "gridWidth": 10,
+    "gridHeight": 11
+  }
+}

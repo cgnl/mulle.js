@@ -1,0 +1,1030 @@
+/**
+ * SeaWorld scene
+ * @module SeaWorldState
+ * 
+ * The boat equivalent of WorldState (car driving)
+ * Navigate through the sea with your boat
+ * 
+ * Sea Topology System:
+ * Similar to the car world's topology system, the sea world uses a
+ * topology bitmap to define navigable areas and terrain types.
+ * 
+ * Color coding (R channel value):
+ * - 0-50: Deep water (normal sailing)
+ * - 51-100: Medium depth (slight current effects)
+ * - 101-150: Shallow water (slow, small boats only)
+ * - 160-200: Reef/rocks (requires durability)
+ * - 201-220: Strong currents (pushes boat, direction in G channel)
+ * - 240-255: Shore/land (impassable)
+ * 
+ * The G channel can encode current direction (0-255 = 0-360 degrees)
+ * The B channel is reserved for future use (tides, depth variation)
+ */
+
+import MulleState from './base'
+
+import MulleSprite from '../objects/sprite'
+import MulleDriveBoat from '../objects/driveboat'
+import MulleBuildBoat from '../objects/buildboat'
+import MulleToolbox from '../objects/toolbox'
+
+import MulleSeaWorld from '../struct/seaworld'
+
+/**
+ * Sea world scene - sail your boat!
+ * @extends MulleState
+ */
+class SeaWorldState extends MulleState {
+  preload () {
+    super.preload()
+
+    // Load sea world assets
+    this.game.load.pack('seaworld', 'assets/seaworld.json', null, this)
+    this.game.load.pack('boat_bms', 'assets/boat_bms.json', null, this)
+    
+    // Load sea topology atlas (similar to car world's topography)
+    this.game.load.atlas('sea_topology', 'assets/sea_topology/sea_topology.png', 'assets/sea_topology/sea_topology.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH)
+  }
+
+  create () {
+    super.create()
+
+    // Check if boat is seaworthy
+    const boat = this.game.mulle.user.Boat
+    if (!boat || !boat.isSeaworthy()) {
+      console.error('[SeaWorld] Boat is not seaworthy!')
+      this.game.state.start('boatyard')
+      return
+    }
+
+    // Initialize topology system (similar to car world)
+    this.topBitmap = null
+    this.topSprite = null
+    this.mapCoordinate = new Phaser.Point(1, 1)
+
+    // Add sea audio
+    this.game.mulle.addAudio('seaworld')
+
+    this.game.physics.startSystem(Phaser.Physics.ARCADE)
+
+    // Create topology bitmap for collision detection
+    // Same size as car world topology (316x198 at half resolution)
+    this.topBitmap = this.game.make.bitmapData(316, 198)
+
+    // Play ocean ambient sounds
+    this.playAmbientSounds()
+
+    // Create sea background
+    this.createBackground()
+
+    // Create sea topology layer
+    this.createTopology()
+
+    // Create the sailing boat
+    this.createBoat()
+
+    // Create map objects (islands, buoys, etc)
+    this.mapObjects = this.game.add.group()
+
+    // Create navigation UI
+    this.createUI()
+
+    // Create destination markers
+    this.createDestinations()
+
+    // Load initial map
+    this.changeMap(this.mapCoordinate, true)
+
+    console.log('[SeaWorld] Scene created - set sail!')
+  }
+
+  /**
+   * Change to a different sea map tile
+   * Similar to WorldState.changeMap for cars
+   * @param {Phaser.Point} pos - Map coordinate or offset
+   * @param {boolean} absolute - Whether pos is absolute or relative
+   */
+  changeMap (pos, absolute = false) {
+    console.log('[SeaWorld] Change map', pos)
+
+    var newY = pos.y
+    var newX = pos.x
+
+    if (!absolute) {
+      newY += this.mapCoordinate.y
+      newX += this.mapCoordinate.x
+    }
+
+    // Get sea map data (similar to car world)
+    // For now, use default topology if sea maps not defined
+    var mapName = `sea_${newX}_${newY}`
+    var topName = `sea_top_${newX}_${newY}`
+
+    console.log('[SeaWorld] Map coordinates', newX, newY)
+
+    // Update background if sea maps exist
+    if (this.seaMapSprite) {
+      try {
+        this.seaMapSprite.setDirectorMember('boten_70.DXR', newX + newY * 3)
+      } catch (e) {
+        console.warn('[SeaWorld] Could not load sea map sprite')
+      }
+    }
+
+    // Update topology bitmap
+    this.updateTopology(topName)
+
+    // Update coordinate
+    this.mapCoordinate = new Phaser.Point(newX, newY)
+
+    // Clear and recreate map objects for this tile
+    this.clearMapObjects()
+    this.createMapObjectsForTile(newX, newY)
+  }
+
+  /**
+   * Update topology bitmap from sprite
+   * @param {string} topName - Topology frame name
+   */
+  updateTopology (topName) {
+    if (!this.topBitmap) return
+
+    // Try to load specific topology frame
+    try {
+      if (this.topSprite) {
+        this.topSprite.frameName = topName
+      } else if (this.game.cache.checkImageKey('sea_topology')) {
+        this.topSprite = this.game.add.sprite(-320, -240, 'sea_topology', topName)
+        this.topSprite.smoothed = false
+      }
+
+      if (this.topSprite) {
+        this.topBitmap.draw(this.topSprite, 0, 0)
+        this.topBitmap.update()
+        console.log('[SeaWorld] Topology updated:', topName)
+      }
+    } catch (e) {
+      // If specific topology not available, generate default
+      console.warn('[SeaWorld] Topology not found, generating default:', topName)
+      this.generateDefaultTopology()
+    }
+  }
+
+  /**
+   * Generate default sea topology if no specific one exists
+   * Creates a simple sea with shore borders
+   */
+  generateDefaultTopology () {
+    if (!this.topBitmap) return
+
+    // Generate procedural topology
+    // Shore on edges, deep water in center, some shallow areas
+    for (let y = 0; y < 198; y++) {
+      for (let x = 0; x < 316; x++) {
+        let terrainValue = 25  // Default: deep water
+
+        // Shore on edges (impassable)
+        const edgeMargin = 10
+        if (x < edgeMargin || x > 316 - edgeMargin || y < edgeMargin || y > 198 - edgeMargin) {
+          terrainValue = 245  // Shore
+        }
+        // Shallow water near shore
+        else if (x < edgeMargin * 2 || x > 316 - edgeMargin * 2 || y < edgeMargin * 2 || y > 198 - edgeMargin * 2) {
+          terrainValue = 120  // Shallow
+        }
+        // Some random reefs
+        else if (Math.random() < 0.005) {
+          terrainValue = 180  // Reef
+        }
+        // Random shallow patches
+        else if (Math.random() < 0.02) {
+          terrainValue = 110  // Shallow water
+        }
+        // Occasional current zones
+        else if (Math.random() < 0.01) {
+          terrainValue = 210  // Strong current
+        }
+
+        // Set pixel (R = terrain, G = current direction if applicable, B = reserved)
+        const currentDir = Math.floor(Math.random() * 255)
+        this.topBitmap.setPixel(x, y, terrainValue, currentDir, 0, false)
+      }
+    }
+
+    this.topBitmap.context.putImageData(this.topBitmap.imageData, 0, 0)
+    this.topBitmap.dirty = true
+    console.log('[SeaWorld] Generated default topology')
+  }
+
+  /**
+   * Clear map objects when changing tiles
+   */
+  clearMapObjects () {
+    if (!this.mapObjects) return
+
+    for (var i = this.mapObjects.children.length - 1; i >= 0; i--) {
+      var c = this.mapObjects.children[i]
+      if (c) {
+        this.mapObjects.remove(c, true)
+      }
+    }
+  }
+
+  /**
+   * Create map objects for a specific tile (buoys, rocks, etc)
+   */
+  createMapObjectsForTile (x, y) {
+    // TODO: Load from sea world definition
+    // For now, create some placeholder objects
+    console.log('[SeaWorld] Creating map objects for tile', x, y)
+  }
+
+  /**
+   * Create the sea background
+   */
+  createBackground () {
+    // Sea background - use seaworld assets from 70.DXR
+    this.seaBackground = new MulleSprite(this.game, 320, 240)
+    
+    if (!this.seaBackground.setDirectorMember('boten_70.DXR', 1)) {
+      // Fallback: create blue sea
+      console.warn('[SeaWorld] Could not load sea background, using fallback')
+      this.seaBackground.destroy()
+      
+      const seaGraphics = this.game.add.graphics(0, 0)
+      
+      // Sky gradient
+      for (let y = 0; y < 200; y++) {
+        const blue = Math.floor(135 + (y / 200) * 70)
+        seaGraphics.beginFill(Phaser.Color.getColor(135, 206, blue))
+        seaGraphics.drawRect(0, y, 640, 1)
+        seaGraphics.endFill()
+      }
+      
+      // Sea gradient
+      for (let y = 200; y < 480; y++) {
+        const depth = (y - 200) / 280
+        const r = Math.floor(30 - depth * 20)
+        const g = Math.floor(100 - depth * 40)
+        const b = Math.floor(180 - depth * 30)
+        seaGraphics.beginFill(Phaser.Color.getColor(r, g, b))
+        seaGraphics.drawRect(0, y, 640, 1)
+        seaGraphics.endFill()
+      }
+    } else {
+      this.game.add.existing(this.seaBackground)
+    }
+
+    // Sea map sprite (for specific map tiles)
+    this.seaMapSprite = new MulleSprite(this.game, 320, 200)
+    // Will be updated when changing maps
+
+    // Add animated waves overlay
+    this.createWaves()
+  }
+
+  /**
+   * Create topology layer for collision detection
+   * Similar to car world's topology system
+   */
+  createTopology () {
+    // The topology sprite is rendered off-screen and used for pixel checks
+    // It's never displayed, just used for the topBitmap
+    
+    // Generate initial default topology
+    this.generateDefaultTopology()
+
+    console.log('[SeaWorld] Topology layer created')
+  }
+
+  /**
+   * Create animated wave effect
+   */
+  createWaves () {
+    this.waves = this.game.add.graphics(0, 0)
+    
+    // Draw wave lines
+    this.waveOffset = 0
+    this.waveTimer = this.game.time.events.loop(100, () => {
+      this.waveOffset += 0.1
+      this.drawWaves()
+    })
+  }
+
+  /**
+   * Draw wave animation
+   */
+  drawWaves () {
+    if (!this.waves) return
+    
+    this.waves.clear()
+    this.waves.lineStyle(2, 0xffffff, 0.3)
+
+    for (let row = 0; row < 5; row++) {
+      const y = 250 + row * 50
+      this.waves.moveTo(0, y)
+      
+      for (let x = 0; x < 640; x += 10) {
+        const waveY = y + Math.sin((x / 50) + this.waveOffset + row) * 3
+        this.waves.lineTo(x, waveY)
+      }
+    }
+  }
+
+  /**
+   * Create the sailing boat
+   */
+  createBoat () {
+    // Position boat in center of screen
+    this.driveBoat = new MulleDriveBoat(this.game)
+    this.driveBoat.position.set(320, 250)
+    this.driveBoat.state = this // Give boat reference to scene for callbacks
+    
+    // Connect topology bitmap to boat for terrain checking
+    this.driveBoat.topology = this.topBitmap
+    
+    this.game.add.existing(this.driveBoat)
+
+    // Also show the built boat sprite on top
+    this.boatSprite = new MulleBuildBoat(this.game, 320, 250, null, true, true)
+    this.boatSprite.scale.setTo(0.7) // Scale down for sea view
+    this.game.add.existing(this.boatSprite)
+
+    console.log('[SeaWorld] Boat created with topology reference')
+  }
+
+  /**
+   * Create navigation UI
+   */
+  createUI () {
+    // Compass in top-right
+    this.compass = this.game.add.graphics(590, 50)
+    this.drawCompass()
+
+    // Speed indicator
+    this.speedText = this.game.add.text(50, 30, 'Snelheid: 0', {
+      font: 'bold 14px Arial',
+      fill: '#ffffff',
+      stroke: '#003366',
+      strokeThickness: 2
+    })
+
+    // Create fuel/energy gauge
+    this.createEnergyGauge()
+
+    // Back to boatyard button
+    const backBtn = this.game.add.text(50, 450, 'Terug naar werf', {
+      font: 'bold 14px Arial',
+      fill: '#ffffff',
+      stroke: '#333333',
+      strokeThickness: 2
+    })
+    backBtn.inputEnabled = true
+    backBtn.events.onInputOver.add(() => {
+      backBtn.fill = '#ffff00'
+      this.game.mulle.cursor.current = 'Point'
+    })
+    backBtn.events.onInputOut.add(() => {
+      backBtn.fill = '#ffffff'
+      this.game.mulle.cursor.current = null
+    })
+    backBtn.events.onInputUp.add(() => {
+      this.returnToBoatyard()
+    })
+
+    // Instructions
+    this.instructionText = this.game.add.text(320, 460, 'Pijltjestoetsen of WASD om te varen', {
+      font: '12px Arial',
+      fill: '#cccccc'
+    })
+    this.instructionText.anchor.setTo(0.5, 0.5)
+
+    // Propulsion indicator
+    this.propulsionText = this.game.add.text(50, 85, '', {
+      font: '12px Arial',
+      fill: '#aaaaaa',
+      stroke: '#000000',
+      strokeThickness: 1
+    })
+
+    // Terrain/depth indicator
+    this.terrainText = this.game.add.text(50, 100, '', {
+      font: '12px Arial',
+      fill: '#66ccff',
+      stroke: '#000000',
+      strokeThickness: 1
+    })
+  }
+
+  /**
+   * Create fuel/stamina gauge UI
+   */
+  createEnergyGauge () {
+    const gaugeX = 50
+    const gaugeY = 50
+    const gaugeWidth = 100
+    const gaugeHeight = 12
+    
+    // Gauge container
+    this.energyGaugeGroup = this.game.add.group()
+    
+    // Fuel gauge (for motor boats)
+    this.fuelGaugeBackground = this.game.add.graphics(gaugeX, gaugeY)
+    this.fuelGaugeBackground.beginFill(0x333333, 0.8)
+    this.fuelGaugeBackground.drawRoundedRect(0, 0, gaugeWidth, gaugeHeight, 3)
+    this.fuelGaugeBackground.endFill()
+    this.energyGaugeGroup.add(this.fuelGaugeBackground)
+    
+    this.fuelGaugeFill = this.game.add.graphics(gaugeX + 2, gaugeY + 2)
+    this.energyGaugeGroup.add(this.fuelGaugeFill)
+    
+    this.fuelGaugeLabel = this.game.add.text(gaugeX + gaugeWidth + 5, gaugeY + gaugeHeight / 2, 'Brandstof', {
+      font: '10px Arial',
+      fill: '#ffffff'
+    })
+    this.fuelGaugeLabel.anchor.setTo(0, 0.5)
+    this.energyGaugeGroup.add(this.fuelGaugeLabel)
+    
+    // Stamina gauge (for rowing boats) - positioned below fuel gauge
+    const staminaY = gaugeY + gaugeHeight + 5
+    
+    this.staminaGaugeBackground = this.game.add.graphics(gaugeX, staminaY)
+    this.staminaGaugeBackground.beginFill(0x333333, 0.8)
+    this.staminaGaugeBackground.drawRoundedRect(0, 0, gaugeWidth, gaugeHeight, 3)
+    this.staminaGaugeBackground.endFill()
+    this.energyGaugeGroup.add(this.staminaGaugeBackground)
+    
+    this.staminaGaugeFill = this.game.add.graphics(gaugeX + 2, staminaY + 2)
+    this.energyGaugeGroup.add(this.staminaGaugeFill)
+    
+    this.staminaGaugeLabel = this.game.add.text(gaugeX + gaugeWidth + 5, staminaY + gaugeHeight / 2, 'Energie', {
+      font: '10px Arial',
+      fill: '#ffffff'
+    })
+    this.staminaGaugeLabel.anchor.setTo(0, 0.5)
+    this.energyGaugeGroup.add(this.staminaGaugeLabel)
+    
+    // Warning text (hidden by default)
+    this.energyWarningText = this.game.add.text(320, 100, '', {
+      font: 'bold 18px Arial',
+      fill: '#ff0000',
+      stroke: '#000000',
+      strokeThickness: 3
+    })
+    this.energyWarningText.anchor.setTo(0.5, 0.5)
+    this.energyWarningText.visible = false
+    
+    // Initial visibility based on boat type
+    this.updateGaugeVisibility()
+  }
+
+  /**
+   * Update which gauges are visible based on boat propulsion
+   */
+  updateGaugeVisibility () {
+    if (!this.driveBoat) return
+    
+    // Show fuel gauge only for motor boats
+    const showFuel = this.driveBoat.hasEngine && this.driveBoat.fuelMax > 0
+    this.fuelGaugeBackground.visible = showFuel
+    this.fuelGaugeFill.visible = showFuel
+    this.fuelGaugeLabel.visible = showFuel
+    
+    // Show stamina gauge only for rowing boats
+    const showStamina = this.driveBoat.hasOars && this.driveBoat.staminaMax > 0
+    this.staminaGaugeBackground.visible = showStamina
+    this.staminaGaugeFill.visible = showStamina
+    this.staminaGaugeLabel.visible = showStamina
+    
+    // Adjust speed text position if needed
+    if (showFuel || showStamina) {
+      this.speedText.y = showFuel && showStamina ? 95 : 80
+    } else {
+      this.speedText.y = 30
+    }
+  }
+
+  /**
+   * Update energy gauges display
+   */
+  updateEnergyGauges () {
+    if (!this.driveBoat) return
+    
+    const gaugeWidth = 96  // Inner width (100 - 4 for padding)
+    const gaugeHeight = 8  // Inner height
+    
+    // Update fuel gauge
+    if (this.fuelGaugeFill.visible) {
+      const fuelPercent = this.driveBoat.getFuelPercentage()
+      const fuelWidth = Math.max(0, gaugeWidth * fuelPercent)
+      
+      // Color based on level: green -> yellow -> red
+      let fuelColor
+      if (fuelPercent > 0.5) {
+        fuelColor = 0x00ff00 // Green
+      } else if (fuelPercent > 0.2) {
+        fuelColor = 0xffff00 // Yellow
+      } else {
+        fuelColor = 0xff0000 // Red
+      }
+      
+      this.fuelGaugeFill.clear()
+      this.fuelGaugeFill.beginFill(fuelColor)
+      this.fuelGaugeFill.drawRect(0, 0, fuelWidth, gaugeHeight)
+      this.fuelGaugeFill.endFill()
+    }
+    
+    // Update stamina gauge
+    if (this.staminaGaugeFill.visible) {
+      const staminaPercent = this.driveBoat.getStaminaPercentage()
+      const staminaWidth = Math.max(0, gaugeWidth * staminaPercent)
+      
+      // Color based on level: blue -> cyan -> red
+      let staminaColor
+      if (staminaPercent > 0.5) {
+        staminaColor = 0x0088ff // Blue
+      } else if (staminaPercent > 0.2) {
+        staminaColor = 0x00ffff // Cyan
+      } else {
+        staminaColor = 0xff8800 // Orange
+      }
+      
+      this.staminaGaugeFill.clear()
+      this.staminaGaugeFill.beginFill(staminaColor)
+      this.staminaGaugeFill.drawRect(0, 0, staminaWidth, gaugeHeight)
+      this.staminaGaugeFill.endFill()
+    }
+  }
+
+  /**
+   * Called by driveboat when fuel is low
+   */
+  onLowFuel (current, max) {
+    console.log('[SeaWorld] Low fuel warning!', current, '/', max)
+    this.showEnergyWarning('Brandstof bijna op!')
+  }
+
+  /**
+   * Called by driveboat when stamina is low
+   */
+  onLowStamina (current, max) {
+    console.log('[SeaWorld] Low stamina warning!', current, '/', max)
+    this.showEnergyWarning('Je raakt moe!')
+  }
+
+  /**
+   * Called by driveboat when propulsion changes
+   */
+  onPropulsionChange (oldType, newType) {
+    console.log('[SeaWorld] Propulsion changed:', oldType, '->', newType)
+    
+    // Show appropriate message
+    let message = ''
+    switch (newType) {
+      case 'motor':
+        message = 'Motor gestart'
+        break
+      case 'sail':
+        message = 'Zeilen gehesen!'
+        break
+      case 'oar':
+        message = 'Aan het roeien...'
+        break
+      case 'none':
+        message = 'Drijvend...'
+        this.showOutOfFuelDialog()
+        break
+    }
+    
+    if (message) {
+      this.showMessage(message)
+    }
+    
+    // Update gauge visibility
+    this.updateGaugeVisibility()
+  }
+
+  /**
+   * Show energy warning message
+   */
+  showEnergyWarning (text) {
+    this.energyWarningText.text = text
+    this.energyWarningText.visible = true
+    this.energyWarningText.alpha = 1
+    
+    // Flash effect
+    this.game.add.tween(this.energyWarningText)
+      .to({ alpha: 0.3 }, 300, Phaser.Easing.Linear.None, true, 0, 3, true)
+      .onComplete.add(() => {
+        // Fade out after flashing
+        this.game.add.tween(this.energyWarningText)
+          .to({ alpha: 0 }, 1000, null, true)
+          .onComplete.add(() => {
+            this.energyWarningText.visible = false
+          })
+      })
+  }
+
+  /**
+   * Show dialog when out of fuel with no alternative propulsion
+   */
+  showOutOfFuelDialog () {
+    // Create dialog box
+    if (this.outOfFuelDialog) {
+      this.outOfFuelDialog.destroy()
+    }
+    
+    this.outOfFuelDialog = this.game.add.group()
+    
+    // Background
+    const bg = this.game.add.graphics(320, 240)
+    bg.beginFill(0x000000, 0.9)
+    bg.drawRoundedRect(-150, -75, 300, 150, 10)
+    bg.endFill()
+    this.outOfFuelDialog.add(bg)
+    
+    // Title
+    const title = this.game.add.text(320, 185, 'Geen brandstof!', {
+      font: 'bold 18px Arial',
+      fill: '#ff0000'
+    })
+    title.anchor.setTo(0.5, 0.5)
+    this.outOfFuelDialog.add(title)
+    
+    // Message
+    const msg = this.game.add.text(320, 220, 'Je boot heeft geen brandstof meer.\nWil je terug naar de werf?', {
+      font: '14px Arial',
+      fill: '#ffffff',
+      align: 'center'
+    })
+    msg.anchor.setTo(0.5, 0.5)
+    this.outOfFuelDialog.add(msg)
+    
+    // Yes button
+    const yesBtn = this.game.add.text(260, 280, 'Ja', {
+      font: 'bold 16px Arial',
+      fill: '#00ff00',
+      stroke: '#003300',
+      strokeThickness: 2
+    })
+    yesBtn.anchor.setTo(0.5, 0.5)
+    yesBtn.inputEnabled = true
+    yesBtn.events.onInputOver.add(() => { yesBtn.fill = '#88ff88' })
+    yesBtn.events.onInputOut.add(() => { yesBtn.fill = '#00ff00' })
+    yesBtn.events.onInputUp.add(() => {
+      this.outOfFuelDialog.destroy()
+      this.returnToBoatyard()
+    })
+    this.outOfFuelDialog.add(yesBtn)
+    
+    // No button (continue drifting)
+    const noBtn = this.game.add.text(380, 280, 'Nee, drijven', {
+      font: 'bold 16px Arial',
+      fill: '#ffff00',
+      stroke: '#333300',
+      strokeThickness: 2
+    })
+    noBtn.anchor.setTo(0.5, 0.5)
+    noBtn.inputEnabled = true
+    noBtn.events.onInputOver.add(() => { noBtn.fill = '#ffff88' })
+    noBtn.events.onInputOut.add(() => { noBtn.fill = '#ffff00' })
+    noBtn.events.onInputUp.add(() => {
+      this.outOfFuelDialog.destroy()
+      this.outOfFuelDialog = null
+      // Re-enable boat for drifting
+      if (this.driveBoat) {
+        this.driveBoat.enabled = true
+      }
+    })
+    this.outOfFuelDialog.add(noBtn)
+  }
+
+  /**
+   * Draw compass
+   */
+  drawCompass () {
+    this.compass.clear()
+    
+    // Compass background
+    this.compass.beginFill(0x000000, 0.5)
+    this.compass.drawCircle(0, 0, 40)
+    this.compass.endFill()
+
+    // Compass ring
+    this.compass.lineStyle(2, 0xffffff, 0.8)
+    this.compass.drawCircle(0, 0, 38)
+
+    // Cardinal directions
+    const directions = [
+      { letter: 'N', angle: 0 },
+      { letter: 'O', angle: 90 },
+      { letter: 'Z', angle: 180 },
+      { letter: 'W', angle: 270 }
+    ]
+
+    directions.forEach(dir => {
+      const rad = (dir.angle - 90) * Math.PI / 180
+      const x = Math.cos(rad) * 25
+      const y = Math.sin(rad) * 25
+      
+      const text = this.game.add.text(590 + x, 50 + y, dir.letter, {
+        font: 'bold 10px Arial',
+        fill: '#ffffff'
+      })
+      text.anchor.setTo(0.5, 0.5)
+    })
+  }
+
+  /**
+   * Create destination markers
+   */
+  createDestinations () {
+    this.destinations = []
+
+    // Island destinations (placeholder positions)
+    const islands = [
+      { name: 'Eiland Noord', x: 500, y: 100, scene: 'island_north' },
+      { name: 'Vuurtoren', x: 100, y: 150, scene: 'lighthouse' },
+      { name: 'Vissersdorp', x: 550, y: 400, scene: 'fishing_village' }
+    ]
+
+    islands.forEach(island => {
+      const marker = this.game.add.graphics(island.x, island.y)
+      marker.beginFill(0xffff00, 0.8)
+      marker.drawCircle(0, 0, 15)
+      marker.endFill()
+      
+      marker.beginFill(0x8B4513)
+      marker.drawCircle(0, 0, 10)
+      marker.endFill()
+
+      marker.inputEnabled = true
+      marker.hitArea = new Phaser.Circle(0, 0, 30)
+
+      marker.events.onInputOver.add(() => {
+        this.showDestinationInfo(island)
+        this.game.mulle.cursor.current = 'Point'
+      })
+      marker.events.onInputOut.add(() => {
+        this.hideDestinationInfo()
+        this.game.mulle.cursor.current = null
+      })
+      marker.events.onInputUp.add(() => {
+        this.sailToDestination(island)
+      })
+
+      this.destinations.push({ marker, data: island })
+    })
+  }
+
+  /**
+   * Show destination info tooltip
+   */
+  showDestinationInfo (island) {
+    if (this.destInfo) {
+      this.destInfo.destroy()
+    }
+
+    this.destInfo = this.game.add.text(island.x, island.y - 30, island.name, {
+      font: 'bold 14px Arial',
+      fill: '#ffffff',
+      stroke: '#333333',
+      strokeThickness: 2
+    })
+    this.destInfo.anchor.setTo(0.5, 1)
+  }
+
+  /**
+   * Hide destination info tooltip
+   */
+  hideDestinationInfo () {
+    if (this.destInfo) {
+      this.destInfo.destroy()
+      this.destInfo = null
+    }
+  }
+
+  /**
+   * Sail to a destination
+   */
+  sailToDestination (island) {
+    console.log('[SeaWorld] Sailing to:', island.name)
+    
+    this.showMessage(`Op naar ${island.name}!`)
+
+    // TODO: Animate boat sailing to destination
+    // For now, just show a message
+    this.game.time.events.add(2000, () => {
+      this.showMessage(`${island.name} - Nog niet geimplementeerd`)
+    })
+  }
+
+  /**
+   * Show a message on screen
+   */
+  showMessage (text) {
+    if (this.messageBox) {
+      this.messageBox.destroy()
+    }
+    if (this.messageText) {
+      this.messageText.destroy()
+    }
+
+    this.messageBox = this.game.add.graphics(320, 60)
+    this.messageBox.beginFill(0x000000, 0.8)
+    this.messageBox.drawRoundedRect(-200, -25, 400, 50, 10)
+    this.messageBox.endFill()
+
+    this.messageText = this.game.add.text(320, 60, text, {
+      font: 'bold 16px Arial',
+      fill: '#ffffff'
+    })
+    this.messageText.anchor.setTo(0.5, 0.5)
+
+    // Auto-hide
+    this.game.time.events.add(3000, () => {
+      if (this.messageBox) {
+        this.game.add.tween(this.messageBox).to({ alpha: 0 }, 500, null, true)
+      }
+      if (this.messageText) {
+        this.game.add.tween(this.messageText).to({ alpha: 0 }, 500, null, true)
+      }
+    })
+  }
+
+  /**
+   * Play ambient ocean sounds
+   */
+  playAmbientSounds () {
+    // Try to play ocean ambient
+    try {
+      this.game.mulle.playAudio('boten_70.DXR/70e001v0', true)
+    } catch (e) {
+      console.warn('[SeaWorld] Could not play ambient sounds')
+    }
+  }
+
+  /**
+   * Stop ambient sounds
+   */
+  stopAmbientSounds () {
+    try {
+      this.game.mulle.stopAudio('boten_70.DXR/70e001v0')
+    } catch (e) {
+      // Ignore
+    }
+  }
+
+  /**
+   * Return to boatyard
+   */
+  returnToBoatyard () {
+    console.log('[SeaWorld] Returning to boatyard')
+    this.game.state.start('boatyard')
+  }
+
+  /**
+   * Update loop
+   */
+  update () {
+    super.update()
+
+    // Update speed display
+    if (this.driveBoat && this.speedText) {
+      const speed = Math.abs(this.driveBoat.speed).toFixed(1)
+      this.speedText.text = `Snelheid: ${speed}`
+    }
+
+    // Update propulsion indicator
+    if (this.driveBoat && this.propulsionText) {
+      const propLabels = {
+        'motor': 'Motor',
+        'sail': 'Zeil',
+        'oar': 'Roeien',
+        'none': 'Drijvend'
+      }
+      this.propulsionText.text = propLabels[this.driveBoat.currentPropulsion] || ''
+    }
+
+    // Update terrain/depth indicator
+    if (this.driveBoat && this.terrainText) {
+      const depthInfo = this.driveBoat.getWaterDepth()
+      const terrainLabels = {
+        'deep': 'Diep water',
+        'medium': 'Normaal water',
+        'shallow': 'Ondiep water',
+        'reef': 'Rif!',
+        'current': 'Stroming',
+        'shore': 'Kust'
+      }
+      this.terrainText.text = terrainLabels[depthInfo.terrain.name] || ''
+      
+      // Color code terrain indicator
+      if (depthInfo.terrain.name === 'reef') {
+        this.terrainText.fill = '#ff6600'
+      } else if (depthInfo.terrain.name === 'shallow') {
+        this.terrainText.fill = '#88ccff'
+      } else if (depthInfo.terrain.name === 'current') {
+        this.terrainText.fill = '#00ffff'
+      } else {
+        this.terrainText.fill = '#66ccff'
+      }
+    }
+
+    // Update energy gauges
+    this.updateEnergyGauges()
+
+    // Sync boat sprite position with drive boat
+    if (this.driveBoat && this.boatSprite) {
+      this.boatSprite.x = this.driveBoat.x
+      this.boatSprite.y = this.driveBoat.y
+    }
+
+    // Check for map boundary crossing
+    this.checkMapBoundaries()
+  }
+
+  /**
+   * Check if boat has crossed map boundaries
+   * Similar to car world's border checking
+   */
+  checkMapBoundaries () {
+    if (!this.driveBoat) return
+
+    const x = this.driveBoat.x
+    const y = this.driveBoat.y
+    const margin = 30
+
+    let mapChange = null
+
+    // Check edges (screen is 640x400 for the sea area)
+    if (x < margin) {
+      mapChange = new Phaser.Point(-1, 0)
+      this.driveBoat.x = 640 - margin - 10
+    } else if (x > 640 - margin) {
+      mapChange = new Phaser.Point(1, 0)
+      this.driveBoat.x = margin + 10
+    } else if (y < margin) {
+      mapChange = new Phaser.Point(0, -1)
+      this.driveBoat.y = 400 - margin - 10
+    } else if (y > 400 - margin) {
+      mapChange = new Phaser.Point(0, 1)
+      this.driveBoat.y = margin + 10
+    }
+
+    if (mapChange) {
+      console.log('[SeaWorld] Map boundary crossed:', mapChange)
+      this.changeMap(mapChange)
+    }
+  }
+
+  /**
+   * Clean up
+   */
+  shutdown () {
+    this.stopAmbientSounds()
+
+    // Clean up topology bitmap
+    if (this.topBitmap) {
+      this.topBitmap.destroy()
+      this.topBitmap = null
+    }
+
+    if (this.waveTimer) {
+      this.game.time.events.remove(this.waveTimer)
+    }
+
+    if (this.driveBoat) {
+      this.driveBoat.destroy()
+    }
+
+    if (this.energyGaugeGroup) {
+      this.energyGaugeGroup.destroy()
+    }
+
+    if (this.outOfFuelDialog) {
+      this.outOfFuelDialog.destroy()
+    }
+
+    if (this.mapObjects) {
+      this.mapObjects.destroy()
+    }
+
+    super.shutdown()
+    console.log('[SeaWorld] Scene shutdown')
+  }
+
+  /**
+   * Render debug information (optional)
+   */
+  render () {
+    if (this.game.mulle.debug && this.driveBoat) {
+      // Show current terrain value at boat position
+      const terrain = this.driveBoat.pixelCheck(this.driveBoat.position)
+      this.game.debug.text('Terrain: ' + terrain, 10, 470)
+      this.game.debug.text('Speed mod: ' + this.driveBoat.terrainSpeedModifier.toFixed(2), 10, 485)
+    }
+  }
+}
+
+export default SeaWorldState

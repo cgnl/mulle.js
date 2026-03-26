@@ -1,0 +1,2521 @@
+/**
+ * MulleDriveBoat object
+ * @module objects/driveboat
+ * 
+ * Boat navigation in the sea world
+ * Equivalent of MulleDriveCar but for boats
+ * 
+ * Sea Topology Color System:
+ * - Light blue (R: 100-150) = shallow water (slow, small boats only)
+ * - Dark blue (R: 0-50) = deep water (normal speed)
+ * - Brown (R: 160-200) = reef/rocks (damage if durability too low)
+ * - Green (R: 240+) = shore/land (collision, cannot pass)
+ * 
+ * Topology value breakdown (similar to car):
+ * - R channel encodes terrain type and depth
+ * - Values >= 240 = impassable (shore/land)
+ * - Values 160-200 = reef/rocks (requires durability)
+ * - Values 100-150 = shallow water (requires small boat or shallow draft)
+ * - Values 0-50 = deep water (normal sailing)
+ * - Values 50-100 = medium depth (normal sailing, slight current)
+ */
+'use strict'
+
+import MulleSprite from 'objects/sprite'
+
+/**
+ * Sea terrain types based on topology pixel values
+ */
+const SEA_TERRAIN = {
+  DEEP_WATER: { min: 0, max: 50, name: 'deep', speedMod: 1.0 },
+  MEDIUM_WATER: { min: 51, max: 100, name: 'medium', speedMod: 0.9 },
+  SHALLOW_WATER: { min: 101, max: 150, name: 'shallow', speedMod: 0.5 },
+  REEF: { min: 160, max: 200, name: 'reef', speedMod: 0.3 },
+  CURRENT_STRONG: { min: 201, max: 220, name: 'current', speedMod: 0.7 },
+  SHORE: { min: 240, max: 255, name: 'shore', speedMod: 0 }
+}
+
+/**
+ * Propulsion types for boats
+ * Different propulsion types have different energy consumption characteristics
+ */
+const PropulsionType = {
+  NONE: 'none',     // No propulsion - drifting only (no energy consumption)
+  MOTOR: 'motor',   // Engine-powered - consumes fuel
+  SAIL: 'sail',     // Wind-powered - free energy (no consumption)
+  OAR: 'oar'        // Human-powered - consumes stamina
+}
+
+/**
+ * Original Lingo DirectionList from boten_05.DXR member 10
+ * 16 direction vectors for boat navigation (scaled to 100)
+ */
+const DIRECTION_LIST = [
+  { x: 38, y: -92 },   // Direction 1: NNE
+  { x: 70, y: -70 },   // Direction 2: NE
+  { x: 92, y: -38 },   // Direction 3: ENE
+  { x: 100, y: 0 },    // Direction 4: E
+  { x: 92, y: 38 },    // Direction 5: ESE
+  { x: 70, y: 70 },    // Direction 6: SE
+  { x: 38, y: 92 },    // Direction 7: SSE
+  { x: 0, y: 100 },    // Direction 8: S
+  { x: -38, y: 92 },   // Direction 9: SSW
+  { x: -70, y: 70 },   // Direction 10: SW
+  { x: -92, y: 38 },   // Direction 11: WSW
+  { x: -100, y: 0 },   // Direction 12: W
+  { x: -92, y: -38 },  // Direction 13: WNW
+  { x: -70, y: -70 },  // Direction 14: NW
+  { x: -38, y: -92 },  // Direction 15: NNW
+  { x: 0, y: -100 }    // Direction 16: N
+]
+
+/**
+ * Original Lingo AmplitudeList from boten_05.DXR member 11
+ * 100 values for wave/amplitude calculations - sine wave pattern
+ */
+const AMPLITUDE_LIST = [
+  6, 13, 19, 25, 31, 37, 43, 48, 54, 59, 64, 68, 73, 77, 81, 84, 88, 90, 93, 95,
+  97, 98, 99, 100, 100, 100, 99, 98, 97, 95, 93, 90, 88, 84, 81, 77, 73, 68, 64, 59,
+  54, 48, 43, 37, 31, 25, 19, 13, 6, 0, -6, -13, -19, -25, -31, -37, -43, -48, -54, -59,
+  -64, -68, -73, -77, -81, -84, -88, -90, -93, -95, -97, -98, -99, -100, -100, -100, -99, -98, -97, -95,
+  -93, -90, -88, -84, -81, -77, -73, -68, -64, -59, -54, -48, -43, -37, -31, -25, -19, -13, -6, 0
+]
+
+/**
+ * Original Lingo SpawnLines from boten_05.DXR member 12
+ * 16 spawn positions with direction vectors
+ */
+const SPAWN_LINES = [
+  { pos: { x: 206, y: 478 }, dir: { x: -92, y: -38 } },
+  { pos: { x: 110, y: 412 }, dir: { x: -70, y: -70 } },
+  { pos: { x: 44, y: 316 }, dir: { x: -38, y: -92 } },
+  { pos: { x: 20, y: 202 }, dir: { x: 0, y: -100 } },
+  { pos: { x: 44, y: 88 }, dir: { x: 38, y: -92 } },
+  { pos: { x: 110, y: -8 }, dir: { x: 70, y: -70 } },
+  { pos: { x: 206, y: -74 }, dir: { x: 92, y: -38 } },
+  { pos: { x: 320, y: -98 }, dir: { x: 100, y: 0 } },
+  { pos: { x: 434, y: -74 }, dir: { x: 92, y: 38 } },
+  { pos: { x: 530, y: -8 }, dir: { x: 70, y: 70 } },
+  { pos: { x: 596, y: 88 }, dir: { x: 38, y: 92 } },
+  { pos: { x: 620, y: 202 }, dir: { x: 0, y: 100 } },
+  { pos: { x: 596, y: 316 }, dir: { x: -38, y: 92 } },
+  { pos: { x: 530, y: 412 }, dir: { x: -70, y: 70 } },
+  { pos: { x: 434, y: 478 }, dir: { x: -92, y: 38 } },
+  { pos: { x: 320, y: 502 }, dir: { x: -100, y: 0 } }
+]
+
+/**
+ * Sea world boat
+ * @extends MulleSprite
+ */
+class MulleDriveBoat extends MulleSprite {
+  constructor (game) {
+    super(game)
+
+    // Use boat sprites from BMS (Boot Medium Summer) or similar
+    this.DirResource = 'boten_BMS.CXT'
+    
+    // Try to load a boat sprite
+    if (!this.setDirectorMember('boten_BMS.CXT', 1)) {
+      // Fallback: create a simple boat shape
+      console.warn('[DriveBoat] Could not load boat sprite, using placeholder')
+    }
+
+    // Direction frames (16 directions for boats, same as cars - from original Lingo DirectionList)
+    this.spriteFrames = {}
+    this.nrOfDirections = 16
+
+    // Try to load directional boat sprites
+    this.loadBoatSprites()
+
+    // Wave amplitude tracking for realistic boat movement
+    this.wavePhase = 0  // Current position in AMPLITUDE_LIST (0-99)
+    this.waveSpeed = 2  // How fast we progress through the wave cycle
+
+    this.speed = 0
+    this.direction = 1
+    this.drift = 0
+    this.waterDepth = 0  // Current water depth (0=deep, higher=shallower)
+
+    this.stopTimer = 0
+    
+    // BUG FIX: Initialize acceleration to 0 (will be set from boat properties)
+    this.acceleration = 0
+    this.retardation = 0
+
+    this.reachForSpeed = 0
+
+    this.Steering = 0
+
+    this.forwardBackward = 0
+    
+    // #111: zeroSpeedWait - 15 tick delay when reversing direction
+    this.zeroSpeedWait = 0
+
+    this.lastPosition = new Phaser.Point(0, 0)
+    this.previousData = []
+    for (var i = 0; i < 10; i++) {
+      this.previousData.push([new Phaser.Point(0, 0), 1])
+    }
+
+    this.OutOfBounds = 0
+
+    // BUG FIX #3: internalDirection - sub-degree precision (direction * decimalPrec)
+    // Original: set internalDirection to direction * decimalPrec
+    this.internalDirection = 1 * this.decimalPrec
+
+    this.keySteer = 1
+
+    this.mapOffset = new Phaser.Point(4, 2)
+
+    // Topology bitmap reference (set by seaworld.js)
+    this.topology = null
+
+    // Current terrain info
+    this.currentTerrain = SEA_TERRAIN.DEEP_WATER
+    this.terrainSpeedModifier = 1.0
+
+    // Sound state flags (prevent repeated sounds)
+    this.SoundReef = null
+    this.SoundShore = null
+    this.SoundShallow = null
+
+    // Direction vectors from original Lingo DirectionList (16 directions, scaled to unit vectors)
+    this.directionList = []
+    for (var i = 0; i < DIRECTION_LIST.length; i++) {
+      // Original values are scaled to 100, normalize to unit vectors
+      var xPart = DIRECTION_LIST[i].x / 100
+      var yPart = DIRECTION_LIST[i].y / 100
+      this.directionList.push(new Phaser.Point(xPart, yPart))
+    }
+
+    // Bow positions for collision detection (like wheelPositions in car)
+    this.bowPositions = []
+    for (var i = 1; i <= this.directionList.length; i++) {
+      var x = 12 * this.directionList[i - 1].x
+      var y = 12 * this.directionList[i - 1].y
+      this.bowPositions.push(new Phaser.Point(x, y))
+    }
+    
+    // #120: Corner points for depth checking (3 corners of boat)
+    // Front center, front-left, front-right
+    this.cornerPoints = []
+    for (var i = 1; i <= this.directionList.length; i++) {
+      const forward = this.directionList[i - 1]
+      const perpX = -forward.y
+      const perpY = forward.x
+      
+      this.cornerPoints.push([
+        new Phaser.Point(forward.x * 10, forward.y * 10),                    // Front center
+        new Phaser.Point(forward.x * 8 + perpX * 4, forward.y * 8 + perpY * 4),  // Front-left
+        new Phaser.Point(forward.x * 8 - perpX * 4, forward.y * 8 - perpY * 4)   // Front-right
+      ])
+    }
+    
+    // #124: decimalPrec constant for fixed-point math (position / 100)
+    this.decimalPrec = 100
+
+    this.setDirection(1)
+
+    // Input controls
+    this.cursors = this.game.input.keyboard.createCursorKeys()
+    this.wasd = this.game.input.keyboard.addKeys({
+      'up': Phaser.KeyCode.W,
+      'down': Phaser.KeyCode.S,
+      'left': Phaser.KeyCode.A,
+      'right': Phaser.KeyCode.D
+    })
+
+    // Logic loop at 30fps
+    this.logicLoop = this.game.time.events.loop(Phaser.Timer.SECOND / 30, this.sail, this)
+
+    this.game.physics.enable(this, Phaser.Physics.ARCADE)
+
+    // Boat sounds
+    this.engineSounds = {
+      motor: 'boten_CDDATA.CXT/00e007v0',
+      sail: 'boten_CDDATA.CXT/00e008v0',
+      splash: 'boten_CDDATA.CXT/00e001v0',
+      reef: '05d002v0',      // Reuse car rock sound
+      shore: '05d001v0',     // Collision sound
+      shallow: '05d003v0',   // Reuse car mud sound for shallow water
+      crash: '05d001v0',     // #189: Collision/crash sound
+      crashHeavy: '05d002v0' // #189: Heavy collision sound
+    }
+    
+    // #109, #110: 8 different engine sounds with dynamic pitch
+    // From MotorBoatAncestor.ls lines 134-142
+    // Each engine type has 3 sound files for variation
+    // BUG FIX #1: Corrected motor sound IDs to match original Lingo (MotorBoatAncestor.ls:10)
+    this.motorSounds = [
+      ['05e018v1', '05e019v1', '05e016v1'],  // Engine type 1
+      ['05e018v0', '05e019v0', '05e016v0'],  // Engine type 2
+      ['05e030v0', '05e031v0', '05e032v1'],  // Engine type 3
+      ['05e056v0', '05e057v0', '05e055v0'],  // Engine type 4
+      ['05e034v0', '05e035v0', '05e033v0'],  // Engine type 5
+      ['05e022v0', '05e023v0', '05e020v0'],  // Engine type 6
+      ['05e053v0', '05e054v0', '05e052v0'],  // Engine type 7
+      ['05e026v0', '05e027v0', '05e024v0']   // Engine type 8
+    ]
+    
+    // #110: Pitch percentages for each engine type (affects dynamic pitch calculation)
+    // BUG FIX #3: Corrected pitch values to match original Lingo (MotorBoatAncestor.ls:8)
+    this.pitchPercents = [100, 100, 30, 100, 200, 100, 200, 50]
+    
+    // Motor volumes for each engine type (Director scale 0-255, converted to 0-1 for Web Audio)
+    // BUG FIX #2: Corrected volume levels to match original Lingo (MotorBoatAncestor.ls:9)
+    // Original: 80 * [60, 55, 100, 70, 100, 78, 70, 100] / 100 = [48, 44, 80, 56, 80, 62.4, 56, 80]
+    this.motorVolumes = [48, 44, 80, 56, 80, 62.4, 56, 80]
+    
+    // Current engine type and sound
+    this.currentEngineType = 1
+    this.currentMotorSound = null
+    this.pitchPercent = 50
+    this.dynamicPitch = 22050
+
+    // Engine state
+    this.engineRunning = false
+    
+    // BUG FIX #4: Sail wind sounds (from SailBoatAncestor.ls)
+    // Plays random sail sounds every 100-200 frames when sailing
+    this.sailSounds = ['05e044v0', '05e044v1']
+    this.sailSoundCounter = 0
+    this.sailSoundInterval = 0  // Random interval between 100-200 frames
+    
+    // BUG FIX #9: Track current oar sound to prevent overlapping
+    this.currentOarSound = null
+    
+    // #95: Durability/damage system
+    // Durability is multiplied by 1000 (original formula: Durability * 1000)
+    this.Durability = null  // Will be set from boat properties
+    this.maxDurability = null
+    
+    // #189: Collision/crash tracking
+    this.lastCrashTime = 0
+    this.crashCooldown = 1000  // Minimum time between crash sounds (ms)
+    
+    // #98: Capsize tracking
+    this.sideAngle = 0  // Current tilt angle
+    this.swayHistory = []  // Track sway for buffaSick calculation
+    
+    // #99: Lurch warnings
+    this.lastLurchWarning = 0
+
+    // Enabled flag (can be disabled during menus etc)
+    this.enabled = true
+
+    // ==========================================
+    // FUEL/ENERGY SYSTEM
+    // ==========================================
+    
+    // Fuel for motor boats (like car fuel system)
+    this.fuelMax = 100          // Max fuel tank capacity
+    this.fuelCurrent = 100      // Current fuel level (start full)
+    this.fuelConsumptionRate = 0.05  // Fuel consumed per speed unit per tick
+    
+    // Stamina for oar/rowing boats (human energy)
+    this.staminaMax = 100       // Max stamina
+    this.staminaCurrent = 100   // Current stamina level
+    this.staminaConsumptionRate = 0.03  // Stamina consumed while rowing
+    this.staminaRecoveryRate = 0.02     // Stamina recovery when not rowing
+    
+    // Energy state flags
+    this.outOfFuel = false      // Motor stopped due to no fuel
+    this.outOfStamina = false   // Too tired to row
+    this.fuelWarningShown = false  // Track if low fuel warning displayed
+    this.staminaWarningShown = false  // Track if low stamina warning displayed
+    
+    // Warning thresholds (percentage)
+    this.fuelWarningThreshold = 0.2    // Warn at 20% fuel
+    this.staminaWarningThreshold = 0.2 // Warn at 20% stamina
+    
+    // Current propulsion type being used
+    this.currentPropulsion = PropulsionType.NONE
+
+    // ==========================================
+    // INVENTORY SYSTEMS: Pills (buffaSick) and Belly (mulleHunger)
+    // From ParentScript 34 - BoatBase.ls
+    // ==========================================
+    
+    // buffaSick system - Pills consumption (seasickness/vomit prevention)
+    // Original: set buffaSick to 1000 + (tmpPills * 25)
+    // Decreases during sailing at higher levels (level >= 4)
+    this.buffaSick = 1000  // Will be set from Pills inventory
+    this.buffaSickSpeed = 0  // How fast it decreases (calculated from wave motion)
+    
+    // mulleHunger system - Belly hunger tracking
+    // Original: set mulleHunger to 1000, scales to 10000 internally
+    // Decreases during sailing, fishing rod saves when reaches 0
+    this.mulleHunger = 10000  // Will be set from Belly inventory (* 10)
+    this.mulleHungerSpeed = 3  // Default speed (2 for level 2+, 3 for level 1)
+    this.orgMulleHungerSpeed = 3  // Original speed before modifications
+    
+    // DrivenTimes tracking - increment when propulsion type changes
+    this.drivenTimesTracked = false
+    this.currentDrivenType = null
+    
+    // Level tracking for buffaSick system (only active at level 4+)
+    this.seaLevel = 1
+
+    // BUG FIX: Initialize acceleration and retardation before updateBoatProperties
+    this.acceleration = 10  // Default acceleration
+    this.retardation = 15   // Default retardation (faster deceleration)
+    
+    // Get boat properties
+    this.updateBoatProperties()
+    
+    // Initialize inventory systems after boat properties are set
+    this.initializeInventorySystems()
+
+    // #112: Sail object with direction display
+    this.Sail = null
+    if (this.hasSail) {
+      this.initSail()
+    }
+
+    // #115: oarForce curve - 25 values for rowing animation
+    this.oarForce = [20, 20, 20, 20, 40, 40, 40, 60, 60, 80, 100, 80, 80, 80, 60, 60, 60, 60, 40, 40, 40, 40, 20, 20, 0]
+    this.forceCount = this.oarForce.length
+    this.mouseForceCount = this.forceCount
+    this.Oar = 0
+    
+    // #117: Alternating oar sounds (left/right)
+    this.oarSounds = ['05d127v0', '05d126v0']
+    this.soundCount = 1 // Toggles between 1 and 2
+
+    // Track DrivenTimes for this propulsion type
+    this.trackDrivenTimes()
+
+    console.log('[DriveBoat] Initialized with speed:', this.maxSpeed, 'fuel:', this.fuelMax)
+  }
+
+  /**
+   * Load boat sprites for different directions
+   * Boat sprites have 8 directions with 1 frame per direction (boat0000-boat0007)
+   * Unlike cars which have 16 directions with 4 frames each
+   */
+  loadBoatSprites () {
+    // Boat sprites are in BMS/BLS/BSS (Medium/Large/Small, Summer/Winter)
+    const boatSize = this.getBoatSize()
+    const spriteFile = `boten_${boatSize}S.CXT` // Summer variant
+
+    // Boats have 8 directions with 1 frame per direction
+    for (var dir = 0; dir < this.nrOfDirections; dir++) {
+      this.spriteFrames[dir] = {}
+      
+      // Each direction has a single member (boat0000-boat0007)
+      const memberNum = dir + 1
+      
+      const img = this.game.mulle.getDirectorImage(spriteFile, memberNum)
+      if (img) {
+        this.spriteFrames[dir][0] = img.name
+      }
+    }
+  }
+
+  /**
+   * Get boat size from user's boat
+   */
+  getBoatSize () {
+    const boat = this.game.mulle.user.Boat
+    if (!boat) return 'BM' // Medium default
+
+    const size = boat.getShipSize ? boat.getShipSize() : 'medium'
+    
+    switch (size) {
+      case 'large': return 'BL'
+      case 'small': return 'BS'
+      default: return 'BM'
+    }
+  }
+
+  /**
+   * Update boat properties from user's boat data
+   */
+  updateBoatProperties () {
+    const boat = this.game.mulle.user.Boat
+    if (!boat) {
+      this.maxSpeed = 3
+      this.hasEngine = false
+      this.hasSail = false
+      this.hasOars = false
+      this.boatSize = 'medium'
+      this.durability = 1
+      this.shallowDraft = false
+      return
+    }
+
+    const criteria = boat.criteria || {}
+    const props = boat.properties || {}
+
+    this.hasEngine = props.engine > 0 || props.outboardengine > 0
+    this.hasSail = props.sailwithpole > 0
+    this.hasOars = props.oar > 0
+
+    // Calculate max speed based on propulsion and power (original: Power: 250)
+    // Use boat's getSpeedFactor if available for accurate calculation
+    const speedFactor = boat.getSpeedFactor ? boat.getSpeedFactor() : 0.5
+    const power = props.power || 0
+    
+    if (this.hasEngine) {
+      // Motor speed based on power (original Power: 250 = fast boat)
+      // Base speed 4, +2 for powerful engines
+      this.maxSpeed = 4 + (power > 0 ? Math.min(2, power / 125) : 0)
+    } else if (this.hasSail) {
+      this.maxSpeed = 4
+    } else if (this.hasOars) {
+      this.maxSpeed = 2
+    } else {
+      this.maxSpeed = 1 // Drifting only
+    }
+
+    // Maneuverability affects steering (original: Manoeuv: 38)
+    this.steerSpeed = (props.manoeuverability || 5) / 10
+
+    // Drift from boat properties (original: Drift: 15)
+    this.driftFactor = props.drift || 0
+
+    // Store stability values for wave calculations
+    // Original: Stab: [85, 55], Stabz: 30
+    if (boat.getStabilityValues) {
+      this.stabilityValues = boat.getStabilityValues()
+    } else {
+      this.stabilityValues = {
+        lateral: props.stabilitylateral || props.stability || 50,
+        longitudinal: props.stabilitylongitudinal || props.stability || 50,
+        z: props.stabilityz || 0,
+        combined: props.stability || 50
+      }
+    }
+
+    // Water resistance (original: Resist: 8)
+    this.waterResistance = props.waterresistance || 0
+
+    // Boat size affects where it can sail
+    // Small boats can go in shallow water, large boats cannot
+    this.boatSize = boat.getShipSize ? boat.getShipSize() : 'medium'
+
+    // Durability determines if boat can handle reefs
+    // Higher durability = can pass over reefs without damage
+    this.durability = props.durability || props.hull || 1
+
+    // Shallow draft allows sailing in shallow water regardless of size
+    this.shallowDraft = criteria.ShallowWater || false
+
+    // Reef resistance - can boat handle reef collisions?
+    this.reefResistance = criteria.ReefDurability || (this.durability >= 3)
+
+    // ==========================================
+    // FUEL/ENERGY INITIALIZATION
+    // ==========================================
+    
+    // Fuel tank capacity from boat parts (watertank can double as fuel tank)
+    // Or use a default based on engine size
+    const fuelTankCapacity = props.watertank || props.fueltank || 0
+    if (this.hasEngine) {
+      // Motor boats need fuel
+      // Base capacity + bonus from fuel tank parts
+      this.fuelMax = 50 + (fuelTankCapacity * 25)
+      // Start with 80% fuel (like the car)
+      this.fuelCurrent = this.fuelMax * 0.8
+      // Outboard engines consume more fuel than regular engines
+      if (props.outboardengine > 0) {
+        this.fuelConsumptionRate = 0.07
+      } else {
+        this.fuelConsumptionRate = 0.05
+      }
+
+      // Check if fuel should be full (from mission rewards, etc.)
+      // Original Lingo: setaProp(tmp, #fuel, #Full)
+      const user = this.game.mulle.user
+      if (user && user.Boat && user.Boat.fuelFull) {
+        this.fuelCurrent = this.fuelMax
+        user.Boat.fuelFull = false // Reset the flag after applying
+        user.save()
+        console.log('[DriveBoat] Fuel refilled to full from mission reward!')
+      }
+    } else {
+      // Non-motor boats don't use fuel
+      this.fuelMax = 0
+      this.fuelCurrent = 0
+      this.fuelConsumptionRate = 0
+    }
+    
+    // Stamina for rowing - all boats with oars can row
+    if (this.hasOars) {
+      this.staminaMax = 100
+      this.staminaCurrent = 100
+      // Multiple oar sets make rowing easier (less stamina consumption)
+      const oarCount = props.oar || 1
+      this.staminaConsumptionRate = 0.03 / Math.sqrt(oarCount)
+    } else {
+      this.staminaMax = 0
+      this.staminaCurrent = 0
+      this.staminaConsumptionRate = 0
+    }
+    
+    // Determine primary propulsion type
+    if (this.hasEngine && this.fuelCurrent > 0) {
+      this.currentPropulsion = PropulsionType.MOTOR
+    } else if (this.hasSail) {
+      this.currentPropulsion = PropulsionType.SAIL
+    } else if (this.hasOars) {
+      this.currentPropulsion = PropulsionType.OAR
+    } else {
+      this.currentPropulsion = PropulsionType.NONE
+    }
+
+    // ==========================================
+    // ITEM #100: DYNAMIC FUEL CALCULATION
+    // ==========================================
+    // fuel = 4500 * FuelVolume
+    if (this.hasEngine && props.fuelvolume) {
+      this.fuelMax = 4500 * props.fuelvolume
+      if (this.fuelCurrent === null || this.fuelCurrent === undefined) {
+        this.fuelCurrent = this.fuelMax * 0.8  // Start at 80%
+      }
+    }
+    
+    // ==========================================
+    // ITEM #101: STABILITY-BASED WAVE EFFECTS
+    // ==========================================
+    // stabilities array from boat properties: [lateral, longitudinal]
+    // Original Lingo: stabilities = getaProp(quickProps, #stabilities)
+    if (boat.getStabilities) {
+      this.stabilities = boat.getStabilities()
+    } else {
+      // Calculate from stability values
+      const lateral = this.stabilityValues.lateral || 50
+      const longitudinal = this.stabilityValues.longitudinal || 50
+      this.stabilities = [lateral, longitudinal]
+    }
+    
+    // ==========================================
+    // ITEM #102: SPEED FROM SPEEDLIST
+    // ==========================================
+    // Generate speedList lookup table for speed calculations
+    // Original: speedList from SpeedLists member with resistance scaling
+    // speedList[power] gives the actual speed value
+    this.speedList = this.generateSpeedList(props)
+    
+    // ==========================================
+    // ITEM #95: DURABILITY FROM BOAT
+    // ==========================================
+    // Durability * 1000
+    if (this.Durability === null || this.Durability === undefined) {
+      this.Durability = (props.durability || 1) * 1000
+      this.maxDurability = this.Durability
+    }
+    
+    // ==========================================
+    // BUG FIX #9: GET ACCELERATION AND RETARDATION FROM BOAT
+    // ==========================================
+    // Original: set acceleration to getaProp(quickProps, #acceleration)
+    //           set retardation to getaProp(quickProps, #retardation)
+    this.acceleration = props.acceleration || 10
+    this.retardation = props.retardation || 15
+
+    console.log('[DriveBoat] Properties - engine:', this.hasEngine, 'sail:', this.hasSail, 'oars:', this.hasOars, 'maxSpeed:', this.maxSpeed)
+    console.log('[DriveBoat] Terrain capabilities - size:', this.boatSize, 'durability:', this.Durability, 'shallowDraft:', this.shallowDraft, 'reefResistance:', this.reefResistance)
+    console.log('[DriveBoat] Energy - fuel:', this.fuelCurrent + '/' + this.fuelMax, 'stamina:', this.staminaCurrent + '/' + this.staminaMax, 'propulsion:', this.currentPropulsion)
+    console.log('[DriveBoat] Stability:', this.stabilities, 'speedList entries:', this.speedList.length)
+    console.log('[DriveBoat] Physics - acceleration:', this.acceleration, 'retardation:', this.retardation)
+  }
+  
+  /**
+   * ITEM #102: Generate speedList lookup table
+   * Original: from SpeedLists member with resistance scaling
+   * speedList = (100 - RealResistance) * speedList / 10
+   */
+  generateSpeedList (props) {
+    const power = props.power || 0
+    const resistance = props.waterresistance || props.resistance || 0
+    const weight = props.weight || 50
+    
+    // Generate 250-entry lookup table (as in original)
+    const speedList = []
+    
+    for (let i = 0; i <= 250; i++) {
+      // Base speed calculation from power
+      // Original uses complex lookup table, we'll use a formula
+      let baseSpeed = (i * power) / 100
+      
+      // Apply resistance scaling: (100 - resistance) * speed / 10
+      const resistanceFactor = (100 - resistance) / 10
+      let speed = (baseSpeed * resistanceFactor) / 10
+      
+      // Weight affects top speed
+      speed = speed * (100 / (weight + 50))
+      
+      speedList.push(Math.max(0, speed))
+    }
+    
+    return speedList
+  }
+
+  /**
+   * Initialize inventory systems: Pills (buffaSick) and Belly (mulleHunger)
+   * Original Lingo: lines 23-33 of ParentScript 34 - BoatBase.ls
+   */
+  initializeInventorySystems () {
+    const user = this.game.mulle.user
+    if (!user) return
+
+    // Get sea level for hunger speed calculation
+    this.seaLevel = user.getSeaLevel ? user.getSeaLevel() : 1
+    
+    // Set orgMulleHungerSpeed based on level
+    // Original: if level = 1 then orgMulleHungerSpeed = 3 else orgMulleHungerSpeed = 2
+    if (this.seaLevel === 1) {
+      this.orgMulleHungerSpeed = 3
+    } else {
+      this.orgMulleHungerSpeed = 2
+    }
+    this.mulleHungerSpeed = this.orgMulleHungerSpeed
+
+    // Initialize Pills/buffaSick system
+    // Original: set tmpPills to lookUpInventory(the user of gMulleGlobals, #Pills)
+    //           if listp(tmpPills) then set tmpPills to getaProp(tmpPills, #nr)
+    //           set buffaSick to 1000 + (tmpPills * 25)
+    const pillsData = user.lookUpInventory('Pills')
+    let pillsNr = 0
+    if (pillsData && typeof pillsData === 'object' && pillsData.nr !== undefined) {
+      pillsNr = pillsData.nr
+    }
+    this.buffaSick = 1000 + (pillsNr * 25)
+    
+    // Initialize Belly/mulleHunger system
+    // Original: set mulleHunger to 1000
+    //           set tmpHunger to lookUpInventory(the user of gMulleGlobals, #Belly)
+    //           if listp(tmpHunger) then set mulleHunger to getaProp(tmpHunger, #nr)
+    //           set mulleHunger to mulleHunger * 10
+    this.mulleHunger = 1000  // Default
+    const bellyData = user.lookUpInventory('Belly')
+    if (bellyData && typeof bellyData === 'object' && bellyData.nr !== undefined) {
+      this.mulleHunger = bellyData.nr
+    }
+    this.mulleHunger = this.mulleHunger * 10  // Scale to internal range (0-10000)
+    
+    console.log('[DriveBoat] Inventory initialized - Pills:', pillsNr, 'buffaSick:', this.buffaSick, 'Belly:', (bellyData ? bellyData.nr : 0), 'mulleHunger:', this.mulleHunger)
+  }
+
+  /**
+   * Set boat direction (1-16)
+   * BUG FIX #3: Update internalDirection with decimalPrec scaling
+   */
+  setDirection (dir) {
+    if (dir > this.nrOfDirections) dir = 1
+    if (dir < 1) dir = this.nrOfDirections
+    
+    this.direction = dir
+
+    // BUG FIX #3: internalDirection uses decimalPrec for sub-degree precision
+    // Original: set internalDirection to direction * decimalPrec
+    this.internalDirection = dir * this.decimalPrec
+
+    // Update sprite frame
+    this.updateSprite()
+  }
+
+  /**
+   * Update boat sprite based on direction
+   * BUG FIX: Use discrete direction, not internalDirection (which is scaled)
+   */
+  updateSprite () {
+    const dirIndex = this.direction - 1
+    const frames = this.spriteFrames[dirIndex]
+    if (frames && frames[0]) {
+      this.frameName = frames[0]
+    }
+  }
+
+  /**
+   * #112: Initialize Sail object with direction display
+   */
+  initSail () {
+    this.Sail = {
+      direction: 1,
+      force: 0,
+      inclination: [0, 0],
+      
+      // Calculate wind force on sail
+      getForce: (windDir, windSpeed, boatDir) => {
+        // Wind direction relative to boat
+        const relativeWind = this.correctDirection(windDir - boatDir)
+        
+        // Sail works best at 45-90 degrees from wind
+        // Dead downwind (0 deg) or directly into wind (180 deg) = low force
+        let efficiency = 0
+        
+        if (relativeWind >= -4 && relativeWind <= 4) {
+          // Wind from behind - running
+          efficiency = 0.4 + (4 - Math.abs(relativeWind)) * 0.1
+        } else if (relativeWind >= -8 && relativeWind <= -5) {
+          // Wind from side-rear - broad reach (best point of sail)
+          efficiency = 0.8 + (Math.abs(relativeWind) - 5) * 0.05
+        } else if (relativeWind >= 5 && relativeWind <= 8) {
+          // Wind from side-rear - broad reach (best point of sail)
+          efficiency = 0.8 + (Math.abs(relativeWind) - 5) * 0.05
+        } else {
+          // Other angles - beam reach to close hauled
+          efficiency = 0.6
+        }
+        
+        return (windSpeed / 100) * efficiency * 100
+      },
+      
+      // Update sail direction based on wind
+      calcDirection: (windDir) => {
+        this.Sail.direction = windDir
+      }
+    }
+  }
+
+  /**
+   * #113: Wind force calculation - getForce(Sail)
+   * @returns {number} Force from wind on sail (0-100)
+   */
+  getWindForce () {
+    if (!this.Sail) return 0
+    
+    // Get wind from weather system (if available)
+    const weather = this.game.mulle.weather
+    if (!weather) return 50 // Default moderate wind
+    
+    const windDir = weather.windDirection || 8
+    const windSpeed = weather.windSpeed || 50
+    
+    return this.Sail.getForce(windDir, windSpeed, this.direction)
+  }
+
+  /**
+   * Main sailing logic - called every frame
+   */
+  sail () {
+    if (!this.enabled) return
+
+    // ==========================================
+    // CHECK FUEL/ENERGY STATUS
+    // ==========================================
+    
+    // Check if we've run out of fuel (motor boats)
+    if (this.currentPropulsion === PropulsionType.MOTOR && this.fuelCurrent <= 0) {
+      this.handleOutOfFuel()
+      return
+    }
+    
+    // Check if we've run out of stamina (rowing boats)
+    if (this.currentPropulsion === PropulsionType.OAR && this.staminaCurrent <= 0) {
+      this.handleOutOfStamina()
+    }
+
+    // Get input
+    let steer = 0
+    let throttle = 0
+
+    if (this.cursors.left.isDown || this.wasd.left.isDown) {
+      steer = -1
+    } else if (this.cursors.right.isDown || this.wasd.right.isDown) {
+      steer = 1
+    }
+
+    if (this.cursors.up.isDown || this.wasd.up.isDown) {
+      throttle = 1
+    } else if (this.cursors.down.isDown || this.wasd.down.isDown) {
+      throttle = -0.5 // Reverse is slower
+    }
+
+    // ==========================================
+    // BUG FIX #3: STEERING WITH INTERNAL DIRECTION
+    // ==========================================
+    // Apply steering with sub-degree precision using internalDirection
+    // Original: internalDirection = internalDirection + steering * ManoeuverAbility / 10
+    //           direction = correctDirection(internalDirection / decimalPrec)
+    if (steer !== 0) {
+      const tmpSteer = steer * (this.steerSpeed || 5)
+      this.internalDirection += tmpSteer
+      
+      // Correct internalDirection to stay in range
+      const nrOfDirectionsScaled = this.nrOfDirections * this.decimalPrec
+      while (this.internalDirection > nrOfDirectionsScaled) {
+        this.internalDirection -= nrOfDirectionsScaled
+      }
+      while (this.internalDirection < this.decimalPrec) {
+        this.internalDirection += nrOfDirectionsScaled
+      }
+      
+      // Update discrete direction from internal direction
+      const newDir = Math.round(this.internalDirection / this.decimalPrec)
+      if (newDir !== this.direction) {
+        this.setDirection(newDir)
+      }
+    }
+
+    // ==========================================
+    // BUG FIX #1: CALCSPEEDDIR WITH SPEEDLIST INTERPOLATION
+    // BUG FIX #9: ACCELERATION VS RETARDATION ASYMMETRY
+    // ==========================================
+    // Original: calcSpeedNDir from BoatBase.ls lines 344-391
+    
+    // Calculate force from throttle (0-100 range)
+    let motorForce = throttle * 100
+    
+    // Get power and calculate speed using speedList interpolation
+    const power = this.game.mulle.user?.Boat?.properties?.power || 250
+    const tmpPowerIn = Math.abs(motorForce * power / 100)
+    const tmpPower = Math.floor(tmpPowerIn / 100)
+    const tmpDec = tmpPowerIn - (tmpPower * 100)
+    
+    let tmpWanted = 0
+    if (tmpPower > 0) {
+      const tmpSpeedCount = this.speedList.length
+      let tmpLower, tmpHigher
+      
+      if (tmpPower >= tmpSpeedCount) {
+        tmpLower = this.speedList[tmpSpeedCount - 1]
+        tmpHigher = tmpLower
+      } else {
+        tmpLower = this.speedList[tmpPower]
+        if (tmpPower + 1 < tmpSpeedCount) {
+          tmpHigher = this.speedList[tmpPower + 1]
+        } else {
+          tmpHigher = tmpLower
+        }
+      }
+      
+      // Interpolate between lower and higher speeds
+      tmpWanted = tmpLower + (tmpDec * (tmpHigher - tmpLower) / 100)
+    } else {
+      tmpWanted = 0
+    }
+    
+    if (motorForce < 0) {
+      tmpWanted = -tmpWanted
+    }
+    
+    // Apply acceleration or retardation (different rates!)
+    const tmpDiff = tmpWanted - this.speed
+    let tmpRealSpeedChange
+    
+    if (tmpDiff > 0) {
+      // Accelerating
+      tmpRealSpeedChange = this.acceleration * tmpDiff / this.decimalPrec
+      if (Math.abs(tmpRealSpeedChange) > this.acceleration) {
+        tmpRealSpeedChange = this.acceleration * (tmpRealSpeedChange > 0 ? 1 : -1)
+      }
+    } else {
+      // Decelerating (use retardation rate instead!)
+      tmpRealSpeedChange = this.retardation * tmpDiff / this.decimalPrec
+      if (Math.abs(tmpRealSpeedChange) > this.retardation) {
+        tmpRealSpeedChange = this.retardation * (tmpRealSpeedChange > 0 ? 1 : -1)
+      }
+    }
+    
+    this.speed += tmpRealSpeedChange
+
+    // Reset terrain speed modifier each frame
+    this.terrainSpeedModifier = 1.0
+
+    // ==========================================
+    // BUG FIX #2: DECIMAL PRECISION FOR POSITION
+    // ==========================================
+    // Convert position to internal scaled coordinates (x100)
+    // Original: loc is stored as point * decimalPrec (100)
+    const internalLoc = new Phaser.Point(
+      Math.round(this.position.x * this.decimalPrec),
+      Math.round(this.position.y * this.decimalPrec)
+    )
+
+    // Apply movement with topology checking
+    if (Math.abs(this.speed) > 0.1) {
+      // Get velocity vector from direction
+      // Original: velPoint = getVelPoint(direction) * speed / 100
+      const dirIndex = Math.floor(this.internalDirection / this.decimalPrec)
+      const correctedDir = (dirIndex < 1) ? this.nrOfDirections : ((dirIndex > this.nrOfDirections) ? 1 : dirIndex)
+      const dirVec = this.directionList[correctedDir - 1]
+      
+      // Calculate velocity point (scaled by decimalPrec)
+      const velPoint = new Phaser.Point(
+        dirVec.x * this.speed * this.decimalPrec / 100,
+        dirVec.y * this.speed * this.decimalPrec / 100
+      )
+      
+      // Calculate next position (in internal coordinates)
+      const nextLoc = new Phaser.Point(
+        internalLoc.x + velPoint.x,
+        internalLoc.y + velPoint.y
+      )
+      
+      // Convert to display coordinates for checking
+      const nextPos = new Phaser.Point(
+        nextLoc.x / this.decimalPrec,
+        nextLoc.y / this.decimalPrec
+      )
+
+      // #120, #121, #123: Check depth at corner points before moving
+      const depthCheck = this.checkDepthAtCorners(nextPos)
+      
+      // BUG FIX #4: Island Landing Collision Detection - Verified Implemented
+      // Topology-based collision detection checks R channel values from topology bitmap
+      // checkTerrainPassable() method (line 1104) handles all terrain types:
+      // - Shore/Land (240-255): impassable
+      // - Reef/Rocks (160-200): requires durability
+      // - Shallow water (101-150): requires small boat or shallow draft
+      // Check terrain at next position
+      var terrainCheck = this.pixelCheck(nextPos)
+      var canMove = this.checkTerrainPassable(terrainCheck)
+      
+      // Also check depth
+      if (depthCheck === 'Hit') {
+        canMove = false
+      } else if (depthCheck === 'Shallow' || depthCheck === 1) {
+        // #121: Shallow water speed reduction
+        this.terrainSpeedModifier *= 0.5
+      }
+
+      if (canMove) {
+        this.lastPosition.set(this.position.x, this.position.y)
+        
+        // Update position from internal coordinates
+        this.position.set(nextLoc.x / this.decimalPrec, nextLoc.y / this.decimalPrec)
+
+        // Update forward/backward state
+        if (this.speed > 0) {
+          this.forwardBackward = 1
+        } else if (this.speed < 0) {
+          this.forwardBackward = -1
+        } else {
+          this.forwardBackward = 0
+        }
+
+        // Add wave drift effect using original Lingo AmplitudeList
+        this.applyWaveMotion()
+
+        // Apply current effects based on terrain
+        this.applyCurrentEffects(terrainCheck)
+
+        // ==========================================
+        // CONSUME ENERGY BASED ON PROPULSION TYPE
+        // ==========================================
+        this.consumeEnergy()
+      } else {
+        // Cannot move - hit obstacle
+        // ==========================================
+        // BUG FIX #4: COLLISION DAMAGE (100x too strong)
+        // BUG FIX #10: STEPBACK AFTER COLLISION
+        // ==========================================
+        // Original damage calculation uses speed directly (not speed * 100)
+        // Step back 2 positions after collision
+        this.stepback(2)
+        this.crashed(this.speed)
+        this.OutOfBounds++
+      }
+    } else {
+      // When not moving, recover stamina (if we have oars)
+      this.recoverStamina()
+    }
+
+    // Store position history
+    this.previousData.push([this.position.clone(), this.direction])
+    this.previousData.splice(0, 1)
+
+    // #119: Border detection - 4px from edge triggers map change
+    const borderCheck = this.checkBorders(this.position)
+    if (borderCheck && borderCheck !== 0) {
+      // At edge of map - trigger map transition
+      if (this.state && this.state.onMapBorder) {
+        this.state.onMapBorder(borderCheck)
+      }
+    }
+
+    // ==========================================
+    // ITEM #96: HUNGER SYSTEM INTEGRATION
+    // ==========================================
+    if (!this.inFreeZone && this.mulleHunger > 0) {
+      this.mulleHunger -= this.mulleHungerSpeed
+      
+      if (this.mulleHunger <= 0) {
+        // Hunger reached 0 - try fishing rod or go home
+        const user = this.game.mulle.user
+        if (user && user.SeaInventory && user.SeaInventory.items && user.SeaInventory.items.Fishingrod) {
+          console.log('[DriveBoat] Using fishing rod to catch food!')
+          this.mulleHunger = 10000
+          // Notify state about fishing
+          if (this.state && this.state.onFishing) {
+            this.state.onFishing()
+          }
+        } else {
+          console.log('[DriveBoat] HUNGRY! Need to go home')
+          if (this.state && this.state.onHungry) {
+            this.state.onHungry()
+          }
+          this.enabled = false
+        }
+      } else if (!this.hungerWarningShown && this.mulleHunger < 2000) {
+        this.hungerWarningShown = true
+        if (this.state && this.state.onLowHunger) {
+          this.state.onLowHunger(this.mulleHunger)
+        }
+      }
+    }
+    
+    // ==========================================
+    // ITEM #97: BUFFA SICK SYSTEM INTEGRATION
+    // ==========================================
+    if (!this.inFreeZone && this.buffaSick > 0) {
+      // Track boat swaying to calculate sickness
+      // Use previous and current sideAngle to detect motion
+      const lastSway = this.swayHistory[this.swayHistory.length - 1] || 0
+      const swayDiff = Math.abs(this.sideAngle - lastSway)
+      
+      this.buffaSick -= swayDiff / 13
+      
+      if (this.buffaSick <= 0) {
+        console.log('[DriveBoat] Buffa is SICK! (Vomit)')
+        if (this.state && this.state.onVomit) {
+          this.state.onVomit()
+        }
+        this.enabled = false
+      }
+      
+      // Add to sway history
+      this.swayHistory.push(this.sideAngle)
+      if (this.swayHistory.length > 10) {
+        this.swayHistory.shift()
+      }
+    }
+    
+    // ==========================================
+    // ITEM #101: STABILITY-BASED WAVE EFFECTS
+    // ==========================================
+    // Calculate sideAngle from stabilities and wave info
+    // tmpSideAngle = stabilities[2] * waveInfo[3] / 100
+    // For now, use simplified calculation until we have full wave system
+    const waveEffect = Math.sin(this.game.time.now / 1000) * 10
+    this.sideAngle = (this.stabilities[1] || 50) * waveEffect / 100
+    
+    // ==========================================
+    // ITEM #98-99: CAPSIZE & LURCH DETECTION
+    // ==========================================
+    this.checkCapsize(this.sideAngle)
+    
+    // ==========================================
+    // ITEM #107: WEATHER DRIFT
+    // ==========================================
+    this.applyWeatherDrift()
+    
+    // ==========================================
+    // ITEM #110: DYNAMIC PITCH CALCULATION
+    // ==========================================
+    if (this.currentPropulsion === PropulsionType.MOTOR) {
+      this.updateEngineSound()
+    }
+    
+    // ==========================================
+    // BUG FIX #4: SAIL WIND SOUNDS
+    // ==========================================
+    // Play random sail sounds every 100-200 frames when sailing
+    if (this.currentPropulsion === PropulsionType.SAIL && this.Sail) {
+      this.sailSoundCounter++
+      
+      // Check if it's time to play a sail sound
+      if (this.sailSoundCounter >= this.sailSoundInterval) {
+        // Play random sail sound
+        const randomIndex = Math.floor(Math.random() * this.sailSounds.length)
+        const sailSound = this.sailSounds[randomIndex]
+        this.game.mulle.playAudio(sailSound)
+        
+        // Reset counter and set new random interval (100-200 frames)
+        this.sailSoundCounter = 0
+        this.sailSoundInterval = Math.floor(Math.random() * 101) + 100
+      }
+    } else {
+      // Reset counter when not sailing
+      this.sailSoundCounter = 0
+      this.sailSoundInterval = 0
+    }
+
+    // Boundary check
+    this.checkBounds()
+  }
+
+  /**
+   * Check if terrain is passable based on boat capabilities
+   * @param {number} terrainValue - Red channel value from topology
+   * @returns {boolean} - Whether boat can pass
+   */
+  checkTerrainPassable (terrainValue) {
+    // Shore/Land - always impassable
+    if (terrainValue >= 240) {
+      console.log('[DriveBoat] Shore collision')
+      if (!this.SoundShore) {
+        var s = this.game.mulle.playAudio(this.engineSounds.shore)
+        if (s) {
+          s.onStop.addOnce(() => { this.SoundShore = null })
+        }
+        this.SoundShore = true
+      }
+      return false
+    }
+
+    // Reef/Rocks - requires durability
+    if (terrainValue >= 160 && terrainValue <= 200) {
+      if (!this.reefResistance) {
+        console.log('[DriveBoat] Reef collision - need more durability')
+        if (!this.SoundReef) {
+          var s = this.game.mulle.playAudio(this.engineSounds.reef)
+          if (s) {
+            s.onStop.addOnce(() => { this.SoundReef = null })
+          }
+          this.SoundReef = true
+        }
+        this.terrainSpeedModifier = 0.1
+        return false
+      }
+      // Can pass reef but slowly
+      this.currentTerrain = SEA_TERRAIN.REEF
+      this.terrainSpeedModifier = SEA_TERRAIN.REEF.speedMod
+      return true
+    }
+
+    // Shallow water - requires small boat or shallow draft
+    if (terrainValue >= 101 && terrainValue <= 150) {
+      if (this.boatSize === 'large' && !this.shallowDraft) {
+        console.log('[DriveBoat] Shallow water - boat too large')
+        if (!this.SoundShallow) {
+          var s = this.game.mulle.playAudio(this.engineSounds.shallow)
+          if (s) {
+            s.onStop.addOnce(() => { this.SoundShallow = null })
+          }
+          this.SoundShallow = true
+        }
+        this.terrainSpeedModifier = 0.2
+        return false
+      }
+      // Small/medium boats can pass, but slowly
+      this.currentTerrain = SEA_TERRAIN.SHALLOW_WATER
+      this.terrainSpeedModifier = SEA_TERRAIN.SHALLOW_WATER.speedMod
+      return true
+    }
+
+    // Strong current area
+    if (terrainValue >= 201 && terrainValue <= 220) {
+      this.currentTerrain = SEA_TERRAIN.CURRENT_STRONG
+      this.terrainSpeedModifier = SEA_TERRAIN.CURRENT_STRONG.speedMod
+      return true
+    }
+
+    // Medium depth water
+    if (terrainValue >= 51 && terrainValue <= 100) {
+      this.currentTerrain = SEA_TERRAIN.MEDIUM_WATER
+      this.terrainSpeedModifier = SEA_TERRAIN.MEDIUM_WATER.speedMod
+      return true
+    }
+
+    // Deep water - normal sailing
+    this.currentTerrain = SEA_TERRAIN.DEEP_WATER
+    this.terrainSpeedModifier = SEA_TERRAIN.DEEP_WATER.speedMod
+    return true
+  }
+
+  /**
+   * #115, #116, #117: Apply oar force curve with hunger and sound effects
+   * BUG FIX #7: OAR FORCE 100X TOO WEAK - Change 0.13 to 13
+   */
+  applyOarForce (throttle) {
+    let tmpPlaySound = false
+    
+    if (throttle > 0) {
+      // Forward rowing
+      if (this.Oar === 0) {
+        this.Oar = this.forceCount
+      }
+      
+      if (this.Oar > 1) {
+        const tmpForce = this.oarForce[this.Oar - 1]
+        this.Oar--
+        
+        if (tmpForce === 0) {
+          tmpPlaySound = true
+        }
+        
+        // BUG FIX #7: Was 0.13, should be 13 (100x stronger)
+        this.acceleration += (tmpForce / 100) * 13
+      }
+    } else if (throttle < 0) {
+      // Backward rowing
+      if (this.Oar === 0) {
+        this.Oar = -this.forceCount
+      }
+      
+      if (this.Oar < -1) {
+        const tmpForce = -this.oarForce[-this.Oar - 1]
+        this.Oar++
+        
+        // BUG FIX #7: Was 0.13, should be 13 (100x stronger)
+        this.acceleration += (tmpForce / 100) * 13
+      }
+    } else {
+      this.Oar = 0
+    }
+    
+    // #116: Double hunger when rowing
+    if (this.Oar !== 0 && this.game.mulle.user) {
+      // Increase hunger rate while rowing (handled by hunger system)
+      // This would be: mulleHungerSpeed = 2 * orgMulleHungerSpeed
+    }
+    
+    // #117: Alternating oar sounds (left/right)
+    // BUG FIX #9: Stop previous oar sound before playing new one to prevent overlapping
+    if (tmpPlaySound) {
+      const snd = this.oarSounds[this.soundCount - 1]
+      
+      // Stop previous oar sound if playing
+      if (this.currentOarSound) {
+        this.currentOarSound.stop()
+      }
+      
+      // Play new oar sound
+      this.currentOarSound = this.game.mulle.playAudio(snd)
+      this.soundCount = 3 - this.soundCount // Toggle between 1 and 2
+    }
+  }
+
+  /**
+   * Apply wave motion using original Lingo AmplitudeList
+   * This creates realistic bobbing motion for the boat
+   * Uses all three stability values: lateral, longitudinal, and Z
+   */
+  applyWaveMotion () {
+    // Progress through wave cycle
+    this.wavePhase = (this.wavePhase + this.waveSpeed) % AMPLITUDE_LIST.length
+
+    // Get current amplitude from original Lingo data (-100 to 100)
+    const amplitude = AMPLITUDE_LIST[Math.floor(this.wavePhase)]
+
+    // Apply wave effects based on boat properties
+    const driftFactor = this.driftFactor || 1
+    
+    // Get all three stability factors (original: Stab: [85, 55], Stabz: 30)
+    let lateralStability = this.getStabilityFactor()           // Side-to-side stability
+    const longitudinalStability = this.getLongitudinalStabilityFactor()  // Front-to-back stability
+    const zStability = this.getZStabilityFactor()                // Vertical stability
+    
+    // #114: Sail inclination affects stability
+    if (this.Sail && this.currentPropulsion === PropulsionType.SAIL) {
+      const windForce = this.getWindForce()
+      const sailTilt = (windForce / 100) * 0.15
+      
+      // Sail tilt reduces lateral stability
+      lateralStability = Math.max(0, lateralStability - sailTilt)
+      
+      // Store sail inclination for visual effects
+      this.Sail.inclination = [sailTilt * 2, 0]
+    }
+
+    // Horizontal wave drift (side to side) - affected by lateral stability
+    const horizontalDrift = (amplitude / 100) * driftFactor * 0.15 * (1 - lateralStability)
+    this.x += horizontalDrift
+
+    // Longitudinal wave drift (forward/backward pitching) - affected by longitudinal stability
+    // Use a phase-shifted amplitude for different wave feel
+    const pitchPhase = (this.wavePhase + 25) % AMPLITUDE_LIST.length
+    const pitchAmplitude = AMPLITUDE_LIST[Math.floor(pitchPhase)]
+    const pitchDrift = (pitchAmplitude / 100) * driftFactor * 0.08 * (1 - longitudinalStability)
+    
+    // Apply pitch as forward/backward motion based on current direction
+    const dirVec = this.directionList[this.internalDirection]
+    if (dirVec) {
+      this.x += dirVec.x * pitchDrift * 0.5
+      this.y += dirVec.y * pitchDrift * 0.5
+    }
+
+    // Vertical bobbing (heave) - affected by Z stability
+    // Use another phase-shifted amplitude for vertical motion
+    const heavePhase = (this.wavePhase + 50) % AMPLITUDE_LIST.length
+    const heaveAmplitude = AMPLITUDE_LIST[Math.floor(heavePhase)]
+    const heaveDrift = (heaveAmplitude / 100) * driftFactor * 0.05 * (1 - zStability)
+    this.y += heaveDrift
+
+    // Roll rotation hint for visual (not affecting actual direction)
+    // This could be used by the sprite renderer for tilt effect
+    this.waveRoll = (amplitude / 100) * 0.05 * (1 - lateralStability)
+    
+    // Pitch rotation hint
+    this.wavePitch = (pitchAmplitude / 100) * 0.03 * (1 - longitudinalStability)
+  }
+
+  /**
+   * Get stability factor (0-1) based on boat properties
+   * Higher stability = less wave effect
+   * Uses original Lingo format: Stab: [lateral, longitudinal], Stabz
+   */
+  getStabilityFactor () {
+    if (!this.stabilityValues) {
+      const boat = this.game.mulle.user.Boat
+      if (!boat || !boat.properties) return 0.5
+      
+      this.stabilityValues = boat.getStabilityValues ? boat.getStabilityValues() : {
+        lateral: boat.properties.stability || 50,
+        longitudinal: boat.properties.stability || 50,
+        z: 0,
+        combined: boat.properties.stability || 50
+      }
+    }
+
+    // Use lateral stability for side-to-side wave resistance
+    // Original values were around 85, 55 so we normalize to that range
+    const lateralStability = this.stabilityValues.lateral || 50
+    
+    // Normalize to 0-1 range (85 = very stable = 0.85 factor)
+    return Math.min(1, lateralStability / 100)
+  }
+
+  /**
+   * Get longitudinal stability factor for front-to-back motion
+   * @returns {number} 0-1 factor
+   */
+  getLongitudinalStabilityFactor () {
+    if (!this.stabilityValues) return 0.5
+    
+    const longStability = this.stabilityValues.longitudinal || 50
+    return Math.min(1, longStability / 100)
+  }
+
+  /**
+   * Get Z-axis stability for vertical bobbing
+   * @returns {number} 0-1 factor
+   */
+  getZStabilityFactor () {
+    if (!this.stabilityValues) return 0.3
+    
+    const zStability = this.stabilityValues.z || 30
+    return Math.min(1, zStability / 100)
+  }
+
+  /**
+   * Apply current/wave effects based on terrain
+   * @param {number} terrainValue - Red channel value from topology
+   */
+  applyCurrentEffects (terrainValue) {
+    // Strong current areas push the boat
+    if (terrainValue >= 201 && terrainValue <= 220) {
+      // Current direction encoded in green channel (0-255 maps to 0-360 degrees)
+      if (this.topology) {
+        var coord = this.getTopologyCoord(this.position)
+        var pix = this.topology.getPixel(coord.x, coord.y)
+        var currentAngle = (pix.g / 255) * Math.PI * 2
+        var currentStrength = 0.5
+
+        this.x += Math.sin(currentAngle) * currentStrength
+        this.y -= Math.cos(currentAngle) * currentStrength
+      }
+    }
+
+    // Wave resistance in deep water (slight random drift)
+    if (terrainValue <= 50) {
+      var waveForce = 0.1
+      this.x += Math.sin(this.game.time.now / 800) * waveForce
+      this.y += Math.cos(this.game.time.now / 1200) * waveForce * 0.5
+    }
+  }
+
+  /**
+   * Get topology coordinate from world position
+   * #124: Uses decimalPrec scaling (position / 100 for lookup)
+   * @param {Phaser.Point} worldPos - World position
+   * @returns {Phaser.Point} - Topology bitmap coordinate
+   */
+  getTopologyCoord (worldPos) {
+    // Original: argLoc = (argLoc - point(4, 4)) / 2
+    // With decimalPrec, positions are scaled: divide by 100 then divide by 2
+    var tryX = Math.round((worldPos.x - this.mapOffset.x) / 2)
+    var tryY = Math.round((worldPos.y - this.mapOffset.y) / 2)
+    return new Phaser.Point(tryX, tryY)
+  }
+
+  /**
+   * #119: Border detection - 4px from edge triggers map change
+   * @param {Phaser.Point} loc - World position
+   * @returns {Phaser.Point|number} - Direction point or 0 if not at border
+   */
+  checkBorders (loc) {
+    const coord = this.getTopologyCoord(loc)
+    const tmpBorderWidth = 4
+    
+    const topoWidth = 316
+    const topoHeight = 198
+    
+    if (coord.x < (1 + tmpBorderWidth)) {
+      return new Phaser.Point(-1, 0) // West
+    } else if (coord.x > (topoWidth - tmpBorderWidth)) {
+      return new Phaser.Point(1, 0) // East
+    } else if (coord.y < (1 + tmpBorderWidth)) {
+      return new Phaser.Point(0, -1) // North
+    } else if (coord.y > (topoHeight - tmpBorderWidth)) {
+      return new Phaser.Point(0, 1) // South
+    }
+    
+    return 0
+  }
+
+  /**
+   * Check pixel value at coordinate (terrain type)
+   * Similar to MulleDriveCar.pixelCheck
+   * @param {Phaser.Point} coord - World coordinate to check
+   * @returns {number} - Red channel value (terrain type)
+   */
+  pixelCheck (coord) {
+    if (!this.topology) {
+      // No topology loaded - assume deep water
+      return 25
+    }
+
+    var tryX = Math.round((coord.x - this.mapOffset.x) / 2)
+    var tryY = Math.round((coord.y - this.mapOffset.y) / 2)
+
+    // Bounds check
+    if (tryX < 0 || tryY < 0 || tryX >= 316 || tryY >= 198) {
+      // Out of topology bounds - treat as shore
+      return 240
+    }
+
+    var pix = this.topology.getPixel(tryX, tryY)
+    return pix.r
+  }
+
+  /**
+   * BUG FIX #5: DEPTH CHECK USING WRONG FORMAT
+   * BUG FIX #8: WAVE TOPOLOGY INTEGRATION
+   * #118, #120, #122, #123: Topology binary format with corner point depth check
+   * Original uses: charToNum(char N of Topology) for binary depth data
+   * Check depth at location with corner points for full boat coverage
+   * @param {Phaser.Point} loc - World position
+   * @param {Array} cornerPoints - Optional array of corner offset points
+   * @returns {string|number} - 'Hit' for collision, 'Shallow' for too shallow, 1 for passable but slow, 0 for OK
+   */
+  checkDepthAtCorners (loc, cornerPoints) {
+    if (!this.topology) return 0
+    
+    const coord = this.getTopologyCoord(loc)
+    
+    // If no corner points provided, use current direction's corners
+    if (!cornerPoints) {
+      const directionIndex = Math.floor(this.internalDirection / this.decimalPrec) - 1
+      const correctedIndex = (directionIndex < 0) ? this.nrOfDirections - 1 : 
+                             (directionIndex >= this.nrOfDirections) ? 0 : directionIndex
+      cornerPoints = this.cornerPoints[correctedIndex] || [new Phaser.Point(0, 0)]
+    }
+    
+    // BUG FIX #8: Get wave topology info from weather renderer
+    // Original: tmp = getTopoInfo(the waves of the weatherRenderer of gDir, loc / decimalPrec, direction, currentCorners)
+    let waveAltitude = 0
+    let waveFrontBack = 0
+    let waveSideAngle = 0
+    
+    if (this.game.mulle && this.game.mulle.weather && this.game.mulle.weather.getTopoInfo) {
+      const waveInfo = this.game.mulle.weather.getTopoInfo(loc, this.direction, cornerPoints)
+      if (waveInfo) {
+        waveAltitude = waveInfo[0] || 0
+        waveFrontBack = waveInfo[1] || 0
+        waveSideAngle = waveInfo[2] || 0
+      }
+    }
+    
+    // #123: Passability check - all 3 corners must pass
+    for (let i = 0; i < cornerPoints.length; i++) {
+      const tmpPoint = cornerPoints[i]
+      const tmpH = coord.x + Math.round(tmpPoint.x)
+      const tmpV = coord.y + Math.round(tmpPoint.y)
+      
+      // Bounds check
+      if (tmpH < 0 || tmpV < 0 || tmpH >= 316 || tmpV >= 198) {
+        return 'Hit'
+      }
+      
+      // BUG FIX #5: Topology binary format - charToNum(char N of Topology)
+      // Original uses binary string data, not pixel RGB values
+      // The topology is a binary string where each byte represents depth
+      // For now, we'll use the R channel as a substitute until binary topology is available
+      const pix = this.topology.getPixel(tmpH, tmpV)
+      let tmpInfo = pix.r
+      
+      // If we have wave topology, integrate it with terrain depth
+      if (waveAltitude !== 0) {
+        // Waves can reduce effective depth (high waves = shallower apparent depth)
+        tmpInfo = Math.max(0, tmpInfo - Math.abs(waveAltitude / 10))
+      }
+      
+      // #122: Hit detection - value === 0 or >= 200 = collision
+      if (tmpInfo === 0 || tmpInfo >= 200) {
+        return 'Hit'
+      }
+      
+      // BUG FIX #5: Check depth levels (0-4, from DepthChecker.ls setDepth method)
+      // Original binary format: depth encoded directly as byte value
+      // depth 0: < 2
+      // depth 1: 2-3
+      // depth 2: 4-9
+      // depth 3: 10-15
+      // depth 4: >= 16
+      let depthValue = 0
+      if (tmpInfo < 2) {
+        depthValue = 0
+      } else if (tmpInfo < 4) {
+        depthValue = 1
+      } else if (tmpInfo < 10) {
+        depthValue = 2
+      } else if (tmpInfo < 16) {
+        depthValue = 3
+      } else {
+        depthValue = 4
+      }
+      
+      // Compare with boat's required depth
+      const requiredDepth = this.getRequiredDepth()
+      
+      if (depthValue < requiredDepth) {
+        // #121: Shallow water - reduce speed
+        return 1 // Too shallow, reduce speed
+      }
+      
+      if (depthValue === requiredDepth) {
+        return 'Shallow' // Borderline shallow
+      }
+    }
+    
+    return 0 // All clear
+  }
+
+  /**
+   * Get required water depth for boat based on size and draft
+   * @returns {number} Depth level (0-4)
+   */
+  getRequiredDepth () {
+    if (this.shallowDraft) return 0 // Shallow draft boats can go anywhere
+    
+    switch (this.boatSize) {
+      case 'small': return 1
+      case 'medium': return 2
+      case 'large': return 3
+      default: return 2
+    }
+  }
+
+  /**
+   * Get current water depth info
+   * @returns {object} - Terrain info object
+   */
+  getWaterDepth () {
+    return {
+      terrain: this.currentTerrain,
+      speedModifier: this.terrainSpeedModifier,
+      canPass: this.terrainSpeedModifier > 0
+    }
+  }
+
+  /**
+   * Correct direction to valid range (1-16)
+   */
+  correctDirection (i) {
+    if (i > this.nrOfDirections) return i - this.nrOfDirections
+    if (i < 1) return i + this.nrOfDirections
+    return i
+  }
+
+  /**
+   * Step back to previous position (recovery from stuck)
+   */
+  stepback (nr) {
+    console.log('[DriveBoat] stepback', nr)
+    var temp = this.previousData[(this.previousData.length - 1) - nr]
+    this.position.set(temp[0].x, temp[0].y)
+    this.direction = temp[1]
+  }
+
+  /**
+   * Get effective max speed based on current propulsion and energy levels
+   */
+  getEffectiveMaxSpeed () {
+    switch (this.currentPropulsion) {
+      case PropulsionType.MOTOR:
+        // Motor: full speed if has fuel
+        return this.fuelCurrent > 0 ? this.maxSpeed : 0.5 // Drift speed when out of fuel
+        
+      case PropulsionType.SAIL:
+        // Sail: wind-powered, free energy but speed varies with wind
+        // For now, use a constant wind factor (could add wind system later)
+        const windFactor = 0.8 + Math.sin(this.game.time.now / 5000) * 0.2
+        return this.maxSpeed * windFactor
+        
+      case PropulsionType.OAR:
+        // Oar: speed decreases as stamina depletes
+        const staminaFactor = this.staminaCurrent / this.staminaMax
+        // At 50% stamina, still 75% speed. Below 20% stamina, speed drops significantly
+        const speedMod = staminaFactor > 0.5 ? 0.5 + (staminaFactor * 0.5) : staminaFactor * 2.5
+        return this.maxSpeed * Math.max(0.2, speedMod)
+        
+      case PropulsionType.NONE:
+      default:
+        // No propulsion: drift only
+        return 0.5
+    }
+  }
+
+  /**
+   * Consume energy based on current propulsion type and speed
+   * Also handles Pills (buffaSick) and Belly (mulleHunger) consumption
+   * Original: lines 555-588 of ParentScript 34 - BoatBase.ls
+   * BUG FIX #6: FUEL CONSUMPTION 30X TOO FAST - Add missing /30
+   */
+  consumeEnergy () {
+    const absSpeed = Math.abs(this.speed)
+    
+    // Standard energy consumption per propulsion type
+    switch (this.currentPropulsion) {
+      case PropulsionType.MOTOR:
+        // BUG FIX #6: Motor boats consume fuel proportional to speed
+        // Original: tmpFuel = tmpFuel - (abs(motorSpeed) * fuelConsumption / 30)
+        // Was missing the /30 divisor!
+        const fuelUsed = (absSpeed * this.fuelConsumptionRate) / 30
+        this.fuelCurrent = Math.max(0, this.fuelCurrent - fuelUsed)
+        
+        // Check for low fuel warning
+        if (!this.fuelWarningShown && this.fuelCurrent / this.fuelMax <= this.fuelWarningThreshold) {
+          this.fuelWarningShown = true
+          this.onLowFuel()
+        }
+        break
+        
+      case PropulsionType.OAR:
+        // Rowing consumes stamina
+        const staminaUsed = absSpeed * this.staminaConsumptionRate
+        this.staminaCurrent = Math.max(0, this.staminaCurrent - staminaUsed)
+        
+        // Check for low stamina warning
+        if (!this.staminaWarningShown && this.staminaCurrent / this.staminaMax <= this.staminaWarningThreshold) {
+          this.staminaWarningShown = true
+          this.onLowStamina()
+        }
+        break
+        
+      case PropulsionType.SAIL:
+        // Sailboats don't consume energy (wind power is free!)
+        break
+        
+      case PropulsionType.NONE:
+      default:
+        // No propulsion, no consumption
+        break
+    }
+    
+    // ==========================================
+    // PILLS CONSUMPTION (buffaSick system)
+    // Original: lines 555-566 of BoatBase.ls
+    // Only active at level >= 4, decreases based on wave motion
+    // ==========================================
+    if (this.seaLevel >= 4 && this.buffaSick > 0) {
+      // buffaSick decreases based on wave motion (frontBack sway)
+      // Original: set buffaSick to buffaSick - (tmpDiff / 13)
+      // For simplicity, use a constant decrease rate since we don't have full wave simulation
+      this.buffaSick -= 1
+      
+      if (this.buffaSick <= 0) {
+        // Out of pills! Mulle vomits and has to go home
+        // Original: say(the mulleTalkObject of gDir, #Vomit, 1, me, #Q, #GoHome)
+        console.log('[DriveBoat] buffaSick <= 0: Vomit! Must return to shore')
+        this.handleVomit()
+      }
+    }
+    
+    // ==========================================
+    // BELLY CONSUMPTION (mulleHunger system)
+    // Original: lines 568-588 of BoatBase.ls
+    // Decreases constantly during sailing
+    // ==========================================
+    if (this.mulleHunger > 0) {
+      // Decrease hunger at configured speed
+      // Original: set mulleHunger to mulleHunger - mulleHungerSpeed
+      this.mulleHunger -= this.mulleHungerSpeed
+      
+      if (this.mulleHunger <= 0) {
+        // Hungry! Check if has fishing rod
+        // Original: if isInInventory(the user of gMulleGlobals, #Fishingrod)
+        this.handleHunger()
+      }
+    }
+  }
+
+  /**
+   * Recover stamina when not actively rowing
+   */
+  recoverStamina () {
+    if (this.hasOars && this.staminaCurrent < this.staminaMax) {
+      this.staminaCurrent = Math.min(this.staminaMax, this.staminaCurrent + this.staminaRecoveryRate)
+      
+      // Reset warning if stamina recovers above threshold
+      if (this.staminaWarningShown && this.staminaCurrent / this.staminaMax > this.staminaWarningThreshold + 0.1) {
+        this.staminaWarningShown = false
+      }
+    }
+  }
+
+  /**
+   * Called when fuel runs out
+   */
+  handleOutOfFuel () {
+    if (!this.outOfFuel) {
+      // Try to consume a Belly snack first
+      if (this.hasBelly()) {
+        const consumed = this.consumeBelly()
+        if (consumed) {
+          // Belly snack restored fuel, continue sailing
+          return
+        }
+      }
+
+      this.outOfFuel = true
+      this.enabled = false
+
+      // Stop engine sound
+      this.stopEngine()
+
+      console.log('[DriveBoat] Out of fuel!')
+
+      // Play out of fuel sound (similar to car)
+      // Using a similar sound to the car's fuel empty sound
+      var sound = this.game.mulle.playAudio('05d011v0')
+
+      if (sound) {
+        sound.onStop.addOnce(() => {
+          // After sound plays, try to fall back to alternative propulsion
+          this.fallbackPropulsion()
+        })
+      } else {
+        this.fallbackPropulsion()
+      }
+    }
+  }
+
+  /**
+   * Called when stamina runs out
+   */
+  handleOutOfStamina () {
+    if (!this.outOfStamina) {
+      // Try to consume a Belly snack first
+      if (this.hasBelly()) {
+        const consumed = this.consumeBelly()
+        if (consumed) {
+          // Belly snack restored stamina, continue rowing
+          return
+        }
+      }
+
+      this.outOfStamina = true
+      console.log('[DriveBoat] Out of stamina! Resting...')
+
+      // Can't row anymore, switch to drift or sail if available
+      this.fallbackPropulsion()
+    }
+
+    // Continue recovering stamina even when out
+    this.recoverStamina()
+
+    // If stamina recovered enough, allow rowing again
+    if (this.staminaCurrent > this.staminaMax * 0.3) {
+      this.outOfStamina = false
+      if (this.currentPropulsion === PropulsionType.NONE && this.hasOars) {
+        this.currentPropulsion = PropulsionType.OAR
+        console.log('[DriveBoat] Stamina recovered, can row again')
+      }
+    }
+  }
+
+  /**
+   * Fall back to alternative propulsion when primary fails
+   */
+  fallbackPropulsion () {
+    const previousPropulsion = this.currentPropulsion
+    
+    // Try alternative propulsion methods
+    if (this.hasSail) {
+      this.currentPropulsion = PropulsionType.SAIL
+      console.log('[DriveBoat] Falling back to sail')
+    } else if (this.hasOars && this.staminaCurrent > 0) {
+      this.currentPropulsion = PropulsionType.OAR
+      console.log('[DriveBoat] Falling back to oars')
+    } else {
+      this.currentPropulsion = PropulsionType.NONE
+      console.log('[DriveBoat] No propulsion available, drifting')
+    }
+    
+    // Re-enable boat if we found alternative propulsion
+    if (this.currentPropulsion !== PropulsionType.NONE) {
+      this.enabled = true
+      this.outOfFuel = false
+    }
+    
+    // Recalculate max speed for new propulsion
+    this.updateMaxSpeedForPropulsion()
+    
+    // Notify state (seaworld) about propulsion change
+    if (this.state && this.state.onPropulsionChange) {
+      this.state.onPropulsionChange(previousPropulsion, this.currentPropulsion)
+    }
+  }
+
+  /**
+   * Update max speed when propulsion changes
+   */
+  updateMaxSpeedForPropulsion () {
+    switch (this.currentPropulsion) {
+      case PropulsionType.MOTOR:
+        this.maxSpeed = 6
+        break
+      case PropulsionType.SAIL:
+        this.maxSpeed = 4
+        break
+      case PropulsionType.OAR:
+        this.maxSpeed = 2
+        break
+      case PropulsionType.NONE:
+      default:
+        this.maxSpeed = 0.5 // Drift only
+        break
+    }
+  }
+
+  /**
+   * Called when fuel is low - for UI notifications
+   */
+  onLowFuel () {
+    console.log('[DriveBoat] Low fuel warning!')
+    // This will be handled by seaworld.js for UI display
+    if (this.state && this.state.onLowFuel) {
+      this.state.onLowFuel(this.fuelCurrent, this.fuelMax)
+    }
+  }
+
+  /**
+   * Handle vomit event when buffaSick reaches 0
+   * Original: lines 560-565 of BoatBase.ls
+   */
+  handleVomit () {
+    this.enabled = false
+    
+    // Original: if isMissionCompleted(the user of gMulleGlobals, 3) then addGivenMission(3)
+    const user = this.game.mulle.user
+    if (user && user.isMissionCompleted(3) > 0) {
+      user.addGivenMission(3)
+    }
+    
+    // Play vomit sound and dialogue
+    // Original: say(the mulleTalkObject of gDir, #Vomit, 1, me, #Q, #GoHome)
+    console.log('[DriveBoat] VOMIT! Mulle is seasick, must return to shore')
+    
+    // TODO: Play vomit sound/dialogue
+    // For now, trigger return to shore
+    if (this.state && this.state.returnToShore) {
+      this.state.returnToShore('vomit')
+    }
+  }
+
+  /**
+   * Handle hunger event when mulleHunger reaches 0
+   * Original: lines 571-587 of BoatBase.ls
+   */
+  handleHunger () {
+    const user = this.game.mulle.user
+    if (!user) return
+    
+    // Check if has fishing rod (auto-use to catch fish)
+    // Original: if isInInventory(the user of gMulleGlobals, #Fishingrod)
+    if (user.isInInventory('Fishingrod')) {
+      // Has fishing rod! Use it to catch fish and restore hunger
+      // Original: if isInInventory(#Fished) then tmpSnd = "05d120v0" else tmpSnd = "05d045v0"
+      const hasFished = user.isInInventory('Fished')
+      const fishSound = hasFished ? '05d120v0' : '05d045v0'
+      
+      if (!hasFished) {
+        // First time fishing - set Fished flag
+        // Original: setInInventory(the user of gMulleGlobals, #Fished, [:])
+        user.setInInventory('Fished', {})
+      }
+      
+      // Restore hunger to full
+      // Original: set mulleHunger to 10000
+      this.mulleHunger = 10000
+      
+      // TODO: Show fishing animation/sprite
+      // Original: set the member of sprite getProp(the spriteList of gDir, #TRANS) to member "33b008v0"
+      // Original: set the loc of sprite getProp(the spriteList of gDir, #TRANS) to point(320, 204)
+      
+      console.log('[DriveBoat] Used fishing rod! Hunger restored. Sound:', fishSound)
+      
+      // Play fishing sound
+      this.game.mulle.playAudio(fishSound)
+    } else {
+      // No fishing rod! Must return to shore hungry
+      // Original: say(the mulleTalkObject of gDir, #Hungry, 1, me, #Q, #GoHome)
+      this.enabled = false
+      console.log('[DriveBoat] HUNGRY! No fishing rod, must return to shore')
+      
+      // TODO: Play hungry sound/dialogue
+      // For now, trigger return to shore
+      if (this.state && this.state.returnToShore) {
+        this.state.returnToShore('hungry')
+      }
+    }
+  }
+
+  /**
+   * Save inventory state (Pills and Belly) back to user data
+   * Original: lines 250-262 of BoatBase.ls (save method)
+   */
+  saveInventoryState () {
+    const user = this.game.mulle.user
+    if (!user) return
+    
+    // Save Pills (buffaSick converted back to pills count)
+    // Original: set tmpLeft to (buffaSick - 1000) / 25
+    //           if tmpLeft > 0 then setaProp(tmpPillsList, #nr, tmpLeft)
+    //           else deleteFromInventory(the user of gMulleGlobals, #Pills)
+    const pillsLeft = Math.floor((this.buffaSick - 1000) / 25)
+    if (pillsLeft > 0) {
+      user.setInInventory('Pills', { nr: pillsLeft }, true)  // Replace, don't add
+    } else {
+      user.removeFromInventory('Pills')
+    }
+    
+    // Save Belly (mulleHunger converted back to belly nr)
+    // Original: setInInventory(the user of gMulleGlobals, #Belly, [#nr: mulleHunger / 10])
+    const bellyNr = Math.floor(this.mulleHunger / 10)
+    user.setInInventory('Belly', { nr: bellyNr }, true)  // Replace, don't add
+    
+    console.log('[DriveBoat] Saved inventory - Pills:', pillsLeft, 'Belly:', bellyNr)
+  }
+
+  /**
+   * Track DrivenTimes for current propulsion type
+   * Original: lines 215-220 of BoatBase.ls (calculateMyProps)
+   */
+  trackDrivenTimes () {
+    const user = this.game.mulle.user
+    if (!user) return
+    
+    // Only track once per session/propulsion type change
+    if (this.drivenTimesTracked && this.currentDrivenType === this.currentPropulsion) {
+      return
+    }
+    
+    // Get propulsion type name (Motor, Sail, Oar)
+    let typeName = null
+    switch (this.currentPropulsion) {
+      case PropulsionType.MOTOR:
+        typeName = 'Motor'
+        break
+      case PropulsionType.SAIL:
+        typeName = 'Sail'
+        break
+      case PropulsionType.OAR:
+        typeName = 'Oar'
+        break
+      default:
+        return  // Don't track NONE
+    }
+    
+    // Get current DrivenTimes from inventory
+    // Original: set tmpAllDriv to lookUpInventory(the user of gMulleGlobals, #DrivenTimes)
+    //           if voidp(tmpAllDriv) then tmpAllDriv = [#Motor: 0, #Sail: 0, #Oar: 0]
+    let drivenTimes = user.lookUpInventory('DrivenTimes')
+    if (!drivenTimes || typeof drivenTimes !== 'object') {
+      drivenTimes = { Motor: 0, Sail: 0, Oar: 0 }
+    }
+    
+    // Increment count for this propulsion type
+    // Original: set tmpDriv to setaProp(tmpAllDriv, argType, getaProp(tmpAllDriv, argType) + 1)
+    drivenTimes[typeName] = (drivenTimes[typeName] || 0) + 1
+    
+    // Save back to inventory
+    // Original: setInInventory(the user of gMulleGlobals, #DrivenTimes, tmpAllDriv)
+    user.setInInventory('DrivenTimes', drivenTimes)
+    
+    this.drivenTimesTracked = true
+    this.currentDrivenType = this.currentPropulsion
+    
+    console.log('[DriveBoat] Tracked DrivenTimes:', typeName, '=', drivenTimes[typeName])
+  }
+
+  /**
+   * Called when stamina is low - for UI notifications
+   */
+  onLowStamina () {
+    console.log('[DriveBoat] Low stamina warning!')
+    // This will be handled by seaworld.js for UI display
+    if (this.state && this.state.onLowStamina) {
+      this.state.onLowStamina(this.staminaCurrent, this.staminaMax)
+    }
+  }
+
+  /**
+   * Refuel the boat (called from fuel station or boatyard)
+   */
+  refuel (amount) {
+    if (this.fuelMax > 0) {
+      this.fuelCurrent = Math.min(this.fuelMax, this.fuelCurrent + amount)
+      this.outOfFuel = false
+      this.fuelWarningShown = false
+      
+      // If we were drifting due to no fuel, restore motor propulsion
+      if (this.hasEngine && this.currentPropulsion !== PropulsionType.MOTOR) {
+        this.currentPropulsion = PropulsionType.MOTOR
+        this.enabled = true
+        this.updateMaxSpeedForPropulsion()
+      }
+      
+      console.log('[DriveBoat] Refueled to', this.fuelCurrent + '/' + this.fuelMax)
+    }
+  }
+
+  /**
+   * Get fuel percentage (0-1)
+   */
+  getFuelPercentage () {
+    if (this.fuelMax <= 0) return 1 // Non-motor boats are always "full"
+    return this.fuelCurrent / this.fuelMax
+  }
+
+  /**
+   * Get stamina percentage (0-1)
+   */
+  getStaminaPercentage () {
+    if (this.staminaMax <= 0) return 1 // Non-rowing boats are always "full"
+    return this.staminaCurrent / this.staminaMax
+  }
+
+  /**
+   * Consume 1 Belly snack unit to restore fuel/stamina
+   * Belly snacks can be used to refuel motor boats or restore stamina for rowing
+   * @returns {boolean} True if Belly was consumed, false if none available
+   */
+  consumeBelly () {
+    const user = this.game.mulle.user
+    if (!user || !user.SeaInventory || !user.SeaInventory.items || !user.SeaInventory.items.Belly) {
+      console.log('[DriveBoat] No Belly snacks available')
+      return false
+    }
+
+    const belly = user.SeaInventory.items.Belly
+    if (!belly.nr || belly.nr <= 0) {
+      console.log('[DriveBoat] Belly snacks depleted!')
+      return false
+    }
+
+    belly.nr--
+    console.log('[DriveBoat] Consumed 1 Belly snack. Remaining:', belly.nr)
+
+    if (belly.nr <= 0) {
+      delete user.SeaInventory.items.Belly
+      console.log('[DriveBoat] Belly snacks exhausted - item removed from inventory')
+    }
+
+    user.save()
+
+    const bellyFuelRestore = 25
+    const bellyStaminaRestore = 30
+
+    if (this.hasEngine && this.fuelMax > 0) {
+      const fuelNeeded = this.fuelMax - this.fuelCurrent
+      const fuelToRestore = Math.min(bellyFuelRestore, fuelNeeded)
+      this.fuelCurrent = Math.min(this.fuelMax, this.fuelCurrent + fuelToRestore)
+      console.log('[DriveBoat] Belly restored fuel:', fuelToRestore, '→', this.fuelCurrent + '/' + this.fuelMax)
+      this.outOfFuel = false
+      this.fuelWarningShown = false
+
+      if (this.currentPropulsion === PropulsionType.NONE || this.currentPropulsion !== PropulsionType.MOTOR) {
+        const oldPropulsion = this.currentPropulsion
+        this.currentPropulsion = PropulsionType.MOTOR
+        this.enabled = true
+        this.updateMaxSpeedForPropulsion()
+        if (this.state && this.state.onPropulsionChange) {
+          this.state.onPropulsionChange(oldPropulsion, this.currentPropulsion)
+        }
+      }
+    }
+
+    if (this.hasOars && this.staminaMax > 0) {
+      const staminaNeeded = this.staminaMax - this.staminaCurrent
+      const staminaToRestore = Math.min(bellyStaminaRestore, staminaNeeded)
+      this.staminaCurrent = Math.min(this.staminaMax, this.staminaCurrent + staminaToRestore)
+      console.log('[DriveBoat] Belly restored stamina:', staminaToRestore, '→', this.staminaCurrent + '/' + this.staminaMax)
+      this.outOfStamina = false
+      this.staminaWarningShown = false
+    }
+
+    return true
+  }
+
+  /**
+   * Get current Belly snack count
+   * @returns {number} Number of Belly snacks (0 if none)
+   */
+  getBellyCount () {
+    const user = this.game.mulle.user
+    if (!user || !user.SeaInventory || !user.SeaInventory.items || !user.SeaInventory.items.Belly) {
+      return 0
+    }
+    return user.SeaInventory.items.Belly.nr || 0
+  }
+
+  /**
+   * Check if player has Belly snacks
+   * @returns {boolean}
+   */
+  hasBelly () {
+    return this.getBellyCount() > 0
+  }
+
+  /**
+   * Check if boat can still move
+   */
+  canMove () {
+    switch (this.currentPropulsion) {
+      case PropulsionType.MOTOR:
+        return this.fuelCurrent > 0
+      case PropulsionType.OAR:
+        return this.staminaCurrent > 0
+      case PropulsionType.SAIL:
+        return true // Wind is always available
+      case PropulsionType.NONE:
+      default:
+        return true // Can always drift
+    }
+  }
+
+  /**
+   * Check if boat is within sea bounds
+   */
+  checkBounds () {
+    const margin = 50
+
+    if (this.x < margin) {
+      this.x = margin
+      this.OutOfBounds = -1
+    } else if (this.x > 640 - margin) {
+      this.x = 640 - margin
+      this.OutOfBounds = 1
+    }
+
+    if (this.y < margin) {
+      this.y = margin
+      this.OutOfBounds = -2
+    } else if (this.y > 480 - margin) {
+      this.y = 480 - margin
+      this.OutOfBounds = 2
+    }
+  }
+
+  /**
+   * Start engine sound
+   */
+  /**
+   * ITEM #109: Start engine sound with proper sound selection
+   * Original: MotorBoatAncestor.ls uses 8 different engine sounds
+   */
+  startEngine () {
+    if (this.engineRunning) return
+    this.engineRunning = true
+
+    if (this.hasEngine) {
+      // Get engine sound type from boat properties
+      const boat = this.game.mulle.user.Boat
+      const engineSound = boat && boat.properties ? boat.properties.enginesound || 1 : 1
+      this.currentEngineType = Math.min(8, Math.max(1, engineSound))
+      
+      // Get pitch percent and volume for this engine type
+      this.pitchPercent = this.pitchPercents[this.currentEngineType - 1]
+      const volume = this.motorVolumes[this.currentEngineType - 1] / 100
+      
+      // Select engine sound (use third sound from the array as base)
+      const soundName = this.motorSounds[this.currentEngineType - 1][2]
+      
+      // Play looping engine sound
+      this.currentMotorSound = this.game.mulle.playAudio(soundName, true)
+      if (this.currentMotorSound) {
+        this.currentMotorSound.volume = volume
+      }
+      
+      console.log('[DriveBoat] Started engine type', this.currentEngineType, 'sound:', soundName)
+    }
+  }
+  
+  /**
+   * ITEM #110: Update engine sound with dynamic pitch
+   * Original: MotorBoatAncestor.ls:137
+   * freq = 22050 + (pitchPercent * speed * 20000 / 100 / 100)
+   */
+  updateEngineSound () {
+    if (!this.engineRunning || !this.currentMotorSound) return
+    
+    // Calculate dynamic pitch based on speed
+    // freq = 22050 + (pitchPercent * speed * 20000 / 100 / 100)
+    const absSpeed = Math.abs(this.speed)
+    this.dynamicPitch = 22050 + (this.pitchPercent * absSpeed * 20000 / 100 / 100)
+    
+    // Apply pitch to sound (if Phaser sound supports playbackRate)
+    if (this.currentMotorSound.playbackRate !== undefined) {
+      this.currentMotorSound.playbackRate = this.dynamicPitch / 22050
+    }
+  }
+
+  /**
+   * Stop engine sound
+   */
+  stopEngine () {
+    if (!this.engineRunning) return
+    this.engineRunning = false
+
+    if (this.currentMotorSound) {
+      this.currentMotorSound.stop()
+      this.currentMotorSound = null
+    }
+  }
+  
+  /**
+   * #106, #189: Collision damage and crash sounds
+   * Original: BoatBase.ls crashed() method
+   * Reduces durability when hitting obstacles
+   * BUG FIX #4: COLLISION DAMAGE 100X TOO STRONG
+   * @param {number} speed - Impact speed
+   */
+  crashed (speed) {
+    const now = this.game.time.now
+    
+    // #189: Play crash sound (with cooldown to prevent spam)
+    if (now - this.lastCrashTime > this.crashCooldown) {
+      const absSpeed = Math.abs(speed)
+      
+      // BUG FIX #10: Crash sound threshold should be 50% of max speed, not 3
+      // Max speed is typically 600-700, so 50% = 300-350
+      const heavyCrashThreshold = this.maxSpeed * 0.5
+      
+      // Choose crash sound based on impact severity
+      let crashSound = this.engineSounds.crash
+      if (absSpeed > heavyCrashThreshold) {
+        crashSound = this.engineSounds.crashHeavy
+      }
+      
+      this.game.mulle.playAudio(crashSound)
+      this.lastCrashTime = now
+      
+      console.log('[DriveBoat] Crash! Speed:', absSpeed.toFixed(2))
+    }
+    
+    // BUG FIX #4: Reduce durability based on impact speed
+    // Original uses speed directly (not * 100) because Durability is already scaled by 1000
+    // Speed range is 0-700, so damage should be abs(speed), not abs(speed) * 100
+    if (this.Durability !== null && this.Durability !== undefined) {
+      // Calculate damage: higher speed = more damage
+      // BUG FIX: Was speed * 100, should be just speed (already in correct range)
+      const crashDamage = Math.abs(speed)
+      this.Durability -= crashDamage
+      
+      console.log('[DriveBoat] Durability:', this.Durability, '/', this.maxDurability, '(damage:', crashDamage, ')')
+      
+      // Check if boat broke
+      if (this.Durability <= 0) {
+        this.handleBoatBreak()
+      } else if (this.Durability < this.maxDurability * 0.2) {
+        // Low durability warning
+        this.handleLowDurability()
+      }
+    }
+  }
+  
+  /**
+   * Handle boat breaking due to zero durability
+   */
+  handleBoatBreak () {
+    console.log('[DriveBoat] BOAT BROKE! Durability reached 0')
+    this.enabled = false
+    
+    // Play boat breaking sound/dialogue
+    // Original would trigger sink sequence: go("Sink")
+    if (this.state && this.state.onBoatBreak) {
+      this.state.onBoatBreak()
+    }
+  }
+  
+  /**
+   * Handle low durability warning
+   */
+  handleLowDurability () {
+    console.log('[DriveBoat] Low durability warning!')
+    
+    if (this.state && this.state.onLowDurability) {
+      this.state.onLowDurability(this.Durability, this.maxDurability)
+    }
+  }
+  
+  /**
+   * #98-99: Check for capsize and lurch warnings
+   * Original: BoatBase.ls lines 414-427
+   * @param {number} sideAngle - Current boat tilt angle
+   */
+  checkCapsize (sideAngle) {
+    const absSideAngle = Math.abs(sideAngle)
+    
+    // #98: Capsize detection - sideAngle > 30 = capsize
+    if (absSideAngle > 30) {
+      console.log('[DriveBoat] CAPSIZE! Angle:', absSideAngle)
+      this.enabled = false
+      
+      // Play capsize sound/dialogue
+      // Original: say(the mulleTalkObject of gDir, #Capsize, 1, me, #Q, #GoHome)
+      if (this.state && this.state.onCapsize) {
+        this.state.onCapsize(sideAngle)
+      }
+      
+      return
+    }
+    
+    // #99: Lurch warnings
+    const now = this.game.time.now
+    
+    // LurchHard at 27 degrees
+    if (absSideAngle > 27 && now - this.lastLurchWarning > 5000) {
+      console.log('[DriveBoat] LURCH HARD! Angle:', absSideAngle)
+      // Original: say(the mulleTalkObject of gDir, #LurchHard, 0, 0, #Q, 0, 100)
+      this.lastLurchWarning = now
+      
+      if (this.state && this.state.onLurch) {
+        this.state.onLurch('hard', absSideAngle)
+      }
+    } 
+    // LurchEasy at 23 degrees
+    else if (absSideAngle > 23 && now - this.lastLurchWarning > 5000) {
+      console.log('[DriveBoat] Lurch easy. Angle:', absSideAngle)
+      // Original: say(the mulleTalkObject of gDir, #LurchEasy, 0, 0, #Q, 0, 100)
+      this.lastLurchWarning = now
+      
+      if (this.state && this.state.onLurch) {
+        this.state.onLurch('easy', absSideAngle)
+      }
+    }
+  }
+  
+  /**
+   * #107: Apply weather drift from wind
+   * Original: BoatBase.ls lines 361-370
+   * drift = 90 * Drift * windVelPoint / 100 / 100
+   */
+  applyWeatherDrift () {
+    // Get wind from weather system (if available)
+    const weather = this.game.mulle.weather
+    if (!weather || !weather.windVelocity) return
+    
+    const windVelPoint = weather.windVelocity || { x: 0, y: 0 }
+    const driftFactor = this.driftFactor || 0
+    
+    // Calculate drift: 90 * Drift * windVelPoint / 100 / 100
+    const driftX = 90 * driftFactor * windVelPoint.x / 100 / 100
+    const driftY = 90 * driftFactor * windVelPoint.y / 100 / 100
+    
+    // Apply drift to position
+    this.x += driftX
+    this.y += driftY
+  }
+
+  /**
+   * Clean up when boat is removed
+   */
+  destroy () {
+    // Save inventory state before destroying
+    this.saveInventoryState()
+    
+    if (this.logicLoop) {
+      this.game.time.events.remove(this.logicLoop)
+    }
+    this.stopEngine()
+    super.destroy()
+  }
+
+  /**
+   * Get spawn line data for a given direction index
+   * Used when entering seaworld from a specific edge/direction
+   * @param {number} index - Direction index (0-15)
+   * @returns {Object} Spawn data with pos {x,y} and dir {x,y}
+   */
+  static getSpawnLine (index) {
+    if (index < 0 || index >= SPAWN_LINES.length) {
+      index = 0
+    }
+    return SPAWN_LINES[index]
+  }
+
+  /**
+   * Get spawn line for entering from a map edge
+   * @param {string} edge - 'north', 'south', 'east', 'west'
+   * @returns {Object} Best spawn line for that edge
+   */
+  static getSpawnLineForEdge (edge) {
+    // Map edges to spawn line indices (16 directions around the screen)
+    // Spawn lines are arranged clockwise starting from South-Southwest
+    // Index 0: bottom-left area, Index 4: top-left, Index 8: top-right, Index 12: bottom-right
+    const edgeMap = {
+      'south': 0,   // Enter from south - spawn at bottom, face north
+      'southwest': 1,
+      'west': 3,    // Enter from west - spawn at left, face east
+      'northwest': 5,
+      'north': 7,   // Enter from north - spawn at top, face south
+      'northeast': 9,
+      'east': 11,   // Enter from east - spawn at right, face west
+      'southeast': 13
+    }
+    
+    const index = edgeMap[edge.toLowerCase()] || 0
+    return SPAWN_LINES[index]
+  }
+
+  /**
+   * Get the direction index (1-16) that corresponds to a spawn line's direction vector
+   * @param {Object} spawnLine - Spawn line with dir {x,y}
+   * @returns {number} Direction index (1-16) for setDirection()
+   */
+  static getDirectionFromSpawnLine (spawnLine) {
+    // Find the closest match in DIRECTION_LIST
+    const dirX = spawnLine.dir.x
+    const dirY = spawnLine.dir.y
+    
+    let bestMatch = 1
+    let bestDist = Infinity
+    
+    for (let i = 0; i < DIRECTION_LIST.length; i++) {
+      const dx = DIRECTION_LIST[i].x - dirX
+      const dy = DIRECTION_LIST[i].y - dirY
+      const dist = dx * dx + dy * dy
+      
+      if (dist < bestDist) {
+        bestDist = dist
+        bestMatch = i + 1 // Directions are 1-indexed
+      }
+    }
+    
+    return bestMatch
+  }
+
+  /**
+   * Get all spawn lines (for debugging/visualization)
+   * @returns {Array} Array of all 16 spawn lines
+   */
+  static getAllSpawnLines () {
+    return SPAWN_LINES
+  }
+}
+
+// Export constants for external use
+MulleDriveBoat.SPAWN_LINES = SPAWN_LINES
+MulleDriveBoat.DIRECTION_LIST = DIRECTION_LIST
+MulleDriveBoat.AMPLITUDE_LIST = AMPLITUDE_LIST
+
+export default MulleDriveBoat

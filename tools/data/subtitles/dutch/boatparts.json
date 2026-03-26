@@ -1,0 +1,44 @@
+{
+  "02d002v0": {
+    "lines": [
+      "Alles werkt prima.",
+      "Je moet maar hard genoeg je best doen.",
+      "Wil je het eens proberen?"
+    ],
+    "actor": "christina"
+  },
+  "02d003v0": {
+    "lines": [
+      "Alles komt ooit nog wel eens van pas."
+    ],
+    "actor": "christina"
+  },
+  "02d004v0": {
+    "lines": [
+      "Toestellen, apparaten, groot of klein,",
+      "je zegt het maar.",
+      "Gewoonweg alles kun je opnieuw gebruiken.",
+      "Neem dat maar van me aan."
+    ],
+    "actor": "christina"
+  },
+  "03d011v0": {
+    "lines": [
+      "De werkplaats ligt vol!"
+    ],
+    "actor": "christina"
+  },
+  "03d012v0": {
+    "lines": [
+      "Er is geen plaats meer."
+    ],
+    "actor": "christina"
+  },
+  "03d014v0": {
+    "lines": [
+      "Nee, hier is geen plaats meer",
+      "voor nog meer rommel..."
+    ],
+    "actor": "christina"
+  }
+}

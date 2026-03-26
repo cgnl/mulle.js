@@ -1,0 +1,192 @@
+{
+  "tools/build_data/Movies/drxtract/85.DXR/score.json": {
+    "dirFile": "85.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 15
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 2
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/84.DXR/score.json": {
+    "dirFile": "84.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 15
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 2
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/86.DXR/score.json": {
+    "dirFile": "86.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": "86b001v0",
+        "frames": 35
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 4
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/87.DXR/score.json": {
+    "dirFile": "87.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 77
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 2
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/83.DXR/score.json": {
+    "dirFile": "83.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": "83b001v0",
+        "frames": 224
+      },
+      {
+        "castId": 2,
+        "dirName": "83b002v0",
+        "frames": 3
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/82.DXR/score.json": {
+    "dirFile": "82.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": "82b001v0",
+        "frames": 115
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 3
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/04.DXR/score.json": {
+    "dirFile": "04.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 13
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 12
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/05.DXR/score.json": {
+    "dirFile": "05.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 16
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 3
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/89.DXR/score.json": {
+    "dirFile": "89.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": "89b001v0",
+        "frames": 30
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 4
+      }
+    ]
+  },
+  "tools/build_data/Movies/drxtract/88.DXR/score.json": {
+    "dirFile": "88.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 60
+      },
+      {
+        "castId": 2,
+        "dirName": null,
+        "frames": 4
+      }
+    ]
+  },
+  "tools/build_data/BoatsMovies/drxtract/boten_05.dxr/score.json": {
+    "dirFile": "boten_05.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 8
+      }
+    ]
+  },
+  "tools/build_data/BoatsMovies/drxtract/boten_77.dxr/score.json": {
+    "dirFile": "boten_77.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 1992
+      },
+      {
+        "castId": 3,
+        "dirName": null,
+        "frames": 1
+      }
+    ]
+  },
+  "tools/build_data/BoatsMovies/drxtract/boten_79.dxr/score.json": {
+    "dirFile": "boten_79.DXR",
+    "backgrounds": [
+      {
+        "castId": 1,
+        "dirName": null,
+        "frames": 140
+      },
+      {
+        "castId": 3,
+        "dirName": null,
+        "frames": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,1655 @@
+{
+  "0": {
+    "MapId": 0,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "2": {
+    "MapId": 2,
+    "MapImage": "30b001v0",
+    "Topology": "30t001v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "3": {
+    "MapId": 3,
+    "MapImage": "30b002v0",
+    "Topology": "30t002v0",
+    "objects": [
+      [
+        25,
+        {
+          "x": 552,
+          "y": 305
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "5": {
+    "MapId": 5,
+    "MapImage": "30b088v0",
+    "Topology": "30t088v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "6": {
+    "MapId": 6,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "7": {
+    "MapId": 7,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "8": {
+    "MapId": 8,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d08"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "9": {
+    "MapId": 9,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d02"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "10": {
+    "MapId": 10,
+    "MapImage": "30b066v0",
+    "Topology": "30t066v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d07"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "11": {
+    "MapId": 11,
+    "MapImage": "30b004v0",
+    "Topology": "30t004v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "12": {
+    "MapId": 12,
+    "MapImage": "30b005v0",
+    "Topology": "30t005v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "13": {
+    "MapId": 13,
+    "MapImage": "30b006v0",
+    "Topology": "30t006v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "14": {
+    "MapId": 14,
+    "MapImage": "30b007v0",
+    "Topology": "30t007v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#1"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "15": {
+    "MapId": 15,
+    "MapImage": "Dummy",
+    "Topology": "30t067v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b067v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "16": {
+    "MapId": 16,
+    "MapImage": "30b008v0",
+    "Topology": "30t008v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "17": {
+    "MapId": 17,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "18": {
+    "MapId": 18,
+    "MapImage": "30b068v0",
+    "Topology": "30t068v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d04"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "19": {
+    "MapId": 19,
+    "MapImage": "30b009v0",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        26,
+        {
+          "x": 319,
+          "y": 176
+        }
+      ],
+      [
+        7,
+        {
+          "x": 306,
+          "y": 195
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2",
+      "#Fog": true,
+      "#FreeZone": true
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "20": {
+    "MapId": 20,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d03"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "21": {
+    "MapId": 21,
+    "MapImage": "30b010v0",
+    "Topology": "30t010v0",
+    "objects": [
+      [
+        20,
+        {
+          "x": 342,
+          "y": 284
+        }
+      ],
+      [
+        43,
+        {
+          "x": 456,
+          "y": 218
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "22": {
+    "MapId": 22,
+    "MapImage": "30b011v0",
+    "Topology": "30t011v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "23": {
+    "MapId": 23,
+    "MapImage": "30b012v0",
+    "Topology": "30t012v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#1"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "24": {
+    "MapId": 24,
+    "MapImage": "30b013v0",
+    "Topology": "30t013v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 390,
+          "y": 278
+        }
+      ],
+      [
+        5,
+        {
+          "x": 390,
+          "y": 278
+        }
+      ],
+      [
+        6,
+        {
+          "x": 390,
+          "y": 278
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#1"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "25": {
+    "MapId": 25,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "26": {
+    "MapId": 26,
+    "MapImage": "30b014v0",
+    "Topology": "30t014v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "27": {
+    "MapId": 27,
+    "MapImage": "30b015v0",
+    "Topology": "30t015v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "28": {
+    "MapId": 28,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d06"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "29": {
+    "MapId": 29,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d01"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "30": {
+    "MapId": 30,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [
+      [
+        8,
+        {
+          "x": 320,
+          "y": 200
+        },
+        {
+          "#Pic": "d05"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "31": {
+    "MapId": 31,
+    "MapImage": "30b016v0",
+    "Topology": "30t016v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "32": {
+    "MapId": 32,
+    "MapImage": "30b017v0",
+    "Topology": "30t017v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 500,
+          "y": 91
+        }
+      ],
+      [
+        5,
+        {
+          "x": 500,
+          "y": 91
+        }
+      ],
+      [
+        6,
+        {
+          "x": 500,
+          "y": 91
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": 0
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "33": {
+    "MapId": 33,
+    "MapImage": "30b018v0",
+    "Topology": "30t018v0",
+    "objects": [
+      [
+        18,
+        {
+          "x": 169,
+          "y": 195
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#1"
+    },
+    "UnderMapImage": "30b018v2",
+    "DirFile": "boten_80.DXR"
+  },
+  "34": {
+    "MapId": 34,
+    "MapImage": "Dummy",
+    "Topology": "30t079v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b079v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "35": {
+    "MapId": 35,
+    "MapImage": "30b069v0",
+    "Topology": "30t069v0",
+    "objects": [
+      [
+        10,
+        {
+          "x": 320,
+          "y": 200
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "36": {
+    "MapId": 36,
+    "MapImage": "30b019v0",
+    "Topology": "30t019v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "37": {
+    "MapId": 37,
+    "MapImage": "30b020v0",
+    "Topology": "30t020v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "38": {
+    "MapId": 38,
+    "MapImage": "30b021v0",
+    "Topology": "30t021v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "39": {
+    "MapId": 39,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "40": {
+    "MapId": 40,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "42": {
+    "MapId": 42,
+    "MapImage": "30b023v0",
+    "Topology": "30t023v0",
+    "objects": [
+      [
+        2,
+        {
+          "x": 425,
+          "y": 75
+        },
+        {
+          "#EnterDir": 12,
+          "#Board": {
+            "x": 549,
+            "y": 355
+          }
+        }
+      ],
+      [
+        49,
+        {
+          "x": 589,
+          "y": 196
+        },
+        {
+          "#Sound": "82d004v0"
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": "30b023v2",
+    "DirFile": "boten_80.DXR"
+  },
+  "43": {
+    "MapId": 43,
+    "MapImage": "30b024v0",
+    "Topology": "30t024v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 44,
+          "y": 138
+        }
+      ],
+      [
+        5,
+        {
+          "x": 44,
+          "y": 138
+        }
+      ],
+      [
+        6,
+        {
+          "x": 44,
+          "y": 138
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": "30b080v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "44": {
+    "MapId": 44,
+    "MapImage": "Dummy",
+    "Topology": "30t070v0",
+    "objects": [
+      [
+        11,
+        {
+          "x": 406,
+          "y": 172
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#1"
+    },
+    "UnderMapImage": "30b070v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "45": {
+    "MapId": 45,
+    "MapImage": "Dummy",
+    "Topology": "30t081v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b081v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "46": {
+    "MapId": 46,
+    "MapImage": "30b025v0",
+    "Topology": "30t025v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "47": {
+    "MapId": 47,
+    "MapImage": "30b026v0",
+    "Topology": "30t026v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#Full"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "48": {
+    "MapId": 48,
+    "MapImage": "30b027v0",
+    "Topology": "30t027v0",
+    "objects": [
+      [
+        28,
+        {
+          "x": 285,
+          "y": 170
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "49": {
+    "MapId": 49,
+    "MapImage": "Dummy",
+    "Topology": "30t071v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": "30b071v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "50": {
+    "MapId": 50,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "51": {
+    "MapId": 51,
+    "MapImage": "30b028v0",
+    "Topology": "30t028v0",
+    "objects": [
+      [
+        17,
+        {
+          "x": 423,
+          "y": 100
+        }
+      ],
+      [
+        4,
+        {
+          "x": 317,
+          "y": 368
+        }
+      ],
+      [
+        5,
+        {
+          "x": 317,
+          "y": 368
+        }
+      ],
+      [
+        6,
+        {
+          "x": 317,
+          "y": 368
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "52": {
+    "MapId": 52,
+    "MapImage": "30b029v0",
+    "Topology": "30t029v0",
+    "objects": [
+      [
+        3,
+        {
+          "x": 490,
+          "y": 152
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "53": {
+    "MapId": 53,
+    "MapImage": "30b030v0",
+    "Topology": "30t030v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 378,
+          "y": 374
+        }
+      ],
+      [
+        5,
+        {
+          "x": 378,
+          "y": 374
+        }
+      ],
+      [
+        9,
+        {
+          "x": 320,
+          "y": 202
+        },
+        {
+          "#Rate": 2
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "54": {
+    "MapId": 54,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "55": {
+    "MapId": 55,
+    "MapImage": "30b031v0",
+    "Topology": "30t031v0",
+    "objects": [
+      [
+        19,
+        {
+          "x": 210,
+          "y": 173
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "56": {
+    "MapId": 56,
+    "MapImage": "30b032v0",
+    "Topology": "30t032v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b082v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "57": {
+    "MapId": 57,
+    "MapImage": "30b033v0",
+    "Topology": "30t033v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "58": {
+    "MapId": 58,
+    "MapImage": "30b034v0",
+    "Topology": "30t034v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "59": {
+    "MapId": 59,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "60": {
+    "MapId": 60,
+    "MapImage": "30b072v0",
+    "Topology": "30t072v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "61": {
+    "MapId": 61,
+    "MapImage": "30b035v0",
+    "Topology": "30t035v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "62": {
+    "MapId": 62,
+    "MapImage": "30b036v0",
+    "Topology": "30t036v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 337,
+          "y": 351
+        }
+      ],
+      [
+        5,
+        {
+          "x": 337,
+          "y": 351
+        }
+      ],
+      [
+        6,
+        {
+          "x": 337,
+          "y": 351
+        }
+      ],
+      [
+        42,
+        {
+          "x": 320,
+          "y": 204
+        },
+        {
+          "#FrameList": "[\"31b005v0\"]",
+          "#CheckPoints": "[point(543, 358)]"
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "63": {
+    "MapId": 63,
+    "MapImage": "30b037v0",
+    "Topology": "30t037v0",
+    "objects": [
+      [
+        16,
+        {
+          "x": 253,
+          "y": 89
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "64": {
+    "MapId": 64,
+    "MapImage": "30b038v0",
+    "Topology": "30t038v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "65": {
+    "MapId": 65,
+    "MapImage": "Dummy",
+    "Topology": "30t083v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b083v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "66": {
+    "MapId": 66,
+    "MapImage": "30b039v0",
+    "Topology": "30t039v0",
+    "objects": [
+      [
+        10,
+        {
+          "x": 140,
+          "y": 130
+        }
+      ],
+      [
+        47,
+        {
+          "x": 306,
+          "y": 289
+        },
+        {
+          "#Show": "Bensinmack"
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "67": {
+    "MapId": 67,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "68": {
+    "MapId": 68,
+    "MapImage": "30b073v0",
+    "Topology": "30t073v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "69": {
+    "MapId": 69,
+    "MapImage": "30b074v0",
+    "Topology": "30t074v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "70": {
+    "MapId": 70,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "72": {
+    "MapId": 72,
+    "MapImage": "30b040v0",
+    "Topology": "30t040v0",
+    "objects": [
+      [
+        42,
+        {
+          "x": 320,
+          "y": 204
+        },
+        {
+          "#FrameList": "[\"31b006v0\"]",
+          "#CheckPoints": "[point(219, 94), point(123,114), point(166, 113)]"
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "73": {
+    "MapId": 73,
+    "MapImage": "30b041v0",
+    "Topology": "30t041v0",
+    "objects": [
+      [
+        21,
+        {
+          "x": 562,
+          "y": 164
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "74": {
+    "MapId": 74,
+    "MapImage": "30b042v0",
+    "Topology": "30t042v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "75": {
+    "MapId": 75,
+    "MapImage": "30b043v0",
+    "Topology": "30t043v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 379,
+          "y": 167
+        }
+      ],
+      [
+        5,
+        {
+          "x": 379,
+          "y": 167
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "76": {
+    "MapId": 76,
+    "MapImage": "Dummy",
+    "Topology": "30t085v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": "30b085v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "77": {
+    "MapId": 77,
+    "MapImage": "Dummy",
+    "Topology": "30t075v0",
+    "objects": [
+      [
+        11,
+        {
+          "x": 208,
+          "y": 144
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": "30b075v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "78": {
+    "MapId": 78,
+    "MapImage": "Dummy",
+    "Topology": "30t076v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": "30b076v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "79": {
+    "MapId": 79,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "80": {
+    "MapId": 80,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "81": {
+    "MapId": 81,
+    "MapImage": "30b044v0",
+    "Topology": "30t044v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "82": {
+    "MapId": 82,
+    "MapImage": "30b045v0",
+    "Topology": "30t045v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "83": {
+    "MapId": 83,
+    "MapImage": "30b046v0",
+    "Topology": "30t046v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "84": {
+    "MapId": 84,
+    "MapImage": "30b047v0",
+    "Topology": "30t047v0",
+    "objects": [
+      [
+        47,
+        {
+          "x": 272,
+          "y": 269
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": "30b087v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "85": {
+    "MapId": 85,
+    "MapImage": "Dummy",
+    "Topology": "30t086v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b086v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "86": {
+    "MapId": 86,
+    "MapImage": "30b048v0",
+    "Topology": "30t048v0",
+    "objects": [
+      [
+        40,
+        {
+          "x": 640,
+          "y": 400
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "87": {
+    "MapId": 87,
+    "MapImage": "30b049v0",
+    "Topology": "30t049v0",
+    "objects": [
+      [
+        40,
+        {
+          "x": 4,
+          "y": 400
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "88": {
+    "MapId": 88,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "89": {
+    "MapId": 89,
+    "MapImage": "30b050v0",
+    "Topology": "30t050v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "90": {
+    "MapId": 90,
+    "MapImage": "30b051v0",
+    "Topology": "30t051v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "91": {
+    "MapId": 91,
+    "MapImage": "30b052v0",
+    "Topology": "30t052v0",
+    "objects": [
+      [
+        24,
+        {
+          "x": 204,
+          "y": 189
+        }
+      ],
+      [
+        42,
+        {
+          "x": 320,
+          "y": 204
+        },
+        {
+          "#FrameList": "[\"31b007v0\"]",
+          "#CheckPoints": "[point(433, 108)]"
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "92": {
+    "MapId": 92,
+    "MapImage": "30b053v0",
+    "Topology": "30t053v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "93": {
+    "MapId": 93,
+    "MapImage": "30b054v0",
+    "Topology": "30t054v0",
+    "objects": [
+      [
+        4,
+        {
+          "x": 166,
+          "y": 275
+        }
+      ],
+      [
+        5,
+        {
+          "x": 166,
+          "y": 275
+        }
+      ]
+    ],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "94": {
+    "MapId": 94,
+    "MapImage": "30b055v0",
+    "Topology": "30t055v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "95": {
+    "MapId": 95,
+    "MapImage": "Dummy",
+    "Topology": "30t077v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": "30b077v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "96": {
+    "MapId": 96,
+    "MapImage": "30b056v0",
+    "Topology": "30t056v0",
+    "objects": [
+      [
+        40,
+        {
+          "x": 640,
+          "y": 200
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "97": {
+    "MapId": 97,
+    "MapImage": "30b057v0",
+    "Topology": "30t057v0",
+    "objects": [
+      [
+        23,
+        {
+          "x": 144,
+          "y": 263
+        }
+      ],
+      [
+        40,
+        {
+          "x": 4,
+          "y": 200
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#3"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "98": {
+    "MapId": 98,
+    "MapImage": "Dummy",
+    "Topology": "30t078v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": "30b078v0",
+    "DirFile": "boten_80.DXR"
+  },
+  "99": {
+    "MapId": 99,
+    "MapImage": "30b058v0",
+    "Topology": "30t058v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "100": {
+    "MapId": 100,
+    "MapImage": "30b059v0",
+    "Topology": "30t059v0",
+    "objects": [
+      [
+        27,
+        {
+          "x": 286,
+          "y": 54
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "101": {
+    "MapId": 101,
+    "MapImage": "30b060v0",
+    "Topology": "30t060v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "102": {
+    "MapId": 102,
+    "MapImage": "30b061v0",
+    "Topology": "30t061v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "103": {
+    "MapId": 103,
+    "MapImage": "30b062v0",
+    "Topology": "30t062v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "104": {
+    "MapId": 104,
+    "MapImage": "30b063v0",
+    "Topology": "30t063v0",
+    "objects": [],
+    "Special": null,
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "105": {
+    "MapId": 105,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "106": {
+    "MapId": 106,
+    "MapImage": "30b064v0",
+    "Topology": "30t064v0",
+    "objects": [
+      [
+        40,
+        {
+          "x": 640,
+          "y": 4
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "107": {
+    "MapId": 107,
+    "MapImage": "30b065v0",
+    "Topology": "30t065v0",
+    "objects": [
+      [
+        40,
+        {
+          "x": 4,
+          "y": 4
+        }
+      ]
+    ],
+    "Special": {
+      "#WindSpeed": "#2"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "108": {
+    "MapId": 108,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#4"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "109": {
+    "MapId": 109,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  },
+  "110": {
+    "MapId": 110,
+    "MapImage": "Dummy",
+    "Topology": "30t999v0",
+    "objects": [],
+    "Special": {
+      "#WindSpeed": "#5"
+    },
+    "UnderMapImage": null,
+    "DirFile": "boten_80.DXR"
+  }
+}

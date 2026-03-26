@@ -1,0 +1,3811 @@
+{
+  "overall_score": 100.0,
+  "total_checks": 1182,
+  "total_found": 1182,
+  "total_missing": 0,
+  "folders_verified": 51,
+  "folders_no_js": 0,
+  "folders_skipped": 10,
+  "folders": {
+    "00": {
+      "status": "VERIFIED",
+      "js_files": [
+        "album.js",
+        "carshow.js",
+        "credits.js",
+        "diploma.js",
+        "dlcshop.js",
+        "dorisdigital.js",
+        "figgeferrum.js",
+        "filebrowser.js",
+        "garage.js",
+        "junk.js",
+        "luddelabb.js",
+        "menu.js",
+        "mudcar.js",
+        "ocean.js",
+        "roaddog.js",
+        "roadthing.js",
+        "saftfabrik.js",
+        "solhem.js",
+        "sturestortand.js",
+        "treecar.js",
+        "viola.js",
+        "world.js",
+        "worldselect.js",
+        "yard.js",
+        "boatyard.js",
+        "boat_junk.js",
+        "boat_yard.js",
+        "seaworld.js"
+      ],
+      "lingo_scripts": 47,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 4,
+        "found": [
+          "DrivenTimes",
+          "index",
+          "tmpInventory",
+          "tmpItem"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 75,
+        "found": [
+          "00d007v0",
+          "00d008v0",
+          "00d009v0",
+          "00d039v0",
+          "00d041v0",
+          "00d042v0",
+          "00d043v0",
+          "00d044v0",
+          "00d045v0",
+          "00d046v0",
+          "00d048v0",
+          "00d049v0",
+          "00d050v0",
+          "00d051v0",
+          "00d053v0",
+          "00d054v0",
+          "00d055v0",
+          "00d056v0",
+          "00d067v0",
+          "00d069v0",
+          "00d071v0",
+          "00d072v0",
+          "00d073v0",
+          "00d074v0",
+          "00d075v0",
+          "00d076v0",
+          "00d077v0",
+          "00d078v0",
+          "00d079v0",
+          "00e110v0",
+          "03d008v0",
+          "03d009v0",
+          "03d010v0",
+          "03d011v0",
+          "03d012v0",
+          "03d014v0",
+          "03d015v0",
+          "04d009v0",
+          "04d024v0",
+          "04d025v0",
+          "04d026v0",
+          "04d048v0",
+          "04d056v0",
+          "05e018v0",
+          "05e018v1",
+          "05e022v0",
+          "05e026v0",
+          "05e030v0",
+          "05e034v0",
+          "05e053v0",
+          "05e056v0",
+          "09d001v0",
+          "09d002v0",
+          "09d003v0",
+          "09d005v0",
+          "09d006v0",
+          "09d058v0",
+          "09d059v0",
+          "09d060v0",
+          "09d061v0",
+          "09d062v0",
+          "09d063v0",
+          "09d064v0",
+          "20d163v0",
+          "50d001v0",
+          "50d002v0",
+          "50d003v0",
+          "50d004v0",
+          "50d005v0",
+          "50d006v0",
+          "50d007v0",
+          "50d008v0",
+          "50d009v0",
+          "50d013v0",
+          "50d014v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 18,
+        "found": [
+          "HullBackOffset",
+          "HullFrontOffset",
+          "boatViewHandler",
+          "externalParts",
+          "hullBackInsideOffset",
+          "hullFrontInsideOffset",
+          "junkPileHandlers",
+          "junkViewHandler",
+          "levelHandler",
+          "loopMaster",
+          "mouseMaster",
+          "parts",
+          "rudderBackOffset",
+          "rudderFrontOffset",
+          "user",
+          "users",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 3,
+        "found": [
+          "05",
+          "13",
+          "Sink"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "01": {
+      "status": "VERIFIED",
+      "js_files": [
+        "zee_intro.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 27,
+        "found": [
+          "00d001v0",
+          "00d002v0",
+          "00d003v0",
+          "00d004v0",
+          "00d005v0",
+          "00e104v0",
+          "00e107v0",
+          "00e108v0",
+          "00e109v0",
+          "00e110v0",
+          "01d001v0",
+          "01d002v0",
+          "01d003v0",
+          "01d004v0",
+          "01d005v0",
+          "01d006v0",
+          "01d007v0",
+          "01d009v0",
+          "01e001v0",
+          "01e002v0",
+          "01e003v0",
+          "01e005v0",
+          "01e006v0",
+          "01e007v0",
+          "01e008v0",
+          "01e009v0",
+          "01e010v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 6,
+        "found": [
+          "WhereFrom",
+          "boatViewHandler",
+          "firstTimeList",
+          "loopMaster",
+          "user",
+          "weather"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 3,
+        "found": [
+          "04",
+          "15",
+          "Quay"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "02": {
+      "status": "VERIFIED",
+      "js_files": [
+        "junk.js",
+        "boat_junk.js"
+      ],
+      "lingo_scripts": 4,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 10,
+        "found": [
+          "00d001v0",
+          "00d002v0",
+          "00d003v0",
+          "00d004v0",
+          "00d005v0",
+          "00e110v0",
+          "02d002v0",
+          "02d003v0",
+          "02d004v0",
+          "02e003v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 5,
+        "found": [
+          "WhereFrom",
+          "enterShelf",
+          "firstTimeList",
+          "loopMaster",
+          "weather"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "02",
+          "03",
+          "04",
+          "NewShelf"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "03": {
+      "status": "VERIFIED",
+      "js_files": [
+        "garage.js",
+        "boat_yard.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 13,
+        "found": [
+          "00d001v0",
+          "00d002v0",
+          "00d003v0",
+          "00d004v0",
+          "00d005v0",
+          "00e110v0",
+          "03d001v0",
+          "03d002v0",
+          "03d003v0",
+          "03d004v0",
+          "03d005v0",
+          "03d006v0",
+          "03d007v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 7,
+        "found": [
+          "WhereFrom",
+          "enterShelf",
+          "firstTimeList",
+          "gotNewParts",
+          "loopMaster",
+          "user",
+          "weather"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "02",
+          "03",
+          "04",
+          "Gift"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "04": {
+      "status": "VERIFIED",
+      "js_files": [
+        "yard.js",
+        "boatyard.js",
+        "QuayData.js"
+      ],
+      "lingo_scripts": 17,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Belly",
+          "tmpFirst"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 62,
+        "found": [
+          "00d001v0",
+          "00d002v0",
+          "00d003v0",
+          "00d004v0",
+          "00d005v0",
+          "00d010v0",
+          "00d011v0",
+          "00d012v0",
+          "00d013v0",
+          "00d075v0",
+          "00e104v0",
+          "00e107v0",
+          "00e108v0",
+          "00e109v0",
+          "00e110v0",
+          "04d001v0",
+          "04d002v0",
+          "04d003v0",
+          "04d004v0",
+          "04d007v0",
+          "04d010v0",
+          "04d012v0",
+          "04d013v0",
+          "04d014v0",
+          "04d015v0",
+          "04d016v0",
+          "04d017v0",
+          "04d018v0",
+          "04d019v0",
+          "04d020v0",
+          "04d022v0",
+          "04d023v0",
+          "04d027v0",
+          "04d028v0",
+          "04d029v0",
+          "04d030v0",
+          "04d032v0",
+          "04d034v0",
+          "04d035v0",
+          "04d036v0",
+          "04d037v0",
+          "04d038v0",
+          "04d039v0",
+          "04d040v0",
+          "04d041v0",
+          "04d042v0",
+          "04d043v0",
+          "04d044v0",
+          "04d045v0",
+          "04d046v0",
+          "04d047v0",
+          "04d049v0",
+          "04d051v0",
+          "04d052v0",
+          "04d053v0",
+          "04d054v0",
+          "04d055v0",
+          "04e005v0",
+          "04e006v0",
+          "04e998v0",
+          "04e999v0",
+          "50d012v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 9,
+        "found": [
+          "WhereFrom",
+          "externalParts",
+          "firstTimeList",
+          "gotNewHull",
+          "gotNewParts",
+          "loopMaster",
+          "radioHandler",
+          "user",
+          "weather"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 5,
+        "found": [
+          "01",
+          "03",
+          "04",
+          "MetalWorld",
+          "WoodWorld"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 4,
+        "found": [
+          1,
+          2,
+          13,
+          20
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "05": {
+      "status": "VERIFIED",
+      "js_files": [
+        "world.js",
+        "seaworld.js",
+        "SeaWorldData.js"
+      ],
+      "lingo_scripts": 39,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 9,
+        "found": [
+          "Belly",
+          "DrivenTimes",
+          "Fished",
+          "Fishingrod",
+          "MapPiece1",
+          "MapPiece2",
+          "MapPiece3",
+          "Pills",
+          "tmpItem"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 86,
+        "found": [
+          "00e101v0",
+          "00e110v0",
+          "05d001v0",
+          "05d005v0",
+          "05d018v0",
+          "05d023v0",
+          "05d045v0",
+          "05d051v0",
+          "05d055v0",
+          "05d056v0",
+          "05d057v0",
+          "05d066v0",
+          "05d120v0",
+          "05d125v0",
+          "05d126v0",
+          "05d127v0",
+          "05d128v0",
+          "05d129v0",
+          "05d130v0",
+          "05d131v0",
+          "05d135v0",
+          "05d136v0",
+          "05d137v0",
+          "05e008v1",
+          "05e016v0",
+          "05e016v1",
+          "05e018v0",
+          "05e018v1",
+          "05e019v0",
+          "05e019v1",
+          "05e020v0",
+          "05e022v0",
+          "05e023v0",
+          "05e024v0",
+          "05e024v1",
+          "05e026v0",
+          "05e027v0",
+          "05e030v0",
+          "05e031v0",
+          "05e032v1",
+          "05e033v0",
+          "05e033v1",
+          "05e034v0",
+          "05e035v0",
+          "05e043v0",
+          "05e044v0",
+          "05e044v1",
+          "05e052v0",
+          "05e052v1",
+          "05e053v0",
+          "05e054v0",
+          "05e055v0",
+          "05e056v0",
+          "05e057v0",
+          "05e058v0",
+          "05e059v0",
+          "05e060v0",
+          "09d001v0",
+          "09d002v0",
+          "09d003v0",
+          "09d005v0",
+          "09d006v0",
+          "09d058v0",
+          "09d059v0",
+          "09d060v0",
+          "09d061v0",
+          "09d062v0",
+          "09d063v0",
+          "09d064v0",
+          "19d001v0",
+          "19d002v0",
+          "19d003v0",
+          "19d004v0",
+          "19d006v0",
+          "19d007v0",
+          "19d008v0",
+          "19d009v0",
+          "19d010v0",
+          "19d011v0",
+          "19d012v0",
+          "19d013v0",
+          "19d014v0",
+          "19d015v0",
+          "19d016v0",
+          "33e007v0",
+          "33e011v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 12,
+        "found": [
+          "WhereFrom",
+          "availableXtras",
+          "levelHandler",
+          "loopMaster",
+          "maps",
+          "mouseMaster",
+          "parts",
+          "radioHandler",
+          "user",
+          "weather",
+          "world",
+          "worlds"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "01",
+          "08",
+          "13",
+          "Leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          3,
+          14,
+          15
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "AmbienceSound",
+          "MulleSez"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "06": {
+      "status": "VERIFIED",
+      "js_files": [
+        "album.js"
+      ],
+      "lingo_scripts": 19,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 3,
+        "found": [
+          "BluePrint3",
+          "Blueprint1",
+          "Blueprint2"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 11,
+        "found": [
+          "06d001v0",
+          "06d002v0",
+          "06d004v0",
+          "06d007v0",
+          "06e001v0",
+          "06e002v0",
+          "06e003v0",
+          "07d001v0",
+          "07d002v0",
+          "07d003v0",
+          "07d005v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 6,
+        "found": [
+          "WhereFrom",
+          "boatViewHandler",
+          "checkmemory",
+          "loopMaster",
+          "parts",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "04",
+          "Leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "drawBoat"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "08": {
+      "status": "VERIFIED",
+      "js_files": [
+        "diploma.js",
+        "help.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "WhereFrom",
+          "boatViewHandler",
+          "parts",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "Leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "drawBoat"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "10": {
+      "status": "VERIFIED",
+      "js_files": [
+        "menu.js"
+      ],
+      "lingo_scripts": 1,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 1,
+        "found": [
+          "10e001v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "11"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "11": {
+      "status": "VERIFIED",
+      "js_files": [
+        "menu.js"
+      ],
+      "lingo_scripts": 26,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 7,
+        "found": [
+          "11d001v0",
+          "11d003v0",
+          "11d004v0",
+          "11d006v0",
+          "11d007v0",
+          "11d008v0",
+          "70e001v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "WhereFrom",
+          "users"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "03",
+          "12",
+          "IntroStart",
+          "Wait"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "12": {
+      "status": "VERIFIED",
+      "js_files": [
+        "credits.js"
+      ],
+      "lingo_scripts": 23,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "01.dir"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "13": {
+      "status": "VERIFIED",
+      "js_files": [
+        "dlcshop.js"
+      ],
+      "lingo_scripts": 7,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 1,
+        "found": [
+          "04e004v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "Eldmatch"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "14": {
+      "status": "VERIFIED",
+      "js_files": [
+        "filebrowser.js",
+        "boat_filebrowser.js"
+      ],
+      "lingo_scripts": 10,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 3,
+        "found": [
+          "BluePrint3",
+          "Blueprint1",
+          "Blueprint2"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 1,
+        "found": [
+          "07d002v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "boatViewHandler",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "15": {
+      "status": "VERIFIED",
+      "js_files": [
+        "blueprint.js",
+        "BlueprintData.js"
+      ],
+      "lingo_scripts": 11,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 4,
+        "found": [
+          "BluePrint3",
+          "Blueprint1",
+          "Blueprint2",
+          "inventoryCheck"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 8,
+        "found": [
+          "00e110v0",
+          "15d000v0",
+          "15d027v0",
+          "15d028v0",
+          "15e001v0",
+          "15e002v0",
+          "15e004v0",
+          "15e005v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 5,
+        "found": [
+          "boatViewHandler",
+          "firstTimeList",
+          "gotNewHull",
+          "loopMaster",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "01",
+          "MainMenu",
+          "Shipyard",
+          "Small"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "70": {
+      "status": "VERIFIED",
+      "js_files": [
+        "erson.js"
+      ],
+      "lingo_scripts": 5,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Suit",
+          "helmet"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "externalParts",
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          15
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "71": {
+      "status": "VERIFIED",
+      "js_files": [
+        "haven.js",
+        "HarborData.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "externalParts",
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          14
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "76": {
+      "status": "VERIFIED",
+      "js_files": [
+        "showboat.js",
+        "ShowBoatData.js"
+      ],
+      "lingo_scripts": 7,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 1,
+        "found": [
+          "76e002v1"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "Start",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          6
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "77": {
+      "status": "VERIFIED",
+      "js_files": [
+        "birgit.js",
+        "BirgitData.js"
+      ],
+      "lingo_scripts": 25,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 6,
+        "found": [
+          "Belly",
+          "Blinddog",
+          "DoctorBag",
+          "MapPiece1",
+          "Pills",
+          "Swimring"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 13,
+        "found": [
+          "CantDoItDogBag",
+          "DeliverMapBag",
+          "JustDoItBag",
+          "JustDoItDogBag",
+          "JustDoItPrimaBag",
+          "SCJustDoItPrimaBag",
+          "SCcantDoItPrimaBag",
+          "cantDoItPrimaBag",
+          "deliverMapRing",
+          "leave",
+          "notrip",
+          "ringleave",
+          "trip"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 5,
+        "found": [
+          2,
+          3,
+          4,
+          5,
+          22
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 3,
+        "found": [
+          "drawBoat",
+          "primaTrip",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "78": {
+      "status": "VERIFIED",
+      "js_files": [
+        "preacher.js",
+        "PreacherData.js"
+      ],
+      "lingo_scripts": 6,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Belly",
+          "tmpStuffNeeded"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "BibleLeave",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          1,
+          20
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "79": {
+      "status": "VERIFIED",
+      "js_files": [
+        "fisherman.js",
+        "FishermanData.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Belly",
+          "tmpStuffNeeded"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 5,
+        "found": [
+          "anchorleave",
+          "burkLeave",
+          "cantDoIt",
+          "justDoIt",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          17
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "80": {
+      "status": "VERIFIED",
+      "js_files": [
+        "george.js",
+        "GeorgeData.js"
+      ],
+      "lingo_scripts": 10,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Diary",
+          "MapPiece2"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 5,
+        "found": [
+          "Story1",
+          "Story2",
+          "leave",
+          "story2",
+          "story3"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          7,
+          18,
+          19
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "81": {
+      "status": "VERIFIED",
+      "js_files": [
+        "surfer.js",
+        "SurferData.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "RottenFish"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          9
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "83": {
+      "status": "VERIFIED",
+      "js_files": [
+        "mia.js",
+        "MiaData.js"
+      ],
+      "lingo_scripts": 14,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 9,
+        "found": [
+          "boatride",
+          "boatride2",
+          "boatride3",
+          "infiniteJustDoIt2",
+          "justDoITluck2",
+          "justdoit2",
+          "leave",
+          "start",
+          "story1"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          13,
+          25
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "84": {
+      "status": "VERIFIED",
+      "js_files": [
+        "algae_island.js",
+        "AlgaeIslandData.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "helmet"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 5,
+        "found": [
+          "04d027v0",
+          "04d029v0",
+          "05d109v0",
+          "83d019v0",
+          "84e007v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "boatViewHandler",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 3,
+        "found": [
+          "justDoittank",
+          "justdoItTank",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          10,
+          11,
+          21
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "85": {
+      "status": "VERIFIED",
+      "js_files": [
+        "roaddog.js",
+        "saftfabrik.js",
+        "waterpump.js"
+      ],
+      "lingo_scripts": 6,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Diary",
+          "Suit"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "Start",
+          "StartDiary",
+          "leave",
+          "suit"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          7,
+          8
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "drawBoat"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "86": {
+      "status": "VERIFIED",
+      "js_files": [
+        "cave.js",
+        "CaveData.js",
+        "solhem.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Blinddog",
+          "MapPiece3"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "leave",
+          "medalStart"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          4,
+          8,
+          10
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "87": {
+      "status": "VERIFIED",
+      "js_files": [
+        "diving.js",
+        "DivingData.js"
+      ],
+      "lingo_scripts": 6,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Suit",
+          "helmet"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "start"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          12,
+          23
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "88": {
+      "status": "VERIFIED",
+      "js_files": [
+        "whale.js",
+        "WhaleData.js"
+      ],
+      "lingo_scripts": 4,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "Fishingrod"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "leave",
+          "start"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          11,
+          24
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_02": {
+      "status": "VERIFIED",
+      "js_files": [
+        "boat_junk.js",
+        "junk.js"
+      ],
+      "lingo_scripts": 4,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 10,
+        "found": [
+          "00d001v0",
+          "00d002v0",
+          "00d003v0",
+          "00d004v0",
+          "00d005v0",
+          "00e110v0",
+          "02d002v0",
+          "02d003v0",
+          "02d004v0",
+          "02e003v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 5,
+        "found": [
+          "WhereFrom",
+          "enterShelf",
+          "firstTimeList",
+          "loopMaster",
+          "weather"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "02",
+          "03",
+          "04",
+          "NewShelf"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_04": {
+      "status": "VERIFIED",
+      "js_files": [
+        "boatyard.js",
+        "yard.js",
+        "YardData.js",
+        "QuayData.js",
+        "ShipYardData.js"
+      ],
+      "lingo_scripts": 17,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Belly",
+          "tmpFirst"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 62,
+        "found": [
+          "00d001v0",
+          "00d002v0",
+          "00d003v0",
+          "00d004v0",
+          "00d005v0",
+          "00d010v0",
+          "00d011v0",
+          "00d012v0",
+          "00d013v0",
+          "00d075v0",
+          "00e104v0",
+          "00e107v0",
+          "00e108v0",
+          "00e109v0",
+          "00e110v0",
+          "04d001v0",
+          "04d002v0",
+          "04d003v0",
+          "04d004v0",
+          "04d007v0",
+          "04d010v0",
+          "04d012v0",
+          "04d013v0",
+          "04d014v0",
+          "04d015v0",
+          "04d016v0",
+          "04d017v0",
+          "04d018v0",
+          "04d019v0",
+          "04d020v0",
+          "04d022v0",
+          "04d023v0",
+          "04d027v0",
+          "04d028v0",
+          "04d029v0",
+          "04d030v0",
+          "04d032v0",
+          "04d034v0",
+          "04d035v0",
+          "04d036v0",
+          "04d037v0",
+          "04d038v0",
+          "04d039v0",
+          "04d040v0",
+          "04d041v0",
+          "04d042v0",
+          "04d043v0",
+          "04d044v0",
+          "04d045v0",
+          "04d046v0",
+          "04d047v0",
+          "04d049v0",
+          "04d051v0",
+          "04d052v0",
+          "04d053v0",
+          "04d054v0",
+          "04d055v0",
+          "04e005v0",
+          "04e006v0",
+          "04e998v0",
+          "04e999v0",
+          "50d012v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 9,
+        "found": [
+          "WhereFrom",
+          "externalParts",
+          "firstTimeList",
+          "gotNewHull",
+          "gotNewParts",
+          "loopMaster",
+          "radioHandler",
+          "user",
+          "weather"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 5,
+        "found": [
+          "01",
+          "03",
+          "04",
+          "MetalWorld",
+          "WoodWorld"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 4,
+        "found": [
+          1,
+          2,
+          13,
+          20
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_05": {
+      "status": "VERIFIED",
+      "js_files": [
+        "seaworld.js",
+        "world.js",
+        "SeaWorldData.js"
+      ],
+      "lingo_scripts": 39,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 9,
+        "found": [
+          "Belly",
+          "DrivenTimes",
+          "Fished",
+          "Fishingrod",
+          "MapPiece1",
+          "MapPiece2",
+          "MapPiece3",
+          "Pills",
+          "tmpItem"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 86,
+        "found": [
+          "00e101v0",
+          "00e110v0",
+          "05d001v0",
+          "05d005v0",
+          "05d018v0",
+          "05d023v0",
+          "05d045v0",
+          "05d051v0",
+          "05d055v0",
+          "05d056v0",
+          "05d057v0",
+          "05d066v0",
+          "05d120v0",
+          "05d125v0",
+          "05d126v0",
+          "05d127v0",
+          "05d128v0",
+          "05d129v0",
+          "05d130v0",
+          "05d131v0",
+          "05d135v0",
+          "05d136v0",
+          "05d137v0",
+          "05e008v1",
+          "05e016v0",
+          "05e016v1",
+          "05e018v0",
+          "05e018v1",
+          "05e019v0",
+          "05e019v1",
+          "05e020v0",
+          "05e022v0",
+          "05e023v0",
+          "05e024v0",
+          "05e024v1",
+          "05e026v0",
+          "05e027v0",
+          "05e030v0",
+          "05e031v0",
+          "05e032v1",
+          "05e033v0",
+          "05e033v1",
+          "05e034v0",
+          "05e035v0",
+          "05e043v0",
+          "05e044v0",
+          "05e044v1",
+          "05e052v0",
+          "05e052v1",
+          "05e053v0",
+          "05e054v0",
+          "05e055v0",
+          "05e056v0",
+          "05e057v0",
+          "05e058v0",
+          "05e059v0",
+          "05e060v0",
+          "09d001v0",
+          "09d002v0",
+          "09d003v0",
+          "09d005v0",
+          "09d006v0",
+          "09d058v0",
+          "09d059v0",
+          "09d060v0",
+          "09d061v0",
+          "09d062v0",
+          "09d063v0",
+          "09d064v0",
+          "19d001v0",
+          "19d002v0",
+          "19d003v0",
+          "19d004v0",
+          "19d006v0",
+          "19d007v0",
+          "19d008v0",
+          "19d009v0",
+          "19d010v0",
+          "19d011v0",
+          "19d012v0",
+          "19d013v0",
+          "19d014v0",
+          "19d015v0",
+          "19d016v0",
+          "33e007v0",
+          "33e011v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 12,
+        "found": [
+          "WhereFrom",
+          "availableXtras",
+          "levelHandler",
+          "loopMaster",
+          "maps",
+          "mouseMaster",
+          "parts",
+          "radioHandler",
+          "user",
+          "weather",
+          "world",
+          "worlds"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "01",
+          "08",
+          "13",
+          "Leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          3,
+          14,
+          15
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "AmbienceSound",
+          "MulleSez"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_06": {
+      "status": "VERIFIED",
+      "js_files": [
+        "album.js"
+      ],
+      "lingo_scripts": 19,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 3,
+        "found": [
+          "BluePrint3",
+          "Blueprint1",
+          "Blueprint2"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 11,
+        "found": [
+          "06d001v0",
+          "06d002v0",
+          "06d004v0",
+          "06d007v0",
+          "06e001v0",
+          "06e002v0",
+          "06e003v0",
+          "07d001v0",
+          "07d002v0",
+          "07d003v0",
+          "07d005v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 6,
+        "found": [
+          "WhereFrom",
+          "boatViewHandler",
+          "checkmemory",
+          "loopMaster",
+          "parts",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "04",
+          "Leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "drawBoat"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_08": {
+      "status": "VERIFIED",
+      "js_files": [
+        "diploma.js",
+        "help.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "WhereFrom",
+          "boatViewHandler",
+          "parts",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "Leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "drawBoat"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_11": {
+      "status": "VERIFIED",
+      "js_files": [
+        "menu.js"
+      ],
+      "lingo_scripts": 26,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 7,
+        "found": [
+          "11d001v0",
+          "11d003v0",
+          "11d004v0",
+          "11d006v0",
+          "11d007v0",
+          "11d008v0",
+          "70e001v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "WhereFrom",
+          "users"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "03",
+          "12",
+          "IntroStart",
+          "Wait"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "boat_14": {
+      "status": "VERIFIED",
+      "js_files": [
+        "boat_filebrowser.js",
+        "filebrowser.js"
+      ],
+      "lingo_scripts": 10,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 3,
+        "found": [
+          "BluePrint3",
+          "Blueprint1",
+          "Blueprint2"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 1,
+        "found": [
+          "07d002v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "boatViewHandler",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "boat_15": {
+      "status": "VERIFIED",
+      "js_files": [
+        "blueprint.js",
+        "BlueprintData.js"
+      ],
+      "lingo_scripts": 11,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 4,
+        "found": [
+          "BluePrint3",
+          "Blueprint1",
+          "Blueprint2",
+          "inventoryCheck"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 8,
+        "found": [
+          "00e110v0",
+          "15d000v0",
+          "15d027v0",
+          "15d028v0",
+          "15e001v0",
+          "15e002v0",
+          "15e004v0",
+          "15e005v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 5,
+        "found": [
+          "boatViewHandler",
+          "firstTimeList",
+          "gotNewHull",
+          "loopMaster",
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "01",
+          "MainMenu",
+          "Shipyard",
+          "Small"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "boat_70": {
+      "status": "VERIFIED",
+      "js_files": [
+        "erson.js"
+      ],
+      "lingo_scripts": 5,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Suit",
+          "helmet"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "externalParts",
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          15
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "boat_71": {
+      "status": "VERIFIED",
+      "js_files": [
+        "haven.js",
+        "HarborData.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "externalParts",
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          14
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "boat_76": {
+      "status": "VERIFIED",
+      "js_files": [
+        "showboat.js",
+        "ShowBoatData.js"
+      ],
+      "lingo_scripts": 7,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 1,
+        "found": [
+          "76e002v1"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "Start",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          6
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_77": {
+      "status": "VERIFIED",
+      "js_files": [
+        "birgit.js",
+        "BirgitData.js"
+      ],
+      "lingo_scripts": 25,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 6,
+        "found": [
+          "Belly",
+          "Blinddog",
+          "DoctorBag",
+          "MapPiece1",
+          "Pills",
+          "Swimring"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 13,
+        "found": [
+          "CantDoItDogBag",
+          "DeliverMapBag",
+          "JustDoItBag",
+          "JustDoItDogBag",
+          "JustDoItPrimaBag",
+          "SCJustDoItPrimaBag",
+          "SCcantDoItPrimaBag",
+          "cantDoItPrimaBag",
+          "deliverMapRing",
+          "leave",
+          "notrip",
+          "ringleave",
+          "trip"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 5,
+        "found": [
+          2,
+          3,
+          4,
+          5,
+          22
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 3,
+        "found": [
+          "drawBoat",
+          "primaTrip",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_78": {
+      "status": "VERIFIED",
+      "js_files": [
+        "preacher.js",
+        "PreacherData.js"
+      ],
+      "lingo_scripts": 6,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Belly",
+          "tmpStuffNeeded"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "BibleLeave",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          1,
+          20
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_79": {
+      "status": "VERIFIED",
+      "js_files": [
+        "fisherman.js",
+        "FishermanData.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Belly",
+          "tmpStuffNeeded"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 5,
+        "found": [
+          "anchorleave",
+          "burkLeave",
+          "cantDoIt",
+          "justDoIt",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          17
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_81": {
+      "status": "VERIFIED",
+      "js_files": [
+        "surfer.js",
+        "SurferData.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "RottenFish"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 1,
+        "found": [
+          9
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_83": {
+      "status": "VERIFIED",
+      "js_files": [
+        "mia.js",
+        "MiaData.js",
+        "treecar.js"
+      ],
+      "lingo_scripts": 14,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 9,
+        "found": [
+          "boatride",
+          "boatride2",
+          "boatride3",
+          "infiniteJustDoIt2",
+          "justDoITluck2",
+          "justdoit2",
+          "leave",
+          "start",
+          "story1"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          13,
+          25
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_84": {
+      "status": "VERIFIED",
+      "js_files": [
+        "algae_island.js",
+        "AlgaeIslandData.js"
+      ],
+      "lingo_scripts": 12,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "helmet"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 5,
+        "found": [
+          "04d027v0",
+          "04d029v0",
+          "05d109v0",
+          "83d019v0",
+          "84e007v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "boatViewHandler",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 3,
+        "found": [
+          "justDoittank",
+          "justdoItTank",
+          "leave"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          10,
+          11,
+          21
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_85": {
+      "status": "VERIFIED",
+      "js_files": [
+        "roaddog.js",
+        "saftfabrik.js",
+        "waterpump.js"
+      ],
+      "lingo_scripts": 6,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Diary",
+          "Suit"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 4,
+        "found": [
+          "Start",
+          "StartDiary",
+          "leave",
+          "suit"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          7,
+          8
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 1,
+        "found": [
+          "drawBoat"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_86": {
+      "status": "VERIFIED",
+      "js_files": [
+        "cave.js",
+        "CaveData.js",
+        "solhem.js"
+      ],
+      "lingo_scripts": 8,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Blinddog",
+          "MapPiece3"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 2,
+        "found": [
+          "user",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "leave",
+          "medalStart"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 3,
+        "found": [
+          4,
+          8,
+          10
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "boat_87": {
+      "status": "VERIFIED",
+      "js_files": [
+        "diving.js",
+        "DivingData.js",
+        "saftfabrik.js"
+      ],
+      "lingo_scripts": 6,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 2,
+        "found": [
+          "Suit",
+          "helmet"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 4,
+        "found": [
+          "externalParts",
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "start"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          12,
+          23
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "boat_88": {
+      "status": "VERIFIED",
+      "js_files": [
+        "sturestortand.js",
+        "whale.js",
+        "WhaleData.js"
+      ],
+      "lingo_scripts": 4,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "Fishingrod"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 3,
+        "found": [
+          "user",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 2,
+        "found": [
+          "leave",
+          "start"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 2,
+        "found": [
+          11,
+          24
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "global_calls": {
+        "total": 2,
+        "found": [
+          "drawBoat",
+          "setSky"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missing_details": []
+    },
+    "shared_00": {
+      "status": "VERIFIED",
+      "js_files": [
+        "album.js",
+        "carshow.js",
+        "credits.js",
+        "diploma.js",
+        "dlcshop.js",
+        "dorisdigital.js",
+        "figgeferrum.js",
+        "filebrowser.js",
+        "garage.js",
+        "junk.js",
+        "luddelabb.js",
+        "menu.js",
+        "mudcar.js",
+        "ocean.js",
+        "roaddog.js",
+        "roadthing.js",
+        "saftfabrik.js",
+        "solhem.js",
+        "sturestortand.js",
+        "treecar.js",
+        "viola.js",
+        "world.js",
+        "worldselect.js",
+        "yard.js",
+        "boatyard.js",
+        "boat_junk.js",
+        "boat_yard.js",
+        "seaworld.js"
+      ],
+      "lingo_scripts": 47,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 4,
+        "found": [
+          "DrivenTimes",
+          "index",
+          "tmpInventory",
+          "tmpItem"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 75,
+        "found": [
+          "00d007v0",
+          "00d008v0",
+          "00d009v0",
+          "00d039v0",
+          "00d041v0",
+          "00d042v0",
+          "00d043v0",
+          "00d044v0",
+          "00d045v0",
+          "00d046v0",
+          "00d048v0",
+          "00d049v0",
+          "00d050v0",
+          "00d051v0",
+          "00d053v0",
+          "00d054v0",
+          "00d055v0",
+          "00d056v0",
+          "00d067v0",
+          "00d069v0",
+          "00d071v0",
+          "00d072v0",
+          "00d073v0",
+          "00d074v0",
+          "00d075v0",
+          "00d076v0",
+          "00d077v0",
+          "00d078v0",
+          "00d079v0",
+          "00e110v0",
+          "03d008v0",
+          "03d009v0",
+          "03d010v0",
+          "03d011v0",
+          "03d012v0",
+          "03d014v0",
+          "03d015v0",
+          "04d009v0",
+          "04d024v0",
+          "04d025v0",
+          "04d026v0",
+          "04d048v0",
+          "04d056v0",
+          "05e018v0",
+          "05e018v1",
+          "05e022v0",
+          "05e026v0",
+          "05e030v0",
+          "05e034v0",
+          "05e053v0",
+          "05e056v0",
+          "09d001v0",
+          "09d002v0",
+          "09d003v0",
+          "09d005v0",
+          "09d006v0",
+          "09d058v0",
+          "09d059v0",
+          "09d060v0",
+          "09d061v0",
+          "09d062v0",
+          "09d063v0",
+          "09d064v0",
+          "20d163v0",
+          "50d001v0",
+          "50d002v0",
+          "50d003v0",
+          "50d004v0",
+          "50d005v0",
+          "50d006v0",
+          "50d007v0",
+          "50d008v0",
+          "50d009v0",
+          "50d013v0",
+          "50d014v0"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "state": {
+        "total": 18,
+        "found": [
+          "HullBackOffset",
+          "HullFrontOffset",
+          "boatViewHandler",
+          "externalParts",
+          "hullBackInsideOffset",
+          "hullFrontInsideOffset",
+          "junkPileHandlers",
+          "junkViewHandler",
+          "levelHandler",
+          "loopMaster",
+          "mouseMaster",
+          "parts",
+          "rudderBackOffset",
+          "rudderFrontOffset",
+          "user",
+          "users",
+          "weather",
+          "world"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 3,
+        "found": [
+          "05",
+          "13",
+          "Sink"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    },
+    "showboat": {
+      "status": "VERIFIED",
+      "js_files": [
+        "showboat.js",
+        "ShowBoatData.js"
+      ],
+      "lingo_scripts": 14,
+      "overall_coverage": 100.0,
+      "inventory": {
+        "total": 1,
+        "found": [
+          "DrivenTimes"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "audio": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "state": {
+        "total": 1,
+        "found": [
+          "user"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "transitions": {
+        "total": 1,
+        "found": [
+          "05"
+        ],
+        "missing": [],
+        "coverage": 100.0
+      },
+      "missions": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "global_calls": {
+        "total": 0,
+        "found": [],
+        "missing": [],
+        "coverage": 100
+      },
+      "missing_details": []
+    }
+  }
+}

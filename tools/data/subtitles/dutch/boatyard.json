@@ -1,0 +1,33 @@
+{
+  "04d001v0": {
+    "lines": [
+      "Welkom bij de scheepswerf!",
+      "Ik ben Christina Colombus"
+    ],
+    "actor": "christina"
+  },
+  "04d002v0": {
+    "lines": [
+      "Hier kun je boten bouwen",
+      "Kies onderdelen uit de shop",
+      "En plaats ze op je boot"
+    ],
+    "actor": "christina"
+  },
+  "04d003v0": {
+    "lines": [
+      "Druk op de rode knop",
+      "Om te gaan varen!",
+      "Veel plezier op zee"
+    ],
+    "actor": "christina"
+  },
+  "04d004v0": {
+    "lines": [
+      "Je hebt geen onderdelen meer!",
+      "Kom later terug als je",
+      "Nieuwe onderdelen hebt gevonden"
+    ],
+    "actor": "christina"
+  }
+}

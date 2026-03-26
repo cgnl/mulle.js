@@ -1,0 +1,39 @@
+# Miel Monteur Boten Edition — ASSET BASE IMAGE
+# Build once, reuse for code-only rebuilds:
+#   docker build -f Dockerfile.boten-base -t mielboten-base .
+# Only rebuild when ISOs, asset pipeline, or build scripts change.
+
+FROM alpine:latest AS iso
+ARG GAME_LANG=nl
+WORKDIR /iso
+COPY iso/mullebil_${GAME_LANG}.iso ./mullebil_${GAME_LANG}.iso
+COPY iso/mullebat_${GAME_LANG}.iso ./mullebat_${GAME_LANG}.iso
+RUN apk add --no-cache zip && \
+    echo "dummy" > dummy.txt && zip plugin.exe dummy.txt && rm dummy.txt
+
+FROM python:3.11 AS builder_py
+ARG GAME_LANG=nl
+ARG OPTIPNG_LEVEL=0
+WORKDIR /build
+
+COPY ./build_scripts ./build_scripts
+COPY ./requirements.txt .
+COPY ./assets.py .
+COPY ./audiosprite ./audiosprite
+COPY --from=iso /iso/mullebil_${GAME_LANG}.iso ./iso/mullebil_${GAME_LANG}.iso
+COPY --from=iso /iso/mullebat_${GAME_LANG}.iso ./iso/mullebat_${GAME_LANG}.iso
+COPY --from=iso /iso/plugin.exe ./iso/plugin.exe
+
+RUN apt-get update && apt-get -y install ffmpeg optipng p7zip-full libvorbis-dev && rm -rf /var/lib/apt/lists/*
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r requirements.txt
+
+RUN python build_scripts/build.py ${GAME_LANG} download
+RUN python build_scripts/build.py ${GAME_LANG} download-boats
+RUN mkdir -p dist/info/img
+RUN python build_scripts/build.py ${GAME_LANG} scores || echo "Scores build skipped"
+RUN python assets.py ${OPTIPNG_LEVEL} assets_${GAME_LANG}
+RUN python build_scripts/build.py ui-images || echo "UI images skipped"
+RUN python build_scripts/topography.py ./cst_out_new/CDDATA.CXT/Standalone ./topography || echo "Topography skipped"
+
+# This is the output — assets ready for the code stage

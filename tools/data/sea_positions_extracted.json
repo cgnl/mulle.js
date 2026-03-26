@@ -1,0 +1,133 @@
+{
+  "_comment": "Sea destination positions extracted from boten_CDDATA.CXT Lingo map data",
+  "_source": "boten_CDDATA.CXT/Standalone/*.txt - MapId entries with point(x,y) coordinates",
+  "_extraction_date": "2025-01-31",
+  "destinations": {
+    "bootshow": {
+      "objectId": 16,
+      "dirScene": 76,
+      "mapId": 63,
+      "position": {"x": 253, "y": 89},
+      "topology": "30t037v0",
+      "name": "Boot Show"
+    },
+    "birgitstrand": {
+      "objectId": 17,
+      "dirScene": 77,
+      "mapId": 51,
+      "position": {"x": 423, "y": 100},
+      "topology": "30t028v0",
+      "name": "Birgit's Strand"
+    },
+    "preacher": {
+      "objectId": 18,
+      "dirScene": 78,
+      "mapId": 33,
+      "position": {"x": 169, "y": 195},
+      "topology": "30t018v0",
+      "underMapImage": "30b018v2",
+      "special": {"windSpeed": 1},
+      "name": "Kerk (Dominee)"
+    },
+    "fisherman": {
+      "objectId": 19,
+      "dirScene": 79,
+      "mapId": 55,
+      "position": {"x": 210, "y": 173},
+      "topology": "30t031v0",
+      "special": {"windSpeed": 2},
+      "name": "Visser"
+    },
+    "vuurtoren": {
+      "objectId": 20,
+      "dirScene": 80,
+      "mapId": 21,
+      "position": {"x": 342, "y": 284},
+      "topology": "30t010v0",
+      "name": "Vuurtoren (Sam)",
+      "_note": "Requires Diary in inventory to access"
+    },
+    "surfstrand": {
+      "objectId": 21,
+      "dirScene": 81,
+      "mapId": 73,
+      "position": {"x": 562, "y": 164},
+      "topology": "30t041v0",
+      "name": "Surfstrand (Sur)"
+    },
+    "racing": {
+      "objectId": 2,
+      "dirScene": 82,
+      "mapId": 42,
+      "position": {"x": 425, "y": 75},
+      "topology": "30t023v0",
+      "underMapImage": "30b023v2",
+      "name": "Race Parcours",
+      "enterDir": 12,
+      "boardPosition": {"x": 549, "y": 355}
+    },
+    "mia": {
+      "objectId": 23,
+      "dirScene": 83,
+      "mapId": 97,
+      "position": {"x": 144, "y": 263},
+      "topology": "30t057v0",
+      "special": {"windSpeed": 3},
+      "name": "Mia's Eiland"
+    },
+    "viola": {
+      "objectId": 24,
+      "dirScene": 84,
+      "mapId": 91,
+      "position": {"x": 204, "y": 189},
+      "topology": "30t052v0",
+      "name": "Viola's Huis"
+    },
+    "waterpump": {
+      "objectId": 25,
+      "dirScene": 85,
+      "mapId": 3,
+      "position": {"x": 552, "y": 305},
+      "topology": "30t002v0",
+      "special": {"windSpeed": 0},
+      "name": "Fontein"
+    },
+    "cave": {
+      "objectId": 26,
+      "dirScene": 86,
+      "mapId": 19,
+      "position": {"x": 319, "y": 176},
+      "topology": "30t999v0",
+      "special": {"windSpeed": 2, "fog": true, "freeZone": true},
+      "name": "Sven's Grot",
+      "_note": "Requires Compass boat part - IfFound:#NoDisplay"
+    },
+    "diving": {
+      "objectId": 27,
+      "dirScene": 87,
+      "mapId": 100,
+      "position": {"x": 286, "y": 54},
+      "topology": "30t059v0",
+      "special": {"windSpeed": 5},
+      "name": "Duikplek"
+    },
+    "whale": {
+      "objectId": 28,
+      "dirScene": 88,
+      "mapId": 48,
+      "position": {"x": 285, "y": 170},
+      "topology": "30t027v0",
+      "special": {"windSpeed": 3},
+      "name": "Walvis Plek"
+    }
+  },
+  "boatyard": {
+    "objectId": 3,
+    "dirScene": 4,
+    "mapId": 52,
+    "position": {"x": 490, "y": 152},
+    "topology": "30t029v0",
+    "name": "Scheepswerf (Quay)",
+    "_note": "Not on sea map - accessed from quay scene"
+  }
+}

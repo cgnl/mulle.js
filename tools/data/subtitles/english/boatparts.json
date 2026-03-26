@@ -1,0 +1,44 @@
+{
+  "02d002v0": {
+    "lines": [
+      "Everything works fine.",
+      "You just have to try hard enough.",
+      "Would you like to give it a try?"
+    ],
+    "actor": "christina"
+  },
+  "02d003v0": {
+    "lines": [
+      "Everything comes in handy sooner or later."
+    ],
+    "actor": "christina"
+  },
+  "02d004v0": {
+    "lines": [
+      "Machines, devices, big or small,",
+      "you name it.",
+      "You can reuse just about anything.",
+      "Take it from me."
+    ],
+    "actor": "christina"
+  },
+  "03d011v0": {
+    "lines": [
+      "The workspace is full!"
+    ],
+    "actor": "christina"
+  },
+  "03d012v0": {
+    "lines": [
+      "There's no more room."
+    ],
+    "actor": "christina"
+  },
+  "03d014v0": {
+    "lines": [
+      "No, there's no room left",
+      "for any more junk..."
+    ],
+    "actor": "christina"
+  }
+}

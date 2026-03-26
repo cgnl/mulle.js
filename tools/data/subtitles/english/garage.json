@@ -1,0 +1,30 @@
+{
+  "03d043v0": {
+    "lines": [
+      "Here comes Figge Ferrum with new parts to Mulles workshop"
+    ]
+  },
+  "03d044v0": {
+    "lines": [
+      "Hey Mulle!"
+    ],
+    "actor": "figgeDoor"
+  },
+  "03d045v0": {
+    "lines": [
+      "- Look at that!",
+      "- it's Figge Ferrum!",
+      " - the scrap dealer",
+      "- Have you brought my stuff?"
+    ],
+    "actor": "mulle"
+  },
+  "03d046v0": {
+    "lines": [
+      "Oh yeah",
+      "I left your stuff in the front yard",
+      "I have to get going, good bye!"
+    ],
+    "actor": "figgeDoor"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "03d043v0": {
+    "lines": [
+      "Nu komt Staf Schroot, zeker met nieuwe onderdelen, naar Miels garage."
+    ]
+  },
+  "03d044v0": {
+    "actor": "stafDeur",
+    "lines": [
+      "Zeg, Miel!"
+    ]
+  },
+  "03d045v0": {
+    "actor": "miel",
+    "lines": [
+      "- Kijk daar eens!",
+      "- Het is Staf Schroot!",
+      "- de schroothandelaar.",
+      "- Heb je mijn spullen meegebracht?"
+    ]
+  },
+  "03d046v0": {
+    "actor": "stafDeur",
+    "lines": [
+      "Ja ja, maak je maar geen zorgen, ik leeg ze op het erf en dan kun je ze zelf sorteren.",
+      "Sorry, maar ik moet ervan door.",
+      "Dag."
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "dirFile": "boten_79.DXR",
+  "markers": {
+    "JustDoit": "79d005v0",
+    "cantDoIt": "79d003v0",
+    "leave": null
+  },
+  "prefix": "79",
+  "strategy": {
+    "a": 3,
+    "b_candidates": [
+      1985,
+      1988,
+      1982,
+      1991,
+      978,
+      981,
+      984,
+      987
+    ],
+    "low_matches": 0,
+    "matches": 16,
+    "strategy": "linear"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "pakket1": {
+    "id": 1,
+    "name": "Oom Otto Pakket 1",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket2": {
+    "id": 2,
+    "name": "Oom Otto Pakket 2",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket3": {
+    "id": 3,
+    "name": "Oom Otto Pakket 3",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket4": {
+    "id": 4,
+    "name": "Oom Otto Pakket 4",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket5": {
+    "id": 5,
+    "name": "Oom Otto Pakket 5",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket6": {
+    "id": 6,
+    "name": "Oom Otto Pakket 6",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket7": {
+    "id": 7,
+    "name": "Oom Otto Pakket 7",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket8": {
+    "id": 8,
+    "name": "Oom Otto Pakket 8",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket9": {
+    "id": 9,
+    "name": "Oom Otto Pakket 9",
+    "parts": [],
+    "partCount": 0
+  },
+  "pakket10": {
+    "id": 10,
+    "name": "Oom Otto Pakket 10",
+    "parts": [],
+    "partCount": 0
+  }
+}

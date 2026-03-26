@@ -1,0 +1,21 @@
+{
+  "dlc_oom_otto": {
+    "name": "Oom Otto uit Amerika",
+    "description": "Exclusieve onderdelen per post van je oom uit Amerika!",
+    "note": "Parts komen via brievenbus in yard, 1-3 per bezoek (originele Lingo behavior)",
+    "parts": [
+      {"id": 5, "name": "Wijnvat achterkant", "category": "back", "source": "pakket1, pakket9"},
+      {"id": 69, "name": "Taxi bordje", "category": "accessory", "morphsTo": [70, 71, 72, 73], "source": "pakket5"},
+      {"id": 184, "name": "Comfortabele stoel", "category": "seat", "source": "pakket9"},
+      {"id": 279, "name": "Racewagen voorkant", "category": "front", "source": "pakket7"},
+      {"id": 280, "name": "Lamp accessoire", "category": "accessory", "source": "pakket8, pakket10"},
+      {"id": 281, "name": "Racewagen achterkant", "category": "back", "source": "pakket4"},
+      {"id": 282, "name": "Racewagen middenstuk", "category": "middle", "source": "pakket6"},
+      {"id": 289, "name": "Toeter", "category": "horn", "source": "pakket8, pakket10"},
+      {"id": 291, "name": "Uitklapbaar onderdeel", "category": "accessory", "morphsTo": [292, 293], "source": "pakket5"},
+      {"id": 300, "name": "Taxi voorkant", "category": "front", "source": "pakket1"},
+      {"id": 301, "name": "Taxi achterkant", "category": "back", "source": "pakket3"},
+      {"id": 302, "name": "Taxi middenstuk", "category": "middle", "source": "pakket2"}
+    ]
+  }
+}

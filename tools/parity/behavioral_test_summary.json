@@ -1,0 +1,139 @@
+{
+  "total_test_files": 25,
+  "total_scripts_parsed": 86,
+  "total_test_cases": 134,
+  "pattern_counts": {
+    "simple_transition": 61,
+    "mission_check": 4,
+    "complex_branching": 6,
+    "inventory_check": 14,
+    "prima_trip": 1
+  },
+  "folders": [
+    {
+      "folder": "00",
+      "scripts": 1,
+      "tests": 1
+    },
+    {
+      "folder": "01",
+      "scripts": 1,
+      "tests": 1
+    },
+    {
+      "folder": "02",
+      "scripts": 1,
+      "tests": 1
+    },
+    {
+      "folder": "04",
+      "scripts": 2,
+      "tests": 5
+    },
+    {
+      "folder": "05",
+      "scripts": 2,
+      "tests": 4
+    },
+    {
+      "folder": "06",
+      "scripts": 1,
+      "tests": 1
+    },
+    {
+      "folder": "08",
+      "scripts": 2,
+      "tests": 2
+    },
+    {
+      "folder": "11",
+      "scripts": 5,
+      "tests": 7
+    },
+    {
+      "folder": "13",
+      "scripts": 1,
+      "tests": 2
+    },
+    {
+      "folder": "15",
+      "scripts": 4,
+      "tests": 4
+    },
+    {
+      "folder": "70",
+      "scripts": 2,
+      "tests": 2
+    },
+    {
+      "folder": "71",
+      "scripts": 1,
+      "tests": 2
+    },
+    {
+      "folder": "76",
+      "scripts": 4,
+      "tests": 4
+    },
+    {
+      "folder": "77",
+      "scripts": 17,
+      "tests": 33
+    },
+    {
+      "folder": "78",
+      "scripts": 3,
+      "tests": 6
+    },
+    {
+      "folder": "79",
+      "scripts": 7,
+      "tests": 7
+    },
+    {
+      "folder": "80",
+      "scripts": 6,
+      "tests": 8
+    },
+    {
+      "folder": "81",
+      "scripts": 3,
+      "tests": 3
+    },
+    {
+      "folder": "83",
+      "scripts": 9,
+      "tests": 13
+    },
+    {
+      "folder": "84",
+      "scripts": 5,
+      "tests": 8
+    },
+    {
+      "folder": "85",
+      "scripts": 3,
+      "tests": 7
+    },
+    {
+      "folder": "86",
+      "scripts": 2,
+      "tests": 5
+    },
+    {
+      "folder": "87",
+      "scripts": 1,
+      "tests": 3
+    },
+    {
+      "folder": "88",
+      "scripts": 2,
+      "tests": 4
+    },
+    {
+      "folder": "shared_00",
+      "scripts": 1,
+      "tests": 1
+    }
+  ]
+}

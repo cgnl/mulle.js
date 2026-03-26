@@ -1,0 +1,30 @@
+{
+  "03d043v0": {
+    "lines": [
+      "Daar komt Figge Ferrum met nieuwe onderdelen naar Miels werkplaats"
+    ]
+  },
+  "03d044v0": {
+    "lines": [
+      "Hé Miel!"
+    ],
+    "actor": "figgeDoor"
+  },
+  "03d045v0": {
+    "lines": [
+      "- Kijk eens aan!",
+      "- Dat is Figge Ferrum!",
+      "- de schroothandelaar",
+      "- Heb je mijn spullen meegebracht?"
+    ],
+    "actor": "mulle"
+  },
+  "03d046v0": {
+    "lines": [
+      "Amai ja",
+      "Ik heb je spullen in de voortuin gezet",
+      "Ik moet er vandoor, tot ziens!"
+    ],
+    "actor": "figgeDoor"
+  }
+}
