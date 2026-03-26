@@ -297,6 +297,10 @@ class MulleSprite extends PhaserSpriteBase {
    */
   addDirectorAnimation (name, firstFrame, frames, loop = false) {
     const [key, frames_offset] = directorAnimation.createAnimation(this.game, this.movie, firstFrame, frames)
+    if (!frames_offset || frames_offset.length === 0) {
+      console.warn('[sprite-anim] No valid frames for animation', name)
+      return null
+    }
     if (!this.key) {
       console.debug('Set sprite key to', key)
       this.loadTexture(key, frames_offset[0])

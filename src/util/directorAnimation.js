@@ -36,6 +36,10 @@ class directorAnimation {
       if (frameName === 'Dummy')
         continue
       [key, frame] = DirectorHelper.getDirectorImage(game, movie, frameName)
+      if (!frame || !frame.name) {
+        console.warn('[directorAnimation] Unable to resolve frame', movie, frameName)
+        continue
+      }
       DirectorFrames.push(frame.name)
       DirectorFramesObjects.push(frame)
     }
@@ -77,8 +81,10 @@ class directorAnimation {
 
     for (const castNum of offset_frames) {
       const frame = DirectorHelper.getSpriteSheetImage(sprite.key, castNum)
-      if (frame === null)
-        console.error('Unable to find image', movie, member)
+      if (!frame) {
+        console.warn('[directorAnimation] Unable to find image in', sprite.key, 'cast', castNum)
+        continue
+      }
       resolved_frames.push(frame.name)
     }
 

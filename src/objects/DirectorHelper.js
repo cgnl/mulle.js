@@ -21,8 +21,9 @@ class DirectorHelper {
    */
   static getDirectorImage (game, movie, member) {
     // noinspection JSUnresolvedVariable
-    const { key, frame } = game.mulle.getDirectorImage(movie, member)
-    return [key, frame]
+    const result = game.mulle.getDirectorImage(movie, member)
+    if (!result) return [null, null]
+    return [result.key, result.frame || result]
   }
 
   /**

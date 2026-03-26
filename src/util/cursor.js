@@ -111,7 +111,15 @@ class MulleCursor {
     this.updateCursorSprite()
   }
 
-  // BUG FIX #2: Removed history system methods (add/remove/refresh) - not in original
+  /**
+   * Remove a cursor type and reset to default.
+   * Called by carpart/boatpart onDrop when a drop target accepts the part.
+   * @param {string} name Cursor type to remove (unused, always resets)
+   */
+  remove (name) {
+    this._current = null
+    this.updateCursorSprite()
+  }
 
   setCursor (activator, name) {
     if (name) {

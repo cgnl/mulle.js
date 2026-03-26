@@ -31,7 +31,7 @@ class MulleDriveCar extends MulleSprite {
       for (var i = 0; i < 16; i++) {
         var img = this.game.mulle.getDirectorImage('05.DXR', (directions[dir] + i))
         if (img && img.name) {
-          this.spriteFrames[dir][ i + 1 ] = img.name
+          this.spriteFrames[dir][ i + 1 ] = { key: img.key, name: img.name }
         }
       }
     }
@@ -299,11 +299,15 @@ class MulleDriveCar extends MulleSprite {
       return
     }
 
-    var n = this.spriteFrames[ this.inclination ][ this.direction ]
+    var frameInfo = this.spriteFrames[ this.inclination ][ this.direction ]
 
-    // this.sprite.setFrame( f );
+    if (!frameInfo) return
 
-    this.frameName = n
+    if (this.key === frameInfo.key) {
+      this.frameName = frameInfo.name
+    } else {
+      this.loadTexture(frameInfo.key, frameInfo.name)
+    }
   }
 
   drive () {

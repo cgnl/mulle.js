@@ -93,8 +93,10 @@ class ObjectAnimation {
       else
         [key, frame] = this.game.director.getImageByCastNumber(this.movie, frameName)
 
-      if (!frame)
-        throw Error('Unable to resolve frame ' + frameName)
+      if (!frame) {
+        console.warn('[ObjectAnimation] Unable to resolve frame', frameName, 'in', this.movie)
+        continue
+      }
 
       console.log('Frame matched as', key, frame)
       DirectorFrames.push(frame)
