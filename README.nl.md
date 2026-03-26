@@ -41,7 +41,7 @@ Je hebt de originele CD-ROM ISO's nodig in een ondersteunde taal. Ze zijn beschi
 | 🇩🇪 Duits | [Autos bauen mit Willy Werkel](https://archive.org/details/autos-bauen-mit-willy-werkel) | [Schiffe bauen mit Willy Werkel](https://archive.org/details/schiffe_bauen_willy_werkel) |
 | 🇸🇪 Zweeds | [Bygg bilar med Mulle Meck](https://archive.org/details/byggbilarmedmullemeck) | [Mulle Meck bygger båtar](https://archive.org/details/mullemeckbyggerbatar) |
 | 🇬🇧 Engels | [Gary Gadget: Building Cars](https://archive.org/details/gary-gadget-building-cars) | — |
-| 🇳🇴 Noors | [Bygg biler med Mulle Mekk](https://archive.org/details/bygg-biler-med-mulle-mekk) | — |
+| 🇳🇴 Noors | [Bygg biler med Mulle Mekk](https://archive.org/details/bygg-biler-med-mulle-mekk) | [Bygg båt med Mulle Mekk](https://archive.org/details/bygg-bat-med-mulle-mekk) |
 | 🇩🇰 Deens | [Byg bil med Mulle Meck](https://archive.org/details/byg-bil-med-mulle-meck) | — |
 
 ## Snel starten (Docker)

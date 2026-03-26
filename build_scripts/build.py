@@ -242,6 +242,7 @@ class Build:
             'sv': 'https://archive.org/download/mullemeckbyggerbatar/MulleMeckByggerBatar.iso',
             'nl': 'https://archive.org/download/2.mielmonteurrechtdoorzee/2.Miel%20Monteur%20Recht%20Door%20Zee.iso',
             'de': 'https://archive.org/download/schiffe_bauen_willy_werkel/Schiffe%20bauen%20mit%20Willy%20Werkel.iso',
+            'no': 'https://archive.org/download/bygg-bat-med-mulle-mekk/Bygg%20B%C3%A5t%20med%20Mulle%20Mekk.zip',
         }
         if self.language in boats_urls:
             url = boats_urls[self.language]
