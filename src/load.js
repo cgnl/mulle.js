@@ -129,15 +129,7 @@ class LoadState extends Phaser.State {
     // Merge boat objects into ObjectsDB (sea-specific map objects)
     var boatObjects = this.game.cache.getJSON('BoatObjectsDB')
     if (boatObjects) {
-      // Use higher IDs for boat objects to avoid collision with car objects
-      // Or store separately for sea world
       this.game.mulle.BoatObjectsDB = boatObjects
-      
-      // Also merge into main ObjectsDB with 'sea_' prefix for compatibility
-      for (var objId in boatObjects) {
-        // Store with 'sea_' prefix to distinguish from car world objects
-        this.game.mulle.ObjectsDB['sea_' + objId] = boatObjects[objId]
-      }
       console.log('[Load] Boat objects loaded:', Object.keys(boatObjects).length)
     }
     
