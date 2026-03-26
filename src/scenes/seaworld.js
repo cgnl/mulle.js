@@ -1558,17 +1558,18 @@ class SeaWorldState extends MulleState {
     const boatObjectsDB = mulle.BoatObjectsDB || {}
     const idKey = String(objectId)
 
-    let def = objectsDB[objectId] || objectsDB[idKey] || objectsDB['sea_' + idKey] || boatObjectsDB[objectId] || boatObjectsDB[idKey] || null
+    // Boat objects take priority over car objects in sea world (IDs overlap)
+    let def = boatObjectsDB[objectId] || boatObjectsDB[idKey] || objectsDB['sea_' + idKey] || objectsDB[objectId] || objectsDB[idKey] || null
 
     if (!def) {
       def = this._createFallbackObjectDefinition(objectId, objectOpt)
     }
 
-    // Cache resolved sea defs into numeric slot so MulleMapObject constructor can read it.
-    if (def && !objectsDB[objectId]) {
-      objectsDB[objectId] = def
-      if (mulle.ObjectsDB) {
-        mulle.ObjectsDB[objectId] = def
+    // Cache resolved sea defs into BoatObjectsDB (not car ObjectsDB) to avoid pollution
+    if (def && !boatObjectsDB[objectId]) {
+      boatObjectsDB[objectId] = def
+      if (mulle.BoatObjectsDB) {
+        mulle.BoatObjectsDB[objectId] = def
       }
     }
 
