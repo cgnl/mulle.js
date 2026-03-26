@@ -1,4 +1,4 @@
-# mulle.js 🚗⛵
+# miel.js 🚗⛵
 
 > ⚠️ **Alpha** — This project is experimental. Expect bugs, missing assets, and incomplete features.
 
@@ -8,13 +8,13 @@ A JavaScript/Phaser remake of the classic **Miel Monteur** (Mulle Meck) games, c
 
 ## What is this?
 
-mulle.js recreates the beloved Miel Monteur games in the browser using [Phaser CE](https://github.com/photonstorm/phaser-ce). Assets are extracted from the original CD-ROM ISOs, and all game logic has been reverse-engineered from the original Macromedia Director/Lingo source.
+miel.js recreates the beloved Miel Monteur games in the browser using [Phaser CE](https://github.com/photonstorm/phaser-ce). Assets are extracted from the original CD-ROM ISOs, and all game logic has been reverse-engineered from the original Macromedia Director/Lingo source.
 
 ### Combined Games via World Select
 
 The original games were released as two separate titles. Interestingly, the first game (cars) contained Lingo code for a **World Select** screen that would allow switching between worlds — but it was never activated, likely due to complexity or time constraints.
 
-mulle.js brings this unused feature to life, merging both games through World Select:
+miel.js brings this unused feature to life, merging both games through World Select:
 
 - 🚗 **Blauwwater** — the original car-building game (*Miel Monteur bouwt auto's*)
 - ⛵ **Scheepswerf** — the boat-building game (*Miel Monteur recht door zee*)

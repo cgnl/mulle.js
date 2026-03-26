@@ -1,4 +1,4 @@
-# mulle.js 🚗⛵
+# miel.js 🚗⛵
 
 > ⚠️ **Alpha** — Dit project is experimenteel. Verwacht bugs, ontbrekende assets en onvoltooide features.
 
@@ -6,13 +6,13 @@ Een JavaScript/Phaser remake van de klassieke **Miel Monteur** (Mulle Meck) spel
 
 ## Wat is dit?
 
-mulle.js herschept de geliefde Miel Monteur spellen in de browser met [Phaser CE](https://github.com/photonstorm/phaser-ce). Assets worden geëxtraheerd uit de originele CD-ROM ISO's en alle spellogica is reverse-engineered vanuit de originele Macromedia Director/Lingo broncode.
+miel.js herschept de geliefde Miel Monteur spellen in de browser met [Phaser CE](https://github.com/photonstorm/phaser-ce). Assets worden geëxtraheerd uit de originele CD-ROM ISO's en alle spellogica is reverse-engineered vanuit de originele Macromedia Director/Lingo broncode.
 
 ### Twee spellen via World Select
 
 De originele spellen waren twee losse titels. Het eerste spel (auto's) bevatte al Lingo-code voor een **World Select** scherm waarmee je kon wisselen tussen werelden — maar dit werd nooit geactiveerd, vermoedelijk door complexiteit of tijdgebrek.
 
-mulle.js brengt deze ongebruikte feature tot leven en voegt beide spellen samen via World Select:
+miel.js brengt deze ongebruikte feature tot leven en voegt beide spellen samen via World Select:
 
 - 🚗 **Blauwwater** — het originele auto-bouwspel (*Miel Monteur bouwt auto's*)
 - ⛵ **Scheepswerf** — het boten-bouwspel (*Miel Monteur recht door zee*)
