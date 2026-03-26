@@ -45,12 +45,11 @@ You need to own the original CD-ROMs in any supported language:
 The easiest way to run is with Docker:
 
 ```bash
-# Place your ISOs in tools/iso/ (example for Dutch)
-cp /path/to/mullebil_nl.iso tools/iso/
-cp /path/to/mullebat_nl.iso tools/iso/
+# Place your ISOs in iso/
+cp /path/to/mullebil_nl.iso iso/
+cp /path/to/mullebat_nl.iso iso/
 
 # Build and run (set GAME_LANG to your language: nl, sv, no, da)
-cd tools
 docker build -f Dockerfile.boten --build-arg GAME_LANG=nl -t mielboten .
 docker run -p 8082:80 mielboten
 ```
@@ -79,8 +78,6 @@ brew install ffmpeg imagemagick optipng p7zip node
 ### Build Steps
 
 ```bash
-cd tools
-
 # Install Python dependencies
 pip3 install -r requirements.txt
 
@@ -104,22 +101,23 @@ Access at http://localhost:8080
 ## Project Structure
 
 ```
-tools/
-├── src/                  # Game source (Phaser scenes, objects, structs)
-│   ├── scenes/           # All game scenes (garage, boatyard, seaworld, NPCs, ...)
+├── src/                   # Game source (Phaser scenes, objects, structs)
+│   ├── scenes/            # All game scenes (garage, boatyard, seaworld, NPCs, ...)
 │   ├── objects/           # Game objects (boat, weather, inventory, ...)
 │   └── struct/            # Data structures (missions, parts, saves, ...)
-├── build_scripts/         # Asset extraction and build pipeline
-├── build_data/            # Original Director cast files (extracted from ISOs)
+├── build_scripts/         # ISO extraction and asset build pipeline
 ├── e2e/                   # Playwright E2E tests (102 tests)
-
+├── parity/                # Lingo parity verification tools and tests
+├── data/                  # Game data JSON files
+├── audiosprite/           # Audio processing tools
+├── dlc/                   # DLC content definitions
 └── dist/                  # Built output (served by webpack-dev-server / Apache)
 ```
 
 ## Testing
 
 ```bash
-cd tools/e2e
+cd e2e
 npx playwright install chromium
 npx playwright test
 ```

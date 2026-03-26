@@ -2,8 +2,8 @@
 # Build: docker build -f Dockerfile.boten -t mielboten .
 # Run: docker run -p 8082:80 mielboten
 
-# Stage 1: Copy local ISOs (expects ISOs in tools/iso/ directory)
-# To use: copy your ISOs to tools/iso/ before building
+# Stage 1: Copy local ISOs (expects ISOs in iso/ directory)
+# To use: copy your ISOs to iso/ before building
 FROM alpine:latest AS iso
 ARG GAME_LANG=nl
 

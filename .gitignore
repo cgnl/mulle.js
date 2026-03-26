@@ -4,29 +4,25 @@ Thumbs.db
 
 # ISOs (user must supply their own)
 *.iso
-tools/iso/
+iso/
 
 # Extracted data (regenerated from ISOs via build pipeline)
-tools/cst_out_new/
-tools/build_data/BoatsMovies/
-tools/build_data/Movies/
-tools/build_data/phaser-ce/
-tools/build_data/drxtract/
 cst_out_new/
+build_data/
 extracted/
 extracted_lingo/
 decompiled_lingo/
 analysis_extra_iso/
 
 # Build output
-tools/dist/
+dist/
 
 # Node modules
 node_modules/
 
 # Playwright
-tools/e2e/test-results/
-tools/e2e/playwright-report/
+e2e/test-results/
+e2e/playwright-report/
 
 # Python
 __pycache__/
@@ -40,12 +36,11 @@ venv*/
 .vscode/
 
 # Coverage
-tools/coverage/
+coverage/
 
 # Temp
 tmp/
-tools/tmp/
 
 # Generated parity data (regenerate with parity scripts)
-tools/parity/lingo_ast.json
-tools/parity/behavioral_contracts.json
+parity/lingo_ast.json
+parity/behavioral_contracts.json
