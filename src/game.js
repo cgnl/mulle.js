@@ -931,6 +931,12 @@ class MulleGame extends Phaser.Game {
       loader.pack('blueprint', 'assets/blueprint.json', null, this)
       loader.pack('boatdiploma', 'assets/boatdiploma.json', null, this)
 
+      // NOTE: zee_intro pack is NOT loaded here because its sprite atlases use
+      // short numeric frame names (1,2,3...) that collide with car/yard atlases.
+      // The zee_intro AUDIO is loaded separately below via individual asset loading.
+      loader.audio('zee_intro-audio', 'assets/zee_intro-audio.ogg')
+      loader.json('zee_intro-audio-audioatlas', 'assets/zee_intro-audio.json')
+
       this.boatAssetsLoaded = true
     }
 
